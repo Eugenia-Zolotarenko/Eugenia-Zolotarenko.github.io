@@ -88,13 +88,16 @@ li a {
 }
 
 /*CONTENT*/
-.content {
-    width: 968px;
-}
+
 
 ul.left_menu {
     float: left;
     width: 240px;
+}
+
+.content {
+
+    width: 968px;
 }
 
 .left_menu >li> a {
@@ -130,3 +133,23 @@ ul.left_menu > li:hover > ul.submenu {
 
     background: url("../img/content_picture.jpg") no-repeat center top;
 }
+
+.content .content_text {
+    float: right;
+
+    margin: 40px 0 85px 0;
+    width: 625px;
+    padding: 0 24px;
+
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.wraper:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*FOOTER*/
