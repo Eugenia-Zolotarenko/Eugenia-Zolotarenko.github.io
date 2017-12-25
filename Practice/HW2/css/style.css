@@ -88,7 +88,12 @@ li a {
 }
 
 /*CONTENT*/
+.content {
+    width: 968px;
+}
+
 ul.left_menu {
+    float: left;
     width: 240px;
 }
 
@@ -114,4 +119,14 @@ ul.submenu  {
 
 ul.left_menu > li:hover > ul.submenu {
     display: block;
+}
+
+
+.content .content_picture {
+    float: right;
+    border: 1px solid #c8c8c8;
+    width: 675px;
+    height: 400px;
+
+    background: url("../img/content_picture.jpg") no-repeat center top;
 }
