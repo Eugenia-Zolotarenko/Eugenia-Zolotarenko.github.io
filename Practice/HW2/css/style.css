@@ -9,7 +9,6 @@ body {
     width: 1060px;
     border-right: 1px solid #dbdbdb;
     border-left: 1px solid #dbdbdb;
-
 }
 
 li a {
@@ -17,11 +16,12 @@ li a {
     text-decoration: none;
 }
 
+.main_menu li{
+    display: inline-block;
+}
+
 
 /*HERDER*/
-.header {
-    position: relative;
-}
 
 .header_logo {
     width: 145px;
@@ -30,65 +30,66 @@ li a {
  }
 
 /*HEADER MENU*/
-.main_menu li{
-    display: inline-block;
-}
-
-.main_menu li a {
-    color: white;
-
-}
 
 .header_menu li a{
     margin: 40px 0;
-    background-position: center top; /* выравниваем фон вверх и по центру */
-    background-repeat: no-repeat;
     height: 40px;
 }
 
 .header_menu .item_1 a {
     width: 144px;
-    background-image: url("../img/header_menu_item1.jpg");
+    background: url("../img/header_menu_item1_name_24.png") no-repeat 50% 50%,
+             url("../img/header_menu_item1_bg.png") no-repeat 50% 50%;
+}
+
+.header_menu .item_1 a:hover {
+    width: 144px;
+    background: url("../img/header_menu_item1_name_24.png") no-repeat 50% 50%,
+    url("../img/header_menu_item1_bg_hover.png") no-repeat 50% 50%;
 }
 
 .header_menu .item_2 a {
-    width: 100px;
-    background-image: url("../img/header_menu_item2.jpg");
+    width: 101px;
+    background: url("../img/header_menu_item2_name.png") no-repeat 50% 60%,
+    url("../img/header_menu_item2_bg.png") no-repeat 50% 50%;
 }
+
+.header_menu .item_2 a:hover {
+    width: 101px;
+    background: url("../img/header_menu_item2_name.png") no-repeat 50% 60%,
+    url("../img/header_menu_item2_bg_hover.png") no-repeat 50% 50%;
+}
+
 .header_menu .item_3 a {
     width: 172px;
-    background-image: url("../img/header_menu_item3.jpg");
+    background: url("../img/header_menu_item3_name.png") no-repeat 50% 60%,
+    url("../img/header_menu_item3_bg.png") no-repeat 50% 50%;
+}
+
+.header_menu .item_3 a:hover {
+    width: 172px;
+    background: url("../img/header_menu_item3_name.png") no-repeat 50% 60%,
+    url("../img/header_menu_item3_bg_hover.png") no-repeat 50% 50%;
 }
 .header_menu .item_4 a {
-    width: 549px;
-    background-image: url("../img/header_menu_item4.jpg");
+    width: 112px;
+    background: url("../img/header_menu_item4_name.png") no-repeat 50% 53%,
+    url("../img/header_menu_item4_bg_1.png") no-repeat 50% 50%;
 }
 
-/*.header_menu .item span.empty{
-    display: inline-block;
-    width: 400px;
-    background-image: url("../img/header_menu_item.jpg");
-}*/
-
-.line {
-    width: 1px;
-    height: 40px;
-    background: url("../img/line.jpg");
-}
- .left_line {
-    position: absolute;
-     top: 80px;
-     left: 144px;
+.header_menu .item_4 a:hover {
+    width: 112px;
+    background: url("../img/header_menu_item4_name.png") no-repeat 50% 53%,
+    url("../img/header_menu_item4_bg_hover_1.png") no-repeat 50% 50%;
 }
 
-.right_line {
-    position: absolute;
-    top: 80px;
-    left: 244px;
+.header_menu .item a {
+    width: 437px;
+    background: url("../img/bg.png") no-repeat 50% 50%;
+    cursor: context-menu;
 }
 
 /*CONTENT*/
-
 
 ul.left_menu {
     float: left;
@@ -96,7 +97,6 @@ ul.left_menu {
 }
 
 .content {
-
     width: 968px;
 }
 
@@ -124,13 +124,11 @@ ul.left_menu > li:hover > ul.submenu {
     display: block;
 }
 
-
 .content .content_picture {
     float: right;
     border: 1px solid #c8c8c8;
     width: 675px;
     height: 400px;
-
     background: url("../img/content_picture.jpg") no-repeat center top;
 }
 
@@ -143,6 +141,7 @@ ul.left_menu > li:hover > ul.submenu {
 
     font-size: 16px;
     line-height: 21px;
+    color: #2c2c2c;
 }
 
 .wraper:after {
@@ -151,5 +150,29 @@ ul.left_menu > li:hover > ul.submenu {
     clear: both;
 }
 
-
 /*FOOTER*/
+.footer {
+    position: relative;
+    background: #e1e1e1;
+    height: 40px;
+    width: 965px;
+}
+
+.footer_menu li a{
+    padding: 5px 75px 10px 25px;
+    font-size: 13.5px;
+    color: #2c2c2c;
+    line-height: 29px;
+}
+.footer_menu  li.active a {
+    text-decoration: underline;
+}
+
+.footer_menu li:last-child {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    font-size: 13.5px;
+    color: #2c2c2c;
+    line-height: 29px;
+}
