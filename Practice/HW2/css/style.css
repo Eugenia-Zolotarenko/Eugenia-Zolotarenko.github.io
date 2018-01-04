@@ -109,20 +109,11 @@ ul.left_menu {
     color: #656363;
 }
 
-ul.submenu  {
-    display: none;
-    margin-top: -1px;
-    border: 1px solid #c8c8c8;
-    padding: 12px 35px;
-
-}
-.submenu >li> a {
-    color: #2c2c2c;
+ul.left_menu > li:hover> a {
+    padding-left: 35px;
+    color: #2c2c2c ;
 }
 
-ul.left_menu > li:hover > ul.submenu {
-    display: block;
-}
 
 .content .content_picture {
     float: right;
