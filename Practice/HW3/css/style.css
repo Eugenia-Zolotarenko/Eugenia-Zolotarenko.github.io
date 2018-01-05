@@ -38,7 +38,7 @@ li a {
     background: url("../img/header_menu_bg.png") repeat-x;
 }
 
-.header_menu .item a {
+ .item a {
     border-right: 1px solid transparent;
     border-left: 1px solid transparent;
     padding: 12px 0 15px 0;
@@ -47,30 +47,30 @@ li a {
     height: 13px;
 }
 
-.header_menu .item_1 a {
+ .item_1 a {
     padding-right:63px;
     padding-left: 25px;
     width: 56px;
 }
 
-.header_menu .item_2 a {
+ .item_2 a {
     padding-right:24px;
     padding-left: 24px;
     width: 53px;
  }
 
-.header_menu .item_3 a {
+.item_3 a {
     padding-right: 64px;
     padding-left: 65px;
     width: 43px;
 }
 
-.header_menu .item_4 a {
+.item_4 a {
     padding-left: 22px;
     width: 90px;
 }
 
-.header_menu .item a:hover {
+.item a:hover {
     border-left: 1px solid #838383;
     border-right: 1px solid #838383;
     background-color: #333;
