@@ -23,7 +23,6 @@ li a {
     display: inline-block;
 }
 
-
 /*HERDER*/
 
 .header_logo {
@@ -37,22 +36,15 @@ li a {
 .header_menu {
     margin: 40px 0;
     background: url("../img/header_menu_bg.png") repeat-x;
-
 }
 
-/*.header_menu li.item  a{
-    box-sizing: border-box;
-}*/
-
-.header_menu li {
-
-}
-
-.header_menu li a{
+.header_menu .item a {
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
     padding: 12px 0 15px 0;
     color: white;
     font-size: 17px;
-
+    height: 13px;
 }
 
 .header_menu .item_1 a {
@@ -84,14 +76,12 @@ li a {
     background-color: #333;
 }
 
-
 /*CONTENT*/
 
 ul.left_menu {
     float: left;
     width: 240px;
 }
-
 
 .left_menu >li> a {
     margin-top: -1px;
@@ -107,13 +97,11 @@ ul.left_menu > li:hover> a {
     color: #2c2c2c;
 }
 
-
 .content_picture {
     float: right;
     border: 1px solid #c8c8c8;
     width: 680px;
     height: 400px;
-
 }
 
 .content_text {
