@@ -1,0 +1,128 @@
+body {
+    min-height: 1060px;
+    background: url("../img/bg.png") repeat-x;
+}
+
+.txt {
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #128aa7;
+}
+
+.wraper {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 38px;
+    width: 1000px;
+    min-height: 990px;
+    background:#ffffff;
+}
+
+/*HEADER*/
+.header {
+   height: 175px;
+}
+
+.header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+    /*contacts*/
+.contacts {
+    float: right;
+    margin-top: 11px;
+    margin-right: 34px;
+}
+
+.contact_us {
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+
+.contact_info {
+    margin: 2px 0;
+    line-height:1.5;
+}
+    /*logo*/
+.logo {
+    float: left;
+    margin-left: 11px;
+    padding-top: 12px;
+}
+
+    /*countries*/
+.countries {
+    clear: right;
+    float: right;
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 34px;
+    font-size: 10px;
+}
+
+.country_flag {
+    position: relative;
+    float: right;
+    margin-right: 17px;
+    display: block;
+    width: 41px;
+    height: 42px;
+}
+
+.country_flag:first-child {
+    margin-right: 0;
+}
+
+.India {
+    background: url("../img/countries.png") no-repeat -1px;
+}
+
+.Nepal {
+    background: url("../img/countries.png") no-repeat -59px;
+}
+
+.Tibet {
+    background:url("../img/countries.png") no-repeat -115px;
+}
+
+.Bhutan {
+    background:url("../img/countries.png") no-repeat -170px;
+}
+
+.Sri_Lanka {
+    background:url("../img/countries.png") no-repeat -226px;
+}
+
+.Maldives {
+    background:url("../img/countries.png") no-repeat -283px;
+}
+
+.country_name {
+    position: absolute;
+    top: 45px;
+    display: block;
+    width: 41px;
+    text-decoration: underline;
+    font-size: 10px;
+    text-align: center;
+}
+
+.photo {
+    height: 235px;
+    background: url("../img/photo.jpg") no-repeat;
+    border-top: 1px solid #128aa7;
+    border-bottom: 1px solid #128aa7;
+}
+
+/*COPYRIGHT*/
+.copyright {
+    position: absolute;
+    left: 400px;
+    bottom: 30px;
+    width: 173px;
+    margin: 0 auto;
+    font-size: 11px;
+    color: #ffffff;
+}
