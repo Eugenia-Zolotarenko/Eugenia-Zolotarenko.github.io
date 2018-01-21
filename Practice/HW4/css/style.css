@@ -1,15 +1,13 @@
 body {
     min-height: 1060px;
-    background: url("../img/bg.png") repeat-x;
+    background: #0c739f url("../img/bg.png") repeat-x;
     font-family: Tahoma;
     font-size: 12px;
 }
 
 .wraper {
     position: relative;
-    margin: 0 auto;
-    margin-top: 38px;
-    /*margin-bottom: 30px;*/
+    margin: 38px auto 10px;
     width: 1000px;
     min-height: 990px;
     background:#ffffff;
@@ -85,7 +83,7 @@ body {
 .country:first-child {
     margin-right: 0;
 }
-
+/*Country flag icons*/
 .India {
     background: url("../img/countries.png") no-repeat 0 0;
 }
@@ -106,9 +104,7 @@ body {
 .Sri_Lanka {
     background:url("../img/countries.png") no-repeat -220px 0;
     width: 53px;
-
-
-   }
+}
 
 .Maldives {
     background:url("../img/countries.png") no-repeat -282px 0;
@@ -122,7 +118,6 @@ body {
 }
 
 /*MAIN MENU*/
-
 .main_menu {
     display: flex;
     justify-content: space-around;
@@ -163,6 +158,7 @@ body {
     -moz-box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.75);
 }
+
 .submenu_name {
     display: block;
     padding: 5px 0 5px 10px;
@@ -175,6 +171,7 @@ ul.main_menu > li:hover > ul.submenu {
 /*CENTRAL PART*/
 
 .central {
+    margin-top: 2px;
     width: 1000px;
     min-height: 575px;
     background: url("../img/central_bg.png") repeat-y;
@@ -211,14 +208,8 @@ ul.main_menu > li:hover > ul.submenu {
     margin: 16px auto;
 }
 
-
-
-
 /*COPYRIGHT*/
 .copyright {
-   /* position: absolute;
-    left: 400px;
-    bottom: 30px;*/
     width: 210px;
     margin: 10px auto;
     color: #ffffff;
