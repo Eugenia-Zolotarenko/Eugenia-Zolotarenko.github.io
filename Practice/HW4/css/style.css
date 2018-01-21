@@ -64,7 +64,7 @@ body {
     position: relative;
     display: block;
     float: right;
-    margin-right: 15px;
+    margin-right: 14px;
 }
 
 .country_flag {
@@ -98,23 +98,24 @@ body {
 
 .Bhutan {
     background:url("../img/countries.png") no-repeat -169px 0;
-    margin-right: 4px;
+    margin-right: -5px;
 }
 
 .Sri_Lanka {
     background:url("../img/countries.png") no-repeat -220px 0;
     width: 53px;
+    margin-right: -4px;
 }
 
 .Maldives {
     background:url("../img/countries.png") no-repeat -282px 0;
 }
 
-.photo {
-    height: 235px;
-    background: url("../img/photo.jpg") no-repeat;
+.photo img{
+    margin-top: -2px;
     border-top: 1px solid #128aa7;
     border-bottom: 1px solid #128aa7;
+    width: 100%;
 }
 
 /*MAIN MENU*/
