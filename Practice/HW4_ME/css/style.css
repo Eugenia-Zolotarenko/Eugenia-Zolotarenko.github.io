@@ -1,0 +1,247 @@
+body {
+    background: #0c739f url("../img/bg.png") repeat-x;
+    font-family: Tahoma;
+    font-size: 12px;
+}
+
+.wraper {
+    position: relative;
+    margin: 38px auto 10px;
+    width: 1000px;
+    background:#ffffff;
+    -webkit-box-shadow: 0px 4px 5px 1px rgba(3,29,40,1);
+    -moz-box-shadow: 0px 4px 5px 1px rgba(3,29,40,1);
+    box-shadow: 0px 4px 5px 1px rgba(3,29,40,1);
+    overflow: hidden;
+}
+
+/*HEADER*/
+.header {
+   height: 175px;
+    color: #128aa7;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+    /*contacts*/
+.contacts {
+    float: right;
+    margin-top: 11px;
+    margin-right: 34px;
+}
+
+.contact_us {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact_info {
+    margin: 2px 0;
+    line-height:1.5;
+}
+    /*logo*/
+.logo {
+    float: left;
+    margin-left: 11px;
+    padding-top: 12px;
+}
+
+    /*countries*/
+.countries {
+    clear: right;
+    float: right;
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 34px;
+    font-size: 10px;
+}
+
+.country {
+    position: relative;
+    display: block;
+    float: right;
+    margin-right: 14px;
+}
+
+.country_flag {
+    display: block;
+    width: 42px;
+    height: 10px;
+    margin: 0 auto;
+    padding-top: 45px;
+    text-decoration: underline;
+    font-size: 10px;
+    color: #128aa7;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.country:first-child {
+    margin-right: 0;
+}
+/*Country flag icons*/
+.India {
+    background: url("../img/countries.png") no-repeat 0 0;
+}
+
+.Nepal {
+    background: url("../img/countries.png") no-repeat -58px 0;
+}
+
+.Tibet {
+    background:url("../img/countries.png") no-repeat -114px 0;
+}
+
+.Bhutan {
+    background:url("../img/countries.png") no-repeat -169px 0;
+    margin-right: -5px;
+}
+
+.Sri_Lanka {
+    background:url("../img/countries.png") no-repeat -220px 0;
+    width: 53px;
+    margin-right: -4px;
+}
+
+.Maldives {
+    background:url("../img/countries.png") no-repeat -282px 0;
+}
+
+.photo img{
+    margin-top: -2px;
+    border-top: 1px solid #128aa7;
+    border-bottom: 1px solid #128aa7;
+    width: 100%;
+}
+
+/*MAIN MENU*/
+.main_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #cacbcb;
+    border-bottom: 1px solid #000;
+    height: 28px;
+    background: url("../img/main_menu_bg.png");
+    box-shadow: 0px 2px 1px grey;
+}
+
+.main_menu>li {
+    position: relative;
+}
+
+.menu_name{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: Tahoma;
+}
+
+.down {
+    padding-right: 10px;
+    background: url("../img/main_menu_triangle.png") no-repeat 100% 60%;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 22px;
+    left: -10px;
+    width: 150px;
+    padding-bottom:  5px;
+    background: #303030;
+    -webkit-box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.75);
+}
+
+.submenu_name {
+    display: block;
+    padding: 5px 0 5px 10px;
+}
+
+ul.main_menu > li:hover > ul.submenu {
+    display: block;
+}
+
+/*CENTRAL PART*/
+
+.central {
+    margin-top: 2px;
+    width: 1000px;
+}
+
+.column {
+    padding: 0 25px 0 15px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #424c43;
+}
+
+.fon1 {
+    width: 100%;
+    background: #edeef0;
+    float: left;
+    position: relative;
+    right: 58%;
+    border-right: 1px solid #c7cacf;
+}
+
+.fon2 {
+    width: 100%;
+    background: #ffffff;
+    float: left;
+    position: relative;
+    right: 21%;
+    border-right: 1px solid #c7cacf;
+}
+
+.fon3 {
+    width: 100%;
+    background: #edeef0;
+    float: left;
+}
+
+.left_column {
+    width: 21%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    left: 79%;
+
+}
+
+.right_column {
+    width: 21%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    left: 133%;
+}
+
+.title_news {
+        width: 100px;
+}
+
+.title_info {
+    width: 150px;
+}
+
+.title {
+    margin: 5px auto;
+    display: block;
+    font-size: 18px;
+    font-weight:bold ;
+
+}
+
+/*COPYRIGHT*/
+.copyright {
+    width: 210px;
+    margin: 10px auto;
+    color: #ffffff;
+}
