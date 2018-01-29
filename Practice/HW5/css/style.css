@@ -174,13 +174,12 @@ body {
     color: #ccc;}
 
 .reg_field::-webkit-input-placeholder {color:#ccc;}
-.reg_field::-moz-placeholder          {color:#cccb;}/* Firefox 19+ */
-.reg_field:-moz-placeholder           {color:#cccb;}/* Firefox 18- */
+.reg_field::-moz-placeholder          {color:#ccc;}/* Firefox 19+ */
+.reg_field:-moz-placeholder           {color:#ccc;}/* Firefox 18- */
 .reg_field:-ms-input-placeholder      {color:#ccc;}
 
 .reg_field:hover {
     background: #1b5288;
-    border: none;
     color: #fffbfb;
     -webkit-box-shadow: 0px 0px 10px 1px rgba(0,255,255,1);
     -moz-box-shadow: 0px 0px 10px 1px rgba(0,255,255,1);
@@ -191,7 +190,6 @@ body {
 .reg_field:hover::-moz-placeholder          {color:#fffbfb;}/* Firefox 19+ */
 .reg_field:hover:-moz-placeholder           {color:#fffbfb;}/* Firefox 18- */
 .reg_field:hover:-ms-input-placeholder      {color:#fffbfb;}
-
 
 .subscribe {
     display: block;
