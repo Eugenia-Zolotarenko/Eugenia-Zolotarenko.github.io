@@ -52,6 +52,53 @@
             <div class="name findPoAvto_discs">Диски:</div>
             <div class="name findPoAvto_tires">Шины:</div>
 
+            <form class="search_options">
+                <dl class="discs">
+                    <dt><label for="marka"><span class="name_option name_option-marka">
+                        Марка</span><span class="sub-name_option sub-name_option-marka"> авто:</span></label>
+                    </dt>
+
+                    <dd>
+                        <select id="marka">
+                            <option value="none"></option>
+                            <option value="audi">audi</option>
+                            <option value="bentley">bentley</option>
+                        </select>
+                    </dd>
+
+
+                    <dt class="option_model"><label for="model">
+                        <span class="name_option name_option-model">Модель</span><span class="sub-name_option sub-name_option-model"> автомобиля:</span>
+                    </label>
+                    </dt>
+                    <dd><select id="model">
+                            <option value="none"></option>
+                            <option value="a6">A6</option>
+                            <option value="a7">A7</option>
+                        </select>
+                    </dd>
+
+                    <dt><label><span class="name_option">Год выпуска </span> <span class="sub-name_option">автомобиля</span></label></dt>
+                    <dd><select name="нyear">
+                            <option value="none"></option>
+                            <option value="2000">2000</option>
+                            <option value="2010">2010</option>
+                        </select>
+                    </dd>
+
+
+                    <dt><label><span class="name_option">Комплектация</span></label></dt>
+                    <dd><select name="komplect">
+                            <option value="none"></option>
+                            <option value="basic">Basic</option>
+                            <option value="Full">Full</option>
+                        </select></dd>
+                    </dd>
+                </dl>
+            </form>
+
+
+
             <a href="#" class="search_txt">поиск...</a>
         </section>
 
