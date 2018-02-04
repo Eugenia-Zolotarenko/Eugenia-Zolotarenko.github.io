@@ -46,19 +46,21 @@
         </div>
     </header>
 
-    <div class="search">
-        <section class="find_box findPoAvto">
-            <div class="name name-findPoAvto">Поиск по автомобилю</div>
-            <div class="name findPoAvto_discs">Диски:</div>
-            <div class="name findPoAvto_tires">Шины:</div>
+    <div class="search_wrapper">
+        <section class="search_box search_box--po-avto">
+            <div class="search_box__name search_box__name-po-avto">Поиск по автомобилю</div>
+            <div class="search_box__name search_box__name-po-avto--discs">Диски:</div>
 
             <form class="search_options">
-                <dl class="discs">
-                    <dt><label for="marka"><span class="name_option name_option-marka">
-                        Марка</span><span class="sub-name_option sub-name_option-marka"> авто:</span></label>
+                <dl class="search_options__list">
+                    <dt class="search_options_item">
+                        <label for="marka">
+                            <span class="search_options__name search_options__name--marka">Марка</span>
+                            <span class="search_options__subname search_options__name--marka_subname"> авто:</span>
+                        </label>
                     </dt>
 
-                    <dd>
+                    <dd class="search_options_variant">
                         <select id="marka">
                             <option value="none"></option>
                             <option value="audi">audi</option>
@@ -67,19 +69,27 @@
                     </dd>
 
 
-                    <dt class="option_model"><label for="model">
-                        <span class="name_option name_option-model">Модель</span><span class="sub-name_option sub-name_option-model"> автомобиля:</span>
-                    </label>
+                    <dt class="search_options_item">
+                        <label for="model">
+                        <span class="search_options__name search_options__name--model">Модель</span>
+                            <span class="search_options__subname search_options__name--model_subname">автомобиля:</span>
+                        </label>
                     </dt>
-                    <dd><select id="model">
+                    <dd class="search_options_variant"><select id="model">
                             <option value="none"></option>
                             <option value="a6">A6</option>
                             <option value="a7">A7</option>
                         </select>
                     </dd>
 
-                    <dt><label><span class="name_option">Год выпуска </span> <span class="sub-name_option">автомобиля</span></label></dt>
-                    <dd><select name="нyear">
+                    <dt class="search_options_item">
+                        <label for="year">
+                            <span class="search_options__name search_options__name--year">Год выпуска</span>
+                            <span class="search_options__subname search_options__name--year_subname"> автомобиля:</span>
+                        </label>
+                    </dt>
+                    <dd class="search_options_variant">
+                        <select id="year" class="search_options_variant--year">
                             <option value="none"></option>
                             <option value="2000">2000</option>
                             <option value="2010">2010</option>
@@ -87,8 +97,75 @@
                     </dd>
 
 
-                    <dt><label><span class="name_option">Комплектация</span></label></dt>
-                    <dd><select name="komplect">
+                    <dt class="search_options_item">
+                        <label for="komplect">
+                            <span class="search_options__name search_options__name--komplect">Комплектация:</span>
+                        </label>
+                    </dt>
+                    <dd class="search_options_variant">
+                        <select id="komplect" class="search_options_variant--komplect">
+                            <option value="none"></option>
+                            <option value="basic">Basic</option>
+                            <option value="Full">Full</option>
+                        </select></dd>
+                    </dd>
+                </dl>
+            </form>
+
+            <div class="search_box__name search_box__name-po-avto--tires">Шины:</div>
+            <form class="search_options">
+                <dl class="search_options__list">
+                    <dt class="search_options_item">
+                        <label for="marka">
+                            <span class="search_options__name search_options__name--marka">Марка</span>
+                            <span class="search_options__subname search_options__name--marka_subname"> авто:</span>
+                        </label>
+                    </dt>
+
+                    <dd class="search_options_variant">
+                        <select id="marka">
+                            <option value="none"></option>
+                            <option value="audi">audi</option>
+                            <option value="bentley">bentley</option>
+                        </select>
+                    </dd>
+
+
+                    <dt class="search_options_item">
+                        <label for="model">
+                            <span class="search_options__name search_options__name--model">Модель</span>
+                            <span class="search_options__subname search_options__name--model_subname">автомобиля:</span>
+                        </label>
+                    </dt>
+                    <dd class="search_options_variant"><select id="model">
+                        <option value="none"></option>
+                        <option value="a6">A6</option>
+                        <option value="a7">A7</option>
+                    </select>
+                    </dd>
+
+                    <dt class="search_options_item">
+                        <label for="year">
+                            <span class="search_options__name search_options__name--year">Год выпуска</span>
+                            <span class="search_options__subname search_options__name--year_subname"> автомобиля:</span>
+                        </label>
+                    </dt>
+                    <dd class="search_options_variant">
+                        <select id="year" class="search_options_variant--year">
+                            <option value="none"></option>
+                            <option value="2000">2000</option>
+                            <option value="2010">2010</option>
+                        </select>
+                    </dd>
+
+
+                    <dt class="search_options_item">
+                        <label for="komplect">
+                            <span class="search_options__name search_options__name--komplect">Комплектация:</span>
+                        </label>
+                    </dt>
+                    <dd class="search_options_variant">
+                        <select id="komplect" class="search_options_variant--komplect">
                             <option value="none"></option>
                             <option value="basic">Basic</option>
                             <option value="Full">Full</option>
@@ -99,19 +176,19 @@
 
 
 
-            <a href="#" class="search_txt">поиск...</a>
+            <a href="#" class="search_link">поиск...</a>
         </section>
 
-        <section class="find_box findTires">
-            <div class="name name-findTires">поиск шин</div>
+        <section class="search_box search_box--tires">
+            <div class="search_box__name search_box__name--tires">поиск шин</div>
 
-            <a href="#" class="search_txt search_txt-tires">поиск...</a>
+            <a href="#" class="search_link search_link-tires">поиск...</a>
         </section>
 
-        <section class="find_box findDiscs">
-            <div class="name name-findDiscs">поиск дисков</div>
+        <section class="search_box search_box--discs">
+            <div class="search_box__name search_box__name--discs">поиск дисков</div>
 
-            <a href="#" class="search_txt search_txt-discs">поиск...</a>
+            <a href="#" class="search_link search_link-discs">поиск...</a>
         </section>
 
 
