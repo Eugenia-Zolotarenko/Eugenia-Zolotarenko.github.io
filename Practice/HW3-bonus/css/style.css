@@ -3,12 +3,13 @@
     margin: 0 auto;
     width: 960px;
     min-height: 883px;
-  background: url("../img/bg.jpg") no-repeat 50% 50%;
-}
-
-.txt {
+    background: url("../img/bg.jpg") no-repeat 50% 50%;
     color: #e6e6e6;
 }
+
+/*.txt {*/
+/*color: #e6e6e6;*/
+/*}*/
 
 /*HEADER*/
 
@@ -44,7 +45,7 @@
 .countries {
     display: flex;
     flex-flow: row wrap;
-    justify-content:space-between;
+    justify-content: space-between;
     margin: -6px 70px 0;
 }
 
@@ -52,20 +53,20 @@
     border-radius: 2%;
     border-style: solid;
     border-width: 5px 5px 6px 6px;
-    -moz-border-image: url("../img/frame.png" )5 5 6 6 stretch repeat;
+    -moz-border-image: url("../img/frame.png") 5 5 6 6 stretch repeat;
     -webkit-border-image: url("../img/frame.png") 5 5 6 6 stretch repeat;
     -o-border-image: url("../img/frame.png") 5 5 6 6 stretch repeat;
-    border-image: url("../img/frame.png") 5 5 6 6  stretch repeat;
+    border-image: url("../img/frame.png") 5 5 6 6 stretch repeat;
 }
 
 .country_name {
-        margin: 0 auto 50px;
-        font-size: 17px;
+    margin: 0 auto 50px;
+    font-size: 17px;
 }
 
 .India,
 .Nepal,
-.Tibet{
+.Tibet {
     width: 40px;
 }
 
