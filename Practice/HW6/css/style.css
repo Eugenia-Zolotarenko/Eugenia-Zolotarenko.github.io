@@ -279,6 +279,10 @@ body {
     letter-spacing: -0.07em;
 }
 
+select {
+    background: url("../img/select_arrow.png") no-repeat right center;
+    font-size: 11px;
+}
 
  /*Поис по автомобилю*/
 .search_box--po-avto {

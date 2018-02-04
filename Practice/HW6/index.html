@@ -54,28 +54,24 @@
             <form class="search_options">
                 <dl class="search_options__list">
                     <dt class="search_options_item">
-                        <label for="marka">
                             <span class="search_options__name search_options__name--marka">Марка</span>
                             <span class="search_options__subname search_options__name--marka_subname"> авто:</span>
-                        </label>
                     </dt>
 
                     <dd class="search_options_variant">
-                        <select id="marka">
+                        <select name="marka">
                             <option value="none"></option>
                             <option value="audi">audi</option>
                             <option value="bentley">bentley</option>
                         </select>
                     </dd>
 
-
                     <dt class="search_options_item">
-                        <label for="model">
                         <span class="search_options__name search_options__name--model">Модель</span>
-                            <span class="search_options__subname search_options__name--model_subname">автомобиля:</span>
-                        </label>
+                        <span class="search_options__subname search_options__name--model_subname">автомобиля:</span>
                     </dt>
-                    <dd class="search_options_variant"><select id="model">
+                    <dd class="search_options_variant">
+                        <select name="model">
                             <option value="none"></option>
                             <option value="a6">A6</option>
                             <option value="a7">A7</option>
@@ -83,31 +79,26 @@
                     </dd>
 
                     <dt class="search_options_item">
-                        <label for="year">
                             <span class="search_options__name search_options__name--year">Год выпуска</span>
                             <span class="search_options__subname search_options__name--year_subname"> автомобиля:</span>
-                        </label>
                     </dt>
                     <dd class="search_options_variant">
-                        <select id="year" class="search_options_variant--year">
+                        <select name="year" class="search_options_variant--year">
                             <option value="none"></option>
                             <option value="2000">2000</option>
                             <option value="2010">2010</option>
                         </select>
                     </dd>
 
-
                     <dt class="search_options_item">
-                        <label for="komplect">
                             <span class="search_options__name search_options__name--komplect">Комплектация:</span>
-                        </label>
                     </dt>
                     <dd class="search_options_variant">
-                        <select id="komplect" class="search_options_variant--komplect">
+                        <select name="komplect" class="search_options_variant--komplect">
                             <option value="none"></option>
                             <option value="basic">Basic</option>
                             <option value="Full">Full</option>
-                        </select></dd>
+                        </select>
                     </dd>
                 </dl>
             </form>
@@ -116,60 +107,51 @@
             <form class="search_options">
                 <dl class="search_options__list">
                     <dt class="search_options_item">
-                        <label for="marka">
                             <span class="search_options__name search_options__name--marka">Марка</span>
                             <span class="search_options__subname search_options__name--marka_subname"> авто:</span>
-                        </label>
                     </dt>
 
                     <dd class="search_options_variant">
-                        <select id="marka">
+                        <select name="marka">
                             <option value="none"></option>
                             <option value="audi">audi</option>
                             <option value="bentley">bentley</option>
                         </select>
                     </dd>
 
-
                     <dt class="search_options_item">
-                        <label for="model">
                             <span class="search_options__name search_options__name--model">Модель</span>
                             <span class="search_options__subname search_options__name--model_subname">автомобиля:</span>
-                        </label>
                     </dt>
-                    <dd class="search_options_variant"><select id="model">
-                        <option value="none"></option>
-                        <option value="a6">A6</option>
-                        <option value="a7">A7</option>
-                    </select>
+                    <dd class="search_options_variant">
+                        <select name="model">
+                            <option value="none"></option>
+                            <option value="a6">A6</option>
+                            <option value="a7">A7</option>
+                        </select>
                     </dd>
 
                     <dt class="search_options_item">
-                        <label for="year">
                             <span class="search_options__name search_options__name--year">Год выпуска</span>
                             <span class="search_options__subname search_options__name--year_subname"> автомобиля:</span>
-                        </label>
                     </dt>
                     <dd class="search_options_variant">
-                        <select id="year" class="search_options_variant--year">
+                        <select name="year" class="search_options_variant--year">
                             <option value="none"></option>
                             <option value="2000">2000</option>
                             <option value="2010">2010</option>
                         </select>
                     </dd>
 
-
                     <dt class="search_options_item">
-                        <label for="komplect">
                             <span class="search_options__name search_options__name--komplect">Комплектация:</span>
-                        </label>
                     </dt>
                     <dd class="search_options_variant">
-                        <select id="komplect" class="search_options_variant--komplect">
+                        <select name="komplect" class="search_options_variant--komplect">
                             <option value="none"></option>
                             <option value="basic">Basic</option>
                             <option value="Full">Full</option>
-                        </select></dd>
+                        </select>
                     </dd>
                 </dl>
             </form>
@@ -181,6 +163,56 @@
 
         <section class="search_box search_box--tires">
             <div class="search_box__name search_box__name--tires">поиск шин</div>
+
+            <form class="search_options">
+                <dl class="search_options__list">
+                    <dt class="search_options_item">
+                            <span class="search_options__name search_options__name--marka">Размер:</span>
+                    </dt>
+                    <dd class="search_options_variant">
+                        <select name="width">
+                            <option value="145" selected>145</option>
+                            <option value="146">146</option>
+                        </select>
+                    </dd>
+
+
+                    <dt class="search_options_item">
+                            <span class="search_options__name search_options__name--model">/</span>
+                    </dt>
+                    <dd class="search_options_variant">
+                        <select name="width1">
+                            <option value="none"></option>
+                            <option value="141">141</option>
+                            <option value="151">151</option>
+                        </select>
+                    </dd>
+
+                    <dt class="search_options_item">
+                            <span class="search_options__name search_options__name--year">R</span>
+                    </dt>
+                    <dd class="search_options_variant">
+                        <select name="radius" class="search_options_variant--year">
+                            <option value="none"></option>
+                            <option value="12" selected>12</option>
+                            <option value="13">13</option>
+                        </select>
+                    </dd>
+
+
+                    <dt class="search_options_item">
+                            <span class="search_options__name search_options__name--komplect">Сезон:</span>
+                    </dt>
+                    <dd class="search_options_variant">
+                        <select name="sezon" class="search_options_variant--komplect">
+                            <option value="none"></option>
+                            <option value="basic">Basic</option>
+                            <option value="Full">Full</option>
+                        </select>
+                    </dd>
+
+                </dl>
+            </form>
 
             <a href="#" class="search_link search_link-tires">поиск...</a>
         </section>
