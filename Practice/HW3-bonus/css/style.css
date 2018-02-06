@@ -1,28 +1,25 @@
-.wraper {
+.hw3-bonus_wrapper {
     position: relative;
     margin: 0 auto;
     width: 960px;
-    min-height: 883px;
     background: url("../img/bg.jpg") no-repeat 50% 50%;
     color: #e6e6e6;
 }
 
-/*.txt {*/
-/*color: #e6e6e6;*/
-/*}*/
-
 /*HEADER*/
 
-.header:after {
-    content: "";
-    display: block;
-    clear: both;
+.header {
+    display: flex;
+    width: 816px;
+    margin: 0 auto;
+    height: 202px;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-.contacts {
-    float: right;
-    margin-top: 150px;
-    margin-right: 87px;
+.header__contacts {
+    margin-bottom: 10px;
+    margin-right: 15px;
     font-family: Tahoma;
 }
 
@@ -36,17 +33,31 @@
     font-size: 9px;
 }
 
-.logo {
-    margin-left: 70px;
-    padding-top: 55px;
+.header_logo {
+    position: relative;
+    width: 265px;
+    height: 149px;
+    background: url("../img/header__logo_bg.png") no-repeat;
+
+}
+
+.header__slogan {
+    position: absolute;
+    top: 125px;
+    left: 83px;
+    font-size: 11px;
+    font-family: Tahoma;
+    color: #e6e6e6;
 }
 
 /*COUNTRIES*/
-.countries {
+.country_wrapper {
     display: flex;
+    height: 461px;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin: -6px 70px 0;
+    align-content:space-between;
+    margin: 0 70px 100px;
 }
 
 .frame {
@@ -60,33 +71,31 @@
 }
 
 .country_name {
-    margin: 0 auto 50px;
+    margin: 0 auto;
     font-size: 17px;
 }
 
-.India,
-.Nepal,
-.Tibet {
+.country_name--india,
+.country_name--nepal,
+.country_name--tibet {
     width: 40px;
 }
 
-.Bhutan {
+.country_name--bhutan {
     width: 50px;
 }
 
-.Sri_Lanka {
+.country_name--sri_lanka {
     width: 70px;
 }
 
-.Maldives {
+.country_name--maldives {
     width: 60px;
 }
 
-.copyright {
-    position: absolute;
-    left: 400px;
-    bottom: 30px;
+.footer__copyright {
     width: 173px;
     margin: 0 auto;
     font-size: 11px;
+    line-height: 75px;
 }
