@@ -7,34 +7,35 @@
 </head>
 
 <body>
-<div class="container">
-    <!--hw3-body-->
-    <div class="alltogether">
-        <!--hw3-wrapper-->
+<div class="hw3-body">
+
+    <div class="hw3-wrapper">
 
     <!--HEADER-->
         <div class="header">
             <div class="header_logo"></div>
-            <ul class="main_menu header_menu">
-                     <li class="item item_1"><a href="#">Главная</a>
-                </li><li class="item item_2"><a href="#">Товары</a>
-                </li><li class="item item_3"><a href="#">О нас</a>
-                </li><li class="item item_4"><a href="#">Контакты</a>
+            <ul class="main_menu header_menu__list">
+                     <li class="main_menu__item header_menu__item"><a class="header_menu__link header_menu__link--main" href="#">Главная</a>
+                </li><li class="main_menu__item header_menu__item"><a class="header_menu__link header_menu__link--goods" href="#">Товары</a>
+                </li><li class="main_menu__item header_menu__item"><a class="header_menu__link header_menu__link--about" href="#">О нас</a>
+                </li><li class="main_menu__item header_menu__item"><a class="header_menu__link header_menu__link--contacts" href="#">Контакты</a></li>
+            </ul>
         </div>
 
     <!--CONTENT-->
-        <div class="wraper">
+        <div class="conent_wrapper">
             <ul class="left_menu">
-                <li><a href="#">Ноутбуки</a></li>
-                <li><a href="#">Планшеты</a>
-                <li><a href="#">Телефоны</a></li>
-                <li><a href="#">Телевизоры</a></li>
-                <li><a href="#">Бытовая техника</a></li>
-                <li><a href="#">Автотовары</a></li>
+                <li class="left_menu__item"><a class="left_menu__link" href="#">Ноутбуки</a></li>
+                <li class="left_menu__item"><a class="left_menu__link" href="#">Планшеты</a>
+                <li class="left_menu__item"><a class="left_menu__link" href="#">Телефоны</a></li>
+                <li class="left_menu__item"><a class="left_menu__link" href="#">Телевизоры</a></li>
+                <li class="left_menu__item"><a class="left_menu__link" href="#">Бытовая техника</a></li>
+                <li class="left_menu__item"><a class="left_menu__link" href="#">Автотовары</a></li>
             </ul>
 
 
-            <div class="content_picture"><img src="img/content_picture.jpg"></div>
+            <img class="content_picture" src="img/content_picture.jpg" alt="bicycle">
+
             <div class="content_text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
                     Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
                     взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
@@ -48,17 +49,12 @@
 
     <!--FOOTER-->
         <div class="footer">
-            <ul class="main_menu footer_menu">
-                <!--class="footer_menu___list"-->
-                <!--class="footer_menu___item"-->
-                <!--class="footer_menu___item:lastChild"-->
-                <!--class="footer_menu___link"-->
-                <!--class="footer_menu___link--contacts"-->
-                     <li><a href="#">Главная</a>
-                </li><li><a href="#">Товары</a>
-                </li><li><a href="#">О_нас</a>
-                </li><li><a href="#">Контакты</a>
-                </li><li class="rights">2014 &#169; All rights reserved</li>
+            <ul class="main_menu">
+                     <li class="main_menu__item footer_menu___item"><a class="footer_menu___link" href="#">Главная</a>
+                </li><li class="main_menu__item footer_menu___item"><a class="footer_menu___link" href="#">Товары</a>
+                </li><li class="main_menu__item footer_menu___item"><a class="footer_menu___link" href="#">О_нас</a>
+                </li><li class="main_menu__item footer_menu___item"><a class="footer_menu___link" href="#">Контакты</a>
+                </li><li class="main_menu__item footer_menu___item">2014 &#169; All rights reserved</li>
             </ul>
         </div>
     </div>
@@ -66,10 +62,3 @@
 
 </body>
 
-<!-- Подправить
-1. ширину картинки с великом
-2. подпрваить падинги в нижнем меню
-3. подправить стили в css, заменить все элементы на классы
-4. заментить и добавить классы в нижнем меню
-5. зкменить класс на враппер в общем блоке и оборачивающем
--->
