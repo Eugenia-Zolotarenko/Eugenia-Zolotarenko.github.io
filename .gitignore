@@ -1,4 +1,9 @@
 # Lines starting with '#' are considered comments.
 # Ignore folder .idea
+<<<<<<< HEAD
 /.idea
 .idea/
+=======
+.idea/
+
+>>>>>>> 96e6d3c4079d3baab1e080acb63574a966c4a54f

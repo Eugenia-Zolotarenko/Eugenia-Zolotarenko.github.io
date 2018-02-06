@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'helvetica_neueregular';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+    url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+    url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype'),
+    url('../fonts/helveticaneue-thin-webfont.svg#helvetica_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    color: #ffffff;
+    font-family: helvetica_neueregular;
+}
+
+.wraper {
+    width: 1215px;
+    min-height: 1064px;
+    margin: 0 auto;
+    background: url("../img/bg_1.jpg") no-repeat 0 36px;
+}
+
+.header {
+    height: 36px;
+    width: 1215px;
+    margin: 0 auto;
+    background: #074f8f;
+    font-size: 14px;
+    line-height: 36px;
+}
+
+.header:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main_menu {
+    float: right;
+    width: 380px;
+    height: 36px;
+}
+
+.main_menu li {
+    float: left;
+}
+
+.main_menu-YouBike {
+    width: 26%;
+}
+
+.main_menu-Vender {
+    width: 17%;
+}
+
+.main_menu-Forum {
+    width: 17%;
+}
+
+.main_menu-Contato {
+    width: 20%;
+}
+
+.main_menu-Ajuda {
+    width: 17%;
+}
+
+.menu_name {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #60b5ed;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.menu_name:hover {
+    color: #ffffff;
+    font-weight: bold;
+    background: #4eabda;
+}
+
+.login {
+    float: right;
+    margin-right: 20px;
+    width: 188px;
+    height: 36px;
+    background: #4faedb url("../img/header_ola_bg.png");
+    text-align: center;
+    color: #ffffff;
+}
+
+.header_link {
+    color: #ffffff;
+}
+
+.ofertas {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.ofers {
+    float: right;
+    width: 110px;
+    height: 36px;
+    padding-left: 50px;
+    background: url("../img/header_flag.png") no-repeat 19px 7px;
+    border-left: 1px solid #56a2dc;
+}
+
+/*REGISTRATION-*/
+
+.conteiner {
+    display: flex;
+    align-items: center;
+    width: 1215px;
+    min-height: 1028px;
+}
+
+.Cadastre {
+    margin: 0 auto;
+    width: 560px;
+    height: 613px;
+}
+
+.Cadastre_header {
+    height: 62px;
+    font-size: 24px;
+    line-height: 62px;
+    text-align: center;
+    background: rgba(0,0,0,0.63);
+}
+
+.Cadastre_form {
+    height: 549px;
+    margin-top: 2px;
+    border: 1px solid transparent;
+    background: rgba(0,0,0,0.63);
+    color: #cccccc;
+}
+
+.facebook_lolin {
+    display: block;
+    width: 276px;
+    margin: 36px auto 30px;
+}
+
+.OU {
+    margin: 0 auto;
+    width: 276px;
+    height: 14px;
+    background: url("../img/Registration_OU.png") no-repeat 0 50%;
+    text-align: center;
+}
+
+.reg_form {
+    margin: 20px 0 20px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.reg_field {
+    display: block;
+    padding-left: 15px;
+    width: 277px;
+    height: 36px;
+    border: none;
+    background-color: #000;
+    border-bottom: 1px solid #484948;
+    font-size: 14px;
+    color: #ccc;}
+
+.reg_field::-webkit-input-placeholder {color:#ccc;}
+.reg_field::-moz-placeholder          {color:#ccc;}/* Firefox 19+ */
+.reg_field:-moz-placeholder           {color:#ccc;}/* Firefox 18- */
+.reg_field:-ms-input-placeholder      {color:#ccc;}
+
+.reg_field:hover {
+    background: #1b5288;
+    color: #fffbfb;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,255,255,1);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,255,255,1);
+    box-shadow: 0px 0px 10px 1px rgba(0,255,255,1);
+}
+
+.reg_field:hover::-webkit-input-placeholder {color:#fffbfb;}
+.reg_field:hover::-moz-placeholder          {color:#fffbfb;}/* Firefox 19+ */
+.reg_field:hover:-moz-placeholder           {color:#fffbfb;}/* Firefox 18- */
+.reg_field:hover:-ms-input-placeholder      {color:#fffbfb;}
+
+.subscribe {
+    display: block;
+    font-size: 14px;
+}
+
+.submit {
+    display: block;
+    width: 150px;
+    height: 36px;
+    background: #4299d2;
+    border: 1px solid #4299d2;
+    border-radius: 5%;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.agree {
+    width: 307px;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+}
+
+
