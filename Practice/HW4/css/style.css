@@ -1,5 +1,4 @@
 body {
-    min-height: 1060px;
     background: #0c739f url("../img/bg.png") repeat-x;
     font-family: Tahoma;
     font-size: 12px;
@@ -9,17 +8,15 @@ body {
     position: relative;
     margin: 38px auto 10px;
     width: 1000px;
-    min-height: 990px;
     background:#ffffff;
-    -webkit-box-shadow: 0px 4px 5px 1px rgba(3,29,40,1);
-    -moz-box-shadow: 0px 4px 5px 1px rgba(3,29,40,1);
-    box-shadow: 0px 4px 5px 1px rgba(3,29,40,1);
+    -webkit-box-shadow: 0 4px 5px 1px rgba(3,29,40,1);
+    -moz-box-shadow: 0 4px 5px 1px rgba(3,29,40,1);
+    box-shadow: 0 4px 5px 1px rgba(3,29,40,1);
 }
 
 /*HEADER*/
 .header {
-   height: 175px;
-    color: #128aa7;
+       color: #128aa7;
 }
 
 .clearfix:after {
@@ -28,30 +25,32 @@ body {
     clear: both;
 }
     /*contacts*/
-.contacts {
+.header__contacts {
     float: right;
     margin-top: 11px;
     margin-right: 34px;
 }
 
 .contact_us {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-weight: bold;
 }
 
 .contact_info {
-    margin: 2px 0;
-    line-height:1.5;
+    margin-bottom: 6px;
 }
     /*logo*/
 .logo {
     float: left;
-    margin-left: 11px;
-    padding-top: 12px;
+    margin-top: 10px;
+    background: url("../img/logo.png") no-repeat;
+    margin-left: 30px;
+    padding: 98px 90px 52px 72px;
+
 }
 
     /*countries*/
-.countries {
+.countries__wrapper{
     clear: right;
     float: right;
     display: inline-block;
@@ -84,35 +83,35 @@ body {
     margin-right: 0;
 }
 /*Country flag icons*/
-.India {
+.india {
     background: url("../img/countries.png") no-repeat 0 0;
 }
 
-.Nepal {
+.nepal {
     background: url("../img/countries.png") no-repeat -58px 0;
 }
 
-.Tibet {
+.tibet {
     background:url("../img/countries.png") no-repeat -114px 0;
 }
 
-.Bhutan {
+.bhutan {
     background:url("../img/countries.png") no-repeat -169px 0;
     margin-right: -5px;
 }
 
-.Sri_Lanka {
+.sri_lanka {
     background:url("../img/countries.png") no-repeat -220px 0;
     width: 53px;
     margin-right: -4px;
 }
 
-.Maldives {
+.maldives {
     background:url("../img/countries.png") no-repeat -282px 0;
 }
 
-.photo img{
-    margin-top: -2px;
+.photo {
+    margin-top: 3px;
     border-top: 1px solid #128aa7;
     border-bottom: 1px solid #128aa7;
     width: 100%;
@@ -127,10 +126,10 @@ body {
     border-bottom: 1px solid #000;
     height: 28px;
     background: url("../img/main_menu_bg.png");
-    box-shadow: 0px 2px 1px grey;
+    box-shadow: 0 2px 1px grey;
 }
 
-.main_menu>li {
+.main_menu__item {
     position: relative;
 }
 
@@ -155,9 +154,9 @@ body {
     width: 150px;
     padding-bottom:  5px;
     background: #303030;
-    -webkit-box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.75);
-    box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 4px 5px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 4px 5px 2px rgba(0,0,0,0.75);
+    box-shadow: 0 4px 5px 2px rgba(0,0,0,0.75);
 }
 
 .submenu_name {
@@ -165,7 +164,7 @@ body {
     padding: 5px 0 5px 10px;
 }
 
-ul.main_menu > li:hover > ul.submenu {
+.main_menu__item:hover > .submenu {
     display: block;
 }
 
@@ -203,7 +202,7 @@ ul.main_menu > li:hover > ul.submenu {
     line-height: 20px;
 }
 
-.title {
+.column__title {
     display: table;
     font-size: 18px;
     margin: 16px auto;
