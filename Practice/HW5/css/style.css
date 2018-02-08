@@ -1,15 +1,3 @@
-@font-face {
-    font-family: 'helvetica_neueregular';
-    src: url('../fonts/helveticaneue-thin-webfont.eot');
-    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
-    url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
-    url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype'),
-    url('../fonts/helveticaneue-thin-webfont.svg#helvetica_neueregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
     color: #ffffff;
     font-family: helvetica_neueregular;
@@ -47,23 +35,23 @@ body {
     float: left;
 }
 
-.main_menu-YouBike {
+.main_menu-youBike {
     width: 26%;
 }
 
-.main_menu-Vender {
+.main_menu-vender {
     width: 17%;
 }
 
-.main_menu-Forum {
+.main_menu-forum {
     width: 17%;
 }
 
-.main_menu-Contato {
+.main_menu-contato {
     width: 20%;
 }
 
-.main_menu-Ajuda {
+.main_menu-ajuda {
     width: 17%;
 }
 
@@ -112,20 +100,20 @@ body {
 
 /*REGISTRATION-*/
 
-.conteiner {
+.registration__wrapper {
     display: flex;
     align-items: center;
     width: 1215px;
     min-height: 1028px;
 }
 
-.Cadastre {
+.registration {
     margin: 0 auto;
     width: 560px;
     height: 613px;
 }
 
-.Cadastre_header {
+.registration__header {
     height: 62px;
     font-size: 24px;
     line-height: 62px;
@@ -133,7 +121,7 @@ body {
     background: rgba(0,0,0,0.63);
 }
 
-.Cadastre_form {
+.registration__form {
     height: 549px;
     margin-top: 2px;
     border: 1px solid transparent;
@@ -147,7 +135,7 @@ body {
     margin: 36px auto 30px;
 }
 
-.OU {
+.registration__divide-box {
     margin: 0 auto;
     width: 276px;
     height: 14px;
@@ -164,7 +152,7 @@ body {
     justify-content: space-around;
 }
 
-.reg_field {
+.registration__reg_field {
     display: block;
     padding-left: 15px;
     width: 277px;
@@ -183,9 +171,9 @@ body {
 .reg_field:hover {
     background: #1b5288;
     color: #fffbfb;
-    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,255,255,1);
-    -moz-box-shadow: 0px 0px 10px 1px rgba(0,255,255,1);
-    box-shadow: 0px 0px 10px 1px rgba(0,255,255,1);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0,255,255,1);
+    -moz-box-shadow: 0 0 10px 1px rgba(0,255,255,1);
+    box-shadow: 0 0 10px 1px rgba(0,255,255,1);
 }
 
 .reg_field:hover::-webkit-input-placeholder {color:#fffbfb;}
@@ -193,18 +181,18 @@ body {
 .reg_field:hover:-moz-placeholder           {color:#fffbfb;}/* Firefox 18- */
 .reg_field:hover:-ms-input-placeholder      {color:#fffbfb;}
 
-.subscribe {
+.registration__subscribe-checkbox {
     display: block;
     font-size: 14px;
 }
 
-.submit {
+.registration__submit-button {
     display: block;
     width: 150px;
     height: 36px;
-    background: #4299d2;
+    background: #4299d2 url("../img/submit.png");
     border: 1px solid #4299d2;
-    border-radius: 5%;
+    border-radius: 2px;
     font-size: 14px;
     color: #ffffff;
 }
