@@ -1,0 +1,38 @@
+body {
+    background: #000000;
+}
+
+.table {
+    margin: 100px auto;
+    width: 500px;
+    height: 541px;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+.table_border-bottom {
+    border-bottom: 10px solid #000000;
+}
+.table_border-right {
+    border-right: 10px solid #000000;
+}
+
+.bg_white {
+    background: #fff;
+}
+
+.bg_yellow {
+    background: yellow;
+}
+
+.bg_red {
+    background: red;
+}
+
+.bg_black {
+    background: #000;
+}
+
+.bg_blue {
+    background: #00f;
+}
