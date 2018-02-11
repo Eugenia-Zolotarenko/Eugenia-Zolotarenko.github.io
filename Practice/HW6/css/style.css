@@ -82,7 +82,7 @@ body {
 }
 
 /*Левое меню "Каталог продукции"*/
-.catalog {
+.catalog__menu {
     float: left;
 }
 
@@ -231,4 +231,107 @@ body {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #e5e9ea;
+}
+
+/*Просмотр товаров*/
+
+.tovar__preview {
+    float: left;
+    border-radius: 3px;
+    background-image: -moz-linear-gradient( 90deg, rgb(35,75,93) 0%, rgb(118,141,151) 57%, rgb(201,207,209) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(35,75,93) 0%, rgb(118,141,151) 57%, rgb(201,207,209) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(35,75,93) 0%, rgb(118,141,151) 57%, rgb(201,207,209) 100%);
+    margin-left: 9px;
+    margin-top: -1px;
+    width: 526px;
+    height: 628px;
+}
+
+.tovar__item {
+    float: left;
+    margin-top: 11px;
+    margin-left: 22px;
+    font: 15px "Lucida Sans Unicode", Arial, sans-serif;
+    line-height: 13px;
+    text-align: center;
+
+}
+
+
+.tovar__item:nth-child(3n-1) {
+    margin-left: 27px;
+}
+
+.tovar__item:nth-child(3n) {
+    margin-left: 29px;
+}
+
+.tovar__item:nth-child(n+4):nth-child(-n+6) {
+    margin-top: 19px;
+}
+
+.tovar__item:nth-child(n+7):nth-child(-n+9) {
+    margin-top: 20px;
+}
+
+.tovar__brand {
+    margin-top: 6px;
+    margin-left: -2px;
+    color: #206988;
+    font-size: 15px;
+}
+.tovar__item:nth-child(2) .tovar__brand,
+.tovar__item:nth-child(8) .tovar__brand {
+    margin-left: 4px;
+}
+
+.tovar__item:nth-child(3n) .tovar__brand {
+    margin-left: 2px;
+}
+
+.tovar__item:nth-child(5) .tovar__brand {
+    margin-left: 2px;
+}
+
+.tovar__model {
+    margin-top: 1px;
+    margin-left: 3px;
+    color: #1f2528;
+    font-size: 13px;
+    letter-spacing: -0.01em;
+}
+
+.tovar__item:nth-child(3n) .tovar__model {
+    margin-left: -1px;
+}
+
+.tovar__item:nth-child(7) .tovar__model {
+    margin-left: 1px;
+}
+
+.tovar__price {
+    margin-top: 1px;
+    margin-left: 4px;
+    font: italic bold 16px Arial, sans-serif;
+    color: #114165;
+
+}
+
+.tovar__item:nth-child(3n-1) .tovar__price {
+    margin-left: 15px;
+    letter-spacing: 0.03em;
+}
+
+.tovar__price--valuta {
+    font-size: 12px;
+
+}
+
+.tovar__image {
+    display: block;
+    border: 1px solid  rgb(164, 174, 177);
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    width: 138px;
+    height: 129px;
 }
