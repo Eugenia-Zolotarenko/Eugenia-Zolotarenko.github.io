@@ -147,3 +147,88 @@ body {
     margin-top: 3px;
     letter-spacing: 0.09em;
 }
+.list__name--item--tires {
+    width: 105px;
+}
+
+.brands_search {
+    margin-top: 14px;
+    margin-left: 15px;
+}
+
+.check {
+    display: block;
+    margin-top: 4px;
+}
+
+.checkbox_style {
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
+.brands_search_variant {
+    position: relative;
+    left: 8px;
+    top: -2px;
+    letter-spacing: -0.01em;
+}
+
+.list__name--item--discs {
+    width: 105px;
+    top: 8px;
+}
+
+.list__item__circle--discs {
+    top: 2px;
+    left: 2px;
+}
+
+.checkbox_style--discs {
+    position: relative;
+    left: 4px;
+    top: 11px;
+}
+
+.checkbox_style--discs2 {
+    position: relative;
+    left: 4px;
+    top: 14px;
+}
+
+.checkbox_style--discs3 {
+    position: relative;
+    left: 4px;
+    top: 17px;
+}
+
+.brands_search_variant--discs {
+    top: 9px;
+    left: 12px;
+}
+
+.brands_search_variant--discs2 {
+    top: 12px;
+    left: 12px;
+}
+
+.brands_search_variant--discs3 {
+    top: 14px;
+    left: 12px;
+}
+
+.brands__button_submit {
+    display: block;
+    border: 1px solid rgb(167, 171, 174);
+    border-radius: 11px;
+    width: 82px;
+    height: 26px;
+    margin-top: 33px;
+    margin-left: 8px;
+    background-image: -moz-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+    background-image: -ms-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+    font: 11px Arial, sans-serif;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #e5e9ea;
+}
