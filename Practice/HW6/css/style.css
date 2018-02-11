@@ -14,220 +14,136 @@ body {
     clear: both;
 }
 
-/*HEADER*/
-    /*info*/
-.phone {
-    float: left;
-    margin-top: 1px;
-    margin-left: 7px;
-    height: 21px;
-    width: 21px;
-    border-radius: 50%;
-    background: url("../img/phone.png") no-repeat 5px, linear-gradient(#0c3357, #1f6786);
+.content_wrapper {
+    margin-top: 15px;
 }
 
-.phone_numbers {
-    float: left;
-    margin-left: 4px;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    line-height: 25px;
-    color: #5e696d;
-    letter-spacing: 0.025em;
-}
 
-.avtoriz {
+/*базовые стили для  названий бокового меню*/
+.list__name {
     position: relative;
-    float: left;
-    box-sizing: border-box;
-    margin-left: 16px;
-    margin-top: -3px;
-    padding-left: 267px;
-    width: 495px;
-    height: 25px;
-    background: url("../img/header_avtoriz.png") no-repeat 7px 4px, linear-gradient(#1f6787, #0c3357);
-    border-radius: 3px;
-    -webkit-box-shadow: 2px 3px 7px 0px rgba(89,109,128,1);
-    -moz-box-shadow: 2px 3px 7px 0px rgba(89,109,128,1);
-    box-shadow: 2px 3px 7px 0px rgba(89,109,128,1);
-    font-family: "Lucida Sans Unicode", Arial, sans-serif;
-    font-size: 11px;
-    color:#ffffff;
-}
-
-.avtoriz_field {
-    position: absolute;
-    top: 3px;
-    padding-left: 5px;
-    width: 109px;
-    height: 15px;
-    border: none;
-    border-radius: 2px;
-    line-height: 25px;
-    font-size: 11px;
-}
-
-.avtoriz_field::-webkit-input-placeholder {color:#97a2a6;}
-.avtoriz_field::-moz-placeholder          {color:#97a2a6;}/* Firefox 19+ */
-.avtoriz_field:-moz-placeholder           {color:#97a2a6;}/* Firefox 18- */
-.avtoriz_field:-ms-input-placeholder      {color:#97a2a6;}
-
-.login_field {
-    left: 24px;
-}
-
-.psw_field {
-    left: 145px;
-}
-
-.vhod {
-    color:#ffffff;
-    font-size: 11px;
-    text-decoration: none;
-    line-height: 25px;
-    letter-spacing: -0.02em;
-}
-
-.fogot_psw {
-    display: inline-block;
-    margin-left: 17px;
-    padding-bottom: 2px;
-    height: 10px;
-    border-bottom: 0.5px solid #bfbfbf;
-    color: #bfbfbf;
-    text-decoration: none;
-    letter-spacing: 0.05em;
-}
-
-.navi {
-    float: right;
-    margin-top: -2px;
-    margin-right: 6px;
-    width: 75px;
-    height: 19px;
-    border: 1px solid #c1c8cb;
-    border-radius: 100px;
-}
-
-.home {
-    width: 18px;
-    height: 12px;
-    margin-left: 7px;
-}
-
-.map {
-    margin-left: -2px;
-}
-
-.email {
+    margin-top: 3px;
     margin-left: -1px;
-}
-
-    /*logo picture*/
-.logo {
-    display: block;
-    margin: 8px 0 6px;
-}
-
-    /*main_menu*/
-
-.header_menu {
-    position: relative;
-    box-sizing: border-box;
-    width: 911px;
-    height: 35px;
-    border: 1px solid rgb(13, 22, 66);
-    border-radius: 4px;
-    background: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(44,48,52) 87%, rgb(87,96,104) 100%);
-    background: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(44,48,52) 87%, rgb(87,96,104) 100%);
-    background: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(44,48,52) 87%, rgb(87,96,104) 100%);
-    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
-}
-
-.main_menu {
-    margin-top: 4px;
-    margin-left: 125px;
+    padding-left: 27px;
+    width: 154px;
     height: 25px;
-}
-
-.main_menu__item {
-    display: inline-block;
-}
-
-.main_menu__link {
-    display: block;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    font-size: 14px;
-    font-family: "Lucida Sans Unicode", Arial, sans-serif;
-    line-height: 25px;
-    color: #bfbfbf;
-    letter-spacing: -0.02em;
-}
-
-.main_menu__link:hover {
+    border: 1px solid rgb(121, 135, 141);
     border-radius: 50px;
+    box-shadow: 0 3px 3px 0 rgba(150, 150, 150, 0.75);
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 26px;
+    letter-spacing: -0.013em;
+    text-transform: uppercase;
+    color: #114165;
+}
+
+.list__name__circle {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 22px;
+    height: 21px;
+    border-radius: 50%;
     background: -moz-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
-    background: -webkit-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+    background: linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
     background: -ms-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
 }
 
-.about_company {
-    width: 125px;
+/*базовые стили для пунктов меню верхнего уровня*/
+.list__name--item {
+    display: block;
+    padding-left: 29px;
+    box-shadow: none;
+    width: 121px;
+    height: 26px;
+    font-size: 14px;
+    line-height: 30px;
 }
 
-.payment {
-    width: 89px;
-}
-
-.ship {
-    width: 95px;
-}
-
-.articles {
-    width: 85px;
-}
-
-.contacts {
-    width: 87px;
-}
-
-.korzina {
+.list__item__circle {
     position: absolute;
-    top: 3px;
-    right: 12px;
-    color: #929b9f;
-    font-family: Arial, sans-serif ;
-    font-size: 11px;
-    letter-spacing: 0.04em;
-    line-height: 25px;
+    top: 1px;
+    left: 5px;
+    border-radius: 50%;
+    background-color: rgb(17, 65, 101);
+    width: 22px;
+    height: 22px;
 }
 
-.korzina_pict {
+.list__name__circle_small {
     position: absolute;
     top: 5px;
-    left: -27px;
+    left: 5px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 12px;
+    height: 12px;
 }
 
-.quantity {
-    margin-right: 10px;
+/*Левое меню "Каталог продукции"*/
+.catalog {
+    float: left;
 }
 
-.sum,
-.quantity{
-    color: #0d5a8f;
+.list__name__circle--pict{
+    position: absolute;
+    left: 1px;
+    width: 20px;
+    height: 20px;
+    background:  url("../img/catalog_list.png") no-repeat center center;
+}
+
+.catalog__list {
+    margin-top: 13px;
+    margin-left: 1px;
+}
+.catalog__submenu {
+    margin-top: 1px;
+    margin-left: 53px;
+    list-style: circle outside;
+}
+
+.catalog__submenu__item {
+    position: relative;
+}
+
+.catalog__submenu__link {
+    position: relative;
+    left: -8px;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
     text-decoration: none;
-    font-size: 12px;
-    letter-spacing: 0.04em;
+    text-transform: none;
+    letter-spacing: -0.05em;
+    color: #465961;
 }
 
-.commodity {
-    margin-right: -1px;
+.catalog__submenu__link:hover {
+    border-bottom:2px solid #0c3256;
+    font: italic bold 14px Arial, sans-serif;
+    line-height: 24px;
+    text-transform: none;
+    color: #0c3256;
+    letter-spacing: normal;
 }
 
-.sum_text {
-    margin-right: 7px;
+.catalog__submenu__item--3 {
+    top: 3px;
 }
 
+.catalog__submenu__item--4 {
+    top: 4px;
+}
 
+/*Правое боковое меню БРЕНДЫ*/
+.brands {
+    float: right;
+    margin-top: -2px;
+}
+
+.list__name--brands {
+    margin-top: 3px;
+    letter-spacing: 0.09em;
+}

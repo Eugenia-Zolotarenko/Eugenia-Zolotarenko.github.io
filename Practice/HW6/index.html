@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 
 <body>
@@ -47,7 +48,7 @@
         </div>
     </header>
 
-    <div class="search_wrapper">
+    <div class="search_wrapper clearfix">
         <section class="search_box search_box--po-avto">
             <h2 class="search_box__name search_box__name-po-avto">Поиск по автомобилю</h2>
             <div class="search_box__name search_box__name-po-avto--discs">Диски:</div>
@@ -301,14 +302,66 @@
     </div>
 
     <div class="content_wrapper">
-        <aside class="catalog">
-            <div class="catalog_name">каталог продукции</div>
-
-        </aside>
-
         <aside class="brands">
+            <div class="list__name list__name--brands">
+                <div class="list__name__circle"><div class="list__name__circle--pict"></div></div>
+                бренды:
+            </div>
+
+            <div class="list__name list__name--item">
+                <div class="list__item__circle"><div class="list__name__circle_small"></div></div>
+                шины
+            </div>
+
+            <div class="list__name list__name--item">
+                <div class="list__item__circle"><div class="list__name__circle_small"></div></div>
+                диски
+            </div>
 
         </aside>
+
+        <aside class="catalog">
+            <div class="list__name">
+                <div class="list__name__circle"><div class="list__name__circle--pict"></div></div>
+                каталог продукции:
+            </div>
+
+            <nav>
+                <ul class="catalog__list">
+                    <li><div class="list__name list__name--item">
+                            <div class="list__item__circle"><div class="list__name__circle_small"></div></div>шины</div>
+                        <ul class="catalog__submenu">
+                            <li class="catalog__submenu__item"><a class="catalog__submenu__link">Наименование 1</a> </li>
+                            <li class="catalog__submenu__item"><a class="catalog__submenu__link">Наименование 2</a> </li>
+                            <li class="catalog__submenu__item catalog__submenu__item--3"><a class="catalog__submenu__link ">Наименование 3</a> </li>
+                            <li class="catalog__submenu__item catalog__submenu__item--4"><a class="catalog__submenu__link ">Наименование 4</a> </li>
+                        </ul>
+                    </li>
+
+                    <li><div class="list__name list__name--item">
+                        <div class="list__item__circle"><div class="list__name__circle_small"></div></div>диски</div>
+                        <ul class="catalog__submenu">
+                            <li class="catalog__submenu__item"><a class="catalog__submenu__link">Наименование 1</a> </li>
+                            <li class="catalog__submenu__item"><a class="catalog__submenu__link">Наименование 2</a> </li>
+                            <li class="catalog__submenu__item catalog__submenu__item--3"><a class="catalog__submenu__link ">Наименование 3</a> </li>
+                            <li class="catalog__submenu__item catalog__submenu__item--4"><a class="catalog__submenu__link ">Наименование 4</a> </li>
+                        </ul>
+                    </li>
+
+                    <li><div class="list__name list__name--item">
+                        <div class="list__item__circle"><div class="list__name__circle_small"></div></div>болты</div>
+                        <ul class="catalog__submenu">
+                            <li class="catalog__submenu__item"><a class="catalog__submenu__link">Наименование 1</a> </li>
+                            <li class="catalog__submenu__item"><a class="catalog__submenu__link">Наименование 2</a> </li>
+                            <li class="catalog__submenu__item catalog__submenu__item--3"><a class="catalog__submenu__link ">Наименование 3</a> </li>
+                            <li class="catalog__submenu__item catalog__submenu__item--4"><a class="catalog__submenu__link ">Наименование 4</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+
 
         <main>
 

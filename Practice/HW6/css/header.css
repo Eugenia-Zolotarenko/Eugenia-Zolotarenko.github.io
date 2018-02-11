@@ -1,0 +1,215 @@
+/*HEADER*/
+/*info*/
+.phone {
+    float: left;
+    margin-top: 1px;
+    margin-left: 7px;
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+    background: url("../img/phone.png") no-repeat 5px, linear-gradient(#0c3357, #1f6786);
+}
+
+.phone_numbers {
+    float: left;
+    margin-left: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: #5e696d;
+    letter-spacing: 0.025em;
+}
+
+.avtoriz {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 16px;
+    margin-top: -3px;
+    padding-left: 267px;
+    width: 495px;
+    height: 25px;
+    background: url("../img/header_avtoriz.png") no-repeat 7px 4px, linear-gradient(#1f6787, #0c3357);
+    border-radius: 3px;
+    -webkit-box-shadow: 2px 3px 7px 0px rgba(89,109,128,1);
+    -moz-box-shadow: 2px 3px 7px 0px rgba(89,109,128,1);
+    box-shadow: 2px 3px 7px 0px rgba(89,109,128,1);
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 11px;
+    color:#ffffff;
+}
+
+.avtoriz_field {
+    position: absolute;
+    top: 3px;
+    padding-left: 5px;
+    width: 109px;
+    height: 15px;
+    border: none;
+    border-radius: 2px;
+    line-height: 25px;
+    font-size: 11px;
+}
+
+.avtoriz_field::-webkit-input-placeholder {color:#97a2a6;}
+.avtoriz_field::-moz-placeholder          {color:#97a2a6;}/* Firefox 19+ */
+.avtoriz_field:-moz-placeholder           {color:#97a2a6;}/* Firefox 18- */
+.avtoriz_field:-ms-input-placeholder      {color:#97a2a6;}
+
+.login_field {
+    left: 24px;
+}
+
+.psw_field {
+    left: 145px;
+}
+
+.vhod {
+    color:#ffffff;
+    font-size: 11px;
+    text-decoration: none;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+}
+
+.fogot_psw {
+    display: inline-block;
+    margin-left: 17px;
+    padding-bottom: 2px;
+    height: 10px;
+    border-bottom: 0.5px solid #bfbfbf;
+    color: #bfbfbf;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+
+.navi {
+    float: right;
+    margin-top: -2px;
+    margin-right: 6px;
+    width: 75px;
+    height: 19px;
+    border: 1px solid #c1c8cb;
+    border-radius: 100px;
+}
+
+.home {
+    width: 18px;
+    height: 12px;
+    margin-left: 7px;
+}
+
+.map {
+    margin-left: -2px;
+}
+
+.email {
+    margin-left: -1px;
+}
+
+/*logo picture*/
+.logo {
+    display: block;
+    margin: 8px 0 6px;
+}
+
+/*main_menu*/
+
+.header_menu {
+    position: relative;
+    box-sizing: border-box;
+    width: 911px;
+    height: 35px;
+    border: 1px solid rgb(13, 22, 66);
+    border-radius: 4px;
+    background: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(44,48,52) 87%, rgb(87,96,104) 100%);
+    background: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(44,48,52) 87%, rgb(87,96,104) 100%);
+    background: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(44,48,52) 87%, rgb(87,96,104) 100%);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.main_menu {
+    margin-top: 4px;
+    margin-left: 125px;
+    height: 25px;
+}
+
+.main_menu__item {
+    display: inline-block;
+}
+
+.main_menu__link {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    line-height: 25px;
+    color: #bfbfbf;
+    letter-spacing: -0.02em;
+}
+
+.main_menu__link:hover {
+    border-radius: 50px;
+    background: -moz-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+    background: -webkit-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+    background: -ms-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+}
+
+.about_company {
+    width: 125px;
+}
+
+.payment {
+    width: 89px;
+}
+
+.ship {
+    width: 95px;
+}
+
+.articles {
+    width: 85px;
+}
+
+.contacts {
+    width: 87px;
+}
+
+.korzina {
+    position: absolute;
+    top: 3px;
+    right: 12px;
+    color: #929b9f;
+    font-family: Arial, sans-serif ;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    line-height: 25px;
+}
+
+.korzina_pict {
+    position: absolute;
+    top: 5px;
+    left: -27px;
+}
+
+.quantity {
+    margin-right: 10px;
+}
+
+.sum,
+.quantity{
+    color: #0d5a8f;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+}
+
+.commodity {
+    margin-right: -1px;
+}
+
+.sum_text {
+    margin-right: 7px;
+}
