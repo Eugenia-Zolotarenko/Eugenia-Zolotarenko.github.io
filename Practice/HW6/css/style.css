@@ -16,6 +16,7 @@ body {
 
 .content_wrapper {
     margin-top: 15px;
+    margin-bottom: 21px;
 }
 
 
@@ -243,6 +244,7 @@ body {
     background-image: -ms-linear-gradient( 90deg, rgb(35,75,93) 0%, rgb(118,141,151) 57%, rgb(201,207,209) 100%);
     margin-left: 9px;
     margin-top: -1px;
+    margin-bottom: 36px;
     width: 526px;
 }
 
@@ -371,20 +373,16 @@ body {
 /*Список логотипов производителей*/
 
 .brand__logo {
+   }
+
+.brand__logo__list {
     clear: both;
     margin:0 auto;
     width: 680px;
 }
 
-.brand__logo__list {
-    margin: 35px auto 28px;
-    height: 30px;
-}
-
 .brand__logo__item {
     display: inline-block;
-    margin-right: -6px;
-    margin-top: 36px;
 }
 
 .brand__logo__link {
@@ -395,36 +393,89 @@ body {
 }
 
 .brand__logo__item:nth-child(2) .brand__logo__link {
-    width: 100px;
-    background:  url("../img/logo_brand_image.png") no-repeat -81px;
+    width: 105px;
+    background:  url("../img/logo_brand_image.png") no-repeat -87px;
 }
 
 .brand__logo__item:nth-child(3) .brand__logo__link {
-    width: 103px;
-    background:  url("../img/logo_brand_image.png") no-repeat -179px;
+    width: 90px;
+    background:  url("../img/logo_brand_image.png") no-repeat -196px;
 }
 
 .brand__logo__item:nth-child(4) .brand__logo__link {
-    width: 80px;
-    background:  url("../img/logo_brand_image.png") no-repeat -280px;
+    width: 66px;
+    background:  url("../img/logo_brand_image.png") no-repeat -290px;
 }
 
 .brand__logo__item:nth-child(5) .brand__logo__link {
-    width: 95px;
-    background:  url("../img/logo_brand_image.png") no-repeat -358px;
+    width: 87px;
+    background:  url("../img/logo_brand_image.png") no-repeat -360px;
 }
 
 .brand__logo__item:nth-child(6) .brand__logo__link {
-    width: 75px;
+    width: 73px;
     background:  url("../img/logo_brand_image.png") no-repeat -451px;
 }
 
 .brand__logo__item:nth-child(7) .brand__logo__link {
-    width: 75px;
-    background:  url("../img/logo_brand_image.png") no-repeat -524px;
+    width: 63px;
+    background:  url("../img/logo_brand_image.png") no-repeat -528px;
 }
 
 .brand__logo__item:nth-child(8) .brand__logo__link {
+    width: 76px;
+    background:  url("../img/logo_brand_image.png") no-repeat -602px;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    width: 910px;
+    background: #213a4d;
+}
+.main_menu--footer {
+    width: 312px;
+    margin-left: 309px;
+    padding-top: 9px;
+}
+
+
+
+.main_menu__link--footer {
+    display: block;
     width: 80px;
-    background:  url("../img/logo_brand_image.png") no-repeat -597px;
+    border-right: 1px solid  #bec6c9;
+    font: 12px Arial, sans-serif;
+    color: #bec6c9;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    line-height: 11px;
+}
+
+.main_menu__link--footer:hover {
+    color: #52abcb}
+}
+
+
+.main_menu__item:nth-child(2) .main_menu__link--footer {
+    width: 66px;
+    padding-left: 9px;
+
+}
+
+.main_menu__item:nth-child(3) .main_menu__link--footer  {
+    width: 53px;
+    padding-left: 8px;
+}
+
+.main_menu__item:nth-child(4)  .main_menu__link--footer {
+    width: 66px;
+    padding-left: 12px;
+    border: none;
+
+.footer__copyright {
+    font: 10px Arial, sans-serif;
+    color: #7f4740;
+    letter-spacing: 0.025em;
 }

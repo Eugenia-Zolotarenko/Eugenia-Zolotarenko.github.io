@@ -157,23 +157,23 @@
     background: -ms-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
 }
 
-.about_company {
+.main_menu__item:first-child .main_menu__link {
     width: 125px;
 }
 
-.payment {
+.main_menu__item:nth-child(2) .main_menu__link {
     width: 89px;
 }
 
-.ship {
+.main_menu__item:nth-child(3) .main_menu__link {
     width: 95px;
 }
 
-.articles {
+.main_menu__item:nth-child(4) .main_menu__link {
     width: 85px;
 }
 
-.contacts {
+.main_menu__item:nth-child(5) .main_menu__link {
     width: 87px;
 }
 
