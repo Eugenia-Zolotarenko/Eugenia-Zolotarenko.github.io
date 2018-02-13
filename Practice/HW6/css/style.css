@@ -244,49 +244,58 @@ body {
     margin-left: 9px;
     margin-top: -1px;
     width: 526px;
-    height: 628px;
 }
 
 .tovar__item {
     float: left;
-    margin-top: 11px;
+    margin-top: 9px;
     margin-left: 22px;
     font: 15px "Lucida Sans Unicode", Arial, sans-serif;
     line-height: 13px;
     text-align: center;
-
 }
 
 
 .tovar__item:nth-child(3n-1) {
-    margin-left: 27px;
+    margin-left: 29px;
+}
+
+.tovar__item:nth-child(5) {
+    margin-left: 28px;
 }
 
 .tovar__item:nth-child(3n) {
     margin-left: 29px;
 }
 
+.tovar__item:nth-child(6) {
+    margin-left: 30px;
+}
+
 .tovar__item:nth-child(n+4):nth-child(-n+6) {
-    margin-top: 19px;
+    margin-top: 17px;
 }
 
 .tovar__item:nth-child(n+7):nth-child(-n+9) {
-    margin-top: 20px;
+    margin-top: 19px;
+    margin-bottom: 28px;
 }
 
 .tovar__brand {
-    margin-top: 6px;
+    margin-top: 8px;
     margin-left: -2px;
     color: #206988;
     font-size: 15px;
 }
+
 .tovar__item:nth-child(2) .tovar__brand,
 .tovar__item:nth-child(8) .tovar__brand {
-    margin-left: 4px;
+    margin-left: 3px;
 }
 
 .tovar__item:nth-child(3n) .tovar__brand {
-    margin-left: 2px;
+    margin-left: 3px;
+    letter-spacing: 0.01em;
 }
 
 .tovar__item:nth-child(5) .tovar__brand {
@@ -295,10 +304,15 @@ body {
 
 .tovar__model {
     margin-top: 1px;
-    margin-left: 3px;
+    margin-left: 5px;
     color: #1f2528;
     font-size: 13px;
     letter-spacing: -0.01em;
+}
+
+.tovar__item:nth-child(2) .tovar__model
+{
+    margin-left: 3px;
 }
 
 .tovar__item:nth-child(3n) .tovar__model {
@@ -310,28 +324,107 @@ body {
 }
 
 .tovar__price {
-    margin-top: 1px;
-    margin-left: 4px;
+    margin-top: 3px;
+    margin-left: 9px;
     font: italic bold 16px Arial, sans-serif;
     color: #114165;
 
 }
 
 .tovar__item:nth-child(3n-1) .tovar__price {
-    margin-left: 15px;
-    letter-spacing: 0.03em;
+    margin-left: 11px;
+    margin-top: 3px;
+    letter-spacing: 0.02em;
 }
 
 .tovar__price--valuta {
     font-size: 12px;
-
+    margin-left: 3px;
 }
 
 .tovar__image {
+    box-sizing: border-box;
     display: block;
     border: 1px solid  rgb(164, 174, 177);
     border-radius: 7px;
     background-color: rgb(255, 255, 255);
-    width: 138px;
+    padding-top: 5px;
+    width: 139px;
     height: 129px;
+}
+
+.tovar__item:nth-child(3n+1) .tovar__image--position {
+    margin-left: -3px;
+}
+
+.tovar__item:nth-child(3n-1) .tovar__image--position {
+     margin-left: -2px;
+     margin-top: -1px;
+}
+
+.tovar__item:nth-child(3n) .tovar__image--position {
+    margin-left: -2px;
+    margin-top: -1px;
+}
+
+
+/*Список логотипов производителей*/
+
+.brand__logo {
+    clear: both;
+    margin:0 auto;
+    width: 680px;
+}
+
+.brand__logo__list {
+    margin: 35px auto 28px;
+    height: 30px;
+}
+
+.brand__logo__item {
+    display: inline-block;
+    margin-right: -6px;
+    margin-top: 36px;
+}
+
+.brand__logo__link {
+    display: block;
+    background:  url("../img/logo_brand_image.png") no-repeat 2px;
+    height: 30px;
+    width: 85px;
+}
+
+.brand__logo__item:nth-child(2) .brand__logo__link {
+    width: 100px;
+    background:  url("../img/logo_brand_image.png") no-repeat -81px;
+}
+
+.brand__logo__item:nth-child(3) .brand__logo__link {
+    width: 103px;
+    background:  url("../img/logo_brand_image.png") no-repeat -179px;
+}
+
+.brand__logo__item:nth-child(4) .brand__logo__link {
+    width: 80px;
+    background:  url("../img/logo_brand_image.png") no-repeat -280px;
+}
+
+.brand__logo__item:nth-child(5) .brand__logo__link {
+    width: 95px;
+    background:  url("../img/logo_brand_image.png") no-repeat -358px;
+}
+
+.brand__logo__item:nth-child(6) .brand__logo__link {
+    width: 75px;
+    background:  url("../img/logo_brand_image.png") no-repeat -451px;
+}
+
+.brand__logo__item:nth-child(7) .brand__logo__link {
+    width: 75px;
+    background:  url("../img/logo_brand_image.png") no-repeat -524px;
+}
+
+.brand__logo__item:nth-child(8) .brand__logo__link {
+    width: 80px;
+    background:  url("../img/logo_brand_image.png") no-repeat -597px;
 }
