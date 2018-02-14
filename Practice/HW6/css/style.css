@@ -130,11 +130,11 @@ body {
     letter-spacing: normal;
 }
 
-.catalog__submenu__item--3 {
+.catalog__submenu__item:nth-child(3) {
     top: 3px;
 }
 
-.catalog__submenu__item--4 {
+.catalog__submenu__item:nth-child(4) {
     top: 4px;
 }
 
@@ -423,8 +423,8 @@ body {
 }
 
 .brand__logo__item:nth-child(8) .brand__logo__link {
-    width: 76px;
-    background:  url("../img/logo_brand_image.png") no-repeat -602px;
+    width: 81px;
+    background:  url("../img/logo_brand_image.png") no-repeat -595px;
 }
 
 
@@ -437,10 +437,9 @@ body {
 .main_menu--footer {
     width: 312px;
     margin-left: 309px;
+    margin-bottom: 14px;
     padding-top: 9px;
 }
-
-
 
 .main_menu__link--footer {
     display: block;
@@ -454,27 +453,30 @@ body {
 }
 
 .main_menu__link--footer:hover {
-    color: #52abcb}
+    color: #52abcb
 }
 
 
-.main_menu__item:nth-child(2) .main_menu__link--footer {
-    width: 66px;
+.main_menu__item--footer:nth-child(2) .main_menu__link--footer { /*Доставка*/
+    width: 65px;
     padding-left: 9px;
-
 }
 
-.main_menu__item:nth-child(3) .main_menu__link--footer  {
-    width: 53px;
+.main_menu__item--footer:nth-child(3) .main_menu__link--footer  { /*Статьи*/
+    width: 54px;
     padding-left: 8px;
 }
 
-.main_menu__item:nth-child(4)  .main_menu__link--footer {
+.main_menu__item--footer:nth-child(4) .main_menu__link--footer {  /*Контакты*/
     width: 66px;
     padding-left: 12px;
     border: none;
+}
 
 .footer__copyright {
+    width: 156px;
+    margin: 0 auto;
+    padding-bottom: 50px;
     font: 10px Arial, sans-serif;
     color: #7f4740;
     letter-spacing: 0.025em;

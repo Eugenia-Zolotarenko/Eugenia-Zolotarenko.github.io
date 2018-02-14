@@ -309,44 +309,61 @@
                 бренды:
             </div>
             <form class="brands_search" action="/">
-                <div class="list__name list__name--item list__name--item--tires">
-                    <div class="list__item__circle"><div class="list__name__circle_small"></div></div>
-                    шины
-                </div>
+                <ul class="brands__list">
+                    <li><div class="list__name list__name--item list__name--item--tires">
+                        <div class="list__item__circle"><div class="list__name__circle_small"></div></div>
+                                шины</div>
+                        <ul>
+                            <li  class="check">
+                                <label>
+                                    <input type="checkbox" class="checkbox_style"><span class="brands_search_variant">Бренд 1</span>
+                                </label>
+                            </li>
 
-                <label class="check">
-                    <input type="checkbox" class="checkbox_style"><span class="brands_search_variant">Бренд 1</span>
-                </label>
+                            <li  class="check">
+                                <label >
+                                    <input type="checkbox" class="checkbox_style"><span class="brands_search_variant">Бренд 2</span>
+                                </label>
+                            </li>
 
-                <label class="check">
-                    <input type="checkbox" class="checkbox_style"><span class="brands_search_variant">Бренд 2</span>
-                </label>
+                            <li  class="check">
+                                <label>
+                                    <input type="checkbox" class="checkbox_style"><span class="brands_search_variant">Бренд 3</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
 
-                <label class="check">
-                    <input type="checkbox" class="checkbox_style"><span class="brands_search_variant">Бренд 3</span>
-                </label>
+                    <li> <div class="list__name list__name--item list__name--item--discs">
+                        <div class="list__item__circle list__item__circle--discs"><div class="list__name__circle_small"></div></div>
+                            диски</div>
+                        <ul>
+                            <li  class="check">
+                                <label>
+                                    <input type="checkbox" class="checkbox_style--discs">
+                                    <span class="brands_search_variant brands_search_variant--discs">Бренд 1</span>
+                                </label>
+                            </li>
 
-                <div class="list__name list__name--item list__name--item--discs">
-                    <div class="list__item__circle list__item__circle--discs"><div class="list__name__circle_small"></div></div>
-                    диски
-                </div>
-                <label class="check">
-                    <input type="checkbox" class="checkbox_style--discs"><span class="brands_search_variant brands_search_variant--discs">Бренд 1</span>
-                </label>
+                            <li  class="check">
+                                <label>
+                                    <input type="checkbox" class=" checkbox_style--discs2">
+                                    <span class="brands_search_variant brands_search_variant--discs2">Бренд 2</span>
+                                </label>
+                            </li>
 
-                <label class="check">
-                    <input type="checkbox" class=" checkbox_style--discs2"><span class="brands_search_variant brands_search_variant--discs2">Бренд 2</span>
-                </label>
-
-                <label class="check ">
-                    <input type="checkbox" class="checkbox_style--discs3" ><span class="brands_search_variant brands_search_variant--discs3">Бренд 3</span>
-                </label>
-
+                            <li  class="check">
+                                <label>
+                                    <input type="checkbox" class="checkbox_style--discs3">
+                                    <span class="brands_search_variant brands_search_variant--discs3">Бренд 3</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
                 <input type="submit" value="выбрать" class="brands__button_submit">
-
             </form>
-
-            </aside>
+        </aside>
 
         <aside class="catalog__menu">
             <div class="list__name">
@@ -361,8 +378,8 @@
                         <ul class="catalog__submenu">
                             <li class="catalog__submenu__item"><a class="catalog__submenu__link">Наименование 1</a> </li>
                             <li class="catalog__submenu__item"><a class="catalog__submenu__link">Наименование 2</a> </li>
-                            <li class="catalog__submenu__item catalog__submenu__item--3"><a class="catalog__submenu__link ">Наименование 3</a> </li>
-                            <li class="catalog__submenu__item catalog__submenu__item--4"><a class="catalog__submenu__link ">Наименование 4</a> </li>
+                            <li class="catalog__submenu__item"><a class="catalog__submenu__link">Наименование 3</a> </li>
+                            <li class="catalog__submenu__item"><a class="catalog__submenu__link">Наименование 4</a> </li>
                         </ul>
                     </li>
 
@@ -371,8 +388,8 @@
                         <ul class="catalog__submenu">
                             <li class="catalog__submenu__item"><a class="catalog__submenu__link">Наименование 1</a> </li>
                             <li class="catalog__submenu__item"><a class="catalog__submenu__link">Наименование 2</a> </li>
-                            <li class="catalog__submenu__item catalog__submenu__item--3"><a class="catalog__submenu__link ">Наименование 3</a> </li>
-                            <li class="catalog__submenu__item catalog__submenu__item--4"><a class="catalog__submenu__link ">Наименование 4</a> </li>
+                            <li class="catalog__submenu__item"><a class="catalog__submenu__link">Наименование 3</a> </li>
+                            <li class="catalog__submenu__item"><a class="catalog__submenu__link">Наименование 4</a> </li>
                         </ul>
                     </li>
 
@@ -381,8 +398,8 @@
                         <ul class="catalog__submenu">
                             <li class="catalog__submenu__item"><a class="catalog__submenu__link">Наименование 1</a> </li>
                             <li class="catalog__submenu__item"><a class="catalog__submenu__link">Наименование 2</a> </li>
-                            <li class="catalog__submenu__item catalog__submenu__item--3"><a class="catalog__submenu__link ">Наименование 3</a> </li>
-                            <li class="catalog__submenu__item catalog__submenu__item--4"><a class="catalog__submenu__link ">Наименование 4</a> </li>
+                            <li class="catalog__submenu__item"><a class="catalog__submenu__link">Наименование 3</a> </li>
+                            <li class="catalog__submenu__item"><a class="catalog__submenu__link">Наименование 4</a> </li>
                         </ul>
                     </li>
                 </ul>
@@ -472,10 +489,10 @@
     <footer class="footer">
         <nav>
             <ul class="main_menu--footer">
-                <li class="main_menu__item main_menu__item--footer"><a href="#" class="main_menu__link--footer about_company">О компании</a></li>
-                <li class="main_menu__item main_menu__item--footer"><a href="#" class="main_menu__link--footer ship">Доставка</a></li>
-                <li class="main_menu__item main_menu__item--footer"><a href="#" class="main_menu__link--footer articles">Статьи</a></li>
-                <li class="main_menu__item main_menu__item--footer"><a href="#" class="main_menu__link--footer contacts">Контакты</a></li>
+                <li class="main_menu__item main_menu__item--footer"><a href="#" class="main_menu__link--footer">О компании</a></li>
+                <li class="main_menu__item main_menu__item--footer"><a href="#" class="main_menu__link--footer">Доставка</a></li>
+                <li class="main_menu__item main_menu__item--footer"><a href="#" class="main_menu__link--footer">Статьи</a></li>
+                <li class="main_menu__item main_menu__item--footer"><a href="#" class="main_menu__link--footer">Контакты</a></li>
             </ul>
         </nav>
         <div class="footer__copyright">Создание сайта © Global Vision</div>

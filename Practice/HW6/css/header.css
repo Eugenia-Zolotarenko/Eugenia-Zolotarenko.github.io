@@ -161,19 +161,19 @@
     width: 125px;
 }
 
-.main_menu__item:nth-child(2) .main_menu__link {
+.main_menu__item:nth-child(2) .main_menu__link { /*Оплата*/
     width: 89px;
 }
 
-.main_menu__item:nth-child(3) .main_menu__link {
+.main_menu__item:nth-child(3) .main_menu__link { /*Доставка*/
     width: 95px;
 }
 
-.main_menu__item:nth-child(4) .main_menu__link {
+.main_menu__item:nth-child(4) .main_menu__link { /*Статьи*/
     width: 85px;
 }
 
-.main_menu__item:nth-child(5) .main_menu__link {
+.main_menu__item:nth-child(5) .main_menu__link { /*Контакты*/
     width: 87px;
 }
 
