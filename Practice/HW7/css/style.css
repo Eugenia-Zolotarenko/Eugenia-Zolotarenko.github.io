@@ -1,0 +1,162 @@
+.body_wrapper {
+    max-width: 320px;
+    height: 516px;
+    margin: 0 auto;
+    font-family: "LeagueGothic", Arial, sans-serif;
+}
+/*HEADER*/
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 516px;
+    background: url("../img/320/header_bg.jpg") no-repeat center center;
+
+}
+
+.logo {
+    padding-top: 73px;
+    width: 153px;
+    margin-bottom: 34px;
+    font-size: 48px;
+    letter-spacing: -0.01em;
+    color: rgb(255, 255, 255);
+    line-height: 0.703;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.logo--end {
+    color: rgb(195, 229, 75);
+    letter-spacing: -0.03em;
+}
+
+.menu {
+       width: 48px;
+
+}
+.menu__link {
+    display: block;
+    border-bottom: 2px solid #edbfff;
+    font-size: 24px;
+    font-family: "LeagueGothic", Arial, sans-serif;
+    line-height: 1.405;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.slider {
+    margin-top: 127px;
+}
+
+.slider__name {
+    margin-left: 15px;
+    font-size: 36px;
+    color: rgb(254, 254, 254);
+    line-height: 0.667;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    text-transform: capitalize;
+    letter-spacing: -0.01em;
+}
+
+.slider__name--description {
+    margin-top: 11px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+}
+
+.slider__list {
+    margin-top: 81px;
+    padding-left: 72px;
+}
+
+.slider__bulit {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 1.7%;
+    background: #000000 ;
+    border-radius: 50px;
+    opacity: 0.302;
+}
+
+.slider__bulit--active {
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 11px;
+    height: 11px;
+    background: #ffffff;
+    border-radius: 50px;
+}
+
+/*ABOUT COMPANY  block*/
+.info{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #33253a;
+    border-bottom: 1px solid #0d151b;
+    background: linear-gradient( #745083, #322539);
+    color: rgb(255, 255, 255);
+}
+
+.info_block {
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    width: 265px;
+}
+
+.info_block__name {
+    margin-left: 55px;
+    font: 24px "LeagueGothic", Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(15, 21, 24, 0.004);
+}
+
+.info_block__summary {
+    margin-top: 3px;
+    margin-left: 55px;
+    height: 70px;
+    overflow: hidden;
+    text-overflow: clip;
+    font: 16px 'Open Sans', sans-serif;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-shadow: 0 1px 0 rgba(15, 21, 24, 0.004);
+}
+
+.info_block__link {
+    position: absolute;
+    top: 112px;
+    right: -1px;
+    white-space: nowrap;
+    font: 18px "LeagueGothic", Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.333;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(15, 21, 24, 0.004);
+}
+
+.info_block__link:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.info_block:nth-child(2) {
+     margin-top: 40px;
+ }
+
+.info_block:nth-child(3) {
+    margin-top: 56px;
+    margin-bottom: 101px;
+}
