@@ -1,0 +1,22 @@
+.menu {
+
+}
+
+.menu__item {
+    margin-left: 1px;
+    width: 47px;
+}
+
+
+.menu__link {
+    display: block;
+    border-bottom: 2px solid #edbfff;
+    font-size: 24px;
+    font-family: "LeagueGothic", Arial, sans-serif;
+    line-height: 1.405;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}

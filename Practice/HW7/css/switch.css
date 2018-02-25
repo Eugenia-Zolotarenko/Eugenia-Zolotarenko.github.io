@@ -1,0 +1,26 @@
+.switch__bullet {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 1.7%;
+    background: #000000 ;
+    border-radius: 50px;
+    opacity: 0.302;
+}
+
+.switch__center {
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 11px;
+    height: 11px;
+    background: #ffffff;
+    border-radius: 50px;
+}
+
+.switch__bullet--theme--light {
+    background: #ffffff;
+}
+
+.switch__center--theme--light {
+    background: linear-gradient(#6a6a6a, #000);
+}

@@ -1,0 +1,105 @@
+.title {
+    font: 24px "LeagueGothic", Arial, sans-serif;
+    line-height: 1;
+    letter-spacing: -0.0015em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.title--description {
+    color: #edbfff;
+}
+
+
+
+
+.title--size--l {
+    font-size: 30px;
+    line-height: 0.8;
+}
+
+.summary {
+    font: 16px 'Open Sans', sans-serif;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.link--light {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 74.6%;
+    white-space: nowrap;
+    font: 18px "LeagueGothic", Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.333;
+    letter-spacing: -0.002em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(15, 21, 24, 0.004);
+}
+
+
+.link:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+
+
+.info_block {
+    box-sizing: border-box;
+
+}
+
+.info_block__name {
+    font: 24px "LeagueGothic", Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    letter-spacing: -0.0015em;
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(15, 21, 24, 0.004);
+}
+
+.news__title--description {
+    margin-left: -3px;
+    margin-top: -1px;
+}
+
+.info_block__summary {
+    overflow: hidden;
+    text-overflow: clip;
+    font: 16px 'Open Sans', sans-serif;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-shadow: 0 1px 0 rgba(15, 21, 24, 0.004);
+
+}
+
+.info_block__link {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 74.6%;
+    white-space: nowrap;
+    font: 18px "LeagueGothic", Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.333;
+    letter-spacing: -0.002em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(15, 21, 24, 0.004);
+}
+
+
+.info_block__name--theme--light {
+    color: rgb(69, 69, 69);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.004);
+    letter-spacing: -0.001em;
+}
+
+.info_block__name--size--m {
+    font-size: 30px;
+    line-height: 0.8;
+
+}
