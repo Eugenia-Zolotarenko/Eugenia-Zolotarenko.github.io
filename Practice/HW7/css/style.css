@@ -18,6 +18,7 @@
     letter-spacing: -0.0015em;
     text-align: left;
     text-transform: uppercase;
+    text-shadow: inherit;
 }
 
 .title--description {
@@ -34,6 +35,19 @@
     line-height: 1.5;
     letter-spacing: -0.02em;
     text-align: left;
+    text-shadow: inherit;
+}
+
+.link {
+    display: inline-block;
+    white-space: nowrap;
+    font: 18px "LeagueGothic", Arial, sans-serif;
+    color: inherit;
+    line-height: 1.333;
+    letter-spacing: -0.002em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: inherit;
 }
 
 .link--light {
@@ -42,11 +56,10 @@
     margin-left: 74.6%;
     white-space: nowrap;
     font: 18px "LeagueGothic", Arial, sans-serif;
-    color: rgb(255, 255, 255);
+
     line-height: 1.333;
     letter-spacing: -0.002em;
-    text-decoration: none;
-    text-transform: uppercase;
+
     text-shadow: 0 1px 0 rgba(15, 21, 24, 0.004);
 }
 
@@ -145,6 +158,12 @@
     overflow: hidden;
 }
 
+.about_company__link {
+    margin-top: 15px;
+    margin-left: 74.6%;
+    letter-spacing: -0.002em;
+}
+
 /*Блок NEWS*/
 
 .news {
@@ -207,18 +226,21 @@
 
 .updates {
     margin-top: 49px;
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+    background: #f9f9f9;
 
 }
 
-.updates__info_block {
-    align-self: flex-start;
+.updates__title {
     margin-bottom: 19px;
     margin-left: 6.1%;
 }
 
 .post {
     width: 67.5%;
-    padding-left: 20%;
+    margin-left: 6.1%;
+    padding-left: 20.75%;
     margin-bottom: 16px;
     background: url("../img/updates_pict.png") no-repeat left top;
 }
@@ -227,6 +249,12 @@
     margin-bottom: 24px;
 }
 
-.post__title {
-    font-weight: bold;
+.summary--bold {
+    font-weight: 800;
+    letter-spacing: 0.0025em;
+}
+
+.updates__link {
+    margin-left: 64.5%;
+    margin-bottom: 86px;
 }
