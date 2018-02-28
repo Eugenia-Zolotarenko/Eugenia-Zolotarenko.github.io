@@ -1,0 +1,158 @@
+@media (max-width: 320px) {
+
+    .position-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .overlay {
+        display: none;
+    }
+    .slider__pict {
+        display: none;
+    }
+
+    .logo {
+        padding-top: 73px;
+        margin-left: -1px;
+        margin-bottom: 34px;
+    }
+
+
+    .slider {
+        margin-top: 127px;
+        padding-left: 13px;
+        margin-bottom: 65px;
+    }
+
+    .slider__switch {
+        margin-top: 78px;
+        padding-left: 18.125%;
+    }
+
+    .about_company {
+        padding-bottom: 42px;
+    }
+
+    .info_block {
+        margin-top: 70px;
+        margin-bottom: 20px;
+        padding-left: 17.1875%;
+        width: 82.8%;
+    }
+
+    .info_block:nth-child(2) {
+        margin-top: 2px;
+    }
+
+    .info_block:nth-child(3) {
+        margin-top: 18px;
+    }
+
+
+    .about_company__summary {
+        margin-top: 3px;
+        height: 70px;
+    }
+
+    .about_company__link {
+        margin-top: 15px;
+        margin-left: 74.6%;
+    }
+
+    .avatar {
+        position: absolute;
+        top: 17px;
+        left: -26px;
+    }
+
+    .news__info_block {
+        width: 80%;
+        margin-top: 70px;
+        margin-bottom: 20px;
+        margin-left: 8%;
+        padding-left: 12%;
+    }
+
+    .news__title {
+        margin-left: -4px;
+        margin-top: 25px;
+        letter-spacing: -0.001em;
+    }
+
+    .news__summary {
+        margin-top: 4px;
+        height: 166px;
+        padding-right: 17%;
+    }
+    .news__title--description {
+        margin-left: -3px;
+        margin-top: -1px;
+    }
+
+    .news__switch {
+        margin-top: 33px;
+        margin-left: 16.5%;
+        width: 28.125%;
+    }
+
+
+    .updates__title {
+        margin-bottom: 19px;
+        margin-left: 6.1%;
+    }
+
+    .recent_updates__post {
+        width: 67.5%;
+        margin-left: 6.1%;
+        padding-left: 20.75%;
+        margin-bottom: 16px;
+    }
+
+    .recent_updates__post:nth-child(3) {
+        margin-bottom: 24px;
+    }
+
+    .recent_updates__link {
+        margin-left: 64.5%;
+        margin-bottom: 86px;
+    }
+
+    .banners {
+        width:75% ;
+        margin-bottom: 16px;
+        padding-top: 52px;
+    }
+
+    .banners__item {
+        margin-bottom: 61px;
+    }
+
+    .banner1 {
+        margin-left: 9.5%;
+        margin-right: 23%;
+    }
+
+    .banner3 {
+        margin-left: 12.5%;
+        margin-right: 27%;
+    }
+
+    .banner5 {
+        margin-left: 1%;
+        margin-right: 23%;
+        margin-top: 2px;
+    }
+
+    .banner6 {
+        margin-top: -19px;
+    }
+    .footer__summary {
+        margin: 39px 0 144px;
+    }
+
+
+
+
+}

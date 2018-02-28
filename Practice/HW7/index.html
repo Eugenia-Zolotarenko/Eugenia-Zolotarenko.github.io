@@ -3,20 +3,22 @@
 <head>
     <title>Home Work 7-8</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,800" rel="stylesheet">
     <link rel="stylesheet" href="css/switch.css">
     <link rel="stylesheet" href="css/menu.css">
-
+    <link rel="stylesheet" href="css/width320.css">
+    <link rel="stylesheet" href="css/width480.css">
 </head>
 
 <body>
     <div class="body_wrapper position-center">
         <header class="header position-center">
+            <div class="overlay"></div>
             <div class="logo">PINGBULL<span class="logo--end">ER</span></div>
             <nav>
                 <ul class="menu">
@@ -25,8 +27,14 @@
             </nav>
 
             <div class="slider">
-                <div class="slider__name">lorem ipsum dolor</div>
-                <div class="slider__description">it will make all of your dreams come</div>
+                <div class="slider__wrapper">
+                    <div class="slider__text">
+                        <div class="slider__name">lorem ipsum dolor</div>
+                        <div class="slider__description">it will make all of your dreams come</div>
+                    </div>
+                    <img src="img/header__slider_iphone.png" class="slider__pict">
+
+                </div>
                 <ul class="switch slider__switch">
                     <li class="switch__bullet"></li>
                     <li class="switch__bullet"><div class="switch__center"></div></li>
@@ -75,7 +83,7 @@
         <section class="news position-center">
             <div class="news__info_block">
                 <img src="img/news_avatar.png" class="avatar" alt="avatar">
-                <div class="title news__name">PINGBULLER</div>
+                <div class="title news__title">PINGBULLER</div>
                 <div class="title title--description news__title--description">starts here</div>
                 <div class="summary news__summary">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere.
                     Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus,
@@ -96,23 +104,23 @@
             </ul>
         </section>
 
-        <section class="updates">
+        <section class="recent_updates">
             <h2 class="title title--size--l updates__title">recent updates</h2>
-            <div class="post">
+            <div class="recent_updates__post">
                 <div class="summary summary--bold">Nunc turpis neque</div>
                 <div class="summary">Posted by Admin on March 13</div>
             </div>
 
-            <div class="post">
+            <div class="recent_updates__post">
                 <div class="summary summary--bold">Nunc turpis neque</div>
                 <div class="summary">Posted by Admin on March 13</div>
             </div>
 
-            <div class="post">
+            <div class="recent_updates__post">
                 <div class="summary summary--bold">Nunc turpis neque</div>
                 <div class="summary">Posted by Admin on March 13</div>
             </div>
-            <a class="link updates__link" href="">more blog posts</a>
+            <a class="link recent_updates__link" href="">more blog posts</a>
 
         </section>
 
