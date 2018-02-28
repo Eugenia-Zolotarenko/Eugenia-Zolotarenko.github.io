@@ -85,8 +85,6 @@
     height: 246px;
 }
 
-
-
 .slider {
 
 }
@@ -117,7 +115,6 @@
 /*ABOUT COMPANY  block*/
 .about_company{
     width: 100%;
-   /* padding-bottom: 42px;*/
     border-top: 1px solid #33253a;
     border-bottom: 1px solid #0d151b;
     background: linear-gradient( #745083, #322539);

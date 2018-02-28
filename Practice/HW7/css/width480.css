@@ -12,28 +12,61 @@
         margin-bottom: 34px;
     }
 
-    .slider__wrapper {
-        display: initial;
-    }
-
-    .slider__pict {
-        /*float: right;*/
-
-    }
-
-    .slider__text {
-        float: left;
-    }
     .slider {
         margin-top: 127px;
         margin-bottom: 57px;
     }
 
-
     .slider__switch {
-        margin-top: 118px;
-        padding-left: 28%;
+        margin-top: 9px;
+        padding-left: 41%;
+    }
+
+    .slider__wrapper {
+        display: initial;
+    }
+
+    .slider__pict {
+       margin-top:-109px;
+    }
+
+    .slider__text {
+        float: left;
+        margin-left: 8px;
+        margin-right: 17px;
+    }
+
+    /*ABOUT COMPANY*/
+
+    .about_company {
+        padding-bottom: 47px;
+    }
+
+    .info_block {
+        margin-top: 77px;
+        margin-bottom: 20px;
+        padding-left: 12%;
+        width: 92%;
+    }
+
+    .info_block:nth-child(2) {
+        margin-top: 2px;
+    }
+
+    .info_block:nth-child(3) {
+        margin-top: 6px;
     }
 
 
+    .about_company__summary {
+        margin-top: 3px;
+        height: 70px;
+    }
+
+    .about_company__link {
+        margin-top: 15px;
+        margin-left: 85%;
+    }
+
+    /*Блок NEWS*/
 }

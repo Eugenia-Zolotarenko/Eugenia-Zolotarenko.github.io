@@ -1,27 +1,13 @@
 @media (max-width: 320px) {
 
-    .position-center {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .overlay {
+   .overlay {
         display: none;
     }
     .slider__pict {
         display: none;
     }
 
-    .logo {
-        padding-top: 73px;
-        margin-left: -1px;
-        margin-bottom: 34px;
-    }
-
-
-    .slider {
-        margin-top: 127px;
+   .slider {
         padding-left: 13px;
         margin-bottom: 65px;
     }
@@ -31,36 +17,27 @@
         padding-left: 18.125%;
     }
 
+    /*ABOUT COMPANY*/
+
     .about_company {
         padding-bottom: 42px;
     }
 
     .info_block {
         margin-top: 70px;
-        margin-bottom: 20px;
         padding-left: 17.1875%;
         width: 82.8%;
-    }
-
-    .info_block:nth-child(2) {
-        margin-top: 2px;
     }
 
     .info_block:nth-child(3) {
         margin-top: 18px;
     }
 
-
-    .about_company__summary {
-        margin-top: 3px;
-        height: 70px;
-    }
-
     .about_company__link {
-        margin-top: 15px;
-        margin-left: 74.6%;
+       margin-left: 74.6%;
     }
 
+    /*Блок NEWS*/
     .avatar {
         position: absolute;
         top: 17px;
