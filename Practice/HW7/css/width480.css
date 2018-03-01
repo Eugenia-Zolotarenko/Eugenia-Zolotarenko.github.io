@@ -1,4 +1,7 @@
 @media (max-width: 480px) {
+    .hidden-m {
+        visibility: hidden;
+    }
 
     .position-center {
         display: flex;
@@ -69,4 +72,69 @@
     }
 
     /*Блок NEWS*/
+    .avatar {
+        position: absolute;
+        top: 15px;
+        left: -12px;
+    }
+
+    .news__info_block {
+        width: 99%;
+        margin-top: 72px;
+        margin-bottom: 20px;
+        margin-left: 8%;
+        padding-left: 11%;
+    }
+
+    .news__title {
+        display: inline-block;
+        font-size: 30px;
+        margin-left: 2px;
+        margin-top: 25px;
+        letter-spacing: -0.001em;
+    }
+
+    .news__title--description {
+        display: inline-block;
+        font-size: 30px;
+        margin-left: 2px;
+    }
+
+    .news__summary {
+        margin-top: 13px;
+        height: 166px;
+        padding-right: 17%;
+        letter-spacing: -0.02em;
+    }
+
+    .news__switch {
+        margin-top: 40px;
+        margin-left: 13%;
+        width: 28.125%;
+    }
+
+    /*RECENT UPDATES*/
+    .recent_updates__title {
+        margin-bottom: 18px;
+        margin-left: 16%;
+    }
+
+    .recent_updates__post {
+        width: 67.5%;
+        margin-left: 16%;
+        padding-left: 14%;
+        margin-bottom: -4px;
+    }
+
+    .recent_updates__post:nth-child(3) {
+        margin-bottom: -6px;
+    }
+
+    .recent_updates__link {
+        margin-left: 70%;
+        margin-bottom: 86px;
+        margin-top: -1px;
+    }
+
+
 }

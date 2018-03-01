@@ -39,7 +39,6 @@
 
     /*Блок NEWS*/
     .avatar {
-        position: absolute;
         top: 17px;
         left: -26px;
     }
@@ -47,37 +46,35 @@
     .news__info_block {
         width: 80%;
         margin-top: 70px;
-        margin-bottom: 20px;
-        margin-left: 8%;
-        padding-left: 12%;
     }
 
     .news__title {
+        display: block;
+        font-size: 24px;
         margin-left: -4px;
-        margin-top: 25px;
-        letter-spacing: -0.001em;
+    }
+    .news__title--description {
+        display: block;
+        font-size: 24px;
+        margin-left: -3px;
+        margin-top: -1px;
     }
 
     .news__summary {
         margin-top: 4px;
-        height: 166px;
-        padding-right: 17%;
-    }
-    .news__title--description {
-        margin-left: -3px;
-        margin-top: -1px;
     }
 
     .news__switch {
         margin-top: 33px;
         margin-left: 16.5%;
-        width: 28.125%;
     }
-
-
-    .updates__title {
+/*RECENT UPDATES*/
+    .recent_updates__title {
         margin-bottom: 19px;
         margin-left: 6.1%;
+    }
+    .hidden {
+        visibility: hidden;
     }
 
     .recent_updates__post {
