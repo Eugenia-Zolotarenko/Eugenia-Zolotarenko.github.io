@@ -129,17 +129,17 @@
     margin-bottom: 20px;
     padding-left: 17.1875%;
     width: 82.8%;*/
-    background: url("../img/info_icons_1.png") no-repeat -91px -1px;
-}
+    background: url("../img/info_icons_1.png") no-repeat -98px -1px;
+}	
 
 .info_block:nth-child(2) {
    /* margin-top: 2px;*/
-    background: url("../img/info_icons_1.png") no-repeat -51px -30px;
+    background: url("../img/info_icons_1.png") no-repeat -55px -30px;
 }
 
 .info_block:nth-child(3) {
     /*margin-top: 18px;*/
-    background: url("../img/info_icons_1.png") no-repeat -7px -55px;
+    background: url("../img/info_icons_1.png") no-repeat -14px -55px;
 }
 
 .about_company__summary {
@@ -217,7 +217,7 @@
 
 
 .recent_updates {
-    padding-top: 49px;
+    padding-top: 48px;
     width: 100%;
     border-bottom: 1px solid #e6e6e6;
     background: #f9f9f9;

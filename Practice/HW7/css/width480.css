@@ -102,6 +102,7 @@
 
     .news__summary {
         margin-top: 13px;
+	   margin-left: 1.8%;
         height: 166px;
         padding-right: 17%;
         letter-spacing: -0.02em;
@@ -119,8 +120,7 @@
         margin-left: 16%;
     }
 
-    .recent_updates__post {
-        width: 67.5%;
+    .recent_updates__post {        
         margin-left: 16%;
         padding-left: 14%;
         margin-bottom: -4px;
@@ -132,8 +132,37 @@
 
     .recent_updates__link {
         margin-left: 70%;
-        margin-bottom: 86px;
-        margin-top: -1px;
+        margin-bottom: 86px;        
+    }
+
+.banners {
+        width: 80% ;
+        margin-bottom: 16px;
+        padding-top: 52px;
+    }
+
+    .banners__item {
+        margin-bottom: 61px;
+    }
+
+    .banner1 {
+        margin-left: 9.5%;
+        margin-right: 23%;
+    }
+
+    .banner3 {
+        margin-left: 12.5%;
+        margin-right: 27%;
+    }
+
+    .banner5 {
+        margin-left: 1%;
+        margin-right: 23%;
+        margin-top: 2px;
+    }
+
+    .banner6 {
+        margin-top: -19px;
     }
 
 

@@ -7,14 +7,20 @@
         display: none;
     }
 
+.hidden {
+        display: none;
+
+    }
+
+
    .slider {
-        padding-left: 13px;
+        padding-left: 22px;
         margin-bottom: 65px;
     }
 
     .slider__switch {
-        margin-top: 78px;
-        padding-left: 18.125%;
+        margin-top: 130px;
+        padding-left: 29.125%;
     }
 
     /*ABOUT COMPANY*/
@@ -25,7 +31,7 @@
 
     .info_block {
         margin-top: 70px;
-        padding-left: 17.1875%;
+        padding-left: 16.1875%;
         width: 82.8%;
     }
 
@@ -34,29 +40,29 @@
     }
 
     .about_company__link {
-       margin-left: 74.6%;
+       margin-left: 76.6%;
     }
 
     /*Блок NEWS*/
     .avatar {
         top: 17px;
-        left: -26px;
+        left: -10%;
     }
 
     .news__info_block {
-        width: 80%;
+        width: 84.5%;
         margin-top: 70px;
+	   padding-bottom: 29px;
     }
 
     .news__title {
         display: block;
-        font-size: 24px;
-        margin-left: -4px;
+        font-size: 24px;        
     }
+
     .news__title--description {
         display: block;
-        font-size: 24px;
-        margin-left: -3px;
+        font-size: 24px;        
         margin-top: -1px;
     }
 
@@ -65,22 +71,27 @@
     }
 
     .news__switch {
-        margin-top: 33px;
+        margin-top: 3px;
         margin-left: 16.5%;
     }
+
+.switch__bullet--theme--light {
+margin-right: 0px;
+}
+
 /*RECENT UPDATES*/
     .recent_updates__title {
         margin-bottom: 19px;
-        margin-left: 6.1%;
+        margin-left: 3%;
     }
     .hidden {
         visibility: hidden;
     }
 
     .recent_updates__post {
-        width: 67.5%;
-        margin-left: 6.1%;
-        padding-left: 20.75%;
+        	
+        margin-left: 4%;
+        padding-left: 21.5%;
         margin-bottom: 16px;
     }
 
@@ -89,12 +100,11 @@
     }
 
     .recent_updates__link {
-        margin-left: 64.5%;
-        margin-bottom: 86px;
+        margin-left: 65.5%;        
     }
 
     .banners {
-        width:75% ;
+        width: 80% ;
         margin-bottom: 16px;
         padding-top: 52px;
     }
@@ -122,6 +132,7 @@
     .banner6 {
         margin-top: -19px;
     }
+
     .footer__summary {
         margin: 39px 0 144px;
     }
