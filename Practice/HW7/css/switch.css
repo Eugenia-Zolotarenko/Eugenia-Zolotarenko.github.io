@@ -19,6 +19,7 @@
 
 .switch__bullet--theme--light {
     background: #ffffff;
+    border: 1px solid #e6e6e6   ;
 }
 
 .switch__center--theme--light {
