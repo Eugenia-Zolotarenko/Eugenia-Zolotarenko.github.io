@@ -75,42 +75,40 @@
     .avatar {
         position: absolute;
         top: 15px;
-        left: -12px;
+        left: -25px;
     }
 
-    .news__info_block {
-        width: 99%;
-        margin-top: 72px;
-        margin-bottom: 20px;
-        margin-left: 8%;
-        padding-left: 11%;
+    .pingbuller__info_block {
+        width: 89.5%;
+        margin: 72px 0  20px 7.5%;
+        padding-left: 8.5%;
+        padding-bottom: 36px;
+
     }
 
-    .news__title {
+    .pingbuller__title {
         display: inline-block;
         font-size: 30px;
-        margin-left: 2px;
         margin-top: 25px;
         letter-spacing: -0.001em;
     }
 
-    .news__title--description {
+    .pingbuller__title--description {
         display: inline-block;
         font-size: 30px;
         margin-left: 2px;
     }
 
-    .news__summary {
+    .pingbuller__summary {
         margin-top: 13px;
-	   margin-left: 1.8%;
+        padding-right: 7%;
         height: 166px;
-        padding-right: 17%;
         letter-spacing: -0.02em;
     }
 
-    .news__switch {
-        margin-top: 40px;
-        margin-left: 13%;
+    .pingbuller__switch {
+        margin-top: 22px;
+        margin-left: 42%;
         width: 28.125%;
     }
 
@@ -121,7 +119,7 @@
     }
 
     .recent_updates__post {        
-        margin-left: 16%;
+        margin-left: 16.5%;
         padding-left: 14%;
         margin-bottom: -4px;
     }
@@ -135,35 +133,42 @@
         margin-bottom: 86px;        
     }
 
-.banners {
-        width: 80% ;
-        margin-bottom: 16px;
-        padding-top: 52px;
+   /*BANNERS*/
+.banners__wrapper {
+        padding-bottom: 14px;
+        padding-top: 36px;
     }
 
     .banners__item {
-        margin-bottom: 61px;
+        margin-bottom: 26px;
     }
 
     .banner1 {
-        margin-left: 9.5%;
-        margin-right: 23%;
+        margin-left: 16.25%;
+        margin-right: 11.75%;
     }
 
     .banner3 {
-        margin-left: 12.5%;
-        margin-right: 27%;
-    }
+        margin-left: 11.65%;
 
+    }
+    .banner4 {
+        margin-left: 13%;
+        margin-right: 11.25%;
+
+    }
     .banner5 {
         margin-left: 1%;
-        margin-right: 23%;
-        margin-top: 2px;
+        margin-top: 21px;
     }
 
     .banner6 {
-        margin-top: -19px;
+
+        margin-left: 12.25%
     }
 
+    .footer__summary {
+        margin: 39px 0 144px;
+    }
 
 }

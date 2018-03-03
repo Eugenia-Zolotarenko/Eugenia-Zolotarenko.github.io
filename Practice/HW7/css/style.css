@@ -1,7 +1,12 @@
 .body_wrapper {
-    max-width: 480px;
+    /*max-width: 480px;*/
     margin: 0 auto;
     font-family: "LeagueGothic", Arial, sans-serif;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .title {
@@ -129,7 +134,7 @@
     margin-bottom: 20px;
     padding-left: 17.1875%;
     width: 82.8%;*/
-    background: url("../img/info_icons_1.png") no-repeat -98px -1px;
+    background: url("../img/info_icons_1.png") no-repeat -90px -1px;
 }	
 
 .info_block:nth-child(2) {
@@ -156,7 +161,7 @@
 
 /*Блок NEWS*/
 
-.news {
+.pingbuller {
     width: 100%;
     background: #f9f9f9;
     color: rgb(69, 69, 69);
@@ -169,7 +174,7 @@
     left: -26px;
 }*/
 
-.news__info_block {
+.pingbuller__info_block {
     box-sizing: border-box;
     position: relative;
     background: #ffffff;
@@ -181,7 +186,7 @@
 
 }
 
-/*.news__title {
+/*.pingbuller__title {
     margin-left: -4px;
     margin-top: 25px;
     letter-spacing: -0.001em;
@@ -189,7 +194,7 @@
 
 
 
-.news__summary {
+.pingbuller__summary {
     /*margin-top: 4px;
     height: 166px;
     padding-right: 17%;*/
@@ -249,11 +254,16 @@
 
 /*BANNERS*/
 
-/*.banners {
-    width:75% ;
-    margin-bottom: 16px;
-    padding-top: 52px;
-}*/
+.banners {
+    width: 100%;
+    border-style: solid;
+    border-width: 0 0 2px;
+    -moz-border-image: url(../img/banner_border_bottom.png) 0 0 2;
+    -webkit-border-image: url(../img/banner_border_bottom.png) 0 0 2;
+    -o-border-image: url(../img/banner_border_bottom.png) 0 0 2;
+    border-image: url(../img/banner_border_bottom.png) 0 0 2 fill;
+   /* border-image: url("../img/banner_border_bottom.png") 0 0 2 repeat;*/
+}
 
 .banners__item {
     float: left;

@@ -22,6 +22,11 @@
         margin-top: 130px;
         padding-left: 29.125%;
     }
+/*HEADER*/
+
+    .header__wrapper {
+
+    }
 
     /*ABOUT COMPANY*/
 
@@ -33,6 +38,7 @@
         margin-top: 70px;
         padding-left: 16.1875%;
         width: 82.8%;
+        background-position: -98px -1px;
     }
 
     .info_block:nth-child(3) {
@@ -49,40 +55,47 @@
         left: -10%;
     }
 
-    .news__info_block {
+    .pingbuller__info_block {
         width: 84.5%;
         margin-top: 70px;
-	   padding-bottom: 29px;
+        margin-left: 12%;
+        padding: 1px 0 29px 11.25%;
     }
 
-    .news__title {
+    .pingbuller__title {
         display: block;
         font-size: 24px;        
     }
 
-    .news__title--description {
+    .pingbuller__title--description {
         display: block;
         font-size: 24px;        
         margin-top: -1px;
     }
 
-    .news__summary {
+    .pingbuller__summary {
         margin-top: 4px;
+        margin-left: 1.8%;
+        padding-right: 11%;
     }
 
-    .news__switch {
-        margin-top: 3px;
-        margin-left: 16.5%;
+    .pingbuller__switch {
+        margin-top: 23px;
+        margin-left: 44%;
     }
 
 .switch__bullet--theme--light {
-margin-right: 0px;
+margin-right: 0;
 }
 
 /*RECENT UPDATES*/
+    .recent_updates {
+        padding-top: 47px;
+    }
+
     .recent_updates__title {
         margin-bottom: 19px;
-        margin-left: 3%;
+        margin-left: 3.5%;
     }
     .hidden {
         visibility: hidden;
@@ -103,8 +116,9 @@ margin-right: 0px;
         margin-left: 65.5%;        
     }
 
-    .banners {
-        width: 80% ;
+    /*BANNERS*/
+    .banners__wrapper {
+        width: 85% ;
         margin-bottom: 16px;
         padding-top: 52px;
     }
@@ -114,8 +128,8 @@ margin-right: 0px;
     }
 
     .banner1 {
-        margin-left: 9.5%;
-        margin-right: 23%;
+        margin-left: 21%;
+        margin-right: 21.5%;
     }
 
     .banner3 {
