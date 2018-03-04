@@ -1,10 +1,6 @@
-.menu {
-
-}
-
 .menu__item {
     margin-left: 1px;
-    width: 47px;
+    /*width: 47px;*/
 }
 
 
@@ -20,3 +16,25 @@
     text-transform: uppercase;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 }
+
+.menu--horisontal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu--horisontal .menu__item {
+    display: inline-block;
+
+
+}
+
+.menu--horisontal .menu__link {
+    border-bottom: none;
+    font-size: 20px;
+    text-align: left;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    letter-spacing: 0.025em;
+
+
+}
+

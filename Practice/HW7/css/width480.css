@@ -3,13 +3,7 @@
         visibility: hidden;
     }
 
-    .position-center {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo {
+     .logo {
         padding-top: 73px;
         margin-left: -1px;
         margin-bottom: 34px;
@@ -174,6 +168,7 @@
         margin-bottom: 62px;
         overflow: hidden;
     }
+
     .news_categories__post:last-child {
         margin-top: 65px;
         margin-bottom: 93px;
@@ -187,8 +182,19 @@
         height: 90px;
     }
 
+
+    /*FOOTER*/
+    .footer__menu {
+         margin-top: 42px;
+    }
+
+
+    .footer__nav {
+        width: 94%;
+    }
+
     .footer__summary {
-        margin: 39px 0 144px;
+        margin: 29px 0 144px;
     }
 
 }
