@@ -29,7 +29,7 @@
         display: initial;
     }
 
-    .slider__pict {
+    .slider__img {
        margin-top:-109px;
     }
 
@@ -165,6 +165,26 @@
     .banner6 {
 
         margin-left: 12.25%
+    }
+
+    /*NEWS CATEGORIES*/
+
+    .news_categories__post {
+        margin-left: 2.125%;
+        margin-bottom: 62px;
+        overflow: hidden;
+    }
+    .news_categories__post:last-child {
+        margin-top: 65px;
+        margin-bottom: 93px;
+    }
+
+    .news_categories__title {
+        margin-bottom: 9px;
+    }
+
+    .news_categories__summary {
+        height: 90px;
     }
 
     .footer__summary {
