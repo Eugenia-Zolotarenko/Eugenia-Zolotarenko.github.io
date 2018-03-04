@@ -11,8 +11,11 @@
         display: none;
     }
 
+    .menu__link {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    }
 
-   .slider {
+    .slider {
         padding-left: 22px;
         margin-bottom: 65px;
     }
@@ -23,8 +26,8 @@
     }
 /*HEADER*/
 
-    .header__wrapper {
-
+    .header__menu .menu__item {
+        width: 47px;
     }
 
     /*ABOUT COMPANY*/
