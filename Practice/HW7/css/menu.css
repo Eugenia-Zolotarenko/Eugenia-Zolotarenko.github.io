@@ -1,12 +1,6 @@
-
-.menu__item {
-
-}
-
-
 .menu__link {
+    box-sizing: border-box;
     display: block;
-    /*border-bottom: 2px solid #edbfff;*/
     font-size: 24px;
     font-family: "LeagueGothic", Arial, sans-serif;
     line-height: 1.405;
@@ -16,18 +10,19 @@
     text-transform: uppercase;
 }
 
-.menu__link--current {
-    border-bottom: 2px solid #edbfff;
-    padding: 0 11px 0 13px;
+.menu__item__hidden {
+    display: none;
 }
 
-.menu--vertical {
+.menu--vertical:hover {
     background: #36293e;
     border-radius: 10px;
     opacity: 0.902;
 }
 
-.menu--vertical .menu__item{
+.menu--vertical:hover .menu__item  {
+    display: block;
+    box-sizing: border-box;
     width: 99%;
     height: 48px;
     border-style: solid;
@@ -39,10 +34,19 @@
 }
 
 
+.menu--vertical .menu__item:last-child {
+    border: none;
+}
+
 .menu--vertical .menu__link:hover {
-    padding: 0;
-    width: 99%;
     border-bottom: 2px solid #edbfff;
+}
+
+.menu--vertical .menu__link--current {
+    border-bottom: 2px solid #edbfff;
+    padding: 9px 11px 0 13px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    background: none;
 }
 
 .menu--vertical .menu__item:nth-child(2) {
@@ -65,35 +69,24 @@
     height: 41px;
 }
 
-
-
-
-.menu--vertical .menu__item:last-child {
-    border: none;
-}
-
-.menu--vertical .menu__link {
-    margin-top: 9px;
-}
-
 .menu--vertical .menu__item:nth-child(2) .menu__link {
-    margin-top: 1px;
+    padding-top: 1px;
 }
 
 .menu--vertical .menu__item:nth-child(3) .menu__link {
-    margin-top: 4px;
+    padding-top: 4px;
 }
 
 .menu--vertical .menu__item:nth-child(4) .menu__link {
-    margin-top: 2px;
+    padding-top: 2px;
 }
 
 .menu--vertical .menu__item:nth-child(5) .menu__link {
-    margin-top: 3px;
+    padding-top: 3px;
 }
 
 .menu--vertical .menu__item:nth-child(6) .menu__link {
-    margin-top: 1px;
+    padding-top: 1px;
 }
 
 .menu--horizontal {

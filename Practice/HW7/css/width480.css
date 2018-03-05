@@ -2,20 +2,16 @@
     .hidden-m {
         visibility: hidden;
     }
-    .header__nav {
-
-    }
-
+.hidden-480 {
+    display: none;
+}
+/*HEADER*/
     .header__menu {
         position: absolute;
         top: 131px;
         width: 53.135%;
         left: 23.5%;
     }
-
-    /*.menu--link {
-        display: none;
-    }*/
 
      .logo {
         padding-top: 73px;
@@ -52,7 +48,6 @@
         margin-left: -1px;
     }
 
-
     /*ABOUT COMPANY*/
 
     .about_company {
@@ -73,7 +68,6 @@
     .info_block:nth-child(3) {
         margin-top: 6px;
     }
-
 
     .about_company__summary {
         margin-top: 3px;
@@ -97,7 +91,6 @@
         margin: 72px 0  20px 7.5%;
         padding-left: 8.5%;
         padding-bottom: 36px;
-
     }
 
     .pingbuller__title {
@@ -148,7 +141,7 @@
     }
 
    /*BANNERS*/
-.banners__wrapper {
+    .banners__wrapper {
         padding-bottom: 14px;
         padding-top: 36px;
     }
@@ -164,20 +157,19 @@
 
     .banner3 {
         margin-left: 11.65%;
-
     }
+
     .banner4 {
         margin-left: 13%;
         margin-right: 11.25%;
-
     }
+
     .banner5 {
         margin-left: 1%;
         margin-top: 21px;
     }
 
     .banner6 {
-
         margin-left: 12.25%
     }
 
@@ -202,12 +194,10 @@
         height: 90px;
     }
 
-
     /*FOOTER*/
     .footer__menu {
          margin-top: 41px;
     }
-
 
     .footer__nav {
         width: 94%;
@@ -216,5 +206,4 @@
     .footer__summary {
         margin: 30px 0 144px;
     }
-
 }

@@ -1,18 +1,13 @@
 @media (max-width: 320px) {
 
-   .overlay {
-        display: none;
-    }
-    .slider__img {
+    .hidden {
         display: none;
     }
 
-.hidden {
-        display: none;
-    }
 
-    .menu__link {
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    /*HEADER*/
+    .overlay {
+        display: none;
     }
 
     .slider {
@@ -24,13 +19,8 @@
         margin-top: 130px;
         padding-left: 29.125%;
     }
-/*HEADER*/
 
-    .header__menu .menu__item {
-        width: 47px;
-    }
-
-    /*ABOUT COMPANY*/
+   /*ABOUT COMPANY*/
 
     .about_company {
         padding-bottom: 42px;
@@ -51,7 +41,7 @@
        margin-left: 76.6%;
     }
 
-    /*Блок NEWS*/
+    /*Блок pingbuller*/
     .avatar {
         top: 17px;
         left: -10%;
@@ -86,9 +76,9 @@
         margin-left: 44%;
     }
 
-.switch__bullet--theme--light {
-margin-right: 0;
-}
+    .switch__bullet--theme--light {
+    margin-right: 0;
+    }
 
 /*RECENT UPDATES*/
     .recent_updates {
@@ -131,22 +121,34 @@ margin-right: 0;
 
     .banner1 {
         margin-left: 21%;
-        margin-right: 21.5%;
+        margin-right: 0;
+    }
+
+    .banner2 {
+        margin-left: 21.75%;
+        margin-right: 0;
     }
 
     .banner3 {
-        margin-left: 12.5%;
-        margin-right: 27%;
+        margin-left: 24.5%;
     }
 
+    .banner4 {
+        margin-left: 25.5%;
+        margin-right: 0;
+    }
+
+
+
     .banner5 {
-        margin-left: 1%;
-        margin-right: 23%;
+        margin-left: 13.5%;
+
         margin-top: 2px;
     }
 
     .banner6 {
         margin-top: -19px;
+        margin-left: ;
     }
 
     .footer__summary {
