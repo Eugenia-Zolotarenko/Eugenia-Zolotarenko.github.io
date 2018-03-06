@@ -1,6 +1,7 @@
 .menu__link {
-    box-sizing: border-box;
     display: block;
+    box-sizing: border-box;
+    border-bottom: none;
     font-size: 24px;
     font-family: "LeagueGothic", Arial, sans-serif;
     line-height: 1.405;
@@ -8,101 +9,14 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 
-.menu__item__hidden {
-    display: none;
-}
-
-.menu--vertical:hover {
-    background: #36293e;
-    border-radius: 10px;
-    opacity: 0.902;
-}
-
-.menu--vertical:hover .menu__item  {
-    display: block;
-    box-sizing: border-box;
-    width: 99%;
-    height: 48px;
-    border-style: solid;
-    border-width: 0 0 2px;
-    -moz-border-image: url(../img/header_menu_border_bottom.png) 0 0 2;
-    -webkit-border-image: url(../img/header_menu_border_bottom.png) 0 0 2;
-    -o-border-image: url(../img/header_menu_border_bottom.png) 0 0 2;
-    border-image: url(../img/header_menu_border_bottom.png) 0 0 2 fill;
-}
-
-
-.menu--vertical .menu__item:last-child {
-    border: none;
-}
-
-.menu--vertical .menu__link:hover {
-    border-bottom: 2px solid #edbfff;
-}
-
-.menu--vertical .menu__link--current {
-    border-bottom: 2px solid #edbfff;
-    padding: 9px 11px 0 13px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
-    background: none;
-}
-
-.menu--vertical .menu__item:nth-child(2) {
-    height: 37px;
-}
-
-.menu--vertical .menu__item:nth-child(3) {
-    height: 42px;
-}
-
-.menu--vertical .menu__item:nth-child(4) {
-    height: 39px;
-}
-
-.menu--vertical .menu__item:nth-child(5) {
-    height: 42px;
-}
-
-.menu--vertical .menu__item:nth-child(6) {
-    height: 41px;
-}
-
-.menu--vertical .menu__item:nth-child(2) .menu__link {
-    padding-top: 1px;
-}
-
-.menu--vertical .menu__item:nth-child(3) .menu__link {
-    padding-top: 4px;
-}
-
-.menu--vertical .menu__item:nth-child(4) .menu__link {
-    padding-top: 2px;
-}
-
-.menu--vertical .menu__item:nth-child(5) .menu__link {
-    padding-top: 3px;
-}
-
-.menu--vertical .menu__item:nth-child(6) .menu__link {
-    padding-top: 1px;
-}
-
-.menu--horizontal {
+.menu {
     display: flex;
     justify-content: space-between;
 }
-
-.menu--horizontal .menu__item {
-    display: inline-block;
+.menu__link-small {
+   font-size: 20px;
+   letter-spacing: -0.01em;
 }
-
-.menu--horizontal .menu__link {
-    border-bottom: none;
-    font-size: 20px;
-    text-align: left;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
-    letter-spacing: -0.01em;
-}
-

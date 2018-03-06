@@ -5,7 +5,14 @@
 .hidden-480 {
     display: none;
 }
+
 /*HEADER*/
+    .logo {
+        padding-top: 73px;
+        margin-left: -1px;
+        margin-bottom: 34px;
+    }
+
     .header__menu {
         position: absolute;
         top: 131px;
@@ -13,10 +20,87 @@
         left: 23.5%;
     }
 
-     .logo {
-        padding-top: 73px;
-        margin-left: -1px;
-        margin-bottom: 34px;
+    .menu__item__hidden {
+        display: none;
+    }
+
+    .menu--vertical {
+        display: initial;
+    }
+
+    .menu--vertical:hover {
+        background: #36293e;
+        border-radius: 10px;
+        opacity: 0.902;
+    }
+
+    .menu--vertical:hover .menu__item {
+        display: block;
+        box-sizing: border-box;
+        width: 99%;
+        height: 48px;
+        border-style: solid;
+        border-width: 0 0 2px;
+        -moz-border-image: url(../img/header_menu_border_bottom.png) 0 0 2;
+        -webkit-border-image: url(../img/header_menu_border_bottom.png) 0 0 2;
+        -o-border-image: url(../img/header_menu_border_bottom.png) 0 0 2;
+        border-image: url(../img/header_menu_border_bottom.png) 0 0 2 fill;
+    }
+
+    .menu--vertical .menu__item:last-child {
+        border: none;
+    }
+
+    .menu--vertical .menu__link:hover {
+        border-bottom: 2px solid #edbfff;
+    }
+
+    .menu--vertical .menu__link--current {
+        display: inline-block;
+        margin-left: 40%;
+        border-bottom: 2px solid #edbfff;
+        padding: 9px 7px 0 6px;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    }
+
+    .menu--vertical .menu__item:nth-child(2) {
+        height: 37px;
+    }
+
+    .menu--vertical .menu__item:nth-child(3) {
+        height: 42px;
+    }
+
+    .menu--vertical .menu__item:nth-child(4) {
+        height: 39px;
+    }
+
+    .menu--vertical .menu__item:nth-child(5) {
+        height: 42px;
+    }
+
+    .menu--vertical .menu__item:nth-child(6) {
+        height: 41px;
+    }
+
+    .menu--vertical .menu__item:nth-child(2) .menu__link {
+        padding-top: 1px;
+    }
+
+    .menu--vertical .menu__item:nth-child(3) .menu__link {
+        padding-top: 4px;
+    }
+
+    .menu--vertical .menu__item:nth-child(4) .menu__link {
+        padding-top: 2px;
+    }
+
+    .menu--vertical .menu__item:nth-child(5) .menu__link {
+        padding-top: 3px;
+    }
+
+    .menu--vertical .menu__item:nth-child(6) .menu__link {
+        padding-top: 1px;
     }
 
     .slider {
