@@ -96,7 +96,7 @@
     opacity: 0.2;
     left: 0;
     /*top: 203px;*/
-    width: 2400px;
+    width: 100%;
 
 }
 
@@ -152,10 +152,6 @@
 
 .about_company__summary {
      overflow: hidden;
-}
-
-.about_company__link {
-      letter-spacing: -0.002em;
 }
 
 /*Блок NEWS*/

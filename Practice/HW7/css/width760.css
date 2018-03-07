@@ -21,7 +21,7 @@
 
     .slider {
         margin-top: 178px;
-        padding-bottom: 175px;
+        padding-bottom: 95px;
     }
 
     .slider__text {
@@ -62,5 +62,50 @@
         margin-top: 78px;
         padding-left: 71%;
     }
+
+    .switch__bullet {
+        margin-right: 1.2%;
+    }
+
+    .about_company {
+        padding-top: 77px;
+        padding-bottom: 64px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .info_block {
+        /*height: 200px;*/
+        overflow: hidden;
+        width: 30%;
+        padding-left: 8%;
+        background-position: -86px -1px;
+    }
+
+    .info_block:nth-child(2) {
+        padding-left: 8.5%;
+        background-position: -44px -30px;
+    }
+
+    .info_block:nth-child(3) {
+        padding-left: 10%;
+        background-position: -11px -55px;
+    }
+
+    .about_company__summary {
+        height: 148px;
+        margin-top: 3px;
+    }
+
+    .about_company__link {
+        margin-top: 2px;
+        margin-left: 56%;
+    }
+
+    .info_block:nth-child(3)  .about_company__link {
+        margin-left: 60%;
+    }
+
 
 }
