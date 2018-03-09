@@ -14,8 +14,9 @@
 
 /*HEADER*/
     .header__logo {
-        margin-left: -1px;
+        margin-left: -6px;
         margin-bottom: 34px;
+        word-spacing: -5px;
     }
     .overlay {
         top: 203px;
@@ -26,7 +27,7 @@
         position: absolute;
         top: 131px;
         width: 53.135%;
-        left: 23.5%;
+        left: 22%;
     }
 
     .menu__item__hidden {
@@ -114,7 +115,7 @@
 
     .slider {
         margin-top: 127px;
-        margin-bottom: 57px;
+        margin-bottom: -40px;
     }
 
     .slider__switch {
@@ -135,17 +136,20 @@
         margin-top: 34px;
         float: left;
         margin-left: 8px;
-        margin-right: 17px;
+        margin-right: 15px;
         width: auto;
     }
 
     .slider__name {
+        margin-top: 2px;
         margin-left: -1px;
+        font-size: 36px;
     }
 
     .slider__description {
-        margin-top: 7px;
+        margin-top: 8px;
         letter-spacing: -0.03em;
+        font-size: 20px;
     }
 
     /*ABOUT COMPANY*/
@@ -155,18 +159,22 @@
     }
 
     .info_block {
-        margin-top: 77px;
         margin-bottom: 20px;
         padding-left: 12%;
         width: 92%;
+        background-position: -92px -1px;
     }
 
     .info_block:nth-child(2) {
         margin-top: 2px;
+        padding-left: 12%;
+        background-position: -51px -30px;
     }
 
     .info_block:nth-child(3) {
         margin-top: 6px;
+        background-position: -9px -55px;
+        padding-left: 12%;
     }
 
     .about_company__summary {
@@ -179,7 +187,20 @@
         margin-left: 85%;
     }
 
+    .info_block:nth-child(3) .about_company__link {
+        margin-left: 85%;
+    }
+
+    .news_wrapper {s
+        flex-direction: column;
+        align-items: center;
+    }
+
     /*Блок pingbuller*/
+    .pingbuller {
+        margin: 0;
+    }
+
     .avatar {
         top: 15px;
         left: -25px;
@@ -190,6 +211,7 @@
         margin: 72px 0  20px 7.5%;
         padding-left: 8.5%;
         padding-bottom: 36px;
+        padding-top: 0;
     }
 
     .pingbuller__title {
@@ -219,6 +241,12 @@
     }
 
     /*RECENT UPDATES*/
+
+    .recent_updates {
+        margin-left: -0.5%;
+        padding-top: 48px;
+    }
+
     .recent_updates__title {
         margin-bottom: 18px;
         margin-left: 16%;
@@ -236,7 +264,7 @@
 
     .recent_updates__link {
         margin-left: 70%;
-        margin-bottom: 86px;        
+        margin-bottom: 16px;
     }
 
    /*BANNERS*/
