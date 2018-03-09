@@ -9,6 +9,7 @@
 }
 .hidden-all {
     visibility: hidden;
+    position: absolute;
 }
 
 .position-center {
