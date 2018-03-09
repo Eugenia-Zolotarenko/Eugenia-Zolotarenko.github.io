@@ -169,6 +169,21 @@
     background: #ffffff;
 }
 
+.avatar {
+    position: absolute;
+    top: 17px;
+    left: -27px;
+}
+
+
+.pingbuller__title {
+    font-size: 30px;
+}
+
+.pingbuller__title--description {
+    font-size: 30px;
+}
+
 .pingbuller__summary {
     overflow: hidden;
     letter-spacing: -0.01em;
@@ -176,7 +191,6 @@
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
-
 }
 
 /*RECENT UODATES*/
