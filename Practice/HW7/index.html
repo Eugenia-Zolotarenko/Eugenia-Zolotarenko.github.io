@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,800" rel="stylesheet">
-    <link rel="stylesheet" href="css/switch.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/width760.css">
     <link rel="stylesheet" href="css/width480.css">
@@ -21,52 +20,59 @@
     <div class="body_wrapper position-center">
         <!--HEADER-->
 
-        <header class="header position-center">
+        <header class="header">
             <!--LOGO-->
-            <div class="logo header__logo">PINGBULL<span class="logo--end"> ER</span></div>
+            <div class="header__wrapper">
+                <div class="logo header__logo">PINGBULL<span class="logo--end"> ER</span></div>
 
             <!--Header MENU-->
-            <nav >
-                <ul class="menu menu--vertical header__menu">
-                    <li class="menu__item">
-                        <a class="menu__link menu__link--current" href="#">HOME</a>
-                    </li>
-                    <li class="menu__item menu__item__hidden">
-                        <a class="menu__link" href="#">about</a>
-                    </li>
-                    <li class="menu__item  menu__item__hidden">
-                        <a class="menu__link" href="#">blog</a>
-                    </li>
-                    <li class="menu__item  menu__item__hidden">
-                        <a class="menu__link" href="#">products</a>
-                    </li>
-                    <li class="menu__item menu__item__hidden">
-                        <a class="menu__link" href="">lorem ipsum</a>
-                    </li>
-                    <li class="menu__item menu__item__hidden">
-                        <a class="menu__link" href="">dolor sit amet</a>
-                    </li>
-                </ul>
-            </nav>
+                <nav >
+                    <ul class="menu menu--vertical header__menu">
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--current" href="#">HOME</a>
+                        </li>
+                        <li class="menu__item menu__item__hidden">
+                            <a class="menu__link" href="#">about</a>
+                        </li>
+                        <li class="menu__item  menu__item__hidden">
+                            <a class="menu__link" href="#">blog</a>
+                        </li>
+                        <li class="menu__item  menu__item__hidden">
+                            <a class="menu__link" href="#">products</a>
+                        </li>
+                        <li class="menu__item menu__item__hidden">
+                            <a class="menu__link" href="">lorem ipsum</a>
+                        </li>
+                        <li class="menu__item menu__item__hidden">
+                            <a class="menu__link" href="">dolor sit amet</a>
+                        </li>
+                    </ul>
+                </nav>
 
-            <div class="overlay"></div>
-            <div class="slider">
-                <div class="slider__text">
-                    <div class="slider__name">lorem ipsum dolor</div>
-                    <div class="slider__description">it will make all of your dreams come</div>
-                    <div class="summary slider__summary hidden hidden-480">Semper sollicitudin gravida eget, vestibulum sit amet sapien.
-                        Nunc dignissim tincidunt est, et auctor turpis ornare a.
-                        Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper.
+                <div class="overlay"></div>
+
+                <div class="slider">
+                    <div class="slider__wrapper">
+                        <div class="slider__text">
+                            <div class="slider__name">lorem ipsum dolor</div>
+                            <div class="slider__description">it will make all of your dreams come<span class=""> true</span></div>
+                            <div class="summary slider__summary hidden hidden-480">Semper sollicitudin gravida eget,
+                                vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a.
+                                Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper.
+                                In odio nunc, imperdiet eget aliquam quis, euismod id lectus.
+                                Nulla interdum arcu et felis aliquam a tempus lectus lobortis.
+                            </div>
+                        </div>
+                        <img src="img/header__slider_iphone.png" class="slider__img hidden">
                     </div>
-                </div>
-                <img src="img/header__slider_iphone.png" class="slider__img hidden">
 
-                <ul class="switch slider__switch">
-                    <li class="switch__bullet"></li>
-                    <li class="switch__bullet"><div class="switch__center"></div></li>
-                    <li class="switch__bullet"></li>
-                    <li class="switch__bullet"></li>
-                </ul>
+                    <ul class="switch slider__switch">
+                        <li class="switch__bullet"></li>
+                        <li class="switch__bullet"><div class="switch__center"></div></li>
+                        <li class="switch__bullet"></li>
+                        <li class="switch__bullet"></li>
+                    </ul>
+                </div>
             </div>
 
         </header>
