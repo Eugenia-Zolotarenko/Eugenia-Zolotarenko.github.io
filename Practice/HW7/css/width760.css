@@ -69,6 +69,7 @@
         margin-right: 1.2%;
     }
 
+    /*ABOUT COMPANY*/
     .about_company {
         padding-top: 77px;
         padding-bottom: 64px;
@@ -78,7 +79,6 @@
     }
 
     .info_block {
-        overflow: hidden;
         width: 30%;
         padding-left: 8%;
         background-position: -86px -1px;

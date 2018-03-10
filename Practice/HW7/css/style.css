@@ -26,7 +26,7 @@ body {
 }
 
 .title {
-    font: 24px "LeagueGothic", Arial, sans-serif;
+    font: 30px "LeagueGothic", Arial, sans-serif;
     line-height: 1;
     letter-spacing: -0.0015em;
     text-align: left;
@@ -169,7 +169,7 @@ body {
 .slider__img {
     width: 28.25%;
     margin-top: -24px;
-    margin-left: 115px;
+    margin-left: 113px;
 }
 
 .slider__switch {
@@ -208,30 +208,60 @@ body {
 
 
 /*ABOUT COMPANY  block*/
-.about_company{
+.about_company__wrapper {
+    display: flex;
+    justify-content: center;
     width: 100%;
     border-top: 1px solid #33253a;
     border-bottom: 1px solid #0d151b;
     background: linear-gradient( #745083, #322539);
+}
+
+.about_company{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 77px;
+    padding-bottom: 65px;
+    max-width: 960px;
     color: rgb(255, 255, 255);
     text-shadow: 0 1px 0 rgba(15, 21, 24, 0.004);
 }
 
 .info_block {
+    width: 30%;
+    padding-left: 5.6%;
     box-sizing: border-box;
-    background: url("../img/info_icons_1.png") no-repeat -90px -1px;
+    background: url("../img/info_icons_1.png") no-repeat -84px 2px;
 }	
 
 .info_block:nth-child(2) {
-    background: url("../img/info_icons_1.png") no-repeat -55px -30px;
+    padding-left: 6.6%;
+    background: url("../img/info_icons_1.png") no-repeat -4px -80px;
 }
 
 .info_block:nth-child(3) {
-   background: url("../img/info_icons_1.png") no-repeat -14px -55px;
+    padding-left: 7.4%;
+    background: url("../img/info_icons_1.png") no-repeat -43px -41px;
 }
 
 .about_company__summary {
-     overflow: hidden;
+    overflow: hidden;
+    height: 125px;
+    margin-top: 7px;
+}
+
+
+.about_company__link {
+    margin-top: 13px;
+    margin-left: 70%;
+}
+
+.info_block:nth-child(2)  .about_company__link {
+    margin-left: 74.5%;
+}
+
+.info_block:nth-child(3)  .about_company__link {
+    margin-left: 76.5%;
 }
 
 .news_wrapper {
