@@ -20,6 +20,11 @@ body {
     display: table;
     clear: both;
 }
+
+.hidden-960 {
+    display: none;
+}
+
 .hidden-all {
     visibility: hidden;
     position: absolute;
@@ -392,52 +397,86 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 24px;
+    padding-bottom: 27px;
 }
 
-.banners a {
+
+.banners__item {
     display: block;
 }
-
-/*.banners__item {
-    float: left;
-}
-
-.banner1 {
-    margin-left: -38.75%;
-
-}
-
-.banner3 {
-    margin-left: 7.25%;
-}
-
-.banner4 {
-    margin-left: 8.5%;
-}
-
-.banner5 {
-    margin-left: 8%;
-    margin-top: 21px;
-}
-
-.banner6 {
-    margin-left: 7.25%;
-    margin-top: 2px;
-}*/
 
 /*NEWS CATEGORIES*/
 
 .news_categories {
-    padding-top: 63px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 96px;
     background: #ececec;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.004);
     color: rgb(69, 69, 69);
 }
 
-.news_categories__summary {
+.news_categories__wrapper {
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news_categories__post {
+    margin-left: 1.25%;
+    margin-bottom: 95px;
+    width: 27.5%;
+}
+
+.news_categories__post:last-child {
+    display: none;
+}
+
+.news_categories__post:first-child {
+    display: block;
+}
+
+.news_categories__title--large {
+    margin-top: -18px;
+    margin-left: -23px;
+    font-size: 48px;
+}
+
+.news_categories__title--light {
+    color: rgb(185, 185, 185);
+}
+
+.news_categories__title--description{
+    margin-top: 14px;
+    margin-left: -25px;
+    font-size: 16px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: rgb(197, 197, 197);
+}
+
+.news_categories__title {
+    margin-top: -16px;
+    margin-left: -20px;
+}
+
+.news_categories__summary--960 {
+    margin-top: 10px;
+    margin-left: -24px;
+    overflow: hidden;
+    height: 120px;
     color: rgb(120, 120, 120);
 }
 
+.news_categories__summary {
+    margin-top: 8px;
+    margin-left: -20px;
+    overflow: hidden;
+    height: 165px;
+    color: rgb(120, 120, 120);
+}
 
 /*FOOTER*/
 
