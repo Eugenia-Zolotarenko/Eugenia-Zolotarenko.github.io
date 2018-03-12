@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,800" rel="stylesheet">
-    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/width760.css">
     <link rel="stylesheet" href="css/width480.css">
     <link rel="stylesheet" href="css/width320.css">
@@ -17,13 +16,13 @@
 </head>
 
 <body>
-    <div class="body_wrapper position-center">
+    <div class="body_wrapper position-center--vertical">
         <!--HEADER-->
 
-        <header class="header">
+        <header class="header__wrapper position-center--horizontal">
             <!--LOGO-->
-            <div class="header__wrapper">
-                <div class="logo header__logo">PINGBULL<span class="logo--end">ER</span></div>
+            <div class="header">
+                <div class="header__logo"><a href="http://pingbull.se/" target="_blank"><img src="img/header_logo.png"></a></div>
 
             <!--Header MENU-->
                 <nav >
@@ -48,15 +47,14 @@
                         </li>
                     </ul>
                 </nav>
-
                 <div class="overlay"></div>
-
                 <div class="slider">
                     <div class="slider__wrapper">
                         <div class="slider__text">
                             <div class="slider__name">lorem ipsum dolor</div>
                             <div class="slider__description">it will make all of your dreams come<span class=""> true</span></div>
-                            <div class="summary slider__summary hidden hidden-480">Semper sollicitudin gravida eget,
+                            <div class="summary slider__summary hidden hidden-480">
+                                Semper sollicitudin gravida eget,
                                 vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a.
                                 Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper.
                                 In odio nunc, imperdiet eget aliquam quis, euismod id lectus.
@@ -65,7 +63,6 @@
                         </div>
                         <img src="img/header__slider_iphone.png" class="slider__img hidden">
                     </div>
-
                     <ul class="switch slider__switch">
                         <li class="switch__bullet"></li>
                         <li class="switch__bullet"><div class="switch__center"></div></li>
@@ -74,12 +71,11 @@
                     </ul>
                 </div>
             </div>
-
         </header>
 
         <!--ABOUT COMPANY-->
-        <div class="about_company__wrapper">
-            <section class="about_company position-center">
+        <div class="about_company__wrapper position-center--horizontal">
+            <section class="about_company position-center--vertical">
                 <div class="info_block">
                     <div class="title">about our company</div>
                     <div class="summary about_company__summary">Nunc turpis neque, feugiat eget eleifend et, lacinia non
@@ -95,7 +91,6 @@
                     </div>
                     <a class="link about_company__link" href="">read more</a>
                 </div>
-
                 <div class="info_block">
                     <div class="title">about our company</div>
                     <div class="summary about_company__summary">Nunc turpis neque, feugiat eget eleifend et, lacinia non
@@ -111,7 +106,6 @@
                     </div>
                     <a class="link about_company__link" href="">read more</a>
                 </div>
-
                 <div class="info_block">
                     <div class="title">about our company</div>
                     <div class="summary about_company__summary">Nunc turpis neque, feugiat eget eleifend et, lacinia non
@@ -130,14 +124,16 @@
         </div>
 
         <!--PINGBULLER -->
-        <div class="news">
-        <div class="news_wrapper">
+        <div class="news__wrapper position-center--horizontal">
+            <div class="news">
             <section class="pingbuller">
                 <div class="pingbuller__info_block">
                     <img src="img/news_avatar.png" class="avatar" alt="avatar">
                     <div class="title pingbuller__title">PINGBULLER</div>
                     <div class="title title--description pingbuller__title--description">starts here</div>
-                    <div class="summary pingbuller__summary">“Nunc turpis neque, feugiat eget eleifend et,
+                    <div class="summary pingbuller__summary">
+                        <div class="pingbuller__triangle"></div>
+                        “Nunc turpis neque, feugiat eget eleifend et,
                         lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis
                         auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in,
                         venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”
@@ -148,7 +144,6 @@
                         Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
                     </div>
                 </div>
-
                 <ul class="switch pingbuller__switch">
                     <li class="switch__bullet switch__bullet--theme--light"></li>
                     <li class="switch__bullet switch__bullet--theme--light">
@@ -161,70 +156,58 @@
 
             <!--RECENT UPDATES-->
             <section class="recent_updates">
-            <h2 class="title title--size--l recent_updates__title">recent updates</h2>
-            <div class="recent_updates__post">
-                <div class="summary summary--bold">Nunc turpis neque<span class="hidden"> feugiat eget</span></div>
-                <div class="summary">Posted by Admin on March 13
-                    <span class="hidden"> 2012<span class="hidden-m"> in Recent News</span></span>
+                <h2 class="title title--size--l recent_updates__title">recent updates</h2>
+                <div class="recent_updates__post">
+                    <div class="summary summary--bold">Nunc turpis neque<span class="hidden"> feugiat eget</span></div>
+                    <div class="summary">Posted by Admin on March 13
+                        <span class="hidden"> 2012<span class="hidden-m"> in Recent News</span></span>
+                    </div>
                 </div>
-            </div>
-
-            <div class="recent_updates__post">
-                <div class="summary summary--bold">Nunc turpis neque<span class="hidden"> feugiat eget</span></div>
-                <div class="summary">Posted by Admin on March 13
-                    <span class="hidden"> 2012<span class="hidden-m"> in Category</span></span>
+                <div class="recent_updates__post">
+                    <div class="summary summary--bold">Nunc turpis neque<span class="hidden"> feugiat eget</span></div>
+                    <div class="summary">Posted by Admin on March 13
+                        <span class="hidden"> 2012<span class="hidden-m"> in Category</span></span>
+                    </div>
                 </div>
-            </div>
-
-            <div class="recent_updates__post">
-                <div class="summary summary--bold">Nunc turpis neque<span class="hidden"> feugiat eget</span></div>
-                <div class="summary">Posted by Admin on March 13
-                    <span class="hidden"> 2012<span class="hidden-m"> in Blog Updates</span></span>
+                <div class="recent_updates__post">
+                    <div class="summary summary--bold">Nunc turpis neque<span class="hidden"> feugiat eget</span></div>
+                    <div class="summary">Posted by Admin on March 13
+                        <span class="hidden"> 2012<span class="hidden-m"> in Blog Updates</span></span>
+                    </div>
                 </div>
+                <a class="link recent_updates__link" href="">more blog posts</a>
+             </section>
             </div>
-            <a class="link recent_updates__link" href="">more blog posts</a>
-
-        </section>
-        </div>
         </div>
 
         <!--BANNERS-->
-        <section class="banners">
-            <div class="banners__width">
-            <div class="banners__wrapper">
-
+        <section class="banners__wrapper position-center--horizontal">
+            <div class="banners">
                 <a href="https://marathon.ua/billabong/" target="_blank" class="banners__item">
                     <img src="img/banner1.png" alt="billabong" class="banner1">
                 </a>
-
                 <a href="https://www.gucci.com/int/en/" target="_blank" class="banners__item">
                     <img src="img/banner2.png" alt="gucci" class="banner2">
                 </a>
-
                 <a href="#" class="banners__item">
                     <img src="img/banner3.png" alt="" class="banner3">
                 </a>
-
                 <a href="http://www.awsmbrand.com/" target="_blank" class="banners__item">
                     <img src="img/banner4.png" alt="awsm" class="banner4">
                 </a>
-
                 <a href="https://bigl.ua/sc-14515-rvca" target="_blank" class="banners__item">
                     <img src="img/banner5.png" alt="rvca" class="banner5">
                 </a>
-
                 <a href="https://www.amazon.com/VonZipper/pages/2603402011" target="_blank" class="banners__item">
                     <img src="img/banner6.png" alt="VonZipper" class="banner6">
                 </a>
             </div>
-            </div>
         </section>
 
         <!--NEWS CATEGORIES-->
-        <section class="news_categories hidden">
+        <section class="news_categories__wrapper position-center--horizontal hidden">
             <h2 class="hidden-all">News</h2>
-
-            <div class="news_categories__wrapper">
+            <div class="news_categories">
                 <div class="news_categories__post"> <!--the 1st block is displaied only for 960px-->
                     <div class="title news_categories__title--large">PIGBULL<span class="news_categories__title--light">ER</span></div>
                     <div class="news_categories__title--description">Copyright 2013, Pingbull AS</div>
@@ -238,7 +221,6 @@
                         aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
                     </div>
                 </div>
-
                 <div class="news_categories__post">
                     <div class="title news_categories__title hidden-960">news categories</div>
                     <div class="title news_categories__title">recent comments</div> <!--displaied only for 960px-->
@@ -252,7 +234,6 @@
                         aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
                     </div>
                 </div>
-
                 <div class="news_categories__post">
                     <div class="title news_categories__title">news categories</div>
                     <div class="summary news_categories__summary">Nunc turpis neque, feugiat eget eleifend et, lacinia
@@ -265,7 +246,6 @@
                         aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
                     </div>
                 </div>
-
                 <div class="news_categories__post"> <!--the last block is not displaied for 960px-->
                     <div class="title news_categories__title">news categories</div>
                     <div class="summary news_categories__summary">Nunc turpis neque, feugiat eget eleifend et, lacinia
@@ -282,9 +262,8 @@
         </section>
 
         <!--FOOTER-->
-        <footer class="footer position-center">
-            <div class="footer__wrapper">
-
+        <footer class="footer__wrapper position-center--horizontal">
+            <div class="footer">
                 <nav class="hidden footer__nav">
                     <ul class="menu footer__menu">
                         <li class="menu__item"><a class="menu__link menu__link-small" href="#">HOME</a></li>
@@ -293,10 +272,8 @@
                         <li class="menu__item"><a class="menu__link menu__link-small" href="#">products</a></li>
                         <li class="menu__item"><a class="menu__link menu__link-small" href="">lorem ipsum</a></li>
                         <li class="menu__item"><a class="menu__link menu__link-small" href="">dolor sit amet</a>
-
                     </ul>
                 </nav>
-
                 <div class="summary summary--size--s footer__summary">Designed by
                     <span class="summary--bold"> Pingbull AS</span>
                 </div>

@@ -2,27 +2,15 @@ body {
     font-family: "LeagueGothic", Arial, sans-serif;
 }
 
-.position-center {
+.position-center--vertical {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.body_wrapper,
-.header
-{   display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.hidden-960 {
-    display: none;
+.position-center--horizontal {
+   display: flex;
+   justify-content: center;
 }
 
 .hidden-all {
@@ -30,8 +18,39 @@ body {
     position: absolute;
 }
 
+.hidden-960 {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__link {
+    display: block;
+    box-sizing: border-box;
+    border-bottom: none;
+    font-size: 24px;
+    line-height: 1.405;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.menu__link-small {
+    font-size: 20px;
+    letter-spacing: -0.01em;
+}
+
+.menu__link--current {
+    border-bottom: 2px solid #edbfff;
+}
+
 .title {
-    font: 30px "LeagueGothic", Arial, sans-serif;
+    font-size: 30px;
     line-height: 1;
     letter-spacing: -0.0015em;
     text-align: left;
@@ -68,7 +87,7 @@ body {
 .link {
     display: inline-block;
     white-space: nowrap;
-    font: 18px "LeagueGothic", Arial, sans-serif;
+    font-size: 18px;
     color: inherit;
     line-height: 1.333;
     letter-spacing: -0.002em;
@@ -83,34 +102,20 @@ body {
 
 /*HEADER*/
 
-.header {
+.header__wrapper {
     width: 100%;
     position: relative;
-    background: url("../img/320/header_bg.jpg") no-repeat center 0;
+    background: url("../img/header_bg.jpg") no-repeat center 0;
 }
 
-.header__wrapper {
+.header {
     max-width: 960px;
 }
 
 .header__logo {
     float: left;
-    margin-left: -0.125%;
-    margin-top: 73px;
-}
-
-.logo {
-    font-size: 48px;
-    letter-spacing: -0.01em;
-    color: rgb(255, 255, 255);
-    line-height: 0.703;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-    /*word-spacing: -1.125em;*/
-}
-
-.logo--end {
-    color: rgb(195, 229, 75);
-    letter-spacing: -0.03em;
+    margin-left: -1.125%;
+    margin-top: 70px;
 }
 
 .header__menu {
@@ -214,8 +219,6 @@ body {
 
 /*ABOUT COMPANY  block*/
 .about_company__wrapper {
-    display: flex;
-    justify-content: center;
     width: 100%;
     border-top: 1px solid #33253a;
     border-bottom: 1px solid #0d151b;
@@ -225,9 +228,9 @@ body {
 .about_company{
     flex-direction: row;
     justify-content: space-between;
+    max-width: 960px;
     padding-top: 77px;
     padding-bottom: 65px;
-    max-width: 960px;
     color: rgb(255, 255, 255);
     text-shadow: 0 1px 0 rgba(15, 21, 24, 0.004);
 }
@@ -236,7 +239,7 @@ body {
     width: 30%;
     padding-left: 5.6%;
     box-sizing: border-box;
-    background: url("../img/info_icons_1.png") no-repeat -84px 2px;
+    background: url("../img/info_icons_1.png") no-repeat -86px 2px;
 }	
 
 .info_block:nth-child(2) {
@@ -255,7 +258,6 @@ body {
     margin-top: 7px;
 }
 
-
 .about_company__link {
     margin-top: 13px;
     margin-left: 70%;
@@ -269,27 +271,21 @@ body {
     margin-left: 76.5%;
 }
 
-.news {
-    display: flex;
-    justify-content: center;
+.news__wrapper {
     width: 100%;
     padding-bottom: 69px;
     background: #f9f9f9;
     border-bottom: 1px solid #e6e6e6;
 }
 
-
-.news_wrapper {
+.news {
     display: flex;
     justify-content: space-around;
     padding-top: 100px;
     max-width: 960px;
 }
 
-
-
 /*Блок Pingbuller*/
-
 
 .pingbuller {
     width: 450px;
@@ -299,8 +295,8 @@ body {
 }
 
 .pingbuller__info_block {
-    box-sizing: border-box;
     position: relative;
+    box-sizing: border-box;
     background: #ffffff;
     margin-left: -21px;
     padding: 2px 6.75% 39px 8.5%;
@@ -335,6 +331,16 @@ body {
     -ms-hyphens: auto;
 }
 
+.pingbuller__info_block:after {
+    content: '';
+    position: absolute;
+    right: 39px;
+    bottom: -17px; /* Положение треугольника */
+    border: 9px solid transparent; /* Прозрачные границы */
+    border-top: 9px solid #ffffff; /* Добавляем треугольник */
+    border-right: 9px solid #ffffff;
+}
+
 .pingbuller__switch {
     margin-top: 22px;
     margin-left: 33.5%;
@@ -367,16 +373,14 @@ body {
 }
 
 .recent_updates__link {
-    margin-left: 81.125%;
+    margin-left: 85.125%;
     margin-top: 25px;
     letter-spacing: -0.025em;
 }
 
 /*BANNERS*/
 
-.banners {
-    display: flex;
-    justify-content: center;
+.banners__wrapper {
     width: 100%;
     background: #f9f9f9;
     border-style: solid;
@@ -387,13 +391,9 @@ body {
     border-image: url(../img/banner_border_bottom.png) 0 0 2 fill;
 }
 
-.banners__width {
+.banners {
     width: 100%;
     max-width: 960px;
-}
-
-.banners__wrapper {
-    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -401,16 +401,13 @@ body {
     padding-bottom: 27px;
 }
 
-
 .banners__item {
     display: block;
 }
 
 /*NEWS CATEGORIES*/
 
-.news_categories {
-    display: flex;
-    justify-content: center;
+.news_categories__wrapper {
     width: 100%;
     padding-top: 96px;
     background: #ececec;
@@ -418,7 +415,7 @@ body {
     color: rgb(69, 69, 69);
 }
 
-.news_categories__wrapper {
+.news_categories {
     max-width: 960px;
     display: flex;
     justify-content: space-between;
@@ -439,13 +436,16 @@ body {
 }
 
 .news_categories__title--large {
-
     margin-left: -23px;
     font-size: 48px;
 }
 
 .news_categories__title--light {
     color: rgb(185, 185, 185);
+}
+
+.news_categories__title {
+    margin-left: -20px;
 }
 
 .news_categories__title--description{
@@ -455,11 +455,6 @@ body {
     font-family: Georgia, serif;
     font-style: italic;
     color: rgb(197, 197, 197);
-}
-
-.news_categories__title {
-
-    margin-left: -20px;
 }
 
 .news_categories__summary--960 {
@@ -481,20 +476,20 @@ body {
 /*FOOTER*/
 
 .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 960px;
     padding-top: 41px;
     padding-bottom: 44px;
-    width: 100%;
-    background: url("../img/footer_bg.jpg")no-repeat;
-    color: rgb(255, 255, 255);
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 .footer__wrapper {
     width: 100%;
-    max-width: 960px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: url("../img/footer_bg.jpg")no-repeat;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 .footer__menu {
