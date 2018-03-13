@@ -7,9 +7,7 @@
     }
 
     .header__logo {
-        padding-top: 73px;
         margin-left: 1.3%;
-        margin-bottom: 32px;
     }
 
     .header__menu {
@@ -18,11 +16,10 @@
     }
     .overlay{
         top: 244px;
-        height: 400px;
     }
 
     .slider {
-        margin-top: 178px;
+        margin-top: 92px;
         padding-bottom: 97px;
     }
 
