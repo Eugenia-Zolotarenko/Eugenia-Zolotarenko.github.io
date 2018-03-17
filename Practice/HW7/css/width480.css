@@ -1,7 +1,5 @@
 @media (max-width: 480px) {
-    .hidden-m {
-        visibility: hidden;
-    }
+
     .hidden-480 {
        display: none;
     }

@@ -62,10 +62,6 @@ body {
     color: #edbfff;
 }
 
-.title--size--l {
-    font-size: 30px;
-    line-height: 0.8;
-}
 
 .summary {
     font: 16px 'Open Sans', sans-serif;
@@ -351,7 +347,7 @@ body {
 /*RECENT UPDATES*/
 
 .recent_updates {
-    padding-top: 32px;
+    padding-top: 26px;
     width: 427px;
 }
 
@@ -370,7 +366,8 @@ body {
 
 .recent_updates__title {
     margin-left: 17px;
-    margin-bottom: 19px;
+    margin-bottom: 16px;
+    margin-top: 6px;
 }
 
 .recent_updates__link {
