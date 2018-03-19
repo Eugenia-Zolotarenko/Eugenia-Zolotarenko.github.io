@@ -66,7 +66,7 @@ body {
 .summary {
     font: 16px 'Open Sans', sans-serif;
     line-height: 1.5;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.025em;;
     text-shadow: inherit;
     color: inherit;
 }
@@ -236,17 +236,17 @@ body {
     width: 30%;
     padding-left: 5.6%;
     box-sizing: border-box;
-    background: url("../img/info_icons_1.png") no-repeat -86px 2px;
+    background: url("../img/info_icons_1.png") no-repeat -93px 5px;
 }	
 
 .info_block:nth-child(2) {
     padding-left: 6.6%;
-    background: url("../img/info_icons_1.png") no-repeat -4px -80px;
+    background: url("../img/info_icons_1.png") no-repeat -4px -61px;
 }
 
 .info_block:nth-child(3) {
     padding-left: 7.4%;
-    background: url("../img/info_icons_1.png") no-repeat -43px -41px;
+    background: url("../img/info_icons_1.png") no-repeat -43px -25px;
 }
 
 .about_company__summary {
@@ -285,7 +285,7 @@ body {
 /*Блок Pingbuller*/
 
 .pingbuller {
-    width: 450px;
+    width: 50%;
     background: #f9f9f9;
     color: rgb(69, 69, 69);
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.004);
@@ -295,9 +295,9 @@ body {
     position: relative;
     box-sizing: border-box;
     background: #ffffff;
-    margin-left: -21px;
+    margin-left: 8px;
     padding: 2px 6.75% 39px 8.5%;
-    width: 427px;
+    width: 91%;
 }
 
 .avatar {
@@ -348,12 +348,12 @@ body {
 
 .recent_updates {
     padding-top: 26px;
-    width: 427px;
+    width: 48.25%;
 }
 
 .recent_updates__post {
     white-space: nowrap;
-    padding-left: 15.3%;
+    padding-left: 14.3%;
     margin-left: 18px;
     margin-bottom: -4px;
     background: url("../img/updates_pict.png") no-repeat left top;
@@ -367,11 +367,11 @@ body {
 .recent_updates__title {
     margin-left: 17px;
     margin-bottom: 16px;
-    margin-top: 6px;
+    margin-top: 3px;
 }
 
 .recent_updates__link {
-    margin-left: 85.125%;
+    margin-left: 79.5%;
     margin-top: 25px;
     letter-spacing: -0.025em;
 }
@@ -496,5 +496,5 @@ body {
 
 .footer__summary {
     margin-top: 7px;
-    margin-right: -8px;
+    margin-right: 1.1%;
 }
