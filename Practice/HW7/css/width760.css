@@ -85,11 +85,7 @@
         padding-left: 71%;
     }
 
-    .switch__bullet {
-        margin-right: 1.2%;
-    }
-
-    /*ABOUT COMPANY*/
+     /*ABOUT COMPANY*/
     .about_company {
         justify-content: space-around;
         max-width: 768px;
@@ -227,28 +223,7 @@
             margin-bottom: 26px;
         }
 
-        .banner1 {
-            margin-left: -19.25%;
-        }
-
-        .banner2 {
-            margin-left: -14%;
-        }
-
-        .banner3 {
-            margin-left: -14.75%;
-        }
-
-        .banner4 {
-            margin-left: 8.5%;
-        }
-
-        .banner5 {
-            margin-left: 9%;
-        }
-
         .banner6 {
-            margin-left: 17.25%;
             margin-top: 2px;
         }
 
@@ -291,7 +266,7 @@
         /*FOOTER*/
         .footer {
             padding-top: 0;
-            padding-bottom: 132px;
+            padding-bottom: 83px;
             max-width: 768px;
         }
 

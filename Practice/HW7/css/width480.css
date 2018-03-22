@@ -31,8 +31,9 @@
     .header__menu {
         position: absolute;
         top: 62px;
-        width: 53.135%;
         left: 22%;
+        width: 53.135%;
+        z-index: 10;
     }
 
     .menu__item__hidden {
@@ -119,8 +120,6 @@
             padding-top: 1px;
         } /*END выпадающее вертикальное меню*/
 
-
-
     .slider {
         margin-top: 103px;
         margin-bottom: -42px;
@@ -198,11 +197,6 @@
         margin-left: 85%;
     } /*End ABOUT COMPANY*/
 
-
-    .news__wrapper {
-
-    }
-
     .news {
         flex-direction: column;
         max-width: 480px;
@@ -272,50 +266,41 @@
     }
 
    /*BANNERS*/
-    .banners__wrapper {
+
+    .banners {
+        display: block;
         padding-bottom: 9px;
         padding-top: 36px;
     }
 
-    .banners {
-        flex-wrap: wrap;
-        padding-top: 0;
-        max-width: 68%;
-    }
-
-    .banners--second-row {
-        padding-top: 20px;
-    }
-
-
    .banners__item {
        float: left;
-    }
+       margin-bottom: 24px;
+   }
 
-    .banner1 {
-        margin-left: 0;
-    }
+   .banner1 {
+       margin-left: 16%;
+   }
 
-    .banner2 {
-        margin-left: 0;
-    }
+   .banner2 {
+       margin-left: 11.85%;
+   }
 
-    .banner3 {
-        margin-left:0;
-    }
+   .banner3 {
+       margin-left: 11.65%;
+   }
 
-   .banner4 {
+  .banner4 {
+       margin-left: 12.75%;
+  }
 
-        margin-left:0%;
-}
-   .banner5 {
-        margin-left: 0;
-        margin-top: 21px;
-    }
+  .banner5 {
+       margin: 21px 0 0 12.5%;
+  }
 
-    .banner6 {
-        margin-left: 0;
-    }
+  .banner6 {
+       margin-left: 12.2%;
+  }
 
     /*NEWS CATEGORIES*/
 
@@ -324,39 +309,38 @@
         flex-direction: column;
         align-items: center;
         max-width: 480px;
-        padding-top: 79px;
+        padding-top: 83px;
 
    }
 
-    .news_categories__post {
-        margin-left: 2.125%;
-        margin-bottom: 62px;
-        overflow: hidden;
-        width: 98%;
-    }
+   .news_categories__post {
+       margin-left: 2.125%;
+       margin-bottom: 62px;
+       overflow: hidden;
+       width: 98%;
+   }
 
-    .news_categories__post:last-child {
-        margin-top: 3px;
-        margin-bottom: 93px;
-        margin-right: 0;
-    }
+   .news_categories__post:last-child {
+       margin-top: 3px;
+       margin-bottom: 93px;
+       margin-right: 0;
+   }
 
-    .news_categories__title {
-        margin-left: 0;
-        margin-bottom: 9px;
-    }
+   .news_categories__title {
+       margin-left: 0;
+       margin-bottom: 9px;
+   }
 
-    .news_categories__summary {
-        height: 90px;
-        margin-left: 0;
-    }
+   .news_categories__summary {
+       height: 90px;
+       margin-left: 0;
+   }
 
     /*FOOTER*/
 
     .footer {
         flex-direction: column;
         align-items: center;
-        padding-bottom: 83px;
     }
 
     .footer__menu {
