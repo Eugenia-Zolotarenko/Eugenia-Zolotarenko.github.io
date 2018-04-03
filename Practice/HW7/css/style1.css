@@ -9,8 +9,8 @@ body {
 }
 
 .position-center--horizontal {
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .hidden-all {
@@ -233,7 +233,7 @@ body {
     padding-left: 5.6%;
     box-sizing: border-box;
     background: url("../img/info_icon_wrench.svg") no-repeat top left;
-}	
+}
 
 .info_block:nth-child(2) {
     padding-left: 6.6%;
@@ -496,7 +496,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .hidden-m {
         visibility: hidden;
     }
@@ -787,7 +787,7 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) {
 
     .hidden-480 {
         display: none;
@@ -918,13 +918,13 @@ body {
     }
 
     .slider__name {
-        margin-top: 5px;
+        margin-top: 2px;
         margin-left: -1px;
         font-size: 36px;
     }
 
     .slider__description {
-        margin-top: 1px;
+        margin-top: 8px;
         letter-spacing: -0.03em;
         font-size: 20px;
     }
@@ -943,28 +943,27 @@ body {
     /*ABOUT COMPANY*/
 
     .about_company {
-        /*flex-direction: column;*/
-        display: block;
+        flex-direction: column;
         padding-bottom: 47px;
     }
 
     .info_block {
         margin-bottom: 20px;
-        padding-left: 16%;
+        padding-left: 12%;
         width: 92%;
         background-position: -90px 4px;
     }
 
     .info_block:nth-child(2) {
-        margin-top: 22px;
-        padding-left: 16%;
-        background-position: -42px -27px;
+        margin-top: 2px;
+        padding-left: 12%;
+        background-position: -55px -27px;
     }
 
     .info_block:nth-child(3) {
-        margin-top: 26px;
-        background-position: 10px -67px;
-        padding-left: 16%;
+        margin-top: 6px;
+        background-position: -9px -67px;
+        padding-left: 12%;
     }
 
     .about_company__summary {
@@ -974,17 +973,15 @@ body {
 
     .about_company__link {
         margin-top: 15px;
-        margin-left: 90%;
+        margin-left: 85%;
     }
 
-    .info_block:nth-child(2) .about_company__link,
     .info_block:nth-child(3) .about_company__link {
-        margin-left: 90%;
+        margin-left: 85%;
     } /*End ABOUT COMPANY*/
 
     .news {
-        /*flex-direction: column;*/
-        display: block;
+        flex-direction: column;
         max-width: 480px;
     }
 
@@ -1054,7 +1051,7 @@ body {
 
     .banners {
         display: block;
-        padding-bottom: 12px;
+        padding-bottom: 9px;
         padding-top: 36px;
     }
 
@@ -1093,7 +1090,7 @@ body {
         flex-direction: column;
         align-items: center;
         max-width: 480px;
-        padding-top: 79px;
+        padding-top: 83px;
 
     }
 
@@ -1141,7 +1138,7 @@ body {
     }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) {
 
     .hidden {
         display: none;
