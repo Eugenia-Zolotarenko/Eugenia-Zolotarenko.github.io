@@ -9,13 +9,13 @@ function pow (x,n) {
             
         case (n > 0):
             for ( var i=1; i < n; i++) {
-            result = result*x;
+            result *= x;
             }
             break;
 
         case (n < 0):
             for ( var i = 1; i < -n; i++) {
-                result = result*x;
+                result *= x;
             }
             result = '1/' + result;
             break;
