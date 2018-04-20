@@ -6,13 +6,15 @@ for (var i =0 ; i < 5; i++) {
 
 var userName = prompt('Enter your name', '');
 
-
-for (var i =0 ; i < 5; i++) {
-    if ( users[i] == userName ) {
-        alert( userName + ', вы успешно вошли' );
-        break;
+function isUserNameInUsers (userName) {
+    for (var i =0 ; i < 5; i++) {
+        return users[i].toLowerCase() == userName.toLowerCase();
     }
-
-    alert('Error');
-    break;
 }
+
+if ( users.some(isUserNameInUsers) ) {
+    alert(userName + ', вы успешно вошли');
+} else {
+    alert('Error');
+}
+
