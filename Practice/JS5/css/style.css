@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.timer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+
+}
+
+.timer__clock {
+    background: darkseagreen;
+    border: 10px solid black;
+    border-radius: 40px;
+    width: 100%;
+    font-size: 1000%;
+}
+
+.buttons__wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    width: 100%;
+}
+
+
+.button {
+    border: 10px solid black;
+    width: 35%;
+    font-size: 700%;
+    border-radius: 15px;
+}
+
+.button__start {
+    background: green;
+}
+
+.button__pause {
+    display: none;
+    background: green;
+}
+
+.button__continue {
+    display: none;
+    background: mediumblue;
+}
+
+.button__clear {
+    background: red;
+}
+
+#timer__mlsec {
+    font-size: 28px;
+}
