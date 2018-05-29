@@ -1,76 +1,26 @@
-var time = document.getElementById("siteTimer");
-var mlsec = document.getElementById("timer__mlsec");
 
+var hour =  document.getElementById('hour').innerHTML = '00';
+var minute =  document.getElementById('minute').innerHTML = '00';
+var second = document.getElementById('second').innerHTML = '00';
+var millisecond =  document.getElementById('millisecond').innerHTML = '000';
 
-function myTimer() {
-     siteTimer = new Date(); //создаём объект Date()
-    siteTimer.setHours(0, 0, 0, 0);
+function timerGo() {
+    document.getElementById('hour').innerHTML = hour;
+    document.getElementById('minute').innerHTML = minute;
+    second = document.getElementById('second').innerHTML = second;
+    document.getElementById('millisecond').innerHTML = millisecond;
 
-     hour = siteTimer.getHours(); //получаем часы
-     minute = siteTimer.getMinutes(); //получаем минуты
-     second = siteTimer.getSeconds(); //получаем секунды
-     millisecond = siteTimer.getMilliseconds();
-    //В следующих трех строках проверяем, если число (часы, минуты, секунды) меньше 10,
-    // то выводим 0 перед числом (для красоты)
-    if (hour < 10) hour = "0" + hour;
-    if (minute < 10) minute = "0" + minute;
-    if (second < 10) second = "0" + second;
-    if (millisecond < 10) millisecond = "00" + millisecond;
-    if (millisecond < 100 & millisecond > 10) millisecond = "0" + millisecond;
-
-    //Находим на странице элемент с id = siteTime и внутрь него записываем время сайта
-    time.innerHTML = hour + ":" + minute + ":" + second;
-    mlsec.innerHTML =  millisecond;
+    if (millisecond > 99) { second++;
+        millisecond = 0;}
+    if (minute > 59) { hour++;
+        minute = 0;}
+    millisecond++;
 }
+
 
 function timerStart() {
-    millisecond = 0;
-
-    idStartInt = setInterval(function() {
-
-        //Находим на странице элемент с id = siteTime и внутрь него записываем время сайта
-
-         time.innerHTML = hour + ":" + minute + ":" + second;
-         mlsec.innerHTML =  millisecond;
-
-        if (millisecond > 99) { second++;
-                                 millisecond = 0;}
-
-
-        if (second > 59) { minute++;
-            second = 0;}
-
-        if (minute > 59) { hour++;
-            minute = 0;}
-
-        millisecond++;
-    }, 10);
+    idStartInt = setInterval(timerGo, 10);
 }
-
-
-function timerContinue() {
-
-    idContinueInt = setInterval(function() {
-
-        //Находим на странице элемент с id = siteTime и внутрь него записываем время сайта
-
-        time.innerHTML = hour + ":" + minute + ":" + second;
-        mlsec.innerHTML =  millisecond;
-
-        if (millisecond > 99) { second++;
-            millisecond = 0;}
-
-
-        if (second > 59) { minute++;
-            second = 0;}
-
-        if (minute > 59) { hour++;
-            minute = 0;}
-
-        millisecond++;
-    }, 10);
-}
-
 
 var start = document.getElementById("start");
 var pause = document.getElementById("pause");
@@ -78,37 +28,35 @@ var contin = document.getElementById("continue");
 var clear = document.getElementById("clear");
 
 function heandlerStart () {
-
     start.style.display = "none";
     pause.style.display = "block";
     timerStart();
-
 }
 
 function heandlerPause () {
     contin.style.display = "block";
     pause.style.display = "none";
     clearInterval(idStartInt);
-    clearInterval(idContinueInt);
 }
 
 function heandlerContinue () {
     contin.style.display = "none";
     pause.style.display = "block";
-    timerContinue();
+    timerStart();
 }
 
 function heandlerClear () {
-    clearInterval(idStartInt);
-    clearInterval(idContinueInt);
+    document.getElementById('hour').innerHTML = '00';
+    document.getElementById('minute').innerHTML = '00';
+    second = document.getElementById('second').innerHTML = '00';
+    document.getElementById('millisecond').innerHTML = '000';
+
     contin.style.display = "none";
     pause.style.display = "none";
     start.style.display = "block";
-    myTimer();
+    clearInterval(idStartInt);
 }
 
-
-myTimer ();
 start.addEventListener('click', heandlerStart);
 pause.addEventListener('click', heandlerPause);
 contin.addEventListener('click', heandlerContinue);

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf8'>
+    <title>Создаем таймер обратного отсчета - Seo блог sergey-oganesyan.ru</title>
+    <script>
+        window.onload = function(){
+
+            function timer(){
+
+                var hour = document.getElementById('hour').innerHTML;
+                var minute = document.getElementById('minute').innerHTML;
+                var second = document.getElementById('second').innerHTML;
+                var end = false;
+
+                if( second > 0 ) second--;
+                else{
+                    second = 59;
+
+                    if( minute > 0 ) minute--;
+                    else{
+                        second = 59;
+
+                        if( hour > 0 ) hour--;
+                        else end = true;
+                    }
+                }
+
+                if(end){
+                    clearInterval(intervalID);
+                    alert("Таймер сработал!");
+                }else{
+                    document.getElementById('hour').innerHTML = hour;
+                    document.getElementById('minute').innerHTML = minute;
+                    document.getElementById('second').innerHTML = second;
+                }
+            }
+            window.intervalID = setInterval(timer, 1000);
+        }
+    </script>
+    <style>
+        #timer{
+            margin: 20px auto;
+            text-align: center;
+            color: #333;
+            font-family: fantasy;
+            font-size: 100px;
+            cursor: default;
+        }
+
+        #timer div{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+
+<div id="timer">
+    <div id="hour">11</div>&nbsp;:
+    <div id="minute">56</div>&nbsp;:
+    <div id="second">11</div>
+</div>
+
+</body>
+</html>

@@ -12,12 +12,21 @@ body {
 
 }
 
-.timer__clock {
+#timer{
     background: darkseagreen;
     border: 10px solid black;
     border-radius: 40px;
     width: 100%;
     font-size: 1000%;
+}
+
+#timer div{
+    display: inline;
+}
+
+#timer div:last-child{
+    display: block;
+    font-size: 28px;
 }
 
 .buttons__wrapper {
@@ -31,7 +40,7 @@ body {
 .button {
     border: 10px solid black;
     width: 35%;
-    font-size: 700%;
+    font-size: 600%;
     border-radius: 15px;
 }
 
@@ -51,8 +60,4 @@ body {
 
 .button__clear {
     background: red;
-}
-
-#timer__mlsec {
-    font-size: 28px;
 }
