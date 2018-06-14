@@ -42,6 +42,8 @@
 .active,
 .active:hover{
     background: rgb(0, 127, 255);
+    pointer-events: none;
+    cursor: default;
 }
 
 .active .tabs-anchor {
