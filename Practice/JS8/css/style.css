@@ -1,0 +1,35 @@
+fieldset {
+    width: 35%;
+    margin: 5% auto;
+}
+
+
+label {
+    display: inline-block; width: 5em;
+}
+fieldset div {
+    margin-bottom: 2em;
+}
+fieldset .help {
+    display: inline-block;
+}
+.ui-tooltip {
+    width: 210px;
+}
+
+.input-field {
+    position: relative;
+}
+
+em {
+    display: none;
+    position: absolute;
+    left: 265px;
+    top: 0;
+    /*width: 150px;*/
+    text-align: left;
+    padding: 5px;
+    font-style: normal;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
