@@ -25,7 +25,7 @@ em {
     display: none;
     position: absolute;
     left: 265px;
-    top: 0;
+    top: -4px;
     /*width: 150px;*/
     text-align: left;
     padding: 5px;
