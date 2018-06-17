@@ -9,18 +9,12 @@ form {
 }
 
 label {
-    display: inline-block; width: 5em;
+    display: inline-block;
+    width: 5em;
 }
+
 fieldset div {
     margin-bottom: 2em;
-}
-
-fieldset .help {
-    display: inline-block;
-}
-
-.ui-tooltip {
-    width: 210px;
 }
 
 .input-field {
