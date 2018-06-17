@@ -1,8 +1,12 @@
-fieldset {
-    width: 35%;
-    margin: 5% auto;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+form {
+    width: 35%;
+}
 
 label {
     display: inline-block; width: 5em;
@@ -10,9 +14,11 @@ label {
 fieldset div {
     margin-bottom: 2em;
 }
+
 fieldset .help {
     display: inline-block;
 }
+
 .ui-tooltip {
     width: 210px;
 }
@@ -26,7 +32,6 @@ em {
     position: absolute;
     left: 265px;
     top: -4px;
-    /*width: 150px;*/
     text-align: left;
     padding: 5px;
     font-style: normal;

@@ -1,21 +1,27 @@
 
 $(document).ready(function () {
     $("div").append("<em></em>");
+    var titles = $('input[title]');
+    var ems = $('em');
+    for ( var i = 0; i < titles.length; i++ ) {
+        $(ems[i]).text( $(titles[i]).attr("title"));
+    }
 
     $("input").hover(
         function(){
-            var hoverText = $(this).attr("title");
-
-            $(this).next("em").text(hoverText);
-            $(this).removeAttr("title");
+            event.preventDefault();
             $(this).next("em").show();
-
 
     },  function(){
             $(this).next("em").hide();
 
     });
-})
+
+    $('input[type="button"]').on( "click", function() {
+        $('em').show();
+        //setTimeout(function() { $("em").hide('slow'); }, 2000);
+        });
+});
 
 
 
