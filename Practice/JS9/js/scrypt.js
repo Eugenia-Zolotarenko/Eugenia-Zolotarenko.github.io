@@ -80,5 +80,10 @@
             .jcarouselControl({
                 target: '+=1'
             });
+
+        $('select').selectBox({
+            loopOptions: true
+        });
     });
 })(jQuery);
+
