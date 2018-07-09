@@ -185,3 +185,15 @@
     opacity: .5;
     cursor: default;
 }
+
+.niceCheck {
+    margin-top: 20px;
+    width: 35px;
+    height: 26px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../img/checked.svg);
+}
+.niceCheck input {
+    display: none;
+}

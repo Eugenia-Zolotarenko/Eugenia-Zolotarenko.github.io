@@ -85,5 +85,6 @@
             loopOptions: true
         });
     });
+        
 })(jQuery);
 
