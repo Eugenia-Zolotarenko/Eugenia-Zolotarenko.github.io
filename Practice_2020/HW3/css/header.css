@@ -1,0 +1,65 @@
+body {
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fitness_page {
+    margin: 0 auto;
+    padding-left: 45px;
+    padding-right: 48px;
+    padding-bottom: 50px;
+    width: 1064px;
+    background-color: #fff;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0, 0.3);
+    font-size: 14px;
+}
+
+/*HEADER*/
+header {
+    margin-bottom: 40px;
+}
+
+    /*LOGO*/
+.logo {
+    padding-top: 50px;
+    margin-bottom: 38px;
+    height: 91px;
+    width: 145px;
+    background: 0 50px url("../img/logo.png") no-repeat;
+}
+
+    /*HEADER_MENU*/
+.header_menu_list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    background: linear-gradient(to top, #444343, #5e5e5e);
+}
+
+.header_menu_item {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+}
+
+.header_menu_link {
+    padding:  0 20px;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.header_menu_item:first-child  .header_menu_link{
+    padding-left: 27px;
+}
+
+.header_menu_link:hover  {
+    background: linear-gradient(to top, #2e2e2e, #4a4a4a);
+    border-right: 1px solid #838383;
+    border-left: 1px solid #838383;
+}
+
