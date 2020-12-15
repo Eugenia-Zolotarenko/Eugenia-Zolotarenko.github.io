@@ -1,0 +1,39 @@
+body {
+    background-color: #282828;
+}
+.main_page {
+    margin: 0 auto;
+    width: 960px;
+    min-height: 883px;
+    background: url("../img/background.jpg") no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 55px;
+    width: 815px;
+}
+
+.logo {
+    width: 266px;
+    height: 147px;
+    background: url("../img/logo.png") no-repeat;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 16px;
+    color: #e6e6e6;
+    font-family: Tahoma;
+    font-size: 8.5px;
+}
+
+.contact_us {
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
