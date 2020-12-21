@@ -40,10 +40,15 @@ header {
     margin-bottom: 5px;
 }
 
+.countries {
+    width: 815px;
+    margin: 0 auto;
+}
+
 .countries_list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .countries_item {
@@ -58,6 +63,7 @@ header {
 }
 
 .countries_img {
+    width: 258px;
     border-radius: 2%;
     border-style: solid;
     border-width: 5px 5px 6px 6px;
