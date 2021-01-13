@@ -1,0 +1,50 @@
+body {
+    background: url("../img/background.jpg");
+}
+
+.main_page {
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 1000px;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    color: #128aa7;
+}
+
+.header__logo {
+    width: 283px;
+    height: 164px;
+    background: url("../img/header_logo.png");
+}
+
+.header__contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__menu__list {
+    display: flex;
+    justify-content: space-between;
+    width: 325px;
+}
+
+.header__menu__item {
+    display: flex;
+    text-align: center;
+}
+
+.header__menu__link {
+    color: inherit;
+
+}
+.header__menu__image {
+    margin: 0 auto;
+}
+.submenu {
+    display: none;
+}
