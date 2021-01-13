@@ -9,10 +9,12 @@ body {
     background-color: white;
 }
 
+/*HEADER*/
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 10px;
+    padding: 0 30px;
     color: #128aa7;
 }
 
@@ -25,6 +27,13 @@ header {
 .header__contacts {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 35px;
+    font-size: 12px;
+}
+
+.header__contacts__contact_us {
+    font-weight: bold;
 }
 
 .header__menu__list {
@@ -40,10 +49,12 @@ header {
 
 .header__menu__link {
     color: inherit;
+    font-size: 10px;
 
 }
 .header__menu__image {
     margin: 0 auto;
+    width: 40px;
 }
 .submenu {
     display: none;
