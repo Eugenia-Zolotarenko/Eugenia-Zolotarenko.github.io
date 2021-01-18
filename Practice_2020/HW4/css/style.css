@@ -1,5 +1,12 @@
 body {
     background: #0c739f url("../img/background.jpg") repeat-x;
+    font-family: Tahoma;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .main_page {
@@ -7,6 +14,7 @@ body {
     padding-top: 10px;
     width: 1000px;
     background-color: white;
+    box-shadow: 1px 1px 20px;
 }
 /*CONTENT*/
 
@@ -18,71 +26,64 @@ body {
     background: url("../img/content__image.jpg");
 }
 
-.clearfix:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 .fon1 {
-    width: 100%;
-    background: #edeef0;
-    float: left;
     position: relative;
     right: 58%;
 
+    float: left;
+    width: 100%;
+    background: #edeef0;
     border-right: 1px solid #c7cacf;
 }
 
 .fon2 {
-    width: 100%;
-    background: #fff;
-    float: left;
     position: relative;
     right: 21%;
 
+    float: left;
+    width: 100%;
+    background: #fff;
     border-right: 1px solid #c7cacf;
 }
 
 .fon3 {
     width: 100%;
-    background: #edeef0;
     float: left;
     overflow: hidden;
+    background: #edeef0;
 }
 
 .content__sidebar {
-    width: 21%;
-    float: left;
-    overflow: hidden;
     position: relative;
     left: 79%;
 
+    float: left;
+    overflow: hidden;
+    width: 21%;
     padding: 15px;
 }
 
 .content {
-    width: 58%;
-    float: left;
-    overflow: hidden;
     position: relative;
     left: 79%;
 
+    width: 58%;
+    float: left;
+    overflow: hidden;
     padding: 15px;
 }
 
 .content__news {
-    width: 21%;
-    float: left;
-    overflow: hidden;
     position: relative;
     left: 79%;
 
+    float: left;
+    overflow: hidden;
+    width: 21%;
     padding: 15px;
 }
 
 .content__text {
-    font-family: Tahoma;
     font-size: 14px;
     line-height: 24px;
 }
@@ -90,7 +91,6 @@ body {
 .content__title {
     font-size: 18px;
     font-weight: bold;
-    font-family: Tahoma;
     text-align: center;
     color: #424c43;
 }

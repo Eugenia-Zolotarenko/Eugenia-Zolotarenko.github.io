@@ -1,15 +1,17 @@
 /*MAIN MENU*/
 .content__main_menu {
-    padding: 8px 0 10px;
     background: #333333;
     border-bottom: 1px solid black;
+
     font-size: 14px;
-    font-family: Tahoma;
+    line-height: 28px;
+
 }
 
 .content__main_menu__list {
     display: flex;
     justify-content: space-around;
+
     color: white;
 }
 
@@ -28,6 +30,7 @@
     position: absolute;
     top: 44%;
     right: -10px;
+
     background: url("../img/content__arrow_down.png");
     width: 5px;
     height: 6px;
@@ -36,13 +39,15 @@
 ul.content__main_menu__submenu {
     display: none;
     position: absolute;
-    top: 32px;
+    top:28px;
     left: -10px;
+    z-index: 1;
+
     width: 150px;
-    padding:10px;
+    padding: 10px;
     padding-top: 5px;
     background: #333333;
-    z-index: 1;
+    box-shadow: 0 4px 5px 2px rgba(0,0,0,0.75);
 }
 
 .content__main_menu__item:hover .content__main_menu__submenu {

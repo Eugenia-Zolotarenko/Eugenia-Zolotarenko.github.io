@@ -4,6 +4,7 @@ header {
     justify-content: space-between;
     margin: 10px 0;
     padding: 0 30px;
+
     color: #128aa7;
 }
 
@@ -18,6 +19,7 @@ header {
     flex-direction: column;
     align-items: flex-end;
     margin-bottom: 35px;
+
     font-size: 12px;
 }
 
@@ -39,8 +41,8 @@ header {
 .header__menu__link {
     color: inherit;
     font-size: 10px;
-
 }
+
 .header__menu__image {
     margin: 0 auto;
     width: 40px;
