@@ -30,7 +30,11 @@ header {
 .header__menu__list {
     display: flex;
     justify-content: space-between;
-    width: 325px;
+    min-width: 325px;
+}
+
+.header__menu__list > li+li {
+    margin: 0 2px;
 }
 
 .header__menu__item {
