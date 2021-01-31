@@ -1,0 +1,61 @@
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    background-color: #074d8a;
+    height: 36px;
+
+    font-size: 14px;
+    line-height: 36px;
+
+}
+
+.header_menu {
+    margin-right: ;
+}
+
+header a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header_menu__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_menu__item {
+    padding: 0 10px;
+    color: #60b5ed;
+}
+
+.header_menu__item:hover {
+    background-color: #4eabda;
+    color: #ffffff;
+}
+
+.oferta {
+    position: relative;
+    padding: 0 20px 0 50px;
+    border-left: 1px solid #4d9ed8;
+}
+
+.oferta:before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 7px;
+    height: 23px;
+    width: 21px;
+    background: url("../img/header_oferta.png");
+}
+
+.log_in a {
+    text-decoration: underline;
+}
+
+.log_in {
+    background: linear-gradient(to bottom, #50afdc, #4299d2);
+    border: 1px solid #4d9ed8;
+    padding: 0 13px;
+}
