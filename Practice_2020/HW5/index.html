@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
 </head>
 
 <body>
 <!--HEADER-->
     <header>
-        <nav class="header_menu">
+        <nav>
             <ul class="header_menu__list">
                 <li class="header_menu__item"><a class="header_menu__link" href="#">Meu YouBike</a></li>
                 <li class="header_menu__item"><a class="header_menu__link" href="#">Vender</a></li>
@@ -27,31 +27,28 @@
         </span>
     </header>
 <!--CONTENT-->
-<main>
-    <div class="registration__form registration__form__header">Cadastre-se</div>
-    <div class="registration__form registration__form__options">
-        <a class="registration__form__facebook_button" href="https://www.facebook.com/login.php">
-            <img src="img/Reg_form_Facebook_button.png" alt="Log In with Facebook">
-        </a>
-        <span class="registration__form__divider">OU</span>
-        <form action="/" class="registration__form__fields">
-            <input type="text" name="first_name" placeholder="First Name" class="input__field">
-            <input type="text" name="last_name" placeholder="Last Name" class="input__field">
-            <input type="email" name="email" placeholder="Email Adress" class="input__field">
-            <input type="password" name="password" placeholder="Choose Password" class="input__field">
-            <input type="password" name="password_confirm" placeholder="Password Confirm" class="input__field">
-            <label><input type="checkbox" name="subscribe" class="input__field__subscribe">
-                        Send me Youbike updates and tips
-            </label>
-            <input type="submit" value="Create my Account" class="input__field__submit">
-        </form>
-        <span class="registration__form__agree">By clicking the button above, you agree to the Terms of Service
-            Xiew our Privacy Ploicy.
-        </span>
-    </div>
-
-</main>
-
-
+    <main>
+        <div class="registration__form registration__form__header">Cadastre-se</div>
+        <div class="registration__form registration__form__options">
+            <a class="registration__form__facebook_button" href="https://www.facebook.com/login.php">
+                <img src="img/Reg_form_Facebook_button.png" alt="Log In with Facebook">
+            </a>
+            <span class="registration__form__divider">OU</span>
+            <form action="/" class="registration__form__fields">
+                <input type="text" name="first_name" placeholder="First Name" class="input__field">
+                <input type="text" name="last_name" placeholder="Last Name" class="input__field">
+                <input type="email" name="email" placeholder="Email Adress" class="input__field">
+                <input type="password" name="password" placeholder="Choose Password" class="input__field">
+                <input type="password" name="password_confirm" placeholder="Password Confirm" class="input__field">
+                <label><input type="checkbox" name="subscribe" class="input__field__subscribe">
+                            Send me Youbike updates and tips
+                </label>
+                <input type="submit" value="Create my Account" class="input__field__submit">
+            </form>
+            <span class="registration__form__agree">By clicking the button above, you agree to the Terms of Service
+                Xiew our Privacy Ploicy.
+            </span>
+        </div>
+    </main>
 </body>
 </html>

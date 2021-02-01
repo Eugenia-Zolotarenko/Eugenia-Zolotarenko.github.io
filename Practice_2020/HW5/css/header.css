@@ -3,15 +3,10 @@ header {
     justify-content: flex-end;
     padding-right: 20px;
     background-color: #074d8a;
-    height: 36px;
-
-    font-size: 14px;
     line-height: 36px;
 
-}
+    font-size: 14px;
 
-.header_menu {
-    margin-right: ;
 }
 
 header a {
@@ -22,6 +17,7 @@ header a {
 .header_menu__list {
     display: flex;
     justify-content: space-between;
+    line-height: 36px;
 }
 
 .header_menu__item {
@@ -50,12 +46,16 @@ header a {
     background: url("../img/header_oferta.png");
 }
 
-.log_in a {
-    text-decoration: underline;
+.log_in {
+    height: 36px;
+    background-color: #4299d2;
+    background: linear-gradient(to top, rgba(0,0,0, 0.3) 20%, rgba(255, 255, 255, 0.3));
+    border: 1px solid #4d9ed8;
+    border-image:
+            linear-gradient(to top,  #4299d2, #4299d2 ) 1 100%;
+    padding: 0 13px;
 }
 
-.log_in {
-    background: linear-gradient(to bottom, #50afdc, #4299d2);
-    border: 1px solid #4d9ed8;
-    padding: 0 13px;
+.log_in a {
+    text-decoration: underline;
 }
