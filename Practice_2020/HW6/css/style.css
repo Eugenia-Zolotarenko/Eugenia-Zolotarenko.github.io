@@ -1,0 +1,138 @@
+body {
+    max-width: 909px;
+    margin: 0 auto;
+}
+
+.text_color_white {
+    color: white;
+}
+
+header {
+    display: flex;
+    margin: 24px 0 6px;
+}
+
+.header__phone_numbers {
+    position: relative;
+    padding: 3px 0 0 32px;
+
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #5e696d;
+    letter-spacing: 0.025em;
+    white-space: pre-wrap;
+}
+
+.header__phone_numbers:before {
+    position: absolute;
+    left: 7px;
+    top: 5px;
+    content: "";
+    width: 22px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #f10000;
+    background: url("../img/header_phone.png") no-repeat center center,
+                linear-gradient(to top, #206988, #114165 59%, 63%, #0c3256);
+}
+
+.header__authorization {
+    position: relative;
+    display: flex;
+    width: 496px;
+    height: 27px;
+    margin: 0 15px 0 10px;
+    padding: 3px 8px 4px 24px;
+    border-radius: 3px;
+    box-shadow: 0 3px 3px 0 rgba(150, 150, 150, 0.75);
+    background-color: #b1bcc0;
+    background: linear-gradient(to bottom, #206988, #114165 59%, 63%, #0c3256);
+
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 11px;
+}
+
+.header__authorization__form:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    content: '';
+    width: 14px;
+    height: 17px;
+    background: url("../img/header_autorization_icon.png") no-repeat;
+}
+
+
+.header__authorization__field {
+    border: 1px solid rgb(155, 161, 163);
+    background-color: #fff;
+    width: 115px;
+    height: 18px;
+}
+
+.header__authorization__form input[type='password'] {
+    margin: 0 -3px 0 3px;
+}
+
+.header__authorization__field::placeholder {
+    color: #97a2a6;
+}
+
+.header__authorization__enter_link {
+    margin: 0 4px 0 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.header__authorization__registration_link {
+    position: relative;
+
+    text-decoration: none;
+    height: 10px;
+    line-height: 20px;
+}
+
+.header__authorization__registration_link:before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: -5px;
+    width: 1px;
+    height: 10px;
+    border-left: 1px solid #d2d8dd;
+}
+
+.header__authorization__recovery_password_link {
+    color: #bfbfbf;
+    margin-left: 18px;
+}
+
+.header__authorization a:last-child {
+    font-size: 12px;
+}
+
+.header__nav {
+    display: flex;
+    padding: 3px 10px 6px 10px;
+    width: 78px;
+    height: 23%;
+    border: 1px solid rgb(189, 196, 199);
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+.header__nav__icon {
+    width: 12px;
+    height: 11px;
+}
+
+.header__nav a:nth-child(2) {
+    margin: 0 10px 0 7px;
+}
+
+.logo {
+    background-image: url("../img/logo.jpg");
+    width: 909px;
+    height: 237px;
+}
