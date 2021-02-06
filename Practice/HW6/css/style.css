@@ -1,0 +1,483 @@
+body {
+    width: 909px;
+    min-height: 1313px;
+    margin: 0 auto;
+}
+
+.info {
+    margin-top: 19px;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content_wrapper {
+    margin-top: 15px;
+    margin-bottom: 21px;
+}
+
+
+/*базовые стили для  названий бокового меню*/
+.list__name {
+    position: relative;
+    margin-top: 3px;
+    margin-left: -1px;
+    padding-left: 27px;
+    width: 154px;
+    height: 25px;
+    border: 1px solid rgb(121, 135, 141);
+    border-radius: 50px;
+    box-shadow: 0 3px 3px 0 rgba(150, 150, 150, 0.75);
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 26px;
+    letter-spacing: -0.013em;
+    text-transform: uppercase;
+    color: #114165;
+}
+
+.list__name__circle {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 22px;
+    height: 21px;
+    border-radius: 50%;
+    background: -moz-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+    background: linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+    background: -ms-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+}
+
+/*базовые стили для пунктов меню верхнего уровня*/
+.list__name--item {
+    display: block;
+    padding-left: 29px;
+    box-shadow: none;
+    width: 121px;
+    height: 26px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.list__item__circle {
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    border-radius: 50%;
+    background-color: rgb(17, 65, 101);
+    width: 22px;
+    height: 22px;
+}
+
+.list__name__circle_small {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 12px;
+    height: 12px;
+}
+
+/*Левое меню "Каталог продукции"*/
+.catalog__menu {
+    float: left;
+}
+
+.list__name__circle--pict{
+    position: absolute;
+    left: 1px;
+    width: 20px;
+    height: 20px;
+    background:  url("../img/catalog_list.png") no-repeat center center;
+}
+
+.catalog__list {
+    margin-top: 13px;
+    margin-left: 1px;
+}
+.catalog__submenu {
+    margin-top: 1px;
+    margin-left: 53px;
+    list-style: circle outside;
+}
+
+.catalog__submenu__item {
+    position: relative;
+}
+
+.catalog__submenu__link {
+    position: relative;
+    left: -8px;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: -0.05em;
+    color: #465961;
+}
+
+.catalog__submenu__link:hover {
+    border-bottom:2px solid #0c3256;
+    font: italic bold 14px Arial, sans-serif;
+    line-height: 24px;
+    text-transform: none;
+    color: #0c3256;
+    letter-spacing: normal;
+}
+
+.catalog__submenu__item:nth-child(3) {
+    top: 3px;
+}
+
+.catalog__submenu__item:nth-child(4) {
+    top: 4px;
+}
+
+/*Правое боковое меню БРЕНДЫ*/
+.brands {
+    float: right;
+    margin-top: -2px;
+}
+
+.list__name--brands {
+    margin-top: 3px;
+    letter-spacing: 0.09em;
+}
+.list__name--item--tires {
+    width: 105px;
+}
+
+.brands_search {
+    margin-top: 14px;
+    margin-left: 15px;
+}
+
+.check {
+    display: block;
+    margin-top: 4px;
+}
+
+.checkbox_style {
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
+.brands_search_variant {
+    position: relative;
+    left: 8px;
+    top: -2px;
+    letter-spacing: -0.01em;
+}
+
+.list__name--item--discs {
+    width: 105px;
+    top: 8px;
+}
+
+.list__item__circle--discs {
+    top: 2px;
+    left: 2px;
+}
+
+.checkbox_style--discs {
+    position: relative;
+    left: 4px;
+    top: 11px;
+}
+
+.checkbox_style--discs2 {
+    position: relative;
+    left: 4px;
+    top: 14px;
+}
+
+.checkbox_style--discs3 {
+    position: relative;
+    left: 4px;
+    top: 17px;
+}
+
+.brands_search_variant--discs {
+    top: 9px;
+    left: 12px;
+}
+
+.brands_search_variant--discs2 {
+    top: 12px;
+    left: 12px;
+}
+
+.brands_search_variant--discs3 {
+    top: 14px;
+    left: 12px;
+}
+
+.brands__button_submit {
+    display: block;
+    border: 1px solid rgb(167, 171, 174);
+    border-radius: 11px;
+    width: 82px;
+    height: 26px;
+    margin-top: 33px;
+    margin-left: 8px;
+    background-image: -moz-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+    background-image: -ms-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+    font: 11px Arial, sans-serif;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #e5e9ea;
+}
+
+/*Просмотр товаров*/
+
+.tovar__preview {
+    float: left;
+    border-radius: 3px;
+    background-image: -moz-linear-gradient( 90deg, rgb(35,75,93) 0%, rgb(118,141,151) 57%, rgb(201,207,209) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(35,75,93) 0%, rgb(118,141,151) 57%, rgb(201,207,209) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(35,75,93) 0%, rgb(118,141,151) 57%, rgb(201,207,209) 100%);
+    margin-left: 9px;
+    margin-top: -1px;
+    margin-bottom: 36px;
+    width: 526px;
+}
+
+.tovar__item {
+    float: left;
+    margin-top: 9px;
+    margin-left: 22px;
+    font: 15px "Lucida Sans Unicode", Arial, sans-serif;
+    line-height: 13px;
+    text-align: center;
+}
+
+
+.tovar__item:nth-child(3n-1) {
+    margin-left: 29px;
+}
+
+.tovar__item:nth-child(5) {
+    margin-left: 28px;
+}
+
+.tovar__item:nth-child(3n) {
+    margin-left: 29px;
+}
+
+.tovar__item:nth-child(6) {
+    margin-left: 30px;
+}
+
+.tovar__item:nth-child(n+4):nth-child(-n+6) {
+    margin-top: 17px;
+}
+
+.tovar__item:nth-child(n+7):nth-child(-n+9) {
+    margin-top: 19px;
+    margin-bottom: 28px;
+}
+
+.tovar__brand {
+    margin-top: 8px;
+    margin-left: -2px;
+    color: #206988;
+    font-size: 15px;
+}
+
+.tovar__item:nth-child(2) .tovar__brand,
+.tovar__item:nth-child(8) .tovar__brand {
+    margin-left: 3px;
+}
+
+.tovar__item:nth-child(3n) .tovar__brand {
+    margin-left: 3px;
+    letter-spacing: 0.01em;
+}
+
+.tovar__item:nth-child(5) .tovar__brand {
+    margin-left: 2px;
+}
+
+.tovar__model {
+    margin-top: 1px;
+    margin-left: 5px;
+    color: #1f2528;
+    font-size: 13px;
+    letter-spacing: -0.01em;
+}
+
+.tovar__item:nth-child(2) .tovar__model
+{
+    margin-left: 3px;
+}
+
+.tovar__item:nth-child(3n) .tovar__model {
+    margin-left: -1px;
+}
+
+.tovar__item:nth-child(7) .tovar__model {
+    margin-left: 1px;
+}
+
+.tovar__price {
+    margin-top: 3px;
+    margin-left: 9px;
+    font: italic bold 16px Arial, sans-serif;
+    color: #114165;
+
+}
+
+.tovar__item:nth-child(3n-1) .tovar__price {
+    margin-left: 11px;
+    margin-top: 3px;
+    letter-spacing: 0.02em;
+}
+
+.tovar__price--valuta {
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+.tovar__image {
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid  rgb(164, 174, 177);
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    padding-top: 5px;
+    width: 139px;
+    height: 129px;
+}
+
+.tovar__item:nth-child(3n+1) .tovar__image--position {
+    margin-left: -3px;
+}
+
+.tovar__item:nth-child(3n-1) .tovar__image--position {
+     margin-left: -2px;
+     margin-top: -1px;
+}
+
+.tovar__item:nth-child(3n) .tovar__image--position {
+    margin-left: -2px;
+    margin-top: -1px;
+}
+
+
+/*Список логотипов производителей*/
+
+.brand__logo {
+   }
+
+.brand__logo__list {
+    clear: both;
+    margin:0 auto;
+    width: 680px;
+}
+
+.brand__logo__item {
+    display: inline-block;
+}
+
+.brand__logo__link {
+    display: block;
+    background:  url("../img/logo_brand_image.png") no-repeat 2px;
+    height: 30px;
+    width: 85px;
+}
+
+.brand__logo__item:nth-child(2) .brand__logo__link {
+    width: 105px;
+    background:  url("../img/logo_brand_image.png") no-repeat -87px;
+}
+
+.brand__logo__item:nth-child(3) .brand__logo__link {
+    width: 90px;
+    background:  url("../img/logo_brand_image.png") no-repeat -196px;
+}
+
+.brand__logo__item:nth-child(4) .brand__logo__link {
+    width: 66px;
+    background:  url("../img/logo_brand_image.png") no-repeat -290px;
+}
+
+.brand__logo__item:nth-child(5) .brand__logo__link {
+    width: 87px;
+    background:  url("../img/logo_brand_image.png") no-repeat -360px;
+}
+
+.brand__logo__item:nth-child(6) .brand__logo__link {
+    width: 73px;
+    background:  url("../img/logo_brand_image.png") no-repeat -451px;
+}
+
+.brand__logo__item:nth-child(7) .brand__logo__link {
+    width: 63px;
+    background:  url("../img/logo_brand_image.png") no-repeat -528px;
+}
+
+.brand__logo__item:nth-child(8) .brand__logo__link {
+    width: 81px;
+    background:  url("../img/logo_brand_image.png") no-repeat -595px;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    width: 910px;
+    background: #213a4d;
+}
+.main_menu--footer {
+    width: 312px;
+    margin-left: 309px;
+    margin-bottom: 14px;
+    padding-top: 9px;
+}
+
+.main_menu__link--footer {
+    display: block;
+    width: 80px;
+    border-right: 1px solid  #bec6c9;
+    font: 12px Arial, sans-serif;
+    color: #bec6c9;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    line-height: 11px;
+}
+
+.main_menu__link--footer:hover {
+    color: #52abcb
+}
+
+
+.main_menu__item--footer:nth-child(2) .main_menu__link--footer { /*Доставка*/
+    width: 65px;
+    padding-left: 9px;
+}
+
+.main_menu__item--footer:nth-child(3) .main_menu__link--footer  { /*Статьи*/
+    width: 54px;
+    padding-left: 8px;
+}
+
+.main_menu__item--footer:nth-child(4) .main_menu__link--footer {  /*Контакты*/
+    width: 66px;
+    padding-left: 12px;
+    border: none;
+}
+
+.footer__copyright {
+    width: 156px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    font: 10px Arial, sans-serif;
+    color: #7f4740;
+    letter-spacing: 0.025em;
+}
