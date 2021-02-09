@@ -5,11 +5,13 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fitness_content.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main-nav.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
+<!--HEADER-->
     <header>
         <span class="header__phone_numbers">(044) 123-45-67 (044)567-89-10</span>
         <div class="header__authorization">
@@ -27,8 +29,27 @@
             <a class="email" href="#"><img src="img/header_email.png" class="header__nav__icon" alt="send email"></a>
         </nav>
     </header>
-    <!--CONTENT-->
+<!--LOGO-->
     <div class="logo"></div>
+<!--CONTENT-->
+    <main>
+        <nav class="main_nav">
+            <ul class="main_nav__list">
+                <li><a href="#">о компании</a></li>
+                <li><a href="#">оплата</a></li>
+                <li><a href="#">доставка</a></li>
+                <li><a href="#">статьи</a></li>
+                <li><a href="#">контакты</a></li>
+            </ul>
+            <span class="main_nav__shopping_cart">товаров:</span><span class="main_nav__shopping_cart__quantity">0</span>
+            <span class="main_nav__amount">на сумму:</span><span class="main_nav__amount_sum">0,00 грн</span>
+        </nav>
+        <div class="main__search">
+            <div class="search search_by_car"></div>
+            <div class="search search_tyres"></div>
+            <div class="search search_discs"></div>
+        </div>
+    </main>
     <!--FOOTER-->
     <!--<footer>
         <nav class="footer_menu">
