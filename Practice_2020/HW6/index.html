@@ -45,9 +45,112 @@
             <span class="main_nav__amount">на сумму:</span><span class="main_nav__amount_sum">0,00 грн</span>
         </nav>
         <div class="main__search">
-            <div class="search search_by_car"></div>
-            <div class="search search_tyres"></div>
-            <div class="search search_discs"></div>
+            <div class="search search_by_car">
+                <div class="search__header">
+                    <span class="search__header2 search__header_discs">Диски:</span>
+                    <span class="search__header1">Поиск по автомобилю</span>
+                    <span class="search__header2 search__header_tyres">Шины:</span></div>
+                <div class="search_by_car__forms">
+                    <form action="/" name="search_by_car_discs" method="get" class="search_by_car_discs">
+                        <label>
+                            <div class="select-name">
+                                <span class="search_field__name">Марка</span>
+                                <span class="search_field__subname">авто:</span>
+                            </div>
+                            <select name="marka_auto" class="select-css">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="fiat">Fiat</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </label>
+                        <label>
+                            <div class="select-name">
+                                <div class="search_field__name">Модель</div>
+                                <div class="search_field__subname">автомобиля:</div>
+                            </div>
+                            <select name="model_auto" class="select-css">
+                                <option value="forester">Forester</option>
+                                <option value="outback">Outback</option>
+                                <option value="tribeca">Tribeca</option>
+                                <option value="impreza">Impreza</option>
+                            </select>
+                        </label>
+                        <label  class="select-css_short-justify">
+                            <div class="select-name">
+                                <div class="search_field__name">Год выпуска</div>
+                                <div class="search_field__subname">автомобиля:</div>
+                            </div>
+                            <select name="year" class="select-css select-css_short">
+                                <option value="2000">2000</option>
+                                <option value="2001">2001</option>
+                                <option value="2002">2002</option>
+                                <option value="2003">2003</option>
+                            </select>
+                        </label>
+                        <label>
+                            <div class="search_field__name select-name">Комплектация:</div>
+                            <select name="complect" class="select-css">
+                                <option value="base">base</option>
+                                <option value="econom">econom</option>
+                                <option value="full">full</option>
+                            </select>
+                        </label>
+                    </form>
+                    <form action="/" name="search_by_car_tyres" method="get" class="search_by_car_tyres">
+                        <label>
+                            <div class="select-name">
+                                <span class="search_field__name">Марка</span>
+                                <span class="search_field__subname">авто:</span>
+                            </div>
+                            <select name="marka_auto" class="select-css">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="fiat">Fiat</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </label>
+                        <label>
+                            <div class="select-name">
+                                <div class="search_field__name">Модель</div>
+                                <div class="search_field__subname">автомобиля:</div>
+                            </div>
+                            <select name="model_auto" class="select-css">
+                                <option value="forester">Forester</option>
+                                <option value="outback">Outback</option>
+                                <option value="tribeca">Tribeca</option>
+                                <option value="impreza">Impreza</option>
+                            </select>
+                        </label>
+                        <label class="select-css_short-justify">
+                            <div class="select-name">
+                                <div class="search_field__name">Год выпуска</div>
+                                <div class="search_field__subname">автомобиля:</div>
+                            </div>
+                            <select name="year" class="select-css select-css_short">
+                                <option value="2000">2000</option>
+                                <option value="2001">2001</option>
+                                <option value="2002">2002</option>
+                                <option value="2003">2003</option>
+                            </select>
+                        </label>
+                        <label>
+                            <div class="search_field__name select-name">Комплектация:</div>
+                            <select name="complect" class="select-css">
+                                <option value="base">base</option>
+                                <option value="econom">econom</option>
+                                <option value="full">full</option>
+                            </select>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div class="search search_tyres">
+                <span class="search__header">Поиск шин</span>
+            </div>
+            <div class="search search_discs">
+                <span class="search__header">Поиск дисков</span>
+            </div>
         </div>
     </main>
     <!--FOOTER-->
