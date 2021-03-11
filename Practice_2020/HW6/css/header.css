@@ -62,7 +62,7 @@ header {
 }
 
 .header__authorization__form input[type='password'] {
-    margin: 0 -3px 0 3px;
+    margin: 0 -4px 0 3px;
 }
 
 .header__authorization__field::placeholder {
@@ -79,10 +79,10 @@ header {
 
 .header__authorization__registration_link {
     position: relative;
+    height: 10px;
 
     text-decoration: none;
-    height: 10px;
-    line-height: 20px;
+    line-height: 19px;
 }
 
 .header__authorization__registration_link:before {

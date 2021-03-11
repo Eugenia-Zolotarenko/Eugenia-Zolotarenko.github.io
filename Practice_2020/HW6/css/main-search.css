@@ -1,0 +1,291 @@
+.search {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(156, 156, 157);
+    border-radius: 17px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 5px 0 rgba(150, 150, 150, 0.75);
+}
+
+.search_by_car {
+    margin-left: 4px;
+    box-shadow: 0 5px 5px 0 rgba(104, 104, 104, 0.75);
+}
+
+/*SEARCH TYRES*/
+
+.search_tyres {
+    margin-right: 10px;
+    margin-left: 14px;
+    border-radius: 18px;
+}
+
+.search:nth-child(3){
+    border-radius: 16px;
+}
+
+.search__header {
+    display: flex;
+    margin-bottom: 3px;
+
+    font-family: "Arial Black", Arial, sans-serif;
+    letter-spacing: 0.025em;
+    font-size: 12px;
+    color: #154467;
+}
+
+.search__header1 {
+    margin-top: -2px;
+    margin-left: 65px;
+}
+
+.search__header2 {
+    font-size: 10px;
+    color: #154468;
+}
+
+.search_tyres .search__header {
+    margin-left: 10px;
+    margin-right: 106px;
+}
+
+.search_by_car__forms {
+    display: flex;
+    justify-content: space-around;
+
+    font-family: Arial,sans-serif;
+    letter-spacing: 0.025em;
+}
+
+.search_by_car label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search_tyres label {
+    display: flex;
+}
+
+.search_by_car label + label {
+    margin-top: 3px;
+}
+
+.select-css_short-justify {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.search_by_car .search__header_discs {
+    margin-top: 2px;
+    margin-left: 20px;
+}
+
+.search_by_car .search__header_tyres {
+    margin-left: 72px;
+    margin-right: 20px;
+}
+
+.search_field__name {
+    font-size: 10px;
+    color: #000000;
+}
+
+.search_field__subname {
+    margin-top: -6px;
+
+    font-size: 8px;
+    color: #77858b;
+
+}
+
+.select-css {
+    box-shadow: inset 1px 1px 1px 0 rgba(0, 0,0, 0.75);
+    background-image: url("../img/search_select_arrow.png"),linear-gradient(to bottom, #ffffff 0%,#ffffff 100%);
+    background-repeat: no-repeat;
+    background-position: right 50%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 17px;
+    width: 100px;
+    padding-left: 5px;
+    padding-right: 15px;
+
+    font-size: 11px;
+}
+
+.select-css_short {
+    width: 58px;
+}
+
+.search_tyres .select-css_short {
+    width: 51px;
+}
+
+.select-name {
+    margin-top: -3px;
+    margin-left: 4px;
+    white-space: nowrap;
+}
+
+.select-css_short-justify .select-css_short {
+    margin-left: 13px;
+}
+
+.search__link {
+    float: right;
+    margin-top: 3px;
+    margin-right: 19px;
+
+    font-size: 14px;
+    font-style: italic;
+    letter-spacing: 0.025em;
+}
+
+.checkbox_value {
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 12px;
+}
+
+.checkbox-css {
+    box-shadow: inset 1px 1px 1px 0 rgba(0, 0,0, 0.75);
+    width: 11px;
+    height: 10px;
+}
+
+.checkbox-name {
+    display: flex;
+}
+
+.search_tyres .select-name {
+    margin-left: 13px;
+    margin-top: 3px;
+    margin-right: 9px;
+}
+
+.search_tyres .select-name:nth-child(2) {
+    margin-right: 5px;
+}
+
+.search_tyres .select-name:nth-child(2) {
+    margin-left: 23px;
+    margin-top: 3px;
+    margin-right: 9px;
+}
+
+.search_tyres form > label:nth-child(2) {
+    margin-left: 27px;
+}
+
+.select_divider {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.search_tyres .checkbox-name {
+    margin-top: 3px;
+    margin-left: 15px;
+
+}
+
+.search_tyres .checkbox-name label {
+    margin-top: 2px;
+    margin-left: 8px;
+}
+
+.search_tyres .checkbox-name label + label{
+    margin-top: -4px;
+}
+
+.search_tyres .search__link {
+    margin-top: -8px;
+    margin-right: 17px;
+    margin-bottom: 7px;
+}
+
+/*SEARCH DISCS*/
+
+.search_discs__form {
+    display: flex;
+}
+
+.search_discs .search__header {
+    margin-left: 9px;
+}
+
+.search_discs label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search_discs label+label {
+    margin-top: 5px;
+}
+
+
+.search_discs .select-name {
+    margin-top: -6px;
+}
+
+.search_discs .search_field__subname {
+    line-height: 9px;
+}
+
+.search_discs__form_part1 {
+    margin-right: 10px;
+}
+
+.search_discs__form_part1 label+label .search_field__subname {
+    margin-top: -2px;
+}
+
+.search_discs__form_part1 .select-name {
+    margin-right: 21px;
+    margin-left: 16px;
+}
+
+.search_discs__form_part2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: -13px;
+    margin-left: 2px;
+    margin-right: 23px;
+}
+
+.search_discs__form_part2:before {
+    position: absolute;
+    top: -5px;
+    left: -1px;
+    content: '';
+    width: 1px;
+    height: 106px;
+    border-left: 1px solid #bdc6ca;
+}
+.search_discs__form_part2 label {
+    flex-direction: column;
+}
+
+.search_discs__form_part2 label .select-css{
+    margin-left: 9px;
+}
+
+.search_discs__form_part2 label:first-child .search_field__subname {
+    margin-top: -3px;
+}
+
+.search_discs__form_part2 label:nth-child(2) .search_field__name {
+    margin-top: 6px;
+}
+
+.search_discs__form_part2 label:nth-child(2) .search_field__subname {
+    margin-top: -3px;
+    margin-bottom: 3px;
+}
+
+.search_discs .search__link {
+    margin-top: -2px;
+    margin-right: 17px;
+}

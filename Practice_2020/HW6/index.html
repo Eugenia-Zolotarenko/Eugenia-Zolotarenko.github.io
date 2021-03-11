@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main-nav.css">
+    <link rel="stylesheet" href="css/main-search.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 
@@ -45,11 +46,13 @@
             <span class="main_nav__amount">на сумму:</span><span class="main_nav__amount_sum">0,00 грн</span>
         </nav>
         <div class="main__search">
+            <!--SEARCH BY CAR-->
             <div class="search search_by_car">
                 <div class="search__header">
                     <span class="search__header2 search__header_discs">Диски:</span>
                     <span class="search__header1">Поиск по автомобилю</span>
-                    <span class="search__header2 search__header_tyres">Шины:</span></div>
+                    <span class="search__header2 search__header_tyres">Шины:</span>
+                </div>
                 <div class="search_by_car__forms">
                     <form action="/" name="search_by_car_discs" method="get" class="search_by_car_discs">
                         <label>
@@ -144,12 +147,116 @@
                         </label>
                     </form>
                 </div>
+                <a class="search__link" href="#">поиск...</a>
             </div>
+            <!--SEARCH TYRES-->
             <div class="search search_tyres">
-                <span class="search__header">Поиск шин</span>
+                <div class="search__header">поиск шин</div>
+                <form name="search_tyres" method="get"  >
+                    <label>
+                        <div class="search_field__name select-name">Размер:</div>
+                        <select name="size" class="select-css select-css_short">
+                            <option value="145">145</option>
+                            <option value="150">150</option>
+                            <option value="160">160</option>
+                        </select>
+                        <div class="select_divider">/</div>
+                        <select name="size_second" class="select-css select-css_short">
+                            <option value="50">50</option>
+                            <option value="60">60</option>
+                            <option value="70">70</option>
+                        </select>
+                    </label>
+                    <label>
+                        <div class="search_field__name select-name">R:</div>
+                        <select name="radius" class="select-css select-css_short">
+                            <option value="12">12</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                        </select>
+                    </label>
+                    <div class="checkbox-name">
+                        <div class="search_field__name">Сезон:</div>
+                        <div>
+                            <label class="checkbox_value">
+                                <input type="checkbox" name="season" class="checkbox-css" value="summer">лето
+                            </label>
+                            <label class="checkbox_value">
+                                <input type="checkbox" name="season" class="checkbox-css" value="winter">зима
+                            </label>
+                            <label class="checkbox_value">
+                                <input type="checkbox" name="season" class="checkbox-css" value="allseason">всесез
+                            </label>
+                        </div>
+                    </div>
+                </form>
+                <a class="search__link" href="#">поиск...</a>
             </div>
+            <!--SEARCH DISCS-->
             <div class="search search_discs">
-                <span class="search__header">Поиск дисков</span>
+                <div class="search__header">поиск дисков</div>
+                <form name="search_discs" method="get" class="search_discs__form">
+                    <div class="search_discs__form_part1">
+                        <label>
+                            <div class="select-name">
+                                <span class="search_field__name">Диаметр</span>
+                                <span class="search_field__subname">диска:</span>
+                            </div>
+                            <select name="size" class="select-css select-css_short">
+                                <option value="145">145</option>
+                                <option value="150">150</option>
+                                <option value="160">160</option>
+                            </select>
+                        </label>
+                        <label>
+                            <div class="select-name">
+                                <div class="search_field__name">Количество</div>
+                                <div class="search_field__subname">крепежных<br>отверстий:</div>
+                            </div>
+                            <select name="size_second" class="select-css select-css_short">
+                                <option value="50">50</option>
+                                <option value="60">60</option>
+                                <option value="70">70</option>
+                            </select>
+                        </label>
+                        <label>
+                            <div class="select-name">
+                                <div class="search_field__name">Диаметр</div>
+                                <div class="search_field__subname">расположения<br>крепежных<br>отверстий:</div>
+                            </div>
+                            <select name="radius" class="select-css select-css_short">
+                                <option value="12">12</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search_discs__form_part2">
+                        <label>
+                            <div class="select-name">
+                                <div class="search_field__name">ДЦО</div>
+                                <div class="search_field__subname">(диаметр<br>центрального<br>отверстия):</div>
+                            </div>
+                            <select name="size_second" class="select-css select-css_short">
+                                <option value="50">50</option>
+                                <option value="60">60</option>
+                                <option value="70">70</option>
+                            </select>
+                        </label>
+                        <label>
+                            <div class="select-name">
+                                <div class="search_field__name">ЕТ</div>
+                                <div class="search_field__subname">(вылет диска):</div>
+                            </div>
+                            <select name="radius" class="select-css select-css_short">
+                                <option value="12">12</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                            </select>
+                        </label>
+                    </div>
+                </form>
+                <a class="search__link" href="#">поиск...</a>
             </div>
         </div>
     </main>
