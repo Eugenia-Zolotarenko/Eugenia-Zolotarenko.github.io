@@ -1,3 +1,6 @@
+.main__search {
+    display: flex;
+}
 .search {
     border-style: solid;
     border-width: 1px;
@@ -20,7 +23,7 @@
     border-radius: 18px;
 }
 
-.search:nth-child(3){
+.search_discs{
     border-radius: 16px;
 }
 

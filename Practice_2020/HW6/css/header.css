@@ -24,7 +24,7 @@ header {
     border-radius: 50%;
     background-color: #f10000;
     background: url("../img/header_phone.png") no-repeat center center,
-    linear-gradient(to top, #206988, #114165 59%, 63%, #0c3256);
+                linear-gradient(to top, #206988, #114165 59%, 63%, #0c3256);
 }
 
 .header__authorization {
