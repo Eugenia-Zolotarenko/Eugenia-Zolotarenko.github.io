@@ -120,3 +120,69 @@ ul li .active {
 ul li .catalog_sublist_link:visited {
      color: inherit;
 }
+
+/*TYRES LIST*/
+
+.tyres_list {
+    display: flex;
+    flex-flow: wrap;
+    /*justify-content: space-evenly;*/
+    border-radius: 3px;
+    background-image: linear-gradient( to bottom, #e5e7e8 0%, 57%, rgb(118,141,151) 100%);
+    /*background-image: -webkit-linear-gradient( 90deg, rgb(35,75,93) 0%, rgb(118,141,151) 57%, rgb(201,207,209) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(35,75,93) 0%, rgb(118,141,151) 57%, rgb(201,207,209) 100%);*/
+    width: 60%;
+    padding-top: 12px;
+    padding-left: 3%;
+    padding-bottom: 30px;
+    margin-left: 9px;
+    margin-right: 9px;
+
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+.tyres_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tyres_item:nth-child(n+4) {
+    margin-top: 14px;
+}
+
+.tyres_item:nth-child(3n-1) {
+    margin-left: 4%;
+    margin-right: 5%;
+}
+
+
+.tyres_brand {
+    font-size: 15px;
+    color: #206988;
+}
+
+.tyres_model {
+    margin-top: -7px;
+    font-size: 13px;
+}
+
+.tyres_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(164, 174, 177);
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    width: 142px;
+    height: 131px;
+    margin-top: -3px;
+}
+
+.tyres_price {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    color: #114165;
+}
