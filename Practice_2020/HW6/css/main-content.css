@@ -244,7 +244,6 @@ ul li .catalog_sublist_link:visited {
     background-image: -ms-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
     cursor:pointer;
 
-    color: white;
     font-family: Arial, sans-serif;
     font-size: 11px;
     text-transform: uppercase;
