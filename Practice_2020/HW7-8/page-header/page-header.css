@@ -1,0 +1,10 @@
+.page-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header__logo {}
+
+.page-header__menu {}
+
+
