@@ -41,7 +41,6 @@
     left: 0;
     width: 100%;
     border-bottom: 2px solid #edbfff;
-
 }
 
 .main-menu__item:last-child:hover{
@@ -50,9 +49,20 @@
 }
 
 .main-menu__link {
+    position: relative;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 24px;
     font-family: LeagueGothic, Arial,sans-serif;
     color: #fff;
 }
+
+.main-menu__link_current:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    bottom:0;
+    left: 0;
+    border-bottom: 2px solid #edbfff;
+}
+
