@@ -1,0 +1,34 @@
+.carousel {
+
+}
+
+.carousel__wrapper {
+
+}
+
+.carousel__item {
+    font-family: LeagueGothic, Arial, sans-serif;
+
+}
+
+.carousel__item-title {
+    margin-bottom: -11px;
+    font-size: 36px;
+    color: #fefefe;
+    text-transform: capitalize;
+}
+
+.carousel__item-subtitle {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #edbfff;
+    letter-spacing: 0.025em;
+}
+
+.carousel__item-description {
+    display: none;
+}
+
+.carousel__img {
+    display: none;
+}
