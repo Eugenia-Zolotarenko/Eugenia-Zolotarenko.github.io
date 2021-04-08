@@ -10,62 +10,109 @@
     <link rel="stylesheet" href="page-header/page-header.css">
     <link rel="stylesheet" href="logo/logo.css">
     <link rel="stylesheet" href="main-menu/main-menu.css">
-    <link rel="stylesheet" href="carousel/carouel.css">
+    <link rel="stylesheet" href="carousel/carous.css">
 
-</head>
-<body class="page">
+ </head>
+ <body class="page">
+ <!--HEADER-->
     <header class="page-header">
-        <img src="logo/logo.png" class="logo page-header__logo" alt="pingbuller.com">
-        <nav class="page-header__main-menu">
-            <ul class="main-menu">
-                <li class="main-menu__item main-menu__item_current">
-                    <a href="#" class="main-menu__link main-menu__link_current">home</a>
-                </li>
-                <li class="main-menu__item main-menu__item_hidden">
-                    <a href="#" class="main-menu__link">about</a>
-                </li>
-                <li class="main-menu__item main-menu__item_hidden">
-                    <a href="#" class="main-menu__link">blog</a>
-                </li>
-                <li class="main-menu__item main-menu__item_hidden">
-                    <a href="#" class="main-menu__link">products</a>
-                </li>
-                <li class="main-menu__item main-menu__item_hidden">
-                    <a href="#" class="main-menu__link">lorem ipsum</a>
-                </li>
-                <li class="main-menu__item main-menu__item_hidden">
-                    <a href="#" class="main-menu__link">dolor si amet</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="carousel page-header__carousel">
+        <div class="page-header__wrapper">
+            <img src="logo/logo.png" class="logo page-header__logo" alt="pingbuller.com">
+            <nav class="page-header__main-menu">
+                <ul class="main-menu">
+                    <li class="main-menu__item main-menu__item_current">
+                        <a href="#" class="main-menu__link main-menu__link_current">home</a>
+                    </li>
+                    <li class="main-menu__item main-menu__item_hidden">
+                        <a href="#" class="main-menu__link">about</a>
+                    </li>
+                    <li class="main-menu__item main-menu__item_hidden">
+                        <a href="#" class="main-menu__link">blog</a>
+                    </li>
+                    <li class="main-menu__item main-menu__item_hidden">
+                        <a href="#" class="main-menu__link">products</a>
+                    </li>
+                    <li class="main-menu__item main-menu__item_hidden">
+                        <a href="#" class="main-menu__link">lorem ipsum</a>
+                    </li>
+                    <li class="main-menu__item main-menu__item_hidden">
+                        <a href="#" class="main-menu__link">dolor si amet</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="carousel page-header__carousel">
             <div class="carousel__wrapper">
-                <a class="carousel__link-back" href="#"></a>
+                <a class="carousel__link" href="#">
+                    <img src="carousel/carousel__link-back.png" alt="carousel__link-back">
+                </a>
                 <div class="carousel__item">
                     <div class="carousel__item-title">lorem ipsum dolor</div>
                     <div class="carousel__item-subtitle">it will make all your dreams come</div>
                     <div class="carousel__item-description"></div>
                 </div>
                 <div class="carousel__img"></div>
-                <a class="carousel__link-forward" href="#"></a>
+                <a class="carousel__link" href="#">
+                    <img src="carousel/carousel__link-forward.png" alt="carousel__link-forward">
+                </a>
             </div>
             <div class="carousel__pagination">
-                <div class="carousel__page">
-                    <span></span>
-                </div>
-                <div class="carousel__page active">
-                    <span></span>
-                </div>
-                <div class="carousel__page">
-                    <span></span>
-                </div>
-                <div class="carousel__page">
-                    <span></span>
-                </div>
-
+                <div class="carousel__page"></div>
+                <div class="carousel__page carousel__page_active"></div>
+                <div class="carousel__page"></div>
+                <div class="carousel__page"></div>
             </div>
         </div>
+        </div>
     </header>
+<!--SECTION-->
+    <section class="section-info">
+        <article class="article" >
+            <h2 class="article__name">about our company</h2>
+            <p class="article__summary">Nunc turpis neque, feugiat eget eleifend et,
+                lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
+                lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
+                Mauris nec metus ultricies erat consequat dignissim non eu nisl.
+                Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu.
+                Suspendisse quis mauris non ligula rutrum faucibus eu quis odio.
+                Phasellus eu lobortis odio. In hac habitasse platea dictumst.
+                Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
+                Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+            </p>
+            <a class="article__link" href="#">read more</a>
+        </article>
+        <article class="" >
+            <h2 class="article__name">about our company</h2>
+            <p class="article__summary">Nunc turpis neque, feugiat eget eleifend et,
+                lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
+                lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
+                Mauris nec metus ultricies erat consequat dignissim non eu nisl.
+                Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu.
+                Suspendisse quis mauris non ligula rutrum faucibus eu quis odio.
+                Phasellus eu lobortis odio. In hac habitasse platea dictumst.
+                Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
+                Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+            </p>
+            <a class="article__link" href="">read more</a>
+        </article>
+        <article class="" >
+            <h2 class="article__name">about our company</h2>
+            <p class="article__summary">Nunc turpis neque, feugiat eget eleifend et,
+                lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
+                lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
+                Mauris nec metus ultricies erat consequat dignissim non eu nisl.
+                Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu.
+                Suspendisse quis mauris non ligula rutrum faucibus eu quis odio.
+                Phasellus eu lobortis odio. In hac habitasse platea dictumst.
+                Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
+                Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+            </p>
+            <a class="article__link" href="">read more</a>
+        </article>
+
+    </section>
 
 
 

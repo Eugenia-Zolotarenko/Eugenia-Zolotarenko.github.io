@@ -9,6 +9,7 @@
 
 .page {
     display: flex;
-    justify-content: center;
-    background: url("page-background.jpg") no-repeat;
+    flex-direction: column;
+    align-items: center;
+    background: url("page-background.jpg")  -1048px 0 no-repeat;
 }

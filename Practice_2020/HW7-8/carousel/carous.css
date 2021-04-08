@@ -1,0 +1,64 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 355px;
+}
+
+.carousel__item {
+    font-family: LeagueGothic, Arial, sans-serif;
+
+}
+
+.carousel__link {
+    width: 22px;
+    height: 34px;
+}
+
+.carousel__item-title {
+    font-size: 36px;
+    color: #fefefe;
+    text-transform: capitalize;
+}
+
+.carousel__item-subtitle {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #edbfff;
+    letter-spacing: 0.025em;
+}
+
+.carousel__item-description {
+    display: none;
+}
+
+.carousel__img {
+    display: none;
+}
+
+.carousel__pagination {
+    display: flex;
+    justify-content: space-around;
+    width: 90px;
+    margin-top: 74px;
+}
+
+.carousel__page {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    opacity: 0.302;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.carousel__page_active {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+}

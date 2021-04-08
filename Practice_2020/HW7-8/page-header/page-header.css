@@ -1,8 +1,14 @@
 .page-header {
+    width: 100%;
+    border-bottom: 1px solid #35283c;
+}
+
+.page-header__wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .page-header__logo {
@@ -18,3 +24,9 @@
 .page-header__carousel {
     margin-top: 178px;
 }
+
+
+.page-header__carousel .carousel__item-title {
+    margin-bottom: -11px;
+}
+
