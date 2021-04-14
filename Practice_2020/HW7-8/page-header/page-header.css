@@ -1,6 +1,7 @@
 .page-header {
     width: 100%;
     border-bottom: 1px solid #35283c;
+    background: url("page-background.jpg")  -1048px 0 no-repeat;
 }
 
 .page-header__wrapper {
@@ -8,7 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    padding-bottom: 68px;
 }
 
 .page-header__logo {
@@ -18,13 +19,11 @@
 .page-header__main-menu {
     position: absolute;
     top: 139px;
-
 }
 
 .page-header__carousel {
     margin-top: 178px;
 }
-
 
 .page-header__carousel .carousel__item-title {
     margin-bottom: -11px;

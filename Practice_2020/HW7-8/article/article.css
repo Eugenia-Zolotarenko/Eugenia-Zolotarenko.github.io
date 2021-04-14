@@ -1,0 +1,56 @@
+.article {
+    position: relative;
+    font-family: LeagueGothic, Arial, sans-serif;
+    color: #ffffff;
+}
+
+.article__icon {
+    position: absolute;
+    top: 11px;
+    left: -48px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(article_sprite.svg);
+}
+
+.article__icon_wrench {
+    width: 20px;
+    height: 20px;
+    background-position: -25px 0;
+}
+
+.article__icon_bubble {
+    width: 20px;
+    height: 20px;
+    background-position: -50px 0;
+}
+
+.article__icon_music-notes {
+    width: 20px;
+    height: 20px;
+    background-position: 0 0;
+}
+
+.article__name {
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(15, 21, 24, 1);
+}
+
+.article__summary {
+    font-family: Open_Sanslight, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.article__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+}
+
+.article__link:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+

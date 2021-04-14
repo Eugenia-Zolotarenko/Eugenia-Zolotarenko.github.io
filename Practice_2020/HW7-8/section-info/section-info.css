@@ -1,0 +1,20 @@
+.section-info {
+    background-image: linear-gradient(to top, #322539, #745083);
+    padding-top: 64px;
+    padding-bottom: 61px;
+    padding-left: 74px;
+}
+
+.section-info > * + * {
+    margin-top: 57px;
+}
+
+.section-info__item {
+    width: 92%;
+}
+
+.section-info__item .article__link {
+    display: inline-block;
+    float: right;
+    margin-top: 8px;
+}
