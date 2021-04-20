@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="la">
 <head>
     <title>Home Work 7-8 2021</title>
     <meta charset="utf-8">
@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="text/text.css">
+    <link rel="stylesheet" href="hidden/hidden.css">
     <link rel="stylesheet" href="page/page.css">
+    <link rel="stylesheet" href="title/title.css">
     <link rel="stylesheet" href="page-header/page-header.css">
     <link rel="stylesheet" href="logo/logo.css">
     <link rel="stylesheet" href="main-menu/main-menu.css">
     <link rel="stylesheet" href="carousel/carous.css">
+    <link rel="stylesheet" href="pagination/pagination.css">
     <link rel="stylesheet" href="section-info/section-info.css">
     <link rel="stylesheet" href="article/article.css">
-    <link rel="stylesheet" href="text_preview/text_preview.css">
-
+    <link rel="stylesheet" href="main-content/main-content.css">
+    <link rel="stylesheet" href="recent-updates/recent-updates.css">
  </head>
  <body class="page">
  <!--HEADER-->
@@ -25,22 +29,22 @@
             <nav class="page-header__main-menu">
                 <ul class="main-menu">
                     <li class="main-menu__item main-menu__item_current">
-                        <a href="#" class="main-menu__link main-menu__link_current">home</a>
+                        <a href="#" class="main-menu__link main-menu__link_current text-uppercase">home</a>
                     </li>
                     <li class="main-menu__item main-menu__item_hidden">
-                        <a href="#" class="main-menu__link">about</a>
+                        <a href="#" class="text-uppercase main-menu__link ">about</a>
                     </li>
                     <li class="main-menu__item main-menu__item_hidden">
-                        <a href="#" class="main-menu__link">blog</a>
+                        <a href="#" class="main-menu__link text-uppercase">blog</a>
                     </li>
                     <li class="main-menu__item main-menu__item_hidden">
-                        <a href="#" class="main-menu__link">products</a>
+                        <a href="#" class="main-menu__link text-uppercase">products</a>
                     </li>
                     <li class="main-menu__item main-menu__item_hidden">
-                        <a href="#" class="main-menu__link">lorem ipsum</a>
+                        <a href="#" class="main-menu__link text-uppercase">lorem ipsum</a>
                     </li>
                     <li class="main-menu__item main-menu__item_hidden">
-                        <a href="#" class="main-menu__link">dolor si amet</a>
+                        <a href="#" class="main-menu__link text-uppercase">dolor si amet</a>
                     </li>
                 </ul>
             </nav>
@@ -50,20 +54,20 @@
                     <img src="carousel/carousel__link-back.png" alt="carousel__link-back">
                 </a>
                 <div class="carousel__item">
-                    <div class="carousel__item-title">lorem ipsum dolor</div>
-                    <div class="carousel__item-subtitle">it will make all your dreams come</div>
-                    <div class="carousel__item-description"></div>
+                    <div class="carousel__title">lorem ipsum dolor</div>
+                    <div class="carousel__subtitle">it will make all your dreams come</div>
+                    <div class="carousel__description hidden"></div>
                 </div>
                 <div class="carousel__img"></div>
                 <a class="carousel__link" href="#">
                     <img src="carousel/carousel__link-forward.png" alt="carousel__link-forward">
                 </a>
             </div>
-            <div class="carousel__pagination">
-                <div class="carousel__page"></div>
-                <div class="carousel__page carousel__page_active"></div>
-                <div class="carousel__page"></div>
-                <div class="carousel__page"></div>
+            <div class="pagination page-header__pagination">
+                <div class="pagination__page"></div>
+                <div class="pagination__page pagination__page_active"></div>
+                <div class="pagination__page"></div>
+                <div class="pagination__page"></div>
             </div>
         </div>
         </div>
@@ -72,8 +76,8 @@
     <section class="section-info">
         <article class="article section-info__item">
             <div class="article__icon article__icon_wrench"></div>
-            <h2 class="article__name">about our company</h2>
-            <p class="article__summary text_preview">Nunc turpis neque, feugiat eget eleifend et,
+            <h2 class="article__title text-uppercase">about our company</h2>
+            <p class="article__text text text_preview">Nunc turpis neque, feugiat eget eleifend et,
                     lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
                     lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
                     Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
@@ -84,12 +88,12 @@
                     Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
                     Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
             </p>
-            <a class="article__link" href="#">read more</a>
+            <a class="article__link text-uppercase text-uppercase_link" href="#">read more</a>
         </article>
         <article class="article section-info__item">
             <div class="article__icon article__icon_bubble"></div>
-            <h2 class="article__name">about our company</h2>
-            <p class="article__summary text_preview">Nunc turpis neque, feugiat eget eleifend et,
+            <h2 class="article__title text-uppercase">about our company</h2>
+            <p class="article__text text text_preview">Nunc turpis neque, feugiat eget eleifend et,
                 lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
                 lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
                 Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
@@ -100,12 +104,12 @@
                 Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
                 Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
             </p>
-            <a class="article__link" href="">read more</a>
+            <a class="article__link text-uppercase text-uppercase_link" href="">read more</a>
         </article>
         <article class="article section-info__item">
             <div class="article__icon article__icon_music-notes"></div>
-            <h2 class="article__name">about our company</h2>
-            <p class="article__summary text_preview">Nunc turpis neque, feugiat eget eleifend et,
+            <h2 class="article__title text-uppercase">about our company</h2>
+            <p class="article__text text text_preview">Nunc turpis neque, feugiat eget eleifend et,
                 lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
                 lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
                 Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
@@ -116,8 +120,83 @@
                 Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
                 Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
             </p>
-            <a class="article__link" href="">read more</a>
+            <a class="article__link text-uppercase text-uppercase_link" href="">read more</a>
         </article>
     </section>
+ <!--MAIN-->
+     <main class="main-content">
+         <div class="main-content__item">
+             <article class="article main-content__article">
+                 <div class="article__icon "></div>
+                 <h2 class="article__title text-uppercase">pingbuller
+                     <span class="main-content__article-subtitle">
+                         starts here
+                     </span>
+                 </h2>
+                 <p class="article__text text text_preview main-content__article-text">
+                     "Nunc turpis neque, feugiat eget eleifend et,
+                     lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
+                     lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                     Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
+                     Mauris nec metus ultricies erat consequat dignissim non eu nisl.
+                     Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu.
+                     Suspendisse quis mauris non ligula rutrum faucibus eu quis odio.
+                     Phasellus eu lobortis odio. In hac habitasse platea dictumst.
+                     Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
+                     Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+                 </p>
+             </article>
+             <div class="pagination main-content__pagination">
+                 <div class="pagination__page pagination__page_theme_light"></div>
+                 <div class="pagination__page pagination__page_theme_light
+                             pagination__page_active_theme_light"></div>
+                 <div class="pagination__page pagination__page_theme_light"></div>
+                 <div class="pagination__page pagination__page_theme_light"></div>
+            </div>
+         </div>
+         <div class="main-content__item ">
+             <div class="recent-updates main-content__recent-updates">
+                 <h2 class="recent-updates__header text-uppercase">recent updates</h2>
+                 <div class="recent-updates__item">
+                     <div class="recent-updates__icon"></div>
+                     <div class="recent-updates__wrapper">
+                         <div class="text recent-updates__text ">
+                             Nunc turpis neque <span class="hidden_less-than-320">feugiat eget</span>
+                         </div>
+                         <div class="text recent-updates__info ">
+                             Posted by Admin on March 13 <span class="hidden_less-than-320">2012
+                             <span class="hidden_less-than-960">in Recent News</span></span>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="recent-updates__item">
+                     <div class="recent-updates__icon"></div>
+                     <div class="recent-updates__wrapper">
+                         <div class="text recent-updates__text ">
+                             Nunc turpis neque <span class="hidden_less-than-320">feugiat eget</span>
+                         </div>
+                         <div class="text recent-updates__info ">
+                             Posted by Admin on March 13 <span class="hidden_less-than-320">2012
+                             <span class="hidden_less-than-960">in Recent News</span></span>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="recent-updates__item">
+                     <div class="recent-updates__icon"></div>
+                     <div class="recent-updates__wrapper">
+                         <div class="text recent-updates__text ">
+                             Nunc turpis neque <span class="hidden_less-than-320">feugiat eget</span>
+                         </div>
+                         <div class="text recent-updates__info ">
+                             Posted by Admin on March 13 <span class="hidden_less-than-320">2012
+                             <span class="hidden_less-than-960">in Recent News</span></span>
+                         </div>
+                     </div>
+                 </div>
+                 <a class="recent-updates__link text-uppercase text-uppercase_link">more blog posts</a>
+             </div>
+         </div>
+
+     </main>
 </body>
 </html>

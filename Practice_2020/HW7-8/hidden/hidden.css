@@ -1,0 +1,11 @@
+.hidden {
+    display: none;
+}
+
+.hidden_less-than-320 {
+    display: none;
+}
+
+.hidden_less-than-960 {
+    display: none;
+}

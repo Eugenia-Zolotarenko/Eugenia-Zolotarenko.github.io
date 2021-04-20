@@ -25,7 +25,10 @@
     margin-top: 178px;
 }
 
-.page-header__carousel .carousel__item-title {
+.page-header__carousel .carousel__title {
     margin-bottom: -11px;
 }
 
+.page-header__pagination {
+    margin-top: 74px;
+}
