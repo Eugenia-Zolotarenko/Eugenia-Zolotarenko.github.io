@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="article/article.css">
     <link rel="stylesheet" href="main-content/main-content.css">
     <link rel="stylesheet" href="recent-updates/recent-updates.css">
+    <link rel="stylesheet" href="banners/banners.css">
+    <link rel="stylesheet" href="footer/footer.css">
  </head>
  <body class="page">
  <!--HEADER-->
@@ -124,37 +126,38 @@
         </article>
     </section>
  <!--MAIN-->
-     <main class="main-content">
-         <div class="main-content__item">
-             <article class="article main-content__article">
-                 <div class="article__icon "></div>
-                 <h2 class="article__title text-uppercase">pingbuller
-                     <span class="main-content__article-subtitle">
-                         starts here
-                     </span>
-                 </h2>
-                 <p class="article__text text text_preview main-content__article-text">
-                     "Nunc turpis neque, feugiat eget eleifend et,
-                     lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
-                     lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
-                     Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
-                     Mauris nec metus ultricies erat consequat dignissim non eu nisl.
-                     Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu.
-                     Suspendisse quis mauris non ligula rutrum faucibus eu quis odio.
-                     Phasellus eu lobortis odio. In hac habitasse platea dictumst.
-                     Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
-                     Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
-                 </p>
-             </article>
-             <div class="pagination main-content__pagination">
-                 <div class="pagination__page pagination__page_theme_light"></div>
-                 <div class="pagination__page pagination__page_theme_light
-                             pagination__page_active_theme_light"></div>
-                 <div class="pagination__page pagination__page_theme_light"></div>
-                 <div class="pagination__page pagination__page_theme_light"></div>
-            </div>
-         </div>
-         <div class="main-content__item ">
+    <main class="main-content">
+        <div class="main-content__wrapper">
+             <div class="main-content__item">
+                 <article class="article main-content__article">
+                     <div class="article__icon "></div>
+                     <h2 class="article__title text-uppercase">pingbuller
+                         <span class="main-content__article-subtitle">
+                             starts here
+                         </span>
+                     </h2>
+                     <p class="article__text text text_preview main-content__article-text">
+                         "Nunc turpis neque, feugiat eget eleifend et,
+                         lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
+                         lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                         Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
+                         Mauris nec metus ultricies erat consequat dignissim non eu nisl.
+                         Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu.
+                         Suspendisse quis mauris non ligula rutrum faucibus eu quis odio.
+                         Phasellus eu lobortis odio. In hac habitasse platea dictumst.
+                         Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
+                         Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+                     </p>
+                 </article>
+                 <div class="pagination main-content__pagination">
+                     <div class="pagination__page pagination__page_theme_light"></div>
+                     <div class="pagination__page pagination__page_theme_light
+                                 pagination__page_active_theme_light"></div>
+                     <div class="pagination__page pagination__page_theme_light"></div>
+                     <div class="pagination__page pagination__page_theme_light"></div>
+                </div>
+             </div>
+             <div class="main-content__item ">
              <div class="recent-updates main-content__recent-updates">
                  <h2 class="recent-updates__header text-uppercase">recent updates</h2>
                  <div class="recent-updates__item">
@@ -196,7 +199,27 @@
                  <a class="recent-updates__link text-uppercase text-uppercase_link">more blog posts</a>
              </div>
          </div>
-
+        </div>
      </main>
+ <!--BANNERS-->
+    <aside class="banners page__banners">
+        <div class="banners__list page__banners-list">
+            <a class="banners__link" href="#"><img src="banners/banner1.png" class="banners__image" alt="banner"></a>
+            <a class="banners__link" href="#"><img src="banners/banner2.png" class="banners__image" alt="banner"></a>
+            <a class="banners__link" href="#"><img src="banners/banner3.png" class="banners__image" alt="banner"></a>
+            <a class="banners__link" href="#"><img src="banners/banner4.png" class="banners__image" alt="banner"></a>
+            <a class="banners__link" href="#"><img src="banners/banner5.png" class="banners__image" alt="banner"></a>
+            <a class="banners__link" href="#"><img src="banners/banner6.png" class="banners__image" alt="banner"></a>
+        </div>
+    </aside>
+ <!--NEWS-->
+    <section class="hidden_less-than-320"></section>
+
+ <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer__background"></div>
+        <div class="footer__text text">Designed by <span>Pingbull AS</span></div>
+    </footer>
+
 </body>
 </html>

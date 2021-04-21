@@ -1,0 +1,22 @@
+.banners {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 5;
+    background-color: #f9f9f9;
+}
+
+.banners__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 73%;
+}
+
+.banners__link {
+    margin-bottom: 62px;
+}
+
+.banners__link:last-child {
+    margin-top: -19px;
+}

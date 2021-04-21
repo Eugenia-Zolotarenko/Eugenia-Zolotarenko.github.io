@@ -4,3 +4,7 @@
     align-items: center;
 }
 
+.page__banners {
+    padding: 51px 20px 13px 21px;
+    border-top: 1px solid #fefefe;
+}

@@ -4,12 +4,16 @@
     align-items: center;
     padding-top: 70px;
     background-color: #f9f9f9;
-    width: 93%;
+    border-bottom: 1px solid #e6e6e6;
 
     color: #454545;
 }
 
-.main-content > * + * {
+.main-content__wrapper {
+    width: 93%;
+}
+
+.main-content__wrapper > * + * {
     margin-top: 39px;
 }
 
@@ -46,7 +50,7 @@
 
 .main-content .article__icon {
     top: 17px;
-    left: -27px;
+    left: -26px;
     width: 53px;
     height: 52px;
     background-image: url("main-content_avatar.png");
@@ -61,5 +65,5 @@
 }
 
 .main-content__recent-updates {
-    width: 100%;
+    margin-bottom: 84px;
 }

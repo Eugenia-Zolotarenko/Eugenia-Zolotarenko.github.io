@@ -5,6 +5,10 @@
     font-weight: normal;
 }
 
+.text span {
+    font-weight: bold;
+}
+
 .text-uppercase {
     color: inherit;
     font-family: LeagueGothic, Arial, sans-serif;
