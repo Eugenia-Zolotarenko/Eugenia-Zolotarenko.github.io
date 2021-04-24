@@ -9,3 +9,9 @@
 .hidden_less-than-960 {
     display: none;
 }
+
+@media (min-width: 321px) {
+    .hidden_less-than-320 {
+        display: inline-block;
+    }
+}

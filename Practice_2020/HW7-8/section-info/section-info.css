@@ -15,8 +15,23 @@
 }
 
 .section-info__item .article__link {
-    display: inline-block;
     float: right;
     margin-top: 8px;
     margin-right: -1px;
+}
+
+@media (min-width: 321px) {
+    .section-info {
+        padding-top: 71px;
+        padding-bottom: 66px;
+        padding-left: 75px;
+    }
+
+    .section-info__item .article__link {
+        margin-right: -13px;
+    }
+
+    .section-info > * + * {
+        margin-top: 51px;
+    }
 }

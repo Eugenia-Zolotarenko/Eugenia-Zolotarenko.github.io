@@ -5,6 +5,16 @@
 }
 
 .page__banners {
-    padding: 51px 20px 13px 21px;
     border-top: 1px solid #fefefe;
+}
+
+.page__banners-list {
+    margin: 51px 0 75px 0;
+}
+/*480px*/
+@media (min-width: 321px) {
+
+    .page__banners-list {
+        margin: 35px 0 43px 0;
+    }
 }

@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="text/text.css">
     <link rel="stylesheet" href="hidden/hidden.css">
     <link rel="stylesheet" href="page/page.css">
-    <link rel="stylesheet" href="title/title.css">
     <link rel="stylesheet" href="page-header/page-header.css">
     <link rel="stylesheet" href="logo/logo.css">
     <link rel="stylesheet" href="main-menu/main-menu.css">
@@ -21,6 +20,7 @@
     <link rel="stylesheet" href="main-content/main-content.css">
     <link rel="stylesheet" href="recent-updates/recent-updates.css">
     <link rel="stylesheet" href="banners/banners.css">
+    <link rel="stylesheet" href="news/news.css">
     <link rel="stylesheet" href="footer/footer.css">
  </head>
  <body class="page">
@@ -60,7 +60,7 @@
                     <div class="carousel__subtitle">it will make all your dreams come</div>
                     <div class="carousel__description hidden"></div>
                 </div>
-                <div class="carousel__img"></div>
+                <img class="carousel__img hidden_less-than-320" src="carousel/carousel_img.png" alt="iphone">
                 <a class="carousel__link" href="#">
                     <img src="carousel/carousel__link-forward.png" alt="carousel__link-forward">
                 </a>
@@ -75,7 +75,7 @@
         </div>
     </header>
 <!--SECTION-->
-    <section class="section-info">
+    <section class="section-info ">
         <article class="article section-info__item">
             <div class="article__icon article__icon_wrench"></div>
             <h2 class="article__title text-uppercase">about our company</h2>
@@ -167,8 +167,8 @@
                              Nunc turpis neque <span class="hidden_less-than-320">feugiat eget</span>
                          </div>
                          <div class="text recent-updates__info ">
-                             Posted by Admin on March 13 <span class="hidden_less-than-320">2012
-                             <span class="hidden_less-than-960">in Recent News</span></span>
+                             Posted by Admin on March 13 <span class="hidden_less-than-320">2012</span>
+                             <span class="hidden_less-than-960">in Recent News</span>
                          </div>
                      </div>
                  </div>
@@ -179,8 +179,8 @@
                              Nunc turpis neque <span class="hidden_less-than-320">feugiat eget</span>
                          </div>
                          <div class="text recent-updates__info ">
-                             Posted by Admin on March 13 <span class="hidden_less-than-320">2012
-                             <span class="hidden_less-than-960">in Recent News</span></span>
+                             Posted by Admin on March 13 <span class="hidden_less-than-320">2012</span>
+                             <span class="hidden_less-than-960">in Recent News</span>
                          </div>
                      </div>
                  </div>
@@ -191,8 +191,8 @@
                              Nunc turpis neque <span class="hidden_less-than-320">feugiat eget</span>
                          </div>
                          <div class="text recent-updates__info ">
-                             Posted by Admin on March 13 <span class="hidden_less-than-320">2012
-                             <span class="hidden_less-than-960">in Recent News</span></span>
+                             Posted by Admin on March 13 <span class="hidden_less-than-320">2012</span>
+                             <span class="hidden_less-than-960">in Recent News</span>
                          </div>
                      </div>
                  </div>
@@ -213,13 +213,76 @@
         </div>
     </aside>
  <!--NEWS-->
-    <section class="hidden_less-than-320"></section>
-
+    <section class="news hidden_less-than-320 ">
+        <article class="article news__article">
+            <h2 class="article__title text-uppercase">pingbull<span>er</span></h2>
+            <div class="news__copyright">Copyright 2013, Pingbull AS</div>
+            <p class="article__text text text_preview">Nunc turpis neque, feugiat eget eleifend et,
+                lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
+                lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
+                Mauris nec metus ultricies erat consequat dignissim non eu nisl.
+                Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu.
+                Suspendisse quis mauris non ligula rutrum faucibus eu quis odio.
+                Phasellus eu lobortis odio. In hac habitasse platea dictumst.
+                Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
+                Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+            </p>
+        </article>
+        <article class="article news__article">
+            <h2 class="article__title text-uppercase">recent comments</h2>
+            <p class="article__text text text_preview">Nunc turpis neque, feugiat eget eleifend et,
+                lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
+                lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
+                Mauris nec metus ultricies erat consequat dignissim non eu nisl.
+                Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu.
+                Suspendisse quis mauris non ligula rutrum faucibus eu quis odio.
+                Phasellus eu lobortis odio. In hac habitasse platea dictumst.
+                Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
+                Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+            </p>
+        </article>
+        <article class="article news__article">
+            <h2 class="article__title text-uppercase">news categories</h2>
+            <p class="article__text text text_preview">Nunc turpis neque, feugiat eget eleifend et,
+                lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
+                lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
+                Mauris nec metus ultricies erat consequat dignissim non eu nisl.
+                Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu.
+                Suspendisse quis mauris non ligula rutrum faucibus eu quis odio.
+                Phasellus eu lobortis odio. In hac habitasse platea dictumst.
+                Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
+                Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+            </p>
+        </article>
+    </section>
  <!--FOOTER-->
     <footer class="footer">
-        <div class="footer__background"></div>
-        <div class="footer__text text">Designed by <span>Pingbull AS</span></div>
+        <nav class="footer__menu hidden_less-than-320">
+            <ul class="main-menu">
+                <li class="main-menu__item">
+                    <a href="#" class="main-menu__link text-uppercase">home</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#" class="text-uppercase main-menu__link ">about</a>
+                </li>
+                <li class="main-menu__item ">
+                    <a href="#" class="main-menu__link text-uppercase">blog</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#" class="main-menu__link text-uppercase">products</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#" class="main-menu__link text-uppercase">lorem ipsum</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#" class="main-menu__link text-uppercase">dolor sit amet</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__text text">Designed by <span class="text_bold">Pingbull AS</span></div>
     </footer>
-
-</body>
+ </body>
 </html>

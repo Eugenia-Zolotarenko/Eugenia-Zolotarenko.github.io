@@ -1,10 +1,11 @@
 .recent-updates {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 92%;
 }
 
-.recent-updates__item {
+
+.recent-updates__item{
     position: relative;
     margin-bottom: 17px;
     padding-left: 67px;
@@ -20,7 +21,6 @@
 }
 
 .recent-updates__header {
-    align-self: self-start;
     margin-bottom: 9px;
     font-size: 30px;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
@@ -33,9 +33,34 @@
 .recent-updates__link {
     align-self: flex-end;
     margin-top: 3px;
-    margin-right: 6px;
+    margin-right: -16px;
 }
 
 .recent-updates__info {
     letter-spacing: -0.005em;
+    white-space: nowrap;
+}
+
+@media (min-width: 321px) {
+
+    .recent-updates {
+        width: 81%;
+    }
+    .recent-updates__item {
+        padding-left: 98px;
+        margin-bottom: 19px;
+    }
+
+    .recent-updates__header {
+        margin-left: 31px;
+    }
+
+    .recent-updates__icon {
+        left: 32px;
+    }
+    .recent-updates__link {
+        margin-top: -3px;
+        margin-right: 8px;
+    }
+
 }

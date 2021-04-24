@@ -6,9 +6,9 @@
 
 .carousel__wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 320px;
+        width: 320px;
 }
 
 .carousel__item {
@@ -37,6 +37,17 @@
 
 }
 
-.carousel__img {
-    display: none;
+
+@media (min-width: 321px) {
+    .carousel__wrapper {
+        width: 111%;
+    }
+
+    .carousel__item {
+        transform: translateY(-32%);
+    }
+
+    .carousel__link {
+        transform: translateY(-53%);
+    }
 }
