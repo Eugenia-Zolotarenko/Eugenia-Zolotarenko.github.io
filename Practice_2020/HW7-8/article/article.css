@@ -1,5 +1,8 @@
 .article {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .article__icon {
@@ -28,7 +31,18 @@
     background-position: 0 0;
 }
 
+.article__link {
+    align-self: flex-end;
+    margin-top: 8px;
+}
+
 .article__link:hover {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
+@media (min-width: 481px) {
+    .article__link {
+        margin-top: 0;
+        margin-right: 5%;
+    }
+}

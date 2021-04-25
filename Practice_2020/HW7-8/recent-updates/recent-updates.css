@@ -41,11 +41,13 @@
     white-space: nowrap;
 }
 
+/*480*/
 @media (min-width: 321px) {
 
     .recent-updates {
         width: 81%;
     }
+
     .recent-updates__item {
         padding-left: 98px;
         margin-bottom: 19px;
@@ -62,5 +64,29 @@
         margin-top: -3px;
         margin-right: 8px;
     }
+}
 
+/*768*/
+
+@media (min-width: 481px) {
+
+    .recent-updates {
+        width: 100%;
+    }
+
+    .main-content__wrapper > * + * {
+        margin-top: 21px;
+    }
+
+    .recent-updates__header {
+        margin-left: 39px;
+    }
+
+    .recent-updates__item {
+        padding-left: 28%;
+    }
+
+    .recent-updates__icon {
+        left: 11%;
+    }
 }

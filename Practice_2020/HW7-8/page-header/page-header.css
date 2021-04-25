@@ -26,10 +26,6 @@
     margin-top: 178px;
 }
 
-.page-header__carousel .carousel__title {
-    margin-bottom: -11px;
-}
-
 .page-header__pagination {
     margin-top: 74px;
 }
@@ -40,7 +36,7 @@
     }
 
     .page-header__wrapper {
-        padding-bottom: 60px;
+        padding-bottom: 56px;
     }
 
     .page-header:after {
@@ -60,5 +56,39 @@
 
     .page-header__pagination {
         margin-top: -25px;
+    }
+}
+
+@media (min-width: 481px) {
+    .page-header {
+        background-position: -815px 0;
+    }
+
+    .page-header:after {
+        top: 244px;
+        height: 400px;
+    }
+    .page-header__wrapper {
+        padding-bottom: 100px;
+    }
+
+    .page-header__logo,
+    .page-header__main-menu{
+        align-self: flex-start;
+        margin-left: 3%;
+    }
+
+    .page-header__main-menu{
+        width: 82%;
+    }
+
+    .page-header__carousel {
+        margin-top: 109px;
+    }
+
+    .page-header__pagination {
+        margin-top: 23px;
+        align-self: flex-end;
+        margin-right: 16%;
     }
 }
