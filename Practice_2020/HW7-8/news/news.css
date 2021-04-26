@@ -6,8 +6,7 @@
         align-items: center;
         width: 100%;
         background: #ececec;
-        padding-top: 56px;
-        padding-bottom: 90px;
+
         z-index: 55;
     }
 
@@ -49,3 +48,20 @@
     }
 }
 
+/*768*/
+@media (min-width: 481px) {
+
+    .news {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .news__article {
+        width: 28%;
+    }
+
+    .news .text_preview {
+        -webkit-line-clamp: 7;
+    }
+
+}

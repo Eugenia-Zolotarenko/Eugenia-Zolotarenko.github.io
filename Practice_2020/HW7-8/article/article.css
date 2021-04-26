@@ -40,6 +40,8 @@
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
+
+/*768*/
 @media (min-width: 481px) {
     .article__link {
         margin-top: 0;

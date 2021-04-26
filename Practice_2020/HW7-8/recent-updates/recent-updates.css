@@ -4,7 +4,6 @@
     width: 92%;
 }
 
-
 .recent-updates__item{
     position: relative;
     margin-bottom: 17px;
@@ -67,7 +66,6 @@
 }
 
 /*768*/
-
 @media (min-width: 481px) {
 
     .recent-updates {

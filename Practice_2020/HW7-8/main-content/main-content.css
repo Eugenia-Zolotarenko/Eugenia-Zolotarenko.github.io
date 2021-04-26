@@ -54,9 +54,6 @@
 .main-content .article__icon {
     top: 17px;
     left: -27px;
-    /*width: 53px;
-    height: 52px;*/
-    /*background-image: url("main-content_avatar.png");*/
 }
 
 .main-content__article .text_preview {
@@ -70,6 +67,7 @@
 .main-content__recent-updates {
     margin-bottom: 84px;
 }
+
 /*480*/
 @media (min-width: 321px) {
     .main-content__wrapper {
@@ -102,7 +100,6 @@
 }
 
 /*768*/
-
 @media (min-width: 481px) {
 
     .main-content {

@@ -49,6 +49,7 @@
     width: 41%;
 }
 
+/*480*/
 @media (min-width: 321px) {
 
        .carousel__item {

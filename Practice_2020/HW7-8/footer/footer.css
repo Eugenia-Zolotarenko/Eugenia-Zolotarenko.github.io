@@ -33,6 +33,7 @@
     margin-top:37px;
 }
 
+/*480*/
 @media (min-width: 321px) {
     .footer__menu {
         margin-top: 41px;
@@ -83,5 +84,30 @@
 
     .footer__text {
         margin-top: 28px;
+    }
+}
+
+/*768*/
+@media (min-width: 321px) {
+
+    .footer__menu {
+        margin-left: 5%;
+    }
+
+    .footer .main-menu {
+        justify-content: flex-start;
+    }
+
+    .footer .main-menu__item {
+        margin-right: 6%;
+    }
+
+    .footer .main-menu__link {
+        font-size: 20px;
+    }
+
+    .footer__text {
+        align-self: flex-end;
+        margin-right: 1%;
     }
 }
