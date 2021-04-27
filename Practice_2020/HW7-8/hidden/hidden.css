@@ -25,3 +25,9 @@
         display: -webkit-box;
     }
 }
+
+@media (min-width: 769px) {
+    .hidden_less-than-960 {
+        display: inline;
+    }
+}

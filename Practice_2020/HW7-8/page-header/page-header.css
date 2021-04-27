@@ -1,4 +1,6 @@
 .page-header {
+    display: flex;
+    justify-content: center;
     position: relative;
     width: 100%;
     border-bottom: 1px solid #35283c;
@@ -20,6 +22,7 @@
 .page-header__main-menu {
     position: absolute;
     top: 139px;
+    z-index: 55;
 }
 
 .page-header__carousel {
@@ -90,5 +93,37 @@
         margin-top: 23px;
         align-self: flex-end;
         margin-right: 16%;
+    }
+}
+
+/*960*/
+@media (min-width: 769px) {
+
+    .page-header {
+        background-position: -700px 0;
+    }
+
+    .page-header:after {
+        top: 278px;
+    }
+
+    .page-header__wrapper{
+        max-width: 960px;
+        padding-bottom: 58px;
+    }
+
+    .page-header__logo, .page-header__main-menu {
+        margin-left: 2%;
+    }
+
+    .page-header__main-menu {
+        top: 69px;
+        right: 1%;
+        width: 67%;
+    }
+
+    .page-header__pagination {
+        margin-top: 124px;
+        margin-right: 14%;
     }
 }

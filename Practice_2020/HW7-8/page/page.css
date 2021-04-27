@@ -1,7 +1,7 @@
 .page {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
 .page__banners {
@@ -32,6 +32,18 @@
 
     .page__news {
         padding-top: 40px;
-        padding-bottom: 97px;
+        padding-bottom: 95px;
+    }
+}
+
+/*960*/
+@media (min-width: 769px) {
+    .page__banners-list {
+        margin: 25px 0 29px 0;
+    }
+
+    .page__news {
+        padding-top: 40px;
+        padding-bottom: 95px;
     }
 }

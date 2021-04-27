@@ -72,3 +72,12 @@
         margin-bottom: 0;
     }
 }
+
+/*960*/
+
+@media (min-width: 769px) {
+    .banners__list {
+        max-width: 960px;
+        justify-content: space-evenly;
+    }
+}

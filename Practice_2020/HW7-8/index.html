@@ -61,7 +61,8 @@
                     <div class="carousel__text hidden_less-than-768 text text_preview">
                         Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est,
                         et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod
-                        lacus id semper.</div>
+                        lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum
+                        arcu et felis aliquam a tempus lectus lobortis..</div>
                 </div>
                 <img class="carousel__img hidden_less-than-320" src="carousel/carousel_img.png" alt="iphone">
                 <a class="carousel__link" href="#">
@@ -79,10 +80,27 @@
     </header>
 <!--SECTION-->
     <section class="section-info ">
-        <article class="article section-info__item">
-            <div class="article__icon article__icon_wrench"></div>
-            <h2 class="article__title text-uppercase">about our company</h2>
-            <p class="article__text text text_preview">Nunc turpis neque, feugiat eget eleifend et,
+        <div class="section-info__wrapper">
+            <article class="article section-info__item">
+                <div class="article__icon article__icon_wrench"></div>
+                <h2 class="article__title text-uppercase">about our company</h2>
+                <p class="article__text text text_preview">Nunc turpis neque, feugiat eget eleifend et,
+                        lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
+                        lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                        Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
+                        Mauris nec metus ultricies erat consequat dignissim non eu nisl.
+                        Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu.
+                        Suspendisse quis mauris non ligula rutrum faucibus eu quis odio.
+                        Phasellus eu lobortis odio. In hac habitasse platea dictumst.
+                        Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
+                        Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+                </p>
+                <a class="article__link text-uppercase text-uppercase_link" href="#">read more</a>
+            </article>
+            <article class="article section-info__item">
+                <div class="article__icon article__icon_bubble"></div>
+                <h2 class="article__title text-uppercase">about our company</h2>
+                <p class="article__text text text_preview">Nunc turpis neque, feugiat eget eleifend et,
                     lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
                     lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
                     Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
@@ -92,26 +110,10 @@
                     Phasellus eu lobortis odio. In hac habitasse platea dictumst.
                     Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
                     Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
-            </p>
-            <a class="article__link text-uppercase text-uppercase_link" href="#">read more</a>
-        </article>
-        <article class="article section-info__item">
-            <div class="article__icon article__icon_bubble"></div>
-            <h2 class="article__title text-uppercase">about our company</h2>
-            <p class="article__text text text_preview">Nunc turpis neque, feugiat eget eleifend et,
-                lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
-                lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
-                Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
-                Mauris nec metus ultricies erat consequat dignissim non eu nisl.
-                Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu.
-                Suspendisse quis mauris non ligula rutrum faucibus eu quis odio.
-                Phasellus eu lobortis odio. In hac habitasse platea dictumst.
-                Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
-                Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
-            </p>
-            <a class="article__link text-uppercase text-uppercase_link" href="">read more</a>
-        </article>
-        <article class="article section-info__item">
+                </p>
+                <a class="article__link text-uppercase text-uppercase_link" href="">read more</a>
+            </article>
+            <article class="article section-info__item">
             <div class="article__icon article__icon_music-notes"></div>
             <h2 class="article__title text-uppercase">about our company</h2>
             <p class="article__text text text_preview">Nunc turpis neque, feugiat eget eleifend et,
@@ -127,6 +129,7 @@
             </p>
             <a class="article__link text-uppercase text-uppercase_link" href="">read more</a>
         </article>
+        </div>
     </section>
  <!--MAIN-->
     <main class="main-content">
@@ -183,7 +186,7 @@
                          </div>
                          <div class="text recent-updates__info ">
                              Posted by Admin on March 13 <span class="hidden_less-than-320">2012</span>
-                             <span class="hidden_less-than-960">in Recent News</span>
+                             <span class="hidden_less-than-960">in Categoty</span>
                          </div>
                      </div>
                  </div>
@@ -195,7 +198,7 @@
                          </div>
                          <div class="text recent-updates__info ">
                              Posted by Admin on March 13 <span class="hidden_less-than-320">2012</span>
-                             <span class="hidden_less-than-960">in Recent News</span>
+                             <span class="hidden_less-than-960">in Blog Posts</span>
                          </div>
                      </div>
                  </div>
@@ -217,75 +220,79 @@
     </aside>
  <!--NEWS-->
     <section class="news hidden_less-than-320 page__news">
-        <article class="article news__article">
-            <h2 class="article__title text-uppercase">pingbull<span>er</span></h2>
-            <div class="news__copyright">Copyright 2013, Pingbull AS</div>
-            <p class="article__text text text_preview">Nunc turpis neque, feugiat eget eleifend et,
-                lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
-                lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
-                Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
-                Mauris nec metus ultricies erat consequat dignissim non eu nisl.
-                Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu.
-                Suspendisse quis mauris non ligula rutrum faucibus eu quis odio.
-                Phasellus eu lobortis odio. In hac habitasse platea dictumst.
-                Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
-                Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
-            </p>
-        </article>
-        <article class="article news__article">
-            <h2 class="article__title text-uppercase">recent comments</h2>
-            <p class="article__text text text_preview">Nunc turpis neque, feugiat eget eleifend et,
-                lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
-                lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
-                Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
-                Mauris nec metus ultricies erat consequat dignissim non eu nisl.
-                Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu.
-                Suspendisse quis mauris non ligula rutrum faucibus eu quis odio.
-                Phasellus eu lobortis odio. In hac habitasse platea dictumst.
-                Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
-                Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
-            </p>
-        </article>
-        <article class="article news__article">
-            <h2 class="article__title text-uppercase">news categories</h2>
-            <p class="article__text text text_preview">Nunc turpis neque, feugiat eget eleifend et,
-                lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
-                lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
-                Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
-                Mauris nec metus ultricies erat consequat dignissim non eu nisl.
-                Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu.
-                Suspendisse quis mauris non ligula rutrum faucibus eu quis odio.
-                Phasellus eu lobortis odio. In hac habitasse platea dictumst.
-                Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
-                Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
-            </p>
-        </article>
+        <div class="news__wrapper">
+            <article class="article news__article">
+                <h2 class="article__title text-uppercase">pingbull<span>er</span></h2>
+                <div class="news__copyright">Copyright 2013, Pingbull AS</div>
+                <p class="article__text text text_preview">Nunc turpis neque, feugiat eget eleifend et,
+                    lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
+                    lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                    Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
+                    Mauris nec metus ultricies erat consequat dignissim non eu nisl.
+                    Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu.
+                    Suspendisse quis mauris non ligula rutrum faucibus eu quis odio.
+                    Phasellus eu lobortis odio. In hac habitasse platea dictumst.
+                    Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
+                    Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+                </p>
+            </article>
+            <article class="article news__article">
+                <h2 class="article__title text-uppercase">recent comments</h2>
+                <p class="article__text text text_preview">Nunc turpis neque, feugiat eget eleifend et,
+                    lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
+                    lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                    Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
+                    Mauris nec metus ultricies erat consequat dignissim non eu nisl.
+                    Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu.
+                    Suspendisse quis mauris non ligula rutrum faucibus eu quis odio.
+                    Phasellus eu lobortis odio. In hac habitasse platea dictumst.
+                    Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
+                    Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+                </p>
+            </article>
+            <article class="article news__article">
+                <h2 class="article__title text-uppercase">news categories</h2>
+                <p class="article__text text text_preview">Nunc turpis neque, feugiat eget eleifend et,
+                    lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel
+                    lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                    Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
+                    Mauris nec metus ultricies erat consequat dignissim non eu nisl.
+                    Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu.
+                    Suspendisse quis mauris non ligula rutrum faucibus eu quis odio.
+                    Phasellus eu lobortis odio. In hac habitasse platea dictumst.
+                    Proin vestibulum turpis at mauris aliquam non euismod lorem euismod.
+                    Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+                </p>
+            </article>
+        </div>
     </section>
  <!--FOOTER-->
     <footer class="footer">
-        <nav class="footer__menu hidden_less-than-320">
-            <ul class="main-menu">
-                <li class="main-menu__item">
-                    <a href="#" class="main-menu__link text-uppercase">home</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="#" class="text-uppercase main-menu__link ">about</a>
-                </li>
-                <li class="main-menu__item ">
-                    <a href="#" class="main-menu__link text-uppercase">blog</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="#" class="main-menu__link text-uppercase">products</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="#" class="main-menu__link text-uppercase">lorem ipsum</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="#" class="main-menu__link text-uppercase">dolor sit amet</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="footer__text text">Designed by <span class="text_bold">Pingbull AS</span></div>
+        <div class="footer__wrapper">
+            <nav class="footer__menu hidden_less-than-320">
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link text-uppercase">home</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="text-uppercase main-menu__link ">about</a>
+                    </li>
+                    <li class="main-menu__item ">
+                        <a href="#" class="main-menu__link text-uppercase">blog</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link text-uppercase">products</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link text-uppercase">lorem ipsum</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link text-uppercase">dolor sit amet</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__text text">Designed by <span class="text_bold">Pingbull AS</span></div>
+        </div>
     </footer>
  </body>
 </html>

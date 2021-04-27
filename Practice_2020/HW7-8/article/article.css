@@ -48,3 +48,10 @@
         margin-right: 5%;
     }
 }
+
+@media (min-width: 769px) {
+    .article__link {
+        margin-top: 14px;
+        margin-right: 0;
+    }
+}

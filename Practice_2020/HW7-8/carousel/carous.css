@@ -102,3 +102,40 @@
         letter-spacing: -0.02em;
     }
 }
+
+/*960*/
+@media (min-width: 769px) {
+    .carousel__img {
+        width: 28%;
+        transform: translate(11%, 9%);
+    }
+
+    .carousel__link {
+        transform: translateY(32%);
+    }
+
+    .carousel__item {
+        width: 54%;
+        transform: translate(-6%, 14%);
+        letter-spacing: -0.01em;
+    }
+
+    .carousel__title {
+        font-size: 60px;
+        letter-spacing: -0.01em;
+    }
+
+    .carousel__subtitle {
+        margin-top: -2px;
+        font-size: 32px;
+        letter-spacing: 0.02em;
+    }
+
+    .carousel__text {
+        width: 100%;
+    }
+
+    .carousel .text_preview {
+        -webkit-line-clamp: 6;
+    }
+}
