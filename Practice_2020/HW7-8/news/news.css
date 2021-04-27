@@ -72,8 +72,7 @@
 }
 
 /*960*/
-
-@media (min-width: 481px) {
+@media (min-width: 769px) {
 
     .news__wrapper {
         max-width: 960px;

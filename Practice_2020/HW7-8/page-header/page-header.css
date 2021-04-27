@@ -33,6 +33,7 @@
     margin-top: 74px;
 }
 
+/*480*/
 @media (min-width: 321px) {
     .page-header {
         background-position: -968px 0;
@@ -62,6 +63,7 @@
     }
 }
 
+/*768*/
 @media (min-width: 481px) {
     .page-header {
         background-position: -815px 0;

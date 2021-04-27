@@ -22,6 +22,7 @@
     width: 96%;
 }
 
+/*480*/
 @media (min-width: 321px) {
     .section-info {
         padding-top: 71px;
@@ -34,6 +35,7 @@
     }
 }
 
+/*768*/
 @media (min-width: 481px) {
     .section-info {
 
@@ -59,7 +61,6 @@
 }
 
 /*960*/
-
 @media (min-width: 769px) {
     .section-info__wrapper {
         max-width: 960px;
