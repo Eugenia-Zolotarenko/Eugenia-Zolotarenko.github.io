@@ -13,6 +13,11 @@
     cursor: pointer;
 }
 
+.pagination__page_active {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+}
+
 .pagination__page_theme_light {
     border: 1px solid #e6e6e6;
     background-color: #ffffff;
@@ -20,14 +25,7 @@
     opacity: 1;
 }
 
-.pagination__page_active {
-    background-color: #ffffff;
-    border: 3px solid #000000;
-}
-
-.pagination__page_active_theme_light {
-    border: 1px solid #e6e6e6;
-    border-radius: 50%;
+.main-content .pagination__page_active {
     background-image: linear-gradient(to top, #454545, #6a6a6a);
     background-clip: content-box;
     padding: 2px;
