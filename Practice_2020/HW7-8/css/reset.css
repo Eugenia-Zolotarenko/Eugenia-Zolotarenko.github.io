@@ -48,11 +48,11 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Упрощаем работу с изображениями */
+/* Упрощаем работу с изображениями
 img {
   max-width: 100%;
   display: block;
-}
+} */
 
 /* Указываем понятную периодичность в потоке данных у article*/
 /*article > * + * {

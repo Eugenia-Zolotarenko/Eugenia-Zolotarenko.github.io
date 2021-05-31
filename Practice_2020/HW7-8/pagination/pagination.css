@@ -25,7 +25,7 @@
     opacity: 1;
 }
 
-.main-content .pagination__page_active {
+.c-main-content .pagination__page_active {
     background-image: linear-gradient(to top, #454545, #6a6a6a);
     background-clip: content-box;
     padding: 2px;

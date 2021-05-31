@@ -1,57 +1,53 @@
-.article {
-    position: relative;
+/** ==========================================================================
+   #C-ARTICLE is a component
+   ==========================================================================*/
+
+/*
+* 1. Extended by .main-content .c-article and recent-updates .c-article
+* 2. Extended by .main-content .c-article__icon and recent-updates .c-article__icon
+*/
+
+.c-article {   /*[1]*/
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
 }
 
-.article__icon {
-    position: absolute;
-    top: 11px;
-    left: -48px;
-    background-repeat: no-repeat;
-    background-image: url(article_sprite.svg);
-}
 
-.article__icon_wrench {
-    width: 20px;
-    height: 20px;
-    background-position: -25px 0;
-}
+    .c-article__icon {  /*[1]*/
+        width: 20px;
+        height: 20px;
+        margin: 0 2rem 0 .5rem;
 
-.article__icon_bubble {
-    width: 20px;
-    height: 20px;
-    background-position: -50px 0;
-}
-
-.article__icon_music-notes {
-    width: 20px;
-    height: 20px;
-    background-position: 0 0;
-}
-
-.article__link {
-    align-self: flex-end;
-    margin-top: 8px;
-}
-
-.article__link:hover {
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-}
-
-/*768*/
-@media (min-width: 481px) {
-    .article__link {
-        margin-top: 0;
-        margin-right: 5%;
+        background-repeat: no-repeat;
+        background-image: url(article_sprite.svg);
+        transform: translateY(40%);
     }
-}
 
-/*960*/
-@media (min-width: 769px) {
-    .article__link {
-        margin-top: 14px;
-        margin-right: 0;
+    .c-article__icon_wrench      { background-position: -25px 0; }
+    .c-article__icon_bubble      { background-position: -50px 0; }
+    .c-article__icon_music-notes { background-position: 0     0; }
+
+
+    .c-article__bd {
+        display: flex;
+        flex-direction: column;
     }
-}
+
+        @media (min-width: 769px) {
+            .c-article__title {
+                font-size: 30px;
+            }
+        }
+
+        .c-article__link {
+            align-self: flex-end;
+            margin-top: 4%;
+        }
+
+        .c-article__link:hover {
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+        }
+
+        @media (min-width: 321px) { .c-article__link { margin: 2%   0  0 0 ; } }
+        @media (min-width: 481px) { .c-article__link { margin: 0    5% 0 0 ; } }
+        @media (min-width: 769px) { .c-article__link { margin: 14px 0  0 0 ; } }
