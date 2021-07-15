@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-05-06. Таймер Split на JavaScript</title>
+    <link rel="stylesheet" href="css/timerSplit.css">
+</head>
+<body>
+<div class="timer__wrapper">
+
+    <div id="timer">
+        <div id="hour"></div>&nbsp;:
+        <div id="minute"></div>&nbsp;:
+        <div id="second"></div>
+        <div id="millisecond"></div>
+    </div>
+
+
+    <div class="buttons__wrapper" id="timerControls">
+        <div id="start" class="button" data-action="start">Start</div>
+        <div id="split" class="button" data-action="split">Split</div>
+        <div id="clear" class="button" data-action="reset">Reset</div>
+    </div>
+
+
+    <div id="splitResults" class="split__results"></div>
+
+</div>
+
+
+<script src="js/timerSplit.js"></script>
+</body>
+</html>
