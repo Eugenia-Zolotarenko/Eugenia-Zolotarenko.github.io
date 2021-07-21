@@ -5,7 +5,7 @@
 }
 
 /* Style the buttons that are used to open the tab content */
-.tab button {
+.tab a {
     background-color: inherit;
     float: left;
     border: none;
@@ -13,15 +13,21 @@
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
+    text-decoration: none;
+}
+
+.tab a:visited {
+    color: inherit;
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tab a:hover {
     background-color: #ddd;
 }
 
+
 /* Create an active/current tab-link class */
-.tab button.is-active {
+.tab a.is-active {
     background-color: #ccc;
 }
 
