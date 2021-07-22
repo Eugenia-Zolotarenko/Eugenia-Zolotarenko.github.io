@@ -1,38 +1,40 @@
-.tab {
+.tab__list {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
 
 /* Style the buttons that are used to open the tab content */
-.tab a {
+.tab__link {
+    border: 1px solid inherit;
     background-color: inherit;
     float: left;
-    border: none;
+
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
     text-decoration: none;
+    color: inherit;
 }
 
-.tab a:visited {
+.tab__link:visited {
     color: inherit;
 }
 
 /* Change background color of buttons on hover */
-.tab a:hover {
+.tab__link:hover {
     background-color: #ddd;
 }
 
-
 /* Create an active/current tab-link class */
-.tab a.is-active {
+.tab__link.is-active {
     background-color: #ccc;
 }
 
+
 /* Style the tab content */
-.tab-content {
+.tab__content {
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;

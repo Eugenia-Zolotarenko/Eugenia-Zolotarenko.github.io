@@ -3,37 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>JS-07-08. Tabs</title>
-
     <link rel="stylesheet" href="css/tabs.css">
-
-
 
 </head>
 <body>
 
-<div class="tab" id="tabs">
-    <a class="tab-link"  href="#London">London</a>
-    <a class="tab-link"  href="#Paris">Paris</a>
-    <a class="tab-link"  href="#Tokyo">Tokyo</a>
+<div class="tab">
+    <div class="tab__list" id="tabs">
+        <a class="tab__link" href="#tab-1">London</a>
+        <a class="tab__link" href="#tab-2">Paris</a>
+        <a class="tab__link" href="#tab-3">Tokyo</a>
+        <a class="tab__link" href="#tab-4">Tokyo</a>
+        <a class="tab__link" href="#tab-5">Tokyo</a>
+    </div>
+
+    <!-- Tab content -->
+    <div id="tab-1" class="tab__content">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="tab-2" class="tab__content">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="tab-3" class="tab__content">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <div id="tab-4" class="tab__content">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="tab-5" class="tab__content">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+
 </div>
 
-<!-- Tab content -->
-<div id="London" class="tab-content">
-    <h3>London</h3>
-    <p>London is the capital city of England.</p>
-</div>
 
-<div id="Paris" class="tab-content">
-    <h3>Paris</h3>
-    <p>Paris is the capital of France.</p>
-</div>
-
-<div id="Tokyo" class="tab-content">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
-</div>
-
-
-<script src="scripts/tabs.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts/tabs-jQuery.js"></script>
 </body>
 </html>
