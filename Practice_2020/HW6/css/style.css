@@ -1,0 +1,29 @@
+body {
+    max-width: 909px;
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+}
+
+.text_color_white {
+    color: white;
+}
+
+.logo {
+    background-image: url("../img/logo.jpg");
+    width: 909px;
+    height: 237px;
+}
+
+/*ASIDE*/
+
+.banners {
+    display: flex;
+    justify-content: space-evenly;
+    width: 77%;
+    margin: 0 auto;
+}
+
+.banners .banner_up {
+   margin-top: -4px;
+}
