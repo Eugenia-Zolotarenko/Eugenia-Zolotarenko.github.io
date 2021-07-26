@@ -1,0 +1,81 @@
+body {
+    background-color: #282828;
+    font-family: Tahoma;
+    color: #e6e6e6;
+}
+.main_page {
+    margin: 0 auto;
+    width: 955px;
+    min-height: 883px;
+    background: url("../img/background.jpg") no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 55px;
+    width: 815px;
+}
+
+.logo {
+    margin-bottom: -2px;
+    width: 266px;
+    height: 147px;
+    background: url("../img/logo.png") no-repeat;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 16px;
+    color: #e6e6e6;
+    font-size: 8.5px;
+}
+
+.contact_us {
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.countries {
+    width: 815px;
+    margin: 0 auto;
+}
+
+.countries_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.countries_item {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.countries_link {
+    color: inherit;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.countries_img {
+    width: 258px;
+    border-radius: 2%;
+    border-style: solid;
+    border-width: 5px 5px 6px 6px;
+    -moz-border-image: url("../img/countries_frame.png") 5 5 6 6 stretch repeat;
+    -webkit-border-image: url("../img/countries_frame.png") 5 5 6 6 stretch repeat;
+    -o-border-image: url("../img/countries_frame.png") 5 5 6 6 stretch repeat;
+    border-image: url(../img/countries_frame.png) 5 5 6 6 stretch repeat;
+}
+
+footer {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 10px;
+}
