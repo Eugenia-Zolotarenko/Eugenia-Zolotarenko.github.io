@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-07-08. Form with tips</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+  <form>
+
+    <fieldset>
+
+      <div>
+        <label for="firstname">Firstname</label>
+        <input id="firstname" name="firstname" title="Please provide your firstname.Please provide your firstname.">
+      </div>
+
+      <div>
+        <label for="lastname">Lastname</label>
+        <input id="lastname" name="lastname" title="Please provide also your lastname.">
+      </div>
+
+      <div>
+        <label for="address">Address</label>
+        <input id="address" name="address" title="Your home or work address.">
+      </div>
+
+    </fieldset>
+
+  </form>
+
+  <button id="show-help" class="help">Show help</button>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts/form.js"></script>
+</body>
+</html>
