@@ -1,0 +1,25 @@
+
+/* Tooltip text */
+.tooltip__text {
+    width: 40%;
+    background-color: #555;
+    color: #fff;
+    padding: 5px;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+}
+
+label {
+    display: inline-block; width: 5em;
+}
+
+fieldset div {
+    margin-bottom: 2em;
+}
+
+ .help {
+    margin-top: 5px;
+}
