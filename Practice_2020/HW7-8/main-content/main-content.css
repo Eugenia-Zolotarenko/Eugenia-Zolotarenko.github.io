@@ -1,0 +1,191 @@
+/** ==========================================================================
+   #C-MAIN-CONTENT is a component
+   ==========================================================================*/
+
+/*
+* 1. Extends .c-article-icon
+* 2. Сдвиг фона по вертикали до середины аватарки (box-shadow распространяется на весь контейнер).
+*/
+
+.c-main-content {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e6e6e6;
+    color: #454545;
+}
+
+@media (min-width: 481px) { .c-main-content { padding-bottom: 2px; } }
+@media (min-width: 769px) { .c-main-content { padding-bottom: 5px; } }
+
+
+    .c-main-content__wrapper {
+        padding-top: 22.5%;
+    }
+
+    @media (min-width: 321px) {
+        .c-main-content__wrapper {
+            padding-top: 15%;
+        }
+    }
+
+
+    @media (min-width: 481px) {
+        .c-main-content__wrapper {
+            padding-top: 13.5%;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .c-main-content__wrapper {
+            max-width: 960px;
+            padding-top: 10.5%;
+        }
+    }
+
+    .c-main-content__item {
+        width: 100%;
+    }
+
+        .c-main-content__item:not(:first-child) { margin-top: 12%; }
+
+    @media (min-width: 321px) {
+        .c-main-content__item:not(:first-child) { margin-top: 8.5%; } }
+
+    @media (min-width: 481px) {
+        .c-main-content__item:not(:first-child) { margin-top: 2.5%; } }
+
+
+        @media (min-width: 481px) {
+            .c-main-content__item {
+                width: 50%;
+            }
+        }
+
+
+            .c-main-content__article {
+                width: 93%;
+                padding-top:    6.5%;
+                padding-bottom: 9%;
+                background-image: linear-gradient(to right, #f9f9f9 9%, #fff 8%);  /*[2]*/
+                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            }
+
+            @media (min-width: 321px) {
+                .c-main-content__article {
+                    width: 96%;
+                    padding-top:    4%;
+                    padding-bottom: 8.5%;
+                    background-image: linear-gradient(to right, #f9f9f9 6%, #fff 5%);
+                }
+            }
+
+            @media (min-width: 481px) {
+                .c-main-content__article {
+                    width: 90%;
+                    padding-top:    5.5%;
+                    padding-bottom: 11.5%;
+                    background-image: linear-gradient(to right, #f9f9f9 7%, #fff 6%);
+                }
+            }
+
+            @media (min-width: 769px) {
+                .c-main-content__article {
+                    width: 100%;
+                    padding-bottom: 6.5%;
+                    background-image: linear-gradient(to right, #f9f9f9 9%, #fff 8%);
+                }
+            }
+
+            @media (min-width: 769px) {
+                .c-main-content__article:after {
+                    position: absolute;
+                    bottom: -20px;
+                    right:   10%;
+                    content: '';
+                    border-style: solid;
+                    border-width: 15px;
+                    border-color: transparent;
+                    border-top-color:   white;
+                    border-right-color: white;
+                }
+            }
+
+                .c-main-content .c-article__icon {  /*[1]*/
+                    width: 53px;
+                    height: 53px;
+                    transform: translate(-17%, -6%);
+                    margin-right: 0;
+                }
+
+                @media (min-width: 321px) {
+                    .c-main-content .c-article__icon {
+                        margin-right: 1%;
+                        transform: translate(-13%, -2%);
+                    }
+                }
+
+                @media (min-width: 481px) {
+                    .c-main-content .c-article__icon {
+                        margin-right: 0.75%;
+                        transform: translate(-17.5%, -10.5%);
+                    }
+                }
+
+                @media (min-width: 769px) {
+                    .c-main-content .c-article__icon {
+                        margin-right: 4.5%;
+                        transform: translate(16.5%, -16%);
+                    }
+                }
+
+
+                .c-main-content__article .text-uppercase{
+                    text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+                }
+
+                @media (min-width: 321px) { .c-main-content__article .text-uppercase { font-size: 30px; } }
+                @media (min-width: 481px) { .c-main-content__article .text-uppercase { font-size: 24px; } }
+                @media (min-width: 769px) { .c-main-content__article .text-uppercase { font-size: 30px; } }
+
+
+                    .c-main-content__article-subtitle {
+                        display: block;
+                        margin-top: -13px;
+                    }
+
+                    @media (min-width: 321px) { .c-main-content__article-subtitle { display: inline; } }
+                    @media (min-width: 481px) { .c-main-content__article-subtitle { display: block;  } }
+                    @media (min-width: 769px) { .c-main-content__article-subtitle { display: inline; } }
+
+
+                    .c-main-content__article-text {
+                        letter-spacing: 0.015em ;
+                    }
+
+                    @media (min-width: 321px) {
+                        .c-main-content__article-text {
+                            padding-top:   2px;
+                            padding-right: 4%;
+                        }
+                    }
+
+                    @media (min-width: 481px) {
+                        .c-main-content__article-text {
+                            padding-top: 3px;
+                        }
+                    }
+
+
+                        .c-main-content__article .text_preview { -webkit-line-clamp: 7; }
+                    @media (min-width: 481px) {
+                        .c-main-content__article .text_preview { -webkit-line-clamp: 6; } }
+                    @media (min-width: 769px) {
+                        .c-main-content__article .text_preview { -webkit-line-clamp: 7; } }
+
+
+                                        .c-main-content__pagination { margin-top: 8.5%; }
+            @media (min-width: 321px) { .c-main-content__pagination { margin-top: 5%; } }
+
+
+                                        .c-main-content__recent-updates { margin-bottom: 17%;   }
+            @media (min-width: 481px) { .c-main-content__recent-updates { margin-bottom: 25%;   } }
+            @media (min-width: 769px) { .c-main-content__recent-updates { margin-bottom: 17.5%; } }

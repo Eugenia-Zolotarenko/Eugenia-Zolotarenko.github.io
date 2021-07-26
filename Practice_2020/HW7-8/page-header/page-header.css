@@ -1,0 +1,172 @@
+/* ==========================================================================
+   #PAGE-HEADER
+   ========================================================================== */
+
+/**
+ * PAGE-HEADER inludes logo, main-menu and carousel *
+ *
+ *1. Black overlay for block "carousel"
+ */
+
+.page-header {
+    position: relative;
+    border-bottom: 1px solid #35283c;
+    background-image: url("page-background.jpg");
+    background-repeat: no-repeat;
+    background-position-x: -1048px;
+    background-position-y: 0;
+}
+
+@media (min-width: 321px) {
+    .page-header {
+        background-position-x: -968px;
+    }
+
+    .page-header:after {        /*[1]*/
+        position: absolute;
+        left: 0;
+        top:  203px;
+        content: '';
+        width: 100%;
+        height: 51vw;
+        background: rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media (min-width: 481px) {
+    .page-header {
+        background-position-x: -815px;
+    }
+
+    .page-header:after {
+        top: 244px;
+        height: 52vw;
+    }
+}
+
+@media (min-width: 769px) {
+    .page-header {
+        background-position-x: -700px;
+    }
+
+    .page-header:after {
+        top: 278px;
+        height: 400px;
+    }
+}
+
+
+    .page-header__wrapper {
+        position: relative;
+        padding-bottom: 9vh;
+    }
+
+    @media (min-width: 321px) {
+        .page-header__wrapper {
+            padding-bottom: 8vh;
+        }
+    }
+
+    @media (min-width: 481px) {
+        .page-header__wrapper {
+            padding-bottom: 16.3vh;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .page-header__wrapper {
+            max-width: 960px;
+            padding-bottom:10.5vh;
+        }
+    }
+
+
+        .page-header__logo {
+            margin-top: 11vh;
+        }
+
+
+        .page-header__main-menu {
+            position: absolute;
+            top: 22vh;
+            z-index: 55;
+        }
+
+        @media (min-width: 481px) {
+            .page-header__main-menu{
+                width: 84%;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .page-header__main-menu {
+                top:   11vh;
+                right: 1%;
+                width: 62%;
+            }
+        }
+
+
+        .page-header__carousel {
+            margin-top: 28.5vh;
+        }
+
+        @media (min-width: 321px) {
+            .page-header__carousel {
+                margin-top: 11vh;
+            }
+        }
+
+        @media (min-width: 481px) {
+            .page-header__carousel {
+                margin-top: 17vh;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .page-header__carousel {
+                margin-top: 22vh;
+            }
+        }
+
+
+        .page-header__pagination {
+                margin-top: 12vh;
+        }
+
+        @media (min-width: 321px) {
+            .page-header__pagination {
+                margin-top: 0;
+            }
+        }
+
+        @media (min-width: 481px) {
+            .page-header__pagination {
+                align-self: flex-end;
+                margin-top:   5vh;
+                margin-right: 16%;
+            }
+        }
+        @media (min-width: 769px) {
+            .page-header__pagination {
+                margin-top:   13vh;
+                margin-right: 14%;
+            }
+        }
+
+/*768*/
+@media (min-width: 481px) {
+    .page-header__logo,
+    .page-header__main-menu{
+        align-self: flex-start;
+        margin-left: 3%;
+    }
+}
+
+/*960*/
+@media (min-width: 769px) {
+       .page-header__logo,
+       .page-header__main-menu {
+        margin-left: 2%;
+    }
+}

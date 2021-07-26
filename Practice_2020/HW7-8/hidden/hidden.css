@@ -1,0 +1,36 @@
+.hidden {
+    display: none;
+}
+
+.hidden_less-than-320 {
+    display: none;
+}
+
+.hidden_less-than-768 {
+    display: none;
+}
+
+.hidden_less-than-960 {
+    display: none;
+}
+
+/*480*/
+@media (min-width: 321px) {
+    .hidden_less-than-320 {
+        display: inline-block;
+    }
+}
+
+/*768*/
+@media (min-width: 481px) {
+    .hidden_less-than-768 {
+        display: -webkit-box;
+    }
+}
+
+/*960*/
+@media (min-width: 769px) {
+    .hidden_less-than-960 {
+        display: inline;
+    }
+}

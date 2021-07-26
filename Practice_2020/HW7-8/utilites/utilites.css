@@ -1,0 +1,33 @@
+/* ==========================================================================
+   #UTILITES
+   ========================================================================== */
+/**
+ * *
+ *
+ *1. Позиционирует содержание блока по центру и элементы ВСЕГДА расположены верикально
+ *
+ *2. В зависимости от размера окна меняется направление дочерних элеменов с
+ *   от вертикального на горизонтальное (от 841 и шире)
+ */
+
+
+
+.u-block-center-column {    /*[1]*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.u-block-align {            /*2*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 481px) {
+    .u-block-align {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: normal;
+    }
+}

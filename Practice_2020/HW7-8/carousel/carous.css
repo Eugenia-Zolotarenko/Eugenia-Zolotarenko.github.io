@@ -1,0 +1,162 @@
+/* ==========================================================================
+   #CAROUSEL
+   ========================================================================== */
+
+/**
+ * CAROUSEL is a component*
+ *
+ *1. arrows back and forward
+ *
+ *2. ограничивает выводимое количество строк текста
+ */
+
+.c-carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+
+    .c-carousel__link {  /*[1]*/
+        width: 22px;
+        height: 34px;
+    }
+
+
+    .c-carousel__item {
+        font-family: LeagueGothic, Arial, sans-serif;
+        margin-right: 4vw;
+        margin-left:  4vw;
+    }
+
+    @media (min-width: 321px) {
+        .c-carousel__item {
+            letter-spacing: 0.05em;
+            margin-left:  2vw;
+        }
+    }
+
+    @media (min-width: 481px) {
+        .c-carousel__item {
+            width: 49%;
+            letter-spacing: -0.02em;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .c-carousel__item {
+            width: 54%;
+            margin-right: 9vw;
+            margin-left:  0;
+            letter-spacing: -0.01em;
+        }
+    }
+
+
+        .c-carousel__title {
+            font-size: 36px;
+            color: #fefefe;
+            text-transform: capitalize;
+        }
+
+        @media (min-width: 321px) {
+            .c-carousel__title {
+                font-size: 7vw;
+                line-height: 1em;
+            }
+        }
+
+        @media (min-width: 481px) {
+            .c-carousel__title {
+                font-size: 6vw;
+                line-height: 3.5rem;
+                letter-spacing: 0.005em;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .c-carousel__title {
+                font-size: 60px;
+                letter-spacing: -0.01em;
+            }
+        }
+
+
+        .c-carousel__subtitle {
+                text-transform: uppercase;
+                font-size: 18px;
+                color: #edbfff;
+                letter-spacing: 0.025em;
+            }
+
+        @media (min-width: 321px) {
+            .c-carousel__subtitle {
+                font-size: 4vw;
+                white-space: nowrap;
+                letter-spacing: 0.01em;
+            }
+        }
+
+        @media (min-width: 481px) {
+            .c-carousel__subtitle {
+                font-size: 3vw;
+                letter-spacing: 0.04em;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .c-carousel__subtitle {
+                margin-top: -2px;
+                font-size: 32px;
+                letter-spacing: 0.02em;
+            }
+        }
+
+
+        .c-carousel__text {
+            width: 75%;
+            color: #fff;
+        }
+
+        @media (min-width: 769px) {
+            .c-carousel__text {
+                width: 100%;
+            }
+        }
+
+
+        .c-carousel .text_preview {    /*[2]*/
+            -webkit-line-clamp: 4;
+            line-clamp: 4;
+        }
+
+        @media (min-width: 769px) {
+            .c-carousel .text_preview {
+                -webkit-line-clamp: 6;
+            }
+        }
+
+
+        .c-carousel__img {
+            width: 41%;
+        }
+
+        @media (min-width: 321px) {
+            .c-carousel__img {
+                transform: translateY(5%);
+            }
+        }
+
+        @media (min-width: 481px) {
+            .c-carousel__img {
+                width: 35.5%;
+                transform: translate(1%, 1%);
+            }
+        }
+
+        @media (min-width: 769px) {
+            .c-carousel__img {
+                width: 28.5%;
+                transform: translate(0% ,3%);
+            }
+        }

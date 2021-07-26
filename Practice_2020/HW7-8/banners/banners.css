@@ -1,0 +1,67 @@
+/** ==========================================================================
+   #C-BANNERS is a component
+   ==========================================================================*/
+
+/* 1. margin-bottom for all elements except two last elements
+*
+* 2. margin-right for every element that is not the third
+*
+* 3. margin bottom for list that has 4 elements in a row, except the last row
+* */
+
+
+
+.banners {
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+        .banners__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            width:64%;
+        }
+
+        @media (min-width: 321px) {
+            .banners__list {
+                width: 68%;
+            }
+        }
+
+        @media (min-width: 481px) {
+            .banners__list {
+                width: 93%;
+                justify-content: space-around;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .banners__list {
+                max-width: 960px;
+                justify-content: space-evenly;
+            }
+        }
+
+
+            @media (min-width: 321px) { .banners__link { width: 22%;  } }
+            @media (min-width: 481px) { .banners__link { width: auto; } }
+
+                                        .banners__link:nth-last-child(n+3) { margin-bottom: 26%; } /*[1]*/
+            @media (min-width: 321px) { .banners__link:nth-last-child(n+3) { margin-bottom: 0;  } }
+            @media (min-width: 481px) { .banners__link:nth-last-child(n+3) { margin-bottom: 0;  } }
+
+                                        .banners__link:last-child { margin-top: -10%;  }
+            @media (min-width: 481px) { .banners__link:last-child { margin-top:   0;    } }
+
+
+            @media (min-width: 321px) { .banners__link:not(:nth-child(3n)) { margin-right: 17%; } } /*[2]*/
+            @media (min-width: 481px) { .banners__link:not(:nth-child(3n)) { margin-right: 0;   } }
+
+
+            @media (min-width: 321px) { .banners__link:nth-last-child(n+4) { margin-bottom: 25px; } }  /*[3]*/
+            @media (min-width: 481px) { .banners__link:nth-last-child(n+4) { margin-bottom: 0;    } }

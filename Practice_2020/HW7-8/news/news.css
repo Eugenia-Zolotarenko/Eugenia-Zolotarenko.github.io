@@ -1,0 +1,84 @@
+@media (min-width: 321px) {
+    .news {
+        background: #ececec;
+        z-index: 55;
+    }
+}
+
+    .news__wrapper {
+        justify-content: center;
+        width: 100%;
+    }
+
+    @media (min-width: 481px) {
+        .news__wrapper {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .news__wrapper {
+            max-width: 960px;
+            justify-content: space-around;
+        }
+    }
+
+
+                                    .news__article { width: 95%; }
+        @media (min-width: 481px) { .news__article { width: 30%; } }
+        @media (min-width: 769px) { .news__article { width: 27%; } }
+
+
+
+                                    .news .c-article__bd:not(:first-child) { margin-top: 12%; }
+        @media (min-width: 481px) { .news .c-article__bd:not(:first-child) { margin-top: 6%;  } }
+        @media (min-width: 769px) { .news .c-article__bd:not(:first-child) { margin-top: 1%;  } }
+
+
+            .news .c-article__title {
+                color: #454545;
+                text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+            }
+
+            @media (min-width: 769px) {
+                .news .c-article__title {
+                    font-size: 30px;
+                }
+            }
+
+            .news .c-article__bd:first-child .c-article__title {
+                    font-size: 40px;
+                    text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+                }
+
+            @media (min-width: 769px) {
+                .news .c-article__bd:first-child .c-article__title {
+                    font-size: 48px;
+                }
+            }
+
+                .news .c-article__bd:first-child .article__title span{
+                        color: #b9b9b9;
+                    }
+
+            .news__copyright {
+                font-family: Georgia, Arial, sans-serif;
+                color: #c5c5c5;
+                font-style: italic;
+                font-size: 16px;
+                text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+            }
+
+            .news .c-article__text {
+                color: #787878;
+            }
+
+            @media (min-width: 321px) { .news .text_preview { -webkit-line-clamp: 4; } }
+            @media (min-width: 481px) { .news .text_preview { -webkit-line-clamp: 7; } }
+
+            @media (min-width: 769px) {
+                .news__article:first-child .text_preview {
+                    -webkit-line-clamp: 5;
+                }
+            }

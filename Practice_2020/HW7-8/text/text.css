@@ -1,0 +1,45 @@
+/*
+* 1. Ограничивает выводимое количество строк текста
+*/
+
+
+
+.text {
+    color: inherit;
+    font-family: Open_Sans, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.text_bold {
+    font-weight: bold;
+}
+
+.text-uppercase {
+    color: inherit;
+    font-family: LeagueGothic, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(15, 21, 24, 1);
+}
+
+.text-uppercase span {
+    color: #edbfff;
+}
+
+.text-uppercase_link {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.text_preview {                 /*[1]*/
+    -ms-text-overflow: ellipsis;
+     -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+}

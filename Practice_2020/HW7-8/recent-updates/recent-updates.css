@@ -1,0 +1,133 @@
+/** ==========================================================================
+   #C-RECENT-UPDATES is a component
+   ==========================================================================*/
+
+/*
+* 1. Extends .c-article-icon
+*/
+
+
+.c-recent-updates {
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+}
+
+@media (min-width: 321px) {
+    .c-recent-updates {
+        width: 78.5%;
+        padding-left: 5.5%;
+    }
+}
+
+@media (min-width: 481px) {
+    .c-recent-updates {
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) {
+    .c-recent-updates {
+        width: 100%;
+        padding-left: 0%;
+    }
+}
+
+
+    .c-recent-updates__header {
+        margin-bottom: 3.5%;
+        font-size: 30px;
+        text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+    }
+
+    @media (min-width: 481px) {
+        .c-recent-updates__header {
+            margin-left: 5%;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .c-recent-updates__header {
+            margin-left:   12%;
+            margin-bottom: 1.5%;
+        }
+    }
+
+
+                                .c-recent-updates .c-article { margin-bottom: 7%;    }
+    @media (min-width: 321px) { .c-recent-updates .c-article { margin-bottom: 5.5%;  } }
+    @media (min-width: 481px) { .c-recent-updates .c-article { margin-bottom: 4.75%; } }
+    @media (min-width: 481px) { .c-recent-updates .c-article { margin-bottom: 3.5%; } }
+
+
+        .c-recent-updates .c-article__icon {   /*[1]*/
+            margin-right: 3.5%;
+            width:  49px;
+            height: 49px;
+            transform: translate(-14%, 0%);
+        }
+
+        @media (min-width: 321px) {
+            .c-recent-updates .c-article__icon {
+                margin-right: 3%;
+                transform: translate(-10%, 0%);
+            }
+        }
+
+        @media (min-width: 481px) {
+            .c-recent-updates .c-article__icon {
+                margin-right: 8%;
+                transform: translate(25%, -4%);
+            }
+        }
+
+        @media (min-width: 769px) {
+            .c-recent-updates .c-article__icon {
+                margin-right: 14%;
+                transform: translate(103%, 2%);
+            }
+        }
+
+
+        .c-recent-updates__text {
+            font-weight: bold;
+        }
+
+        @media (min-width: 321px) {
+            .c-recent-updates__text {
+                width: 102%;
+            }
+        }
+
+
+        .c-recent-updates__info {
+            letter-spacing: -0.005em;
+            white-space: nowrap;
+        }
+
+
+        @media (min-width: 481px) {
+            .c-recent-updates__info {
+                white-space: normal;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .c-recent-updates__info {
+                white-space: nowrap;
+            }
+        }
+
+    .c-recent-updates__link {
+        align-self: flex-end;
+        margin-right: 2%;
+    }
+
+
+    @media (min-width: 769px){
+        .c-recent-updates__link {
+            font-size: 18px;
+            align-self: flex-end;
+            margin-right: 0;
+        }
+    }
