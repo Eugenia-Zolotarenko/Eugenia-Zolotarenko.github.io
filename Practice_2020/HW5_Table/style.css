@@ -1,0 +1,43 @@
+table {
+    width: 350px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+}
+
+.table__border-bottom {
+    border-bottom: 5px solid black;
+}
+
+.table__border-left {
+    border-left: 5px solid black;
+}
+
+.table__border-right {
+    border-right: 5px solid black;
+}
+
+.double__width {
+    width: 100px;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+    height: 150px;
+}
+
+.black {
+    background-color: black;
+}
+
+.blue {
+    background-color: blue;
+}
