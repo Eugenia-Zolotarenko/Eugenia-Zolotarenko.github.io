@@ -1,14 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
 .tab__list {
+    display: flex;
+    justify-content: flex-start;
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+
+    background-color: rgb(233, 233, 233);
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab__link {
-    border: 1px solid inherit;
-    background-color: inherit;
-    float: left;
+    border: 1px solid gray;
+    border-bottom: none;
+    background-color: #f6f6f6;
+    margin: 3px 3px 0;
 
     outline: none;
     cursor: pointer;
@@ -22,12 +30,18 @@
     color: inherit;
 }
 
+.tab__link:focus {
+    border: 1px dotted black;
+    border-bottom: none;
+}
+
+
 /* Change background color of buttons on hover */
 .tab__link:hover {
     background-color: #ddd;
 }
 
-/* Create an active/current tab-link class */
+/* Create an active/current tab-link class*/
 .tab__link.is-active {
     background-color: #ccc;
 }
