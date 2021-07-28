@@ -2,13 +2,12 @@
 
 $(function(){
     let $tabs = $('#tabs');
-    let isKeyUpOn;
 
     showFirstTab($tabs);
 
-    $tabs.on('click', '.tab__link', null,  openTab)
-         .on('keydown', '.tab__link' , null, moveFocus)
-         .on('keyup', '.tab__link',null, openTabWithKey);
+    $tabs.on('click',   '.tab__link', null, openTab)
+         .on('keydown', '.tab__link', null, moveFocus)
+         .on('keyup',   '.tab__link', null, openTabWithKey);
 
 
     function showFirstTab (tabList) {
@@ -19,6 +18,41 @@ $(function(){
         $firstTab.addClass("is-active");  /*add an "is-active" class to the link that opened the tab*/
         $firstTabContent.show();  /*Show the first tab*/
     }
+
+
+
+
+/*Check is Keyup handler for $tabs on or off and functions to on and off handler*/
+    let isKeyupHandlerOn;
+
+    function onKeyupHandler () {
+        if ( isKeyupHandlerOn === false)  {
+            $tabs.on('keyup', '.tab__link', null, openTabWithKey);
+            return  isKeyupHandlerOn = true;
+        }
+    }
+
+    function offKeyupHandler () {
+        $tabs.off('keyup', '.tab__link', openTabWithKey);
+        return  isKeyupHandlerOn = false;
+    }
+
+
+
+
+    /*check if Control keys pressed to handle Cltr+ArrowLeft|ArrowRight keydown*/
+
+    let ctrlIsPressed;
+
+    $(window).on('keydown', null, null, function (event) {
+        if( event.code === 'ControlLeft' || event.code === 'ControlRight' ) { ctrlIsPressed = true; }
+    });
+
+    $(window).on('keyup', null, null, function (event) {
+        if( event.code === 'ControlLeft' || event.code === 'ControlRight' ) { ctrlIsPressed = false; }
+    });
+
+
 
 
     function openTab(event) {
@@ -35,84 +69,57 @@ $(function(){
         $(this).addClass("is-active");
     }
 
-    /*check if Control keys pressed to handle Cltr+ArrowLeft|ArrowRight keydown*/
-
-    let ctrlIsPressed;
-
-    $(window).on('keydown', null, null, function (event) {
-        if( event.code === 'ControlLeft' || event.code === 'ControlRight' ) { ctrlIsPressed = true; }
-    });
-
-    $(window).on('keyup', null, null, function (event) {
-        if( event.code === 'ControlLeft' || event.code === 'ControlRight' ) { ctrlIsPressed = false; }
-    });
 
 
     function moveFocus (event) {
 
-        //if (event.code === 'Enter' || event.code === 'NumpadEnter')  event.preventDefault();
-
+        if (event.code === 'Enter' || event.code === 'NumpadEnter') event.preventDefault();
 
         let $tabindex = $(this).attr('tabindex');
         let $nextTab;
-        let codes = ['ArrowRight', 'ArrowUp', 'ArrowLeft', 'ArrowDown', 'Tab', 'Enter', 'NumpadEnter' ];
+        let codes = ['ArrowRight', 'ArrowUp', 'ArrowLeft', 'ArrowDown', 'Tab', 'Enter', 'NumpadEnter', 'Space', 'Home',
+                     'End'];
 
-        if (!codes.includes(event.code) ) return;
+        if (!codes.includes(event.code)) return;
 
         /* computing the nex tab to be focused*/
         switch (true) {
-            case (event.code === 'ArrowRight' || event.code === 'ArrowUp' || event.code === 'Tab'):
+            case ( ['ArrowRight', 'ArrowUp'].includes(event.code)):
                 $tabindex++;
-                if ( isKeyUpOn === false)  {
-                    $tabs.on('keyup', '.tab__link', null, openTabWithKey);
-                    isKeyUpOn = true;
-                }
+                onKeyupHandler();
                 break;
 
-            case (event.code === 'ArrowLeft' || event.code === 'ArrowDown'):
+            case ( ['ArrowLeft', 'ArrowDown'].includes(event.code) ):
                 $tabindex--;
-                if ( isKeyUpOn === false)  {
-                    $tabs.on('keyup', '.tab__link', null, openTabWithKey);
-                    isKeyUpOn = true;
-                }
+                onKeyupHandler();
                 break;
 
-           /* case (event.code === 'Enter' || event.code === 'NumpadEnter'):
-                $(this).focus();
-                break;*/
+            case ( ['Enter', 'NumpadEnter', 'Space', 'Tab'].includes(event.code) ):
+                onKeyupHandler();
+                break;
         }
 
         let $firstTabIndex = $tabs.children(':first-child').attr('tabindex');
-        let $lastTabIndex  = $tabs.children(':last-child' ).attr('tabindex');
+        let $lastTabIndex = $tabs.children(':last-child').attr('tabindex');
 
-        if ($tabindex > $lastTabIndex)  { $tabindex = $firstTabIndex; }
-        if ($tabindex < $firstTabIndex) { $tabindex = $lastTabIndex;  }
+        switch (true) {
+            case ( ($tabindex > $lastTabIndex) || event.code === 'Home' ):
+                $tabindex = $firstTabIndex;
+                break;
 
-
-        $nextTab = $(`[tabindex= ${$tabindex}]`);
-        $nextTab.focus();
-
-
-        /*CTRL + DOWN/LEFT: Move focus to the previous tab.
-          If on first tab, moves focus to last tab. */
-        if ( ctrlIsPressed  && (event.code === 'ArrowLeft' || event.code === 'ArrowDown') )  {
-            $tabindex--;
-            $nextTab.focus();
-            $tabs.off('keyup', '.tab__link', openTabWithKey); /*The focused tab must be manually activated*/
-            isKeyUpOn = false;
-
-        } else {
-            /*CTRL + UP/RIGHT: Move focus to the previous tab.
-                     If on first tab, moves focus to last tab. The focused tab must be manually activated.*/
-            if (ctrlIsPressed && (event.code === 'ArrowRight' || event.code === 'ArrowUp')) {
-                $tabindex++;
-                $nextTab.focus();
-                $tabs.off('keyup', '.tab__link', openTabWithKey); /*The focused tab must be manually activated*/
-                isKeyUpOn = false;
-            }
+            case ( ($tabindex < $firstTabIndex) || event.code === 'End' ):
+                $tabindex = $lastTabIndex;
+                break;
         }
 
+        $nextTab = $(`[tabindex = ${$tabindex}]`);
+        $nextTab.focus();
+
+        if (ctrlIsPressed && ['ArrowLeft', 'ArrowRight', 'ArrowDown', 'ArrowUp', 'Home', 'End'].includes(event.code) ) {
+            offKeyupHandler();
+        }
     }
+
 
     function openTabWithKey(event)  {
 
