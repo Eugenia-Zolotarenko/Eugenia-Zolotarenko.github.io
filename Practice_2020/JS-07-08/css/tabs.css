@@ -13,7 +13,7 @@
 
 /* Style the buttons that are used to open the tab content */
 .tab__link {
-    border: 1px solid gray;
+    border: 1px solid #c5c5c5;
     border-bottom: none;
     background-color: #f6f6f6;
     margin: 3px 3px 0;
@@ -31,7 +31,7 @@
 }
 
 .tab__link:focus {
-    border: 1px dotted black;
+    border: 1px solid black;
     border-bottom: none;
 }
 
