@@ -1,0 +1,39 @@
+/*CSS checkbox*/
+
+.checkbox-css {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+.label-css {
+    cursor: pointer;
+}
+
+.label-css:before {
+    content: " ";
+    display: inline-block;
+    width:  16px;
+    height:  16px;
+    background: url(../img/sprite.svg);
+    position: relative;
+    top: 3px;
+    margin-right: 15px;
+    background-position: -21px 0;
+}
+.checkbox-css:checked + .label-css:before {
+    background-position: 0 0;
+}
+
+
+/*CSS+JS Checkbox*/
+
+.niceCheck {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    cursor: pointer;
+    background: url('../img/sprite.svg')  -21px 0 no-repeat;
+}
+.niceCheck input {
+    display: none;
+}

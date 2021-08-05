@@ -1,0 +1,71 @@
+.fitness_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+    /*SIDE_BAR*/
+    .catalog {
+        width: 240px;
+    }
+
+        .catalog__item {
+            position: relative;
+            border: 1px solid #c8c8c8;
+            border-bottom: none;
+        }
+
+        .catalog__item:last-child {
+            border-bottom: 1px solid #c8c8c8;
+        }
+
+        .catalog__item.has-submenu:after {
+            background: url("../img/sprite-black.svg")  -21px 0 no-repeat;
+        }
+
+        .catalog__item.is-opened:after {
+            top: 10%;
+            background-position: 0 0;
+        }
+
+            .catalog__link {
+                display: inline-block;
+                width: 100%;
+                padding-left: 22px;
+                color: #656363;
+                line-height: 40px;
+            }
+
+            .catalog__link:hover {
+                padding-left: 32px;
+                background-color: #f9f9f9;
+                color: #2c2c2c;
+            }
+
+            ul.catalog__submenu {
+                display: none;
+                margin-left: 15%;
+            }
+
+
+
+
+    /*MAIN_CONTENT*/
+    .goods {
+        display: flex;
+            flex-direction: column;
+            width: 677px;
+        }
+
+
+        .goods__image{
+            padding: 11% 12%;
+            border: 1px solid #c8c8c8;
+        }
+
+
+        .goods__description {
+            margin-top: 38px;
+            padding: 0 25px;
+            color: #2c2c2c;
+        }
