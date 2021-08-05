@@ -1,50 +1,55 @@
 
 $(function (){
 
-    let $menu = $('.header-menu__list');
-    let $submenu = $menu.find('.header__submenu');
+    let $headerMenu = $('.header-menu__list');
+    let $headerSubmenu = $headerMenu.find('.js-submenu');
 
-    hasSubmenu ();
 
-    $menu.on('click', '.header-menu__item', null, openSubmenu);
+    let $sidebarMenu = $('.catalog__list');
+
+    hasSubmenu ($headerMenu);
+    hasSubmenu ($sidebarMenu);
+
+     $headerMenu.on('click', '.js-menu__item', null, openSubmenu);
+    $sidebarMenu.on('click', '.js-menu__item', null, openSubmenu);
+
+
+    /*animation with jquery.color*/
+    $headerSubmenu.on('mouseenter', function () {
+                    $(this).animate({
+                        backgroundColor: '#03C'
+                    }, 500);
+               })
+            .on('mouseleave', function () {
+                    $(this).animate({
+                        backgroundColor: '##0CF'
+                    }, 500);
+               });
+
 
 
     function openSubmenu (event) {
         event.preventDefault();
 
-        let $currentSubmenu = $(this).find('.header__submenu');
+        let $submenuCurrent = $(this).find('.js-submenu');
+        let $submenuAll = $(this).siblings().find('.js-submenu');
 
-        $submenu.each(function (index, item) {
-            /*hide submenu for items, that is not current*/
 
-             if ( item !== $currentSubmenu[0] ) {
-                 $(item).slideUp();
-                 $(item).parent().removeClass('is-opened');
-             }
-        });
+        $submenuAll.slideUp();                 /*hide submenu for items, that is not current*/
+        $submenuAll.parent().removeClass('is-opened');
 
-        $currentSubmenu.slideToggle();
+        $submenuCurrent.slideToggle();
         $(this).toggleClass('is-opened');
     }
 
 
-/*animation with jquery.color*/
-    $submenu.on('mouseenter', function () {
-        $(this).animate({
-            backgroundColor: '#03C'
-        }, 500);
-    })
-        .on('mouseleave', function () {
-            $(this).animate({
-                backgroundColor: '##0CF'
-            }, 500);
-        });
+    function hasSubmenu (list) {
+        /*  функция добавления класса has-submenu для пунктов, у которых есть подменю.
+            list -  список, для елементов которого нужно установить класс has-submenu
+            js-menu__item  класс для пункта (li) у которого есть подменю
+            js-submenu класс для подменю (ul) */
 
-    function hasSubmenu () {
-        /* функция добавления стрелочки для пунктов, у которых есть подменю */
-
-        let $el = $menu.find( 'li > ul' ); /*при необходимости для меню большей вложенности
-         возможно конретизировать селекторы через классы */
+        let $el = list.find( '.js-menu__item > .js-submenu' );
 
         $el.parent().addClass('has-submenu');
     }

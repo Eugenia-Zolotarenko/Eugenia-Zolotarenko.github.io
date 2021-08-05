@@ -35,10 +35,12 @@ header {
 
         .header-menu__item {
           position: relative;
-            width: 120px;
+          padding-right: 3%;
+          border-right: 1px solid transparent;
+          border-left: 1px solid transparent;
         }
 
-        .header-menu__item.has-submenu:after {
+        li.has-submenu:after {  /*header-menu and catalog-list*/
             content: "";
             background: url("../img/sprite.svg")  -21px 0 no-repeat;
             width: 16px;
@@ -58,15 +60,13 @@ header {
                 color: #ffffff;
                 font-size: 15px;
                 line-height: 40px;
-                border-right: 1px solid transparent;
-                border-left: 1px solid transparent;
             }
 
             .header-menu__item:first-child  .header_menu_link{
                 padding-left: 27px;
             }
 
-            .header-menu__link:hover  {
+            .header-menu__item:hover  {
                background: linear-gradient(to top, #2e2e2e, #4a4a4a);
                  border-right: 1px solid #838383;
                 border-left: 1px solid #838383;
@@ -74,15 +74,16 @@ header {
 
             .header__submenu {
                 position: absolute;
+                z-index: 1;
                 top: 100%;
                 display: none;
+                width: 150%;
 
                 background-color: green;
             }
 
             .header__submenu__item {
                 display: block;
-                width: 120px;
             }
 
                 .header-submenu__link {
@@ -90,5 +91,6 @@ header {
                     color: #ffffff;
                     font-size: 15px;
                     line-height: 40px;
+
                 }
 

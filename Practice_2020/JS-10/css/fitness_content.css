@@ -10,6 +10,7 @@
     }
 
         .catalog__item {
+            position: relative;
             border: 1px solid #c8c8c8;
             border-bottom: none;
         }
@@ -18,6 +19,14 @@
             border-bottom: 1px solid #c8c8c8;
         }
 
+        .catalog__item.has-submenu:after {
+            background: url("../img/sprite-black.svg")  -21px 0 no-repeat;
+        }
+
+        .catalog__item.is-opened:after {
+            top: 10%;
+            background-position: 0 0;
+        }
 
             .catalog__link {
                 display: inline-block;
@@ -31,6 +40,11 @@
                 padding-left: 32px;
                 background-color: #f9f9f9;
                 color: #2c2c2c;
+            }
+
+            ul.catalog__submenu {
+                display: none;
+                margin-left: 15%;
             }
 
 
