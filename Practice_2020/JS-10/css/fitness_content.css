@@ -1,0 +1,57 @@
+.fitness_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+    /*SIDE_BAR*/
+    .catalog {
+        width: 240px;
+    }
+
+        .catalog__item {
+            border: 1px solid #c8c8c8;
+            border-bottom: none;
+        }
+
+        .catalog__item:last-child {
+            border-bottom: 1px solid #c8c8c8;
+        }
+
+
+            .catalog__link {
+                display: inline-block;
+                width: 100%;
+                padding-left: 22px;
+                color: #656363;
+                line-height: 40px;
+            }
+
+            .catalog__link:hover {
+                padding-left: 32px;
+                background-color: #f9f9f9;
+                color: #2c2c2c;
+            }
+
+
+
+
+    /*MAIN_CONTENT*/
+    .goods {
+        display: flex;
+            flex-direction: column;
+            width: 677px;
+        }
+
+
+        .goods__image{
+            padding: 11% 12%;
+            border: 1px solid #c8c8c8;
+        }
+
+
+        .goods__description {
+            margin-top: 38px;
+            padding: 0 25px;
+            color: #2c2c2c;
+        }

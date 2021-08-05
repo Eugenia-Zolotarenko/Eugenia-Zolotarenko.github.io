@@ -1,0 +1,94 @@
+body {
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fitness_page {
+    margin: 0 auto;
+    padding-left: 45px;
+    padding-right: 48px;
+    padding-bottom: 50px;
+    width: 1064px;
+    background-color: #fff;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0, 0.3);
+    font-size: 14px;
+}
+
+/*HEADER*/
+header {
+    margin-bottom: 40px;
+}
+
+    .logo {
+        padding-top:    50px;
+        padding-bottom: 38px;
+    }
+
+    /*HEADER_MENU*/
+    .header-menu__list {
+        justify-content: flex-start;
+        background: linear-gradient(to top, #444343, #5e5e5e);
+    }
+
+        .header-menu__item {
+          position: relative;
+            width: 120px;
+        }
+
+        .header-menu__item.has-submenu:after {
+            content: "";
+            background: url("../img/sprite.svg")  -21px 0 no-repeat;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            right: 5%;
+            top: 28%;
+        }
+
+        .header-menu__item.is-opened:after {
+            background-position:  0 0;
+        }
+
+            .header-menu__link {
+                display: block;
+                padding: 0 20px;
+                color: #ffffff;
+                font-size: 15px;
+                line-height: 40px;
+                border-right: 1px solid transparent;
+                border-left: 1px solid transparent;
+            }
+
+            .header-menu__item:first-child  .header_menu_link{
+                padding-left: 27px;
+            }
+
+            .header-menu__link:hover  {
+               background: linear-gradient(to top, #2e2e2e, #4a4a4a);
+                 border-right: 1px solid #838383;
+                border-left: 1px solid #838383;
+            }
+
+            .header__submenu {
+                position: absolute;
+                top: 100%;
+                display: none;
+
+                background-color: green;
+            }
+
+            .header__submenu__item {
+                display: block;
+                width: 120px;
+            }
+
+                .header-submenu__link {
+                    padding:  0 20px;
+                    color: #ffffff;
+                    font-size: 15px;
+                    line-height: 40px;
+                }
+

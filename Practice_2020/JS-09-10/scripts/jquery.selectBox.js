@@ -7,7 +7,7 @@
  *
  * https://github.com/marcj/jquery-selectBox
  */
-;(function ($) {
+(function ($) {
 
     /**
      * SelectBox class.

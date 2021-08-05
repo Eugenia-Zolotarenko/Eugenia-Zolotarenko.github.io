@@ -11,13 +11,13 @@
     right: 15px;
     bottom: 0;
     font-size: 13px;
-    color: #fff;
+    color: gray;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
     opacity: .66;
 }
 
 .connected-carousels .photo-credits a {
-    color: #fff;
+    color: gray;
 }
 
 /** Navigation container **/
