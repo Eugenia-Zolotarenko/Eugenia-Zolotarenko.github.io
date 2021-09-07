@@ -1,3 +1,6 @@
+# jQuery Slider: A styleable carousel
+
+
 HTML for slider
 
 <div class="carousel">
@@ -37,25 +40,20 @@ HTML for slider
 </div>
 
 
-Options:
+## Usage
 
-imageWidth - image width in pixels
-imageMarginRight - margin-right property for image in pixels
-imagesVisible - quantity of images to to be visible
+Link to the JS file:
 
- options = {
-            imageWidth: 250,
-            imageMarginRight: 25,
-            imagesVisible: 4
-        };
+```html
+<script src="jquery.slider.js" type="text/javascript"></script>
+```
 
-You can change default options if you need:
+Add the CSS file (or append contents to your own stylesheet):
 
- $.fn.slider.defaultOptions = {
-            imageWidth: 250,
-            imageMarginRight: 25,
-            imagesVisible: 4
-        };
+```html
+<link href="jquery.slider.css" rel="stylesheet" type="text/css" />
+```
+
 
 
 Initialization:
@@ -64,9 +62,29 @@ Initialization:
         $('div.carousel').slider();
     });
 
-Initialization with options:
+Initialization with custom options:
 
   $('div.carousel').slider({
         imageWidth: 100,
         imageMarginRight: 20
     });
+
+Options:
+
+  imageWidth - image width in pixels
+  imageMarginRight - margin-right property for image in pixels
+  imagesVisible - quantity of images to to be visible
+
+   options = {
+              imageWidth: 250,
+              imageMarginRight: 25,
+              imagesVisible: 4
+          };
+
+  You can change default options if you need to:
+
+   $.fn.slider.defaultOptions = {
+              imageWidth: 250,
+              imageMarginRight: 25,
+              imagesVisible: 4
+          };
