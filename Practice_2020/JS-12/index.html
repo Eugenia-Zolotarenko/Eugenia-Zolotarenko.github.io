@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head >
+    <meta charset="UTF-8">
+    <title>Home work JS-12 2021</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+<script type="text/template" id="user-profile">
+    <div class="cv">
+
+        <div class="fio"><%=fullName%></div>
+
+        <div class="photo">
+            <img src="<%=imgSrc%>" alt="my photo" width="<%=imgWidth%>">
+        </div>
+
+        <div class="work border"><%=job%></div>
+
+
+        <div class="reason border">Хочу учить фронтенд потому что:
+
+            <ul class="reason_list">
+
+                <% for (let i = 0; i < reasonListItems.length ; i++) { %>
+                <li><%=reasonListItems[i]%></li>
+                <% } %>
+
+            </ul>
+
+            <div class="reason">Мой контактный телефон:</div>
+
+            <div class="reason_list ph"><%=phoneNumber%></div>
+
+            <div class="reason border">Мой профиль Facebook:
+                <div class="reason_list"><a href="<%=faceBookLink%>">facebook.com</a></div>
+            </div>
+
+            <div class="reason">Мой фидбек:</div>
+
+            <div class="reason_list"><%=feedback%></div>
+
+        </div>
+
+    </div>
+
+</script>
+
+</body>
+</html>

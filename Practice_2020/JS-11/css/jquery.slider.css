@@ -1,0 +1,51 @@
+.carousel {
+   display: flex;
+    justify-content: center;
+}
+
+
+    .carousel__hider {
+        width: 875px;
+        margin-left:  2%;
+        margin-right: 2%;
+        overflow: hidden;
+    }
+
+
+        .carousel__list {
+            list-style: none;
+
+            display: flex;
+            flex-wrap: wrap;
+
+            position: relative;
+            width: 10000px;
+            padding: 0;
+        }
+
+
+            .carousel__element {
+                margin-right: 25px;
+                text-align: center;
+
+                align-self: center;
+            }
+
+
+                .carousel__image {
+                    max-width: 200px;
+                }
+
+
+    .carousel__arrow {
+        border: 1px solid grey;
+        padding: 5px;
+        background-color: lightgrey;
+
+        align-self: center;
+    }
+
+    .carousel__arrow:hover {
+        cursor: pointer;
+        background-color: grey;
+    }
