@@ -30,27 +30,27 @@
 
             <div class="w-100"></div>
 
-            <form action="/" method="post" class="col-auto  col-md-6  mt-3  list-group">
+            <form action="/" method="post" class="col-auto  col-md-6  mt-3  list-group" id="js_quiz">
 
                 <%for (let i = 0; i < quizList.length; i++) { %>
 
-                    <div class="list-group-item">
+                    <div class="list-group-item" id="js_quizQuestion_<%=i%>">
 
                         <p class="fw-bold"><%=quizList[i].quizQuestion%></p>
 
                             <%for (let j = 0; j < quizList[i].options.length; j++) { %>
 
-                            <div class="form-check">
+                                <div class="form-check">
 
-                                <input type="checkbox" id="answer_<%=i%>.<%=j%>" name="answer_<%=i%>.<%=j%>"
-                                       value="option <%=j%>"  class="form-check-input">
-                                <label for="answer_<%=i%>.<%=j%>" class="form-check-label">
-                                    <%=quizList[i].options[j]%>
-                                </label>
+                                    <input type="radio" id="<%=i%>.<%=j%>" name="answer_<%=i%>"
+                                           value="<%=j%>"  class="form-check-input">
+                                    <label for="<%=i%>.<%=j%>" class="form-check-label">
+                                        <%=quizList[i].options[j].answer%>
+                                    </label>
 
-                            </div>
+                                </div>
 
-                        <% } %>
+                            <% } %>
                     </div>
 
                 <% } %>
