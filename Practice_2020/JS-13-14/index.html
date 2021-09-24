@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Work JS-13-14</title>
+
+    <!-- Bootstrap CSS (jsDelivery CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+          crossorigin="anonymous">
+
+    <link href="css/user.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/script.js"></script>
+
+
+
+</head>
+<body>
+<script type="text/template" id="quiz">
+
+    <div class="container">
+
+        <div class="row  justify-content-center">
+
+            <h2 class="col-10  display-5  offset-md-3"><%=quizName%></h2>
+
+            <div class="w-100"></div>
+
+            <form action="/" method="post" class="col-auto  col-md-6  mt-3  list-group" id="js_quiz">
+
+                <%for (let i = 0; i < quizList.length; i++) { %>
+
+                    <div class="list-group-item" id="js_quizQuestion_<%=i%>">
+
+                        <p class="fw-bold"><%=quizList[i].quizQuestion%></p>
+
+                            <%for (let j = 0; j < quizList[i].options.length; j++) { %>
+
+                                <div class="form-check">
+
+                                    <input type="radio" id="<%=i%>.<%=j%>" name="answer_<%=i%>"
+                                           value="<%=j%>"  class="form-check-input">
+                                    <label for="<%=i%>.<%=j%>" class="form-check-label">
+                                        <%=quizList[i].options[j].answer%>
+                                    </label>
+
+                                </div>
+
+                            <% } %>
+                    </div>
+
+                <% } %>
+
+                <input type="button"  value = "Check my results" class="btn  btn-primary  mt-3  col-12">
+
+            </form>
+
+        </div>
+
+    </div>
+
+</script>
+
+</body>
+</html>
