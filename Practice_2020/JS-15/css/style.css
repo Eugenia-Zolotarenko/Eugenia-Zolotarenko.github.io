@@ -1,0 +1,11 @@
+.page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    font: 16px arial,sans-serif;
+    padding: 50px 0;
+}
+
