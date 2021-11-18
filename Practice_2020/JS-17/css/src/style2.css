@@ -1,0 +1,39 @@
+.cv {
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+.fio {
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 36px;
+    font-family: Arial;
+}
+
+.photo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.work {
+    font-family: Arial;
+    font-size: 14px;
+    padding-bottom: 20px;
+    color: #808080;
+
+}
+
+.reason {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Myriad Pro';
+}
+
+.border {
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightgrey;
+}
