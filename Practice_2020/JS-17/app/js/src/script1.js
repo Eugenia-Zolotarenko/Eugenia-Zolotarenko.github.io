@@ -1,7 +1,7 @@
 $(function (){
     let data = {
         fullName: 'Eugenia Zolotarenko',
-        imgSrc: 'img/DSC08194.jpg',
+        imgSrc: 'img/dist/DSC08194.jpg',
         imgWidth: 350,
         job: 'работаю в буфете',
         reasonListItems: ['Заборы строить не интересно',

@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         concat: {
-            js: {
+            scripts: {
                 options: {
                     // define a string to put between each file in the concatenated output
                     separator: ';'
@@ -11,7 +11,6 @@ module.exports = function(grunt) {
                 src: ['js/src/*.js'],
                 // the location of the resulting JS file
                 dest: 'js/dist/script.main.js'
-
             },
 
             css: {
@@ -20,7 +19,6 @@ module.exports = function(grunt) {
                 },
                 src: ['css/src/*.css'],
                 dest: 'css/dist/style.main.css'
-
             },
         },
 
@@ -38,13 +36,24 @@ module.exports = function(grunt) {
                     'css/dist/style.main.css': ['css/dist/style.main.css']
                 }
             }
+        },
+
+        watch: {
+            source: {
+                files: ['js/src/*.js', 'css/src/*.css'],
+                tasks: ['concat', 'uglify', 'cssmin'],
+                options: {
+                    spawn: false,
+                    reload: true
+                },
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    //grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
 
