@@ -1,0 +1,11 @@
+@import "variables";
+@import "templates";
+
+
+.header-nav {
+  @extend %justify_space-between;
+
+  align-items: center;
+  background: $backgroundColor;
+
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head >
+    <meta charset="UTF-8">
+    <title>Home work JS-19 2022</title>
+    <link rel="stylesheet" href="css/app.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/app.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header  class="wrapper__header">
+
+            <div class="container  header">
+
+                <div  class="header__logo  logo">
+
+                    <a href="/">
+                        <img src="img/dist/logo.png" alt="logo image" class="logo__img">
+                    </a>
+
+                </div>
+
+
+                <div class="header__social  social">
+
+
+                    <script type="text/template" class="js-social-icons">
+
+
+                            <% for (let i = 0; i < socials.length ; i++) { %>
+
+
+                                <a href="<%=socials[i].iconLink%>" class="social__link" target="_blank">
+                                    <%=socials[i].svgIcon%>
+                                </a>
+
+
+                            <% } %>
+
+
+                    </script>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <div     class="wrapper__header-nav"  id="home">
+
+            <div class="container  header-nav">
+
+                <nav class="header-nav__main-nav"  id="main-nav">
+
+                    <ul class="main-nav">
+
+                        <li class="main-nav__item  main-nav__item_active">
+                            <a class="main-nav__link" href="#home">home</a>
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#features">features</a>
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">services</a>
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">news</a>
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">shop</a>
+                        </li >
+
+                    </ul>
+
+                </nav>
+
+                <div class="header-nav__search search">
+
+                    <form action="/" >
+                        <input type="text" class="search__field"  placeholder="Search...">
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div     class="wrapper__carousel">
+            <div class="container">
+
+            </div>
+        </div>
+
+        <section class="wrapper__features"  id="features">
+            <div class="container">
+
+            </div>
+        </section>
+
+        <main    class="wrapper__services">
+            <div class="container">
+
+            </div>
+        </main>
+
+        <aside   class="wrapper__banners">
+            <div class="container">
+
+            </div>
+        </aside>
+
+        <section class="wrapper__news">
+            <div class="container">
+
+            </div>
+        </section>
+
+        <footer  class="wrapper__footer">
+            <div class="container">
+
+                <div>
+                    aet
+                    hoparo[gjaeojorijphpirhiuerhgoiurguoerg
+                </div>
+
+                <div class="social">
+
+                    <script type="text/template" class="js-social-icons">
+
+                            <% for (let i = 0; i < socials.length ; i++) { %>
+
+                                <a href="<%=socials[i].iconLink%>" class="social__link" target="_blank">
+                                    <%=socials[i].svgIcon%>
+                                </a>
+
+                            <% } %>
+                    </script>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+<script type="text/template" id="user-profile">
+    <div class="cv">
+
+        <div class="fio"><%=fullName%></div>
+
+        <div class="photo">
+            <img src="<%=imgSrc%>" alt="my photo" width="<%=imgWidth%>">
+        </div>
+
+        <div class="work border"><%=job%></div>
+
+
+        <div class="reason border">Хочу учить фронтенд потому что:
+
+            <ul class="reason_list">
+
+                <% for (let i = 0; i < reasonListItems.length ; i++) { %>
+                <li><%=reasonListItems[i]%></li>
+                <% } %>
+
+            </ul>
+
+            <div class="reason">Мой контактный телефон:</div>
+
+            <div class="reason_list ph"><%=phoneNumber%></div>
+
+            <div class="reason border">Мой профиль Facebook:
+                <div class="reason_list"><a href="<%=faceBookLink%>">facebook.com</a></div>
+            </div>
+
+            <div class="reason">Мой фидбек:</div>
+
+            <div class="reason_list"><%=feedback%></div>
+
+        </div>
+
+    </div>
+
+</script>
+
+</body>
+</html>

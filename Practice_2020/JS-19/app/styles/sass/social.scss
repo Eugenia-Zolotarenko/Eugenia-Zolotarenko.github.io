@@ -1,0 +1,24 @@
+@import "variables";
+
+.social {
+
+    &__link:not(:last-child) {
+      margin-right: 0.5em;
+    }
+
+
+    &__link {
+        opacity: 20%;
+        fill: $primaryColor;
+
+
+        &:hover {
+          opacity: 100%;
+          fill: $hoverLinkColor;
+        }
+    }
+
+}
+
+
+

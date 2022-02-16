@@ -1,0 +1,25 @@
+@import "variables";
+@import "templates";
+
+.wrapper {
+  width: 100%;
+
+  padding-top: 35px;
+
+  &__header {
+    @extend %justify_center;
+  }
+
+  &__header-nav {
+    @extend %justify_center;
+    padding-top:    40px;
+    padding-bottom: 40px;
+  }
+
+
+  &__footer {
+    @extend %justify_center;
+  }
+
+
+}
