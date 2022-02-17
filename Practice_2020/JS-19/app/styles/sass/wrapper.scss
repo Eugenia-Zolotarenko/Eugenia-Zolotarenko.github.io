@@ -16,6 +16,10 @@
     padding-bottom: 40px;
   }
 
+  &__carousel {
+    @extend %justify_center;
+
+  }
 
   &__footer {
     @extend %justify_center;
