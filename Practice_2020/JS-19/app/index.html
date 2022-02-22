@@ -3,6 +3,9 @@
 <head >
     <meta charset="UTF-8">
     <title>Home work JS-19 2022</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app.min.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -31,20 +34,15 @@
 
                 <div class="header__social  social">
 
-
                     <script type="text/template" class="js-social-icons">
 
-
                             <% for (let i = 0; i < socials.length ; i++) { %>
-
 
                                 <a href="<%=socials[i].iconLink%>" class="social__link" target="_blank">
                                     <%=socials[i].svgIcon%>
                                 </a>
 
-
                             <% } %>
-
 
                     </script>
 
@@ -54,7 +52,10 @@
 
         </header>
 
+
+
         <div     class="wrapper__header-nav"  id="home">
+          <h2 class="visually-hidden">Main navigation</h2>
 
             <div class="container  header-nav">
 
@@ -71,15 +72,15 @@
                         </li>
 
                         <li class="main-nav__item">
-                            <a class="main-nav__link" href="#">services</a>
+                            <a class="main-nav__link" href="#services">services</a>
                         </li>
 
                         <li class="main-nav__item">
-                            <a class="main-nav__link" href="#">news</a>
+                            <a class="main-nav__link" href="#news">news</a>
                         </li>
 
                         <li class="main-nav__item">
-                            <a class="main-nav__link" href="#">shop</a>
+                            <a class="main-nav__link" href="#shop">shop</a>
                         </li >
 
                     </ul>
@@ -97,7 +98,10 @@
 
         </div>
 
+
+
         <div     class="wrapper__carousel">
+
             <div class="container">
 
               <div  class="slider carousel">
@@ -108,16 +112,91 @@
 
               </div>
 
+              <img class="carousel__slogan" alt="" src="img/dist/carousel-slogan.png">
+
             </div>
         </div>
 
-        <section class="wrapper__features"  id="features">
-            <div class="container">
 
-            </div>
+
+        <section class="wrapper__features"  id="features">
+
+          <h2 class="visually-hidden">Features</h2>
+
+          <div class="container features">
+
+            <article class="article  features__article">
+
+              <div class="article__number">01</div>
+
+              <div class="article__body">
+
+                  <div class="article__icon_settings" ></div>
+
+                  <h3 class="article__name">Power Inside</h3>
+
+                  <p class="article__text  text">Cum sociis natoque penatibus et
+                      magnis dis parturient montesmus. Pro vel nibh et elit mollis
+                      commodo et nec augueique Nemo enim ipsam voluptatem quia
+                      ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+
+                  <a class="article__link" href="/">Read More</a>
+
+              </div>
+
+            </article>
+
+
+            <article class="article  features__article"">
+
+              <div class="article__number">02</div>
+
+              <div class="article__body">
+
+                <div class="article__icon_params" ></div>
+
+                <h3 class="article__name">new technologies</h3>
+
+                <p class="article__text  text">Cum sociis natoque penatibus et
+                    magnis dis parturient montesmus. Pro vel nibh et elit mollis
+                     commodo et nec augueique Nemo enim ipsam voluptatem quia
+                     ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+
+                <a class="article__link" href="/">Read More</a>
+
+              </div>
+
+            </article>
+
+
+            <article class="article  features__article"">
+
+              <div class="article__number">03</div>
+
+              <div class="article__body">
+
+                <div class="article__icon_truck" ></div>
+
+                <h3 class="article__name">fast support</h3>
+
+                <p class="article__text  text">Cum sociis natoque penatibus et
+                    magnis dis parturient montesmus. Pro vel nibh et elit mollis
+                     commodo et nec augueique Nemo enim ipsam voluptatem quia
+                     ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+
+                <a class="article__link" href="/">Read More</a>
+
+              </div>
+
+            </article>
+
+          </div>
         </section>
 
-        <main    class="wrapper__services">
+        <main    class="wrapper__services"   id="services">
+
+            <h2 class="visually-hidden">Our Services</h2>
+
             <div class="container">
 
             </div>

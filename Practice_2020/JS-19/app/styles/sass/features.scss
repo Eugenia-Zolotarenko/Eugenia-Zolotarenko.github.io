@@ -1,0 +1,12 @@
+@import "variables";
+@import "templates";
+
+.features {
+  @extend %justify_space-between;
+  max-height: 200px;
+
+
+  &__article:not(:first-child) {
+    margin-left: 2vw;
+  }
+}

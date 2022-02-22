@@ -1,29 +1,46 @@
 @import "variables";
 @import "templates";
 
+@mixin wrapper($name) {
+    .wrapper__#{$name} {
+        @extend %justify_center;
+    }
+}
+
+@include wrapper('header');
+@include wrapper('header-nav');
+@include wrapper('carousel');
+@include wrapper('features');
+@include wrapper('footer');
+
+
 .wrapper {
   width: 100%;
 
   padding-top: 35px;
 
-  &__header {
+  /*&__header {
     @extend %justify_center;
-  }
+  }*/
 
   &__header-nav {
-    @extend %justify_center;
     padding-top:    40px;
     padding-bottom: 40px;
   }
 
-  &__carousel {
+  /*&__carousel {
     @extend %justify_center;
 
+  }*/
+
+  &__features {
+    padding-top:    75px;
+    padding-bottom: 85px;
   }
 
-  &__footer {
+  /*&__footer {
     @extend %justify_center;
-  }
+  }*/
 
 
 }

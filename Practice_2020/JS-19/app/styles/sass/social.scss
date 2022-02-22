@@ -1,4 +1,5 @@
 @import "variables";
+@import "templates";
 
 .social {
 
@@ -8,6 +9,8 @@
 
 
     &__link {
+        @extend %link;
+
         opacity: 20%;
         fill: $primaryColor;
 
@@ -19,6 +22,3 @@
     }
 
 }
-
-
-

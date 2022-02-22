@@ -1,0 +1,93 @@
+@import "variables";
+@import "templates";
+
+%article__icon {
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-image: url('../img/dist/article-icons.svg');
+}
+
+.article {
+  display: flex;
+  font-family: $headerFont-family;
+  color: #2a2b2e;
+
+
+  &__number {
+    font-size: 90px;
+    color:  rgba(42, 43, 46, 0.102);
+  }
+
+
+  &__body {
+    margin-left: 2vw;
+
+
+  }
+
+
+    &__icon_settings{
+      @extend %article__icon;
+      background-position: -74px 0;
+    }
+
+    &__icon_params{
+      @extend %article__icon;
+      background-position: -37px 0;
+    }
+
+    &__icon_truck{
+      @extend %article__icon;
+      background-position: 0 0;
+    }
+
+
+    &__name{
+      margin-top: 15px;
+      margin-bottom: 25px;
+
+      text-transform: capitalize;
+      font-size: 20px;
+      white-space: nowrap;
+    }
+
+
+    &__text{
+      margin-bottom: 25px;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      line-clamp: 3;
+      box-orient: vertical;
+    }
+
+
+    &__link{
+      @extend %link;
+
+      color: inherit;
+      font-size: $paragraphTextSize;
+
+
+      &::after{
+        margin-left: 10px;
+        content: '\2192';
+        color: $hoverLinkColor;
+      }
+
+
+      &:hover::after{
+        color: #2a2b2e;
+      }
+    }
+
+
+
+
+}

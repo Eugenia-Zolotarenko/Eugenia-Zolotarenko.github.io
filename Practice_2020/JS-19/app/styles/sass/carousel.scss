@@ -1,6 +1,13 @@
 @import "variables";
-@import "templates";
 
 .carousel {
-    //@extend %justify_center;
+  position: relative;
+
+
+  &__slogan {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 20%;
+  }
 }

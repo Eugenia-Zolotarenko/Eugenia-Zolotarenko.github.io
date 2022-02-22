@@ -3,3 +3,21 @@
 .container {
   width: $width;
 }
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+
+.text {
+  font: {
+    family: Arial, sans-serif;
+      size: $paragraphTextSize;
+  }
+  color: $paragraphTextColor;
+  text-align: justify;
+}

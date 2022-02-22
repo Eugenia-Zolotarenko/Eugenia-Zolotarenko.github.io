@@ -1,3 +1,6 @@
+@import "variables";
+
+
 %justify_space-between {
   display: flex;
   justify-content: space-between;
@@ -6,4 +9,13 @@
 %justify_center {
   display: flex;
   justify-content: center;
+}
+
+%link{
+  text-decoration: none;
+}
+
+
+%link:hover{
+  color: $hoverLinkColor;
 }
