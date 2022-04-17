@@ -8,10 +8,6 @@
 
 
     &__item {
-        &:hover{
-         color: $hoverTextColor;
-        }
-
 
         &_active{
           background-color: $hoverLinkColor;
@@ -30,5 +26,10 @@
               text-transform:  uppercase;
               font-size: 14px;
               line-height: 55px;
+
+              &:hover{
+               color: $hoverTextColor;
+              }
+
             }
 }
