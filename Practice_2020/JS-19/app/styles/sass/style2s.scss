@@ -1,6 +1,7 @@
 @import "variables";
 
 .container {
+  position: relative;
   width: $width;
 }
 
@@ -10,14 +11,4 @@
   width: 1px;
   height: 1px;
   overflow: hidden;
-}
-
-
-.text {
-  font: {
-    family: Arial, sans-serif;
-      size: $paragraphTextSize;
-  }
-  color: $paragraphTextColor;
-  text-align: justify;
 }

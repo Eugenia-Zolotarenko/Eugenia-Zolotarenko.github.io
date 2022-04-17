@@ -11,36 +11,41 @@
 @include wrapper('header-nav');
 @include wrapper('carousel');
 @include wrapper('features');
+@include wrapper('services');
+@include wrapper('banners');
+@include wrapper('news');
 @include wrapper('footer');
 
 
 .wrapper {
   width: 100%;
-
   padding-top: 35px;
 
-  /*&__header {
-    @extend %justify_center;
-  }*/
 
   &__header-nav {
     padding-top:    40px;
     padding-bottom: 40px;
   }
 
-  /*&__carousel {
-    @extend %justify_center;
-
-  }*/
 
   &__features {
     padding-top:    75px;
     padding-bottom: 85px;
   }
 
-  /*&__footer {
-    @extend %justify_center;
-  }*/
+  &__services {
+    padding-top:    45px;
+    padding-bottom: 70px;
+
+    background: $backgroundColor;
+    color: $lightTextColor;
+  }
+
+  &__news {
+    padding-top: 4em;
+    padding-bottom: 5.25em;
+    background: #f7f7f7;
+  }
 
 
 }

@@ -9,7 +9,7 @@
 
 
     &__link {
-        @extend %link;
+        text-decoration: none;
 
         opacity: 20%;
         fill: $primaryColor;

@@ -1,0 +1,69 @@
+@import "variables";
+
+%heading {
+  font: {
+    family: $headerFont-family;
+    size: 24px;
+    weight: 300;
+  }
+}
+
+
+.text {
+  font: {
+    family: Arial, sans-serif;
+      size: $paragraphTextSize;
+  }
+  color: $paragraphTextColor;
+  text-align: justify;
+
+
+
+  &__link {
+    font: {
+      family: $headerFont-family;
+        size: $paragraphTextSize;
+    }
+    text-decoration: none;
+    color: inherit;
+
+
+    &_size_m{
+      font-size: 16px;
+    }
+
+
+    &:hover{
+      color: $hoverLinkColor;
+    }
+
+  }
+
+}
+
+@mixin text__header($name, $fontSize) {
+    .text__header#{$name} {
+        @extend %heading;
+        font-size: $fontSize;
+    }
+}
+
+@include text__header('', 24px);
+@include text__header('_size_s', 16px);
+@include text__header('_size_m', 20px);
+@include text__header('_size_l', 90px);
+
+
+
+
+.text__restrict{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  box-orient: vertical;
+}
