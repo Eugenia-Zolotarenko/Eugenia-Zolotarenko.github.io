@@ -8,6 +8,17 @@
   }
 }
 
+%text__restrict{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+
+  -webkit-box-orient: vertical;
+
+  box-orient: vertical;
+}
 
 .text {
   font: {
@@ -45,15 +56,27 @@
     .text__header#{$name} {
         @extend %heading;
         font-size: $fontSize;
+        line-height: 15px;
     }
 }
 
 @include text__header('', 24px);
-@include text__header('_size_s', 16px);
+@include text__header('_size_s', 1.5vw);
 @include text__header('_size_m', 20px);
 @include text__header('_size_l', 90px);
 
 
+
+@mixin text__restriction($line_number) {
+    .text__restriction#{$line_number} {
+        @extend %text__restrict;
+        -webkit-line-clamp: $line_number;
+        line-clamp: $line_number;
+    }
+}
+
+@include text__restriction(3);
+@include text__restriction(4);
 
 
 .text__restrict{

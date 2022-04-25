@@ -91,7 +91,7 @@
 
                 </nav>
 
-                <div class="header-nav__search search">
+                <div class="header-nav__search  search">
 
                     <form action="/" >
                         <input type="text" class="search__field"  placeholder="Search...">
@@ -111,7 +111,7 @@
 
             <div class="container">
 
-              <div  class="slider carousel">
+              <div  class="slider  carousel">
 
                 <div><img src="img/dist/carousel-img1.png" width="100%" height="400px" alt=""></div>
                 <div><img src="img/dist/carousel-img2.jpg" width="100%" height="400px" alt=""></div>
@@ -133,25 +133,25 @@
 
           <h2 class="visually-hidden">Features</h2>
 
-          <div class="container features">
+          <div class="container  features">
 
 
             <article class="features__item">
 
-              <div class="features__number text__header_size_l">01</div>
+              <div class="features__number  text__header_size_l">01</div>
 
               <div class="features__body">
 
                   <div class="features__icon_settings"></div>
 
-                  <h3 class="features__name text__header_size_m">Power Inside</h3>
+                  <h3 class="features__name  text__header_size_m">Power Inside</h3>
 
-                  <p class="features__text  text">Cum sociis natoque penatibus et
+                  <p class="features__text  text  text__restriction3">Cum sociis natoque penatibus et
                       magnis dis parturient montesmus. Pro vel nibh et elit mollis
                       commodo et nec augueique Nemo enim ipsam voluptatem quia
                       ptas sit aspernatur samomo enim ipsam voluptatem.</p>
 
-                  <a class="features__link text__link" href="/">Read More</a>
+                  <a class="features__link  text__link" href="/">Read More</a>
 
               </div>
 
@@ -160,20 +160,20 @@
 
             <article class="features__item">
 
-              <div class="features__number text__header_size_l">02</div>
+              <div class="features__number  text__header_size_l">02</div>
 
               <div class="features__body">
 
                 <div class="features__icon_params" ></div>
 
-                <h3 class="features__name text__header_size_m">new technologies</h3>
+                <h3 class="features__name  text__header_size_m">new technologies</h3>
 
-                <p class="features__text  text">Cum sociis natoque penatibus et
+                <p class="features__text  text  text__restriction3">Cum sociis natoque penatibus et
                     magnis dis parturient montesmus. Pro vel nibh et elit mollis
                      commodo et nec augueique Nemo enim ipsam voluptatem quia
                      ptas sit aspernatur samomo enim ipsam voluptatem.</p>
 
-                <a class="features__link text__link" href="/">Read More</a>
+                <a class="features__link  text__link" href="/">Read More</a>
 
               </div>
 
@@ -182,15 +182,15 @@
 
             <article class="features__item">
 
-              <div class="features__number text__header_size_l">03</div>
+              <div class="features__number  text__header_size_l">03</div>
 
               <div class="features__body">
 
                 <div class="features__icon_truck" ></div>
 
-                <h3 class="features__name text__header_size_m">fast support</h3>
+                <h3 class="features__name  text__header_size_m">fast support</h3>
 
-                <p class="features__text  text">Cum sociis natoque penatibus et
+                <p class="features__text  text  text__restriction3">Cum sociis natoque penatibus et
                     magnis dis parturient montesmus. Pro vel nibh et elit mollis
                      commodo et nec augueique Nemo enim ipsam voluptatem quia
                      ptas sit aspernatur samomo enim ipsam voluptatem.</p>
@@ -272,53 +272,142 @@
     <!--LATEST NEWS-->
               <div class="latest-news">
 
-                <h2 class="text__header">Latest News</h2>
+                <h2 class="text__header  latest-news__header">Latest News</h2>
 
-                <article class="media ">
 
-                    <div class="media__item">
-                      <div class="media__date">
-                        <div class="media__month">Jan</div>
-                        <div class="media__day">23</div>
+                <script type="text/template" id='js-latest-news'>
+
+                        <% for (let i = 0; i < 2 ; i++) { %>
+
+                          <article class="media  latest-news__item">
+
+                              <div class="media__item  latest-news__icon">
+
+                                <div class="latest-news__date">
+                                  <div class="latest-news__month"><%=news[i].newsDate%></div>
+                                  <div class="latest-news__day"><%=news[i].newsDate%></div>
+                                </div>
+
+                                <img class="media__img  latest-news__img"
+                                       src="<%=news[i].newsImg%>"
+                                       alt=""/>
+                              </div>
+
+                              <div class="media__body  latest-news__body">
+
+                                <h3 class="media__heading  latest-news__heading">
+                                  <a href="/" class="text__link  text__header_size_s">
+                                    <%=news[i].newsHeading%>
+                                  </a>
+                                </h3>
+
+                                <div class="media__data  latest-news__data">
+
+                                  <span class="text">by</span>
+
+                                  <a href="<%=news[i].newsAuthorLink%>" class="text__link">
+                                    <%=news[i].newsAuthor%></a>
+
+                                  <span class="text"><%=news[i].newsComments%></span>
+
+                                  <a href="<%=news[i].newsCommentsLink%>"
+                                     class="text__link">6</a>
+                                </div>
+
+                                <p class="latest-news__text  text  text__restriction4">
+                                  <%=news[i].newsText%></p>
+                              </div>
+
+                          </article>
+
+                        <% } %>
+
+                </script>
+
+
+
+                <article class="media  latest-news__item">
+
+                    <div class="media__item  latest-news__icon">
+
+                      <div class="latest-news__date">
+                        <div class="latest-news__month">Jan</div>
+                        <div class="latest-news__day">23</div>
                       </div>
-                      <img class="media__img" src="img/dist/news-img1.png"/>
+
+                      <img class="media__img  latest-news__img"
+                             src="img/dist/news-img1.png"
+                             alt=""/>
                     </div>
 
-                    <div class="media__body">
+                    <div class="media__body  latest-news__body">
 
-                      <h3 class="">
-                        <a href="/" class="text__link text__header_size_s">
-                          Advanced Machinery Helps Improve Quality
+                      <h3 class="media__heading  latest-news__heading">
+                        <a href="/" class="text__link  text__header_size_s">
+                          Advanced Machinery Helps Improve
                         </a>
                       </h3>
 
-                      <p>Cum sociis natoque penatibus et magnis dis parturient
+                      <div class="media__data  latest-news__data">
+                        <span class="text">by</span>
+                        <a href="" class="text__link">cmsmasters</a>
+                        <span class="text">Comments</span>
+                        <a href="" class="text__link">6</a>
+                      </div>
+
+                      <p class="latest-news__text  text  text__restriction4">Cum sociis natoque penatibus et magnis dis parturient
                          ontesmus. Pro vel nibh et elit mollis commodo et nec
                          augueique Nemo enim ipsam voluptatem quia ptas sit
-                         aspernatur samomo enim ipsam voluptatem.</p>
+                         aspernatur samomo enim ipsam voluptatem.Cum sociis natoque penatibus et magnis dis parturient
+                            ontesmus. Pro vel nibh et elit mollis commodo et nec
+                            augueique Nemo enim ipsam voluptatem quia ptas sit
+                            aspernatur samomo enim ipsam voluptatem.Cum sociis natoque penatibus et magnis dis parturient
+                               ontesmus. Pro vel nibh et elit mollis commodo et nec
+                               augueique Nemo enim ipsam voluptatem quia ptas sit
+                               aspernatur samomo enim ipsam voluptatem.Cum sociis natoque penatibus et magnis dis parturient
+                                  ontesmus. Pro vel nibh et elit mollis commodo et nec
+                                  augueique Nemo enim ipsam voluptatem quia ptas sit
+                                  aspernatur samomo enim ipsam voluptatem.</p>
                     </div>
 
 
                 </article>
 
-                <article class=" media">
+                <article class="media  latest-news__item">
 
-                    <div class="media__item">
-                      <img src="img/dist/news-img2.png"/>
+                    <div class="media__item  latest-news__icon">
+
+                      <div class="latest-news__date">
+                        <div class="latest-news__month">Jan</div>
+                        <div class="latest-news__day">21</div>
+                      </div>
+
+                      <img class="media__img  latest-news__img"
+                             src="img/dist/news-img2.png"
+                             alt=""/>
                     </div>
 
                     <div class="media__body">
 
-                      <h3 class="text__header_size_s">
-                        <a href="/" class="text__link text__header_size_s">
-                          Advanced Machinery Helps Improve Quality
+                      <h3 class="media__heading">
+                        <a href="/" class="text__link  text__header_size_s">
+                          Powerful Techniques for Advanced Service
                         </a>
                       </h3>
 
-                      <p>Cum sociis natoque penatibus et magnis dis parturient
+                      <p class="text  text__restriction4">Cum sociis natoque penatibus et magnis dis parturient
                          ontesmus. Pro vel nibh et elit mollis commodo et nec
                          augueique Nemo enim ipsam voluptatem quia ptas sit
-                         aspernatur samomo enim ipsam voluptatem.</p>
+                         aspernatur samomo enim ipsam voluptatem.Cum sociis natoque penatibus et magnis dis parturient
+                            ontesmus. Pro vel nibh et elit mollis commodo et nec
+                            augueique Nemo enim ipsam voluptatem quia ptas sit
+                            aspernatur samomo enim ipsam voluptatem.Cum sociis natoque penatibus et magnis dis parturient
+                               ontesmus. Pro vel nibh et elit mollis commodo et nec
+                               augueique Nemo enim ipsam voluptatem quia ptas sit
+                               aspernatur samomo enim ipsam voluptatem.Cum sociis natoque penatibus et magnis dis parturient
+                                  ontesmus. Pro vel nibh et elit mollis commodo et nec
+                                  augueique Nemo enim ipsam voluptatem quia ptas sit
+                                  aspernatur samomo enim ipsam voluptatem.</p>
                     </div>
 
 

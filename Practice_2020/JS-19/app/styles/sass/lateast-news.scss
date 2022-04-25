@@ -1,0 +1,66 @@
+@import "variables";
+@import "templates";
+
+
+
+
+.latest-news{
+  width: 50%;
+
+  &__header{
+    margin-bottom: 50px;
+  }
+
+
+  &__item:not(:first-child){
+    margin-top: 3em;
+  }
+
+    &__icon {
+      position: relative;
+    }
+
+      &__date{
+        position: absolute;
+        top: 7%;
+        left: -8%;
+      }
+
+  &__body{
+    max-height: 150px;
+    overflow: hidden;
+  }
+
+      &__data{
+        margin-top: -1em;
+        color: #0187f4;
+      }
+
+      &__text{
+        height: 50%;
+        overflow: hidden;
+        margin-top: 1.5em;
+      }
+}
+
+
+  %latest-news__date-item {
+    width:  40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-family: $headerFont-family;
+    font-size: 15px;
+  }
+
+    @mixin latest-news($name, $background, $color) {
+        .latest-news__#{$name} {
+            @extend %latest-news__date-item;
+
+            background: $background;
+            color: $color;
+        }
+    }
+
+    @include latest-news('month', #248cec, $lightTextColor);
+    @include latest-news('day',   #f4b60d, #2a2b2e);
