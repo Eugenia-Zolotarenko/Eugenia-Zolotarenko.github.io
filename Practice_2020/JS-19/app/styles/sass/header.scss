@@ -5,8 +5,7 @@
   @extend %justify_space-between;
   align-items: flex-start;
 
-
-    /*&__social {
-     justify-content: flex-end;
-    }*/
+  &__social{
+    align-self: center;
+  }
 }

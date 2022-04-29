@@ -23,7 +23,7 @@
 
             <div class="container  header">
 
-                <div  class="header__logo  logo">
+                <div  class="logo">
 
                     <a href="/">
                         <img src="img/dist/logo.png" alt="logo image" class="logo__img">
@@ -258,6 +258,7 @@
                 </div>
 
             </div>
+          </div>
 
         </main>
 
@@ -267,25 +268,26 @@
 
 <!--LATEST NEWS & BANNERS PLACE-->
         <section class="wrapper__news">
+
             <div class="container  news">
 
     <!--LATEST NEWS-->
-              <div class="latest-news">
+              <div class="latest-news  news__item">
 
-                <h2 class="text__header  latest-news__header">Latest News</h2>
+                <h2 class="text__header">Latest News</h2>
 
 
                 <script type="text/template" id='js-latest-news'>
 
-                        <% for (let i = 0; i < 2 ; i++) { %>
+                        <% for (let i = 0; i < news.length ; i++) { %>
 
                           <article class="media  latest-news__item">
 
                               <div class="media__item  latest-news__icon">
 
                                 <div class="latest-news__date">
-                                  <div class="latest-news__month"><%=news[i].newsDate%></div>
-                                  <div class="latest-news__day"><%=news[i].newsDate%></div>
+                                  <div class="latest-news__month"><%=news[i].newsMonth%></div>
+                                  <div class="latest-news__day"><%=news[i].newsDay%></div>
                                 </div>
 
                                 <img class="media__img  latest-news__img"
@@ -308,10 +310,8 @@
                                   <a href="<%=news[i].newsAuthorLink%>" class="text__link">
                                     <%=news[i].newsAuthor%></a>
 
-                                  <span class="text"><%=news[i].newsComments%></span>
-
-                                  <a href="<%=news[i].newsCommentsLink%>"
-                                     class="text__link">6</a>
+                                  <span class="text">Comments (</span><a href="<%=news[i].newsCommentsLink%>"
+                                     class="text__link"><%=news[i].newsComments%></a><span class="text" >)</span>
                                 </div>
 
                                 <p class="latest-news__text  text  text__restriction4">
@@ -325,99 +325,44 @@
                 </script>
 
 
-
-                <article class="media  latest-news__item">
-
-                    <div class="media__item  latest-news__icon">
-
-                      <div class="latest-news__date">
-                        <div class="latest-news__month">Jan</div>
-                        <div class="latest-news__day">23</div>
-                      </div>
-
-                      <img class="media__img  latest-news__img"
-                             src="img/dist/news-img1.png"
-                             alt=""/>
-                    </div>
-
-                    <div class="media__body  latest-news__body">
-
-                      <h3 class="media__heading  latest-news__heading">
-                        <a href="/" class="text__link  text__header_size_s">
-                          Advanced Machinery Helps Improve
-                        </a>
-                      </h3>
-
-                      <div class="media__data  latest-news__data">
-                        <span class="text">by</span>
-                        <a href="" class="text__link">cmsmasters</a>
-                        <span class="text">Comments</span>
-                        <a href="" class="text__link">6</a>
-                      </div>
-
-                      <p class="latest-news__text  text  text__restriction4">Cum sociis natoque penatibus et magnis dis parturient
-                         ontesmus. Pro vel nibh et elit mollis commodo et nec
-                         augueique Nemo enim ipsam voluptatem quia ptas sit
-                         aspernatur samomo enim ipsam voluptatem.Cum sociis natoque penatibus et magnis dis parturient
-                            ontesmus. Pro vel nibh et elit mollis commodo et nec
-                            augueique Nemo enim ipsam voluptatem quia ptas sit
-                            aspernatur samomo enim ipsam voluptatem.Cum sociis natoque penatibus et magnis dis parturient
-                               ontesmus. Pro vel nibh et elit mollis commodo et nec
-                               augueique Nemo enim ipsam voluptatem quia ptas sit
-                               aspernatur samomo enim ipsam voluptatem.Cum sociis natoque penatibus et magnis dis parturient
-                                  ontesmus. Pro vel nibh et elit mollis commodo et nec
-                                  augueique Nemo enim ipsam voluptatem quia ptas sit
-                                  aspernatur samomo enim ipsam voluptatem.</p>
-                    </div>
-
-
-                </article>
-
-                <article class="media  latest-news__item">
-
-                    <div class="media__item  latest-news__icon">
-
-                      <div class="latest-news__date">
-                        <div class="latest-news__month">Jan</div>
-                        <div class="latest-news__day">21</div>
-                      </div>
-
-                      <img class="media__img  latest-news__img"
-                             src="img/dist/news-img2.png"
-                             alt=""/>
-                    </div>
-
-                    <div class="media__body">
-
-                      <h3 class="media__heading">
-                        <a href="/" class="text__link  text__header_size_s">
-                          Powerful Techniques for Advanced Service
-                        </a>
-                      </h3>
-
-                      <p class="text  text__restriction4">Cum sociis natoque penatibus et magnis dis parturient
-                         ontesmus. Pro vel nibh et elit mollis commodo et nec
-                         augueique Nemo enim ipsam voluptatem quia ptas sit
-                         aspernatur samomo enim ipsam voluptatem.Cum sociis natoque penatibus et magnis dis parturient
-                            ontesmus. Pro vel nibh et elit mollis commodo et nec
-                            augueique Nemo enim ipsam voluptatem quia ptas sit
-                            aspernatur samomo enim ipsam voluptatem.Cum sociis natoque penatibus et magnis dis parturient
-                               ontesmus. Pro vel nibh et elit mollis commodo et nec
-                               augueique Nemo enim ipsam voluptatem quia ptas sit
-                               aspernatur samomo enim ipsam voluptatem.Cum sociis natoque penatibus et magnis dis parturient
-                                  ontesmus. Pro vel nibh et elit mollis commodo et nec
-                                  augueique Nemo enim ipsam voluptatem quia ptas sit
-                                  aspernatur samomo enim ipsam voluptatem.</p>
-                    </div>
-
-
-                </article>
-
               </div>
 
 
-              <div class="banners-place">
+              <div class="banners-place  news__item">
+
                 <h2 class="text__header">Banners Place</h2>
+
+                  <div id="accordion">
+                      <h3  class="text__header_size_s">Section 1</h3>
+                      <div>
+                          <p class="text">Mauris mauris ante, blandit et, ultrices a, suscipit eget.
+                              Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
+                              condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros.
+                              Nam mi. Proin viverra leo ut odio.</p>
+                      </div>
+                      <h3 class="text__header_size_s">Section 2</h3>
+                      <div>
+                          <p class="text">Cum sociis natoque penatibus et magnis dis parturient mus.
+                              Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam
+                              voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus
+                              et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia
+                              ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec
+                              augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur
+                              samomo enim ipsam voluptatem.Sed non urna. Phasellus eu ligula.
+                              Vestibulum sit amet purus.
+                              Vivamus hendrerit, dolor aliquet laoreet, mauris turpis velit,
+                              faucibus interdum tellus libero ac justo.</p>
+                      </div>
+                      <h3 class="text__header_size_s">Section 3</h3>
+                      <div>
+                          <p class="text">Nam enim risus, molestie et, porta ac, aliquam ac, risus.
+                              Quisque lobortis.Phasellus pellentesque purus in massa.</p>
+                      </div>
+                  </div>
+
+                  <script>
+                      $( "#accordion" ).accordion();
+                  </script>
 
               </div>
             </div>

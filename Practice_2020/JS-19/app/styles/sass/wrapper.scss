@@ -15,6 +15,8 @@
 @include wrapper('banners');
 @include wrapper('news');
 @include wrapper('footer');
+@include wrapper('item');
+
 
 
 .wrapper {

@@ -4,5 +4,20 @@
 
 .news {
   display: flex;
+  justify-content: space-between;
   color: #2a2b2e;
+
+
+  &__item{
+  width: 48%;
+
+    & .text__header{
+      margin-bottom: 50px;
+    }
+}
+
+
+
+
+
 }

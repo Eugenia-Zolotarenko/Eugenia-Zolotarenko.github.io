@@ -1,4 +1,4 @@
-@import "variables";
+@import "app/styles/sass/variables";
 
 .search{
   max-width: 20%;
@@ -14,17 +14,4 @@
     background: #35383c url("../img/dist/search.svg") no-repeat right 7% center;
     color: $lightTextColor;
   }
-/*  &::before {
-    position: absolute;
-    right: -1px;
-    top: -1px;
-    width: 14px;
-    height: 14px;
-  background: url("../img/dist/search.svg") no-repeat ;
-  content: "♥";
-    border: 5px solid white;
-    z-index: 50;
-  }*/
-
-
 }
