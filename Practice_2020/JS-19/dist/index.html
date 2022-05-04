@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head >
+    <meta charset="UTF-8">
+    <title>Home work JS-19 2022</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/app.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+
+<!--HEADER-->
+        <header  class="wrapper__header">
+
+            <div class="container  header">
+
+                <div  class="logo">
+
+                    <a href="/">
+                        <img src="img/dist/logo.png" alt="logo image" class="logo__img">
+                    </a>
+
+                </div>
+
+
+                <div class="header__social  social">
+
+                    <script type="text/template" class="js-social-icons">
+
+                            <% for (let i = 0; i < socials.length ; i++) { %>
+
+                                <a href="<%=socials[i].iconLink%>" class="social__link" target="_blank">
+                                    <%=socials[i].iconSvg%>
+                                </a>
+
+                            <% } %>
+
+                    </script>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+
+
+<!--MAIN NAVIGATION-->
+        <div     class="wrapper__header-nav"  id="home">
+
+          <h2 class="visually-hidden">Main navigation</h2>
+
+            <div class="container  header-nav">
+
+                <nav class="header-nav__main-nav"  id="main-nav">
+
+                    <ul class="main-nav">
+
+                        <li class="main-nav__item  main-nav__item_active">
+                            <a class="main-nav__link" href="#home">home</a>
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#features">features</a>
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#services">services</a>
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#news">news</a>
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#shop">shop</a>
+                        </li >
+
+                    </ul>
+
+                </nav>
+
+                <div class="header-nav__search  search">
+
+                    <form action="/">
+                        <input type="text" class="search__field"  placeholder="Search...">
+                        <button class="search__button"></button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+<!--CAROUSEL-->
+        <div     class="wrapper__carousel">
+
+            <div class="container">
+
+              <div  class="slider  carousel">
+
+                <div><img src="img/dist/carousel-img1.png" width="100%" height="400px" alt=""></div>
+                <div><img src="img/dist/carousel-img2.jpg" width="100%" height="400px" alt=""></div>
+                <div><img src="img/dist/carousel-img3.jpg" width="100%" height="400px" alt=""></div>
+
+              </div>
+
+              <img class="carousel__slogan" alt="" src="img/dist/carousel-slogan.png">
+
+            </div>
+        </div>
+
+
+
+
+
+<!--FEATURES-->
+        <section class="wrapper__features"  id="features">
+
+          <h2 class="visually-hidden">Features</h2>
+
+          <div class="container  features">
+
+
+            <article class="features__item">
+
+              <div class="features__number  text__header_size_l">01</div>
+
+              <div class="features__body">
+
+                  <div class="features__icon_settings"></div>
+
+                  <h3 class="features__name  text__header_size_m">Power Inside</h3>
+
+                  <p class="features__text  text  text__restriction3">Cum sociis natoque penatibus et
+                      magnis dis parturient montesmus. Pro vel nibh et elit mollis
+                      commodo et nec augueique Nemo enim ipsam voluptatem quia
+                      ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+
+                  <a class="features__link  text__link" href="/">Read More</a>
+
+              </div>
+
+            </article>
+
+
+            <article class="features__item">
+
+              <div class="features__number  text__header_size_l">02</div>
+
+              <div class="features__body">
+
+                <div class="features__icon_params" ></div>
+
+                <h3 class="features__name  text__header_size_m">new technologies</h3>
+
+                <p class="features__text  text  text__restriction3">Cum sociis natoque penatibus et
+                    magnis dis parturient montesmus. Pro vel nibh et elit mollis
+                     commodo et nec augueique Nemo enim ipsam voluptatem quia
+                     ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+
+                <a class="features__link  text__link" href="/">Read More</a>
+
+              </div>
+
+            </article>
+
+
+            <article class="features__item">
+
+              <div class="features__number  text__header_size_l">03</div>
+
+              <div class="features__body">
+
+                <div class="features__icon_truck" ></div>
+
+                <h3 class="features__name  text__header_size_m">fast support</h3>
+
+                <p class="features__text  text  text__restriction3">Cum sociis natoque penatibus et
+                    magnis dis parturient montesmus. Pro vel nibh et elit mollis
+                     commodo et nec augueique Nemo enim ipsam voluptatem quia
+                     ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+
+                <a class="features__link  text__link" href="/">Read More</a>
+
+              </div>
+
+            </article>
+
+          </div>
+        </section>
+
+
+
+
+
+<!--SERVICES LIST-->
+        <main    class="wrapper__services"   id="services">
+
+          <div class="container">
+
+            <h2 class="text__header">Our Services</h2>
+
+            <div class="service">
+
+
+                <div class="service__item">
+
+                  <a href="/" class="service__link  text__link  text__link_size_m">
+                    <img class="service__image"  src="img/dist/services-img1.png" alt="Schedule Services">
+                    <span>Schedule Services</span>
+                  </a>
+
+                </div>
+
+
+                <div class="service__item">
+
+                    <a href="/" class="service__link  text__link  text__link_size_m">
+                      <img class="service__image" src="img/dist/services-img2.png" alt="Preventive Maintence">
+                      <span>Preventive Maintence</span>
+                    </a>
+
+                </div>
+
+
+                <div class="service__item">
+
+                  <a href="/" class="service__link  text__link  text__link_size_m">
+                    <img class="service__image"  src="img/dist/services-img3.png" alt="Tire & Wheel Services">
+                    <span>Tire & Wheel Services</span>
+                  </a>
+
+                </div>
+
+
+                <div class="service__item">
+
+                  <a href="/" class="service__link  text__link  text__link_size_m">
+                    <img class="service__image"  src="img/dist/services-img4.png" alt="Repair Services">
+                    <span>Repair Services</span>
+                  </a>
+
+                </div>
+
+            </div>
+          </div>
+
+        </main>
+
+
+
+
+
+<!--LATEST NEWS & BANNERS PLACE-->
+        <section class="wrapper__news"  id="news">
+
+            <div class="container  news">
+
+    <!--LATEST NEWS-->
+              <div class="latest-news  news__item">
+
+                <h2 class="text__header">Latest News</h2>
+
+
+                <script type="text/template" id='js-latest-news'>
+
+                        <% for (let i = 0; i < news.length ; i++) { %>
+
+                          <article class="media  latest-news__item">
+
+                              <div class="media__item  latest-news__icon">
+
+                                <div class="latest-news__date">
+                                  <div class="latest-news__month"><%=news[i].newsMonth%></div>
+                                  <div class="latest-news__day"><%=news[i].newsDay%></div>
+                                </div>
+
+                                <img class="media__img  latest-news__img"
+                                       src="<%=news[i].newsImg%>"
+                                       alt=""/>
+                              </div>
+
+                              <div class="media__body  latest-news__body">
+
+                                <h3 class="media__heading  latest-news__heading">
+                                  <a href="/" class="text__link  text__header_size_s">
+                                    <%=news[i].newsHeading%>
+                                  </a>
+                                </h3>
+
+                                <div class="media__data  latest-news__data">
+
+                                  <span class="text">by</span>
+
+                                  <a href="<%=news[i].newsAuthorLink%>" class="text__link">
+                                    <%=news[i].newsAuthor%></a>
+
+                                  <span class="text">Comments (</span><a href="<%=news[i].newsCommentsLink%>"
+                                     class="text__link"><%=news[i].newsComments%></a><span class="text" >)</span>
+                                </div>
+
+                                <p class="latest-news__text  text  text__restriction4">
+                                  <%=news[i].newsText%></p>
+                              </div>
+
+                          </article>
+
+                        <% } %>
+
+                </script>
+
+
+              </div>
+
+
+              <div class="news__item">
+
+                <h2 class="text__header">Banners Place</h2>
+
+                  <div id="accordion">
+                      <h3  class="text__header_size_s">Section 1</h3>
+                      <div>
+                          <p class="text">Mauris mauris ante, blandit et, ultrices a, suscipit eget.
+                              Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
+                              condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros.
+                              Nam mi. Proin viverra leo ut odio.</p>
+                      </div>
+                      <h3 class="text__header_size_s">Section 2</h3>
+                      <div>
+                          <p class="text">Cum sociis natoque penatibus et magnis dis parturient mus.
+                              Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam
+                              voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus
+                              et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia
+                              ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec
+                              augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur
+                              samomo enim ipsam voluptatem.Sed non urna. Phasellus eu ligula.
+                              Vestibulum sit amet purus.
+                              Vivamus hendrerit, dolor aliquet laoreet, mauris turpis velit,
+                              faucibus interdum tellus libero ac justo.</p>
+                      </div>
+                      <h3 class="text__header_size_s">Section 3</h3>
+                      <div>
+                          <p class="text">Nam enim risus, molestie et, porta ac, aliquam ac, risus.
+                              Quisque lobortis.Phasellus pellentesque purus in massa.</p>
+                      </div>
+                  </div>
+
+                  <script>
+                      $( "#accordion" ).accordion();
+                  </script>
+
+              </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+<!--BANNERS LIST-->
+        <aside   class="wrapper__banners">
+            <div class="container  banners">
+
+                <a target="_blank" href="https://www.rollingbigpower.com/">
+                    <img src="img/dist/banners-img1.png" alt="https://www.rollingbigpower.com/">
+                </a>
+
+                <a target="_blank" href="https://www.motometalwheels.com/">
+                    <img src="img/dist/banners-img2.png" alt="https://www.motometalwheels.com/">
+                </a>
+
+                <a target="_blank" href="https://www.2crave.com/">
+                    <img src="img/dist/banners-img3.png" alt="https://www.2crave.com/">
+                </a>
+
+                <a target="_blank" href="https://www.atxwheels.com/">
+                    <img src="img/dist/banners-img4.png" alt="https://www.atxwheels.com/">
+                </a>
+
+                <a target="_blank" href="http://www.cruiseralloy.com/">
+                    <img src="img/dist/banners-img5.png" alt="http://www.cruiseralloy.com/">
+                </a>
+
+                <a target="_blank" href="https://www.gearoffroad.com/">
+                    <img src="img/dist/banners-img6.png" alt="https://www.gearoffroad.com/">
+                </a>
+
+            </div>
+        </aside>
+
+
+
+
+<!--FOOTER MENU-->
+        <section class="wrapper__links">
+
+            <div class="container">
+
+                <ul class="links-menu" >
+
+                    <li class="links-menu__item  links-menu__text">Socials
+
+                        <ul class="links-menu__submenu">
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Facebook</a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Flickr</a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Twitter</a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Vimeo</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <li class="links-menu__item  links-menu__text">links
+
+                        <ul class="links-menu__submenu">
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">How to Write a Blog</a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Create a Blog in 4 Steps</a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">15 Tips to Increase Traffic
+                                </a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">20 Blog Post Ideas</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <li class="links-menu__item  links-menu__text">blogroll
+
+                        <ul class="links-menu__submenu">
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Blogs Blog
+                                </a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Roll Up Roll Up</a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Blog Free</a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Wordpress Blog</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <li class="links-menu__item  links-menu__text">about us
+
+                        <ul class="links-menu__submenu">
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Agriculture</a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link  ">Harvest</a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Company news</a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Investor relations</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+
+
+
+<!--FOOTER INFO-->
+        <footer  class="wrapper__footer">
+
+            <div class="container  footer-info">
+
+                <div class="footer-info__item">
+                    <span class="footer-info__address">BuildHomeLtd.  Street Name 123   23 45 Cityname</span>
+                    <span class="footer-info__phone">+123 900 123 456</span>
+                    <span class="footer-info__mail">info@buildhome.web</span>
+                </div>
+
+                <div class="footer-info__item">© 2014 Build Home</div>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
