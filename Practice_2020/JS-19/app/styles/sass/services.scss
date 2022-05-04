@@ -1,0 +1,66 @@
+/*!
+1. height and width = height and width of .service__item element
+*/
+
+
+
+@import "variables";
+@import "templates";
+
+
+.service {
+  @extend %justify_space-between;
+
+
+  &__item {
+    position: relative;
+    margin-top: 3.5em;
+    text-align: center;
+  }
+
+    &__link {
+
+      position: relative;
+      display: block;
+
+      &:before {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        right:  0;
+        left:   0;
+        top:    0;
+
+        width:  18vw; /*![1]*/
+        height: 18vw;
+
+        opacity: 0;
+        background:          linear-gradient(#fff,#fff),
+                             linear-gradient(#fff,#fff),
+                             rgba(36, 140, 236,.9);
+        background-repeat:   no-repeat;
+        background-position: center;
+        background-size:     15% 3px,3px 15%; /*!thickness = 3px, length = 15% */
+      }
+
+
+
+      &:hover {
+        color: $hoverTextColor !important;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+
+    }
+
+
+      &__image {
+        display: block;
+        margin-bottom: 2em;
+        width: 18vw;
+        overflow: hidden;
+      }
+
+  }

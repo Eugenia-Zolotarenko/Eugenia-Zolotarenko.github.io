@@ -1,0 +1,15 @@
+@import "variables";
+
+
+.container {
+  position: relative;
+  width: $width;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

@@ -1,0 +1,35 @@
+@import "variables";
+@import "templates";
+
+
+.main-nav {
+    display: flex;
+    color: $lightTextColor;
+
+
+    &__item {
+
+        &_active{
+          background-color: $hoverLinkColor;
+        }
+
+      }
+
+
+        &__link {
+              display: block;
+              padding: 0 1.5em;
+              height: 55px;
+
+              color: inherit;
+              text-decoration: none;
+              text-transform:  uppercase;
+              font-size: 14px;
+              line-height: 55px;
+
+              &:hover{
+               color: $hoverTextColor;
+              }
+
+            }
+}

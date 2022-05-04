@@ -1,0 +1,29 @@
+@import "variables";
+
+.search {
+  position: relative;
+  max-width: 20%;
+
+
+  &__field {
+    width: 90%;
+    height: 40px;
+    padding: 0 5%;
+
+    outline: none;
+    border: 1px solid black;
+    background: #35383c;
+    color: $lightTextColor;
+  }
+
+  &__button {
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    width: 30px;
+    height: 30px;
+    background: #35383c url("../img/dist/search.svg") no-repeat right 7% center;
+    border-style: none;
+    cursor: pointer;
+  }
+}

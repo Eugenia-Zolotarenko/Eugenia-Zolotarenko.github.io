@@ -1,0 +1,23 @@
+@import "variables";
+@import "templates";
+
+
+.media {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 1em;
+  padding: 0 0 1em;
+
+
+    &__item {
+      padding: 0 2em 0 0;
+    }
+
+    &__body {
+      flex: 1;
+      }
+
+      &__heading {
+       margin: 0 0 .5em;
+ }
+}

@@ -1,0 +1,11 @@
+@import "variables";
+@import "templates";
+
+.header {
+  @extend %justify_space-between;
+  align-items: flex-start;
+
+  &__social{
+    align-self: center;
+  }
+}

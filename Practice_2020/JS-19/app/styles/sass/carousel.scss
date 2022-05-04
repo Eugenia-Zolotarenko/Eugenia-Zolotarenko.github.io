@@ -1,0 +1,11 @@
+@import "variables";
+
+.carousel {
+
+  &__slogan {
+    position: absolute;
+    bottom: 15%;
+    left:    5%;
+    width:  20%;
+  }
+}

@@ -1,0 +1,52 @@
+@import "variables";
+
+.links-menu {
+
+  display: flex;
+  justify-content: space-between;
+
+
+  &__item {
+    width: 23%;
+  }
+
+
+  &__text {
+    font-family: $headerFont-family;
+    color: $lightTextColor;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+
+  &__submenu:first-child {
+    margin-top: 50px;
+  }
+
+
+  &__submenu > &__item {
+    width: 100%;
+    padding-top:    12px;
+    padding-bottom: 13px;
+  }
+
+
+  &__submenu > &__item:not(:last-child){
+    border-bottom: 1px solid rgb(57,60,64);
+  }
+
+
+  &__link {
+    font-family: Arial, sans-serif;
+    font-size: $paragraphTextSize;
+    color: rgba(255, 255, 255, 0.302);
+    text-decoration: none;
+    text-transform:  none;
+
+    &:hover{
+      color:  $hoverLinkColor;
+    }
+  }
+
+}
+
