@@ -93,8 +93,9 @@
 
                 <div class="header-nav__search  search">
 
-                    <form action="/" >
+                    <form action="/">
                         <input type="text" class="search__field"  placeholder="Search...">
+                        <button class="search__button"></button>
                     </form>
 
                 </div>
@@ -370,6 +371,11 @@
 
         </section>
 
+
+
+
+
+<!--BANNERS LIST-->
         <aside   class="wrapper__banners">
             <div class="container  banners">
 
@@ -400,73 +406,145 @@
             </div>
         </aside>
 
-        <footer  class="wrapper__footer">
+
+
+
+<!--FOOTER MENU-->
+        <section class="wrapper__links">
+
             <div class="container">
 
-                <div>
-                    aet
-                    hoparo[gjaeojorijphpirhiuerhgoiurguoerg
-                </div>
+                <ul class="links-menu" >
 
-                <div class="social">
+                    <li class="links-menu__item  links-menu__text">Socials
 
-                    <script type="text/template" class="js-social-icons">
+                        <ul class="links-menu__submenu">
 
-                            <% for (let i = 0; i < socials.length ; i++) { %>
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Facebook</a>
+                            </li>
 
-                                <a href="<%=socials[i].iconLink%>" class="social__link" target="_blank">
-                                    <%=socials[i].svgIcon%>
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Flickr</a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Twitter</a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Vimeo</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <li class="links-menu__item  links-menu__text">links
+
+                        <ul class="links-menu__submenu">
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">How to Write a Blog</a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Create a Blog in 4 Steps</a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">15 Tips to Increase Traffic
                                 </a>
+                            </li>
 
-                            <% } %>
-                    </script>
-                </div>
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">20 Blog Post Ideas</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <li class="links-menu__item  links-menu__text">blogroll
+
+                        <ul class="links-menu__submenu">
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Blogs Blog
+                                </a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Roll Up Roll Up</a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Blog Free</a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Wordpress Blog</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <li class="links-menu__item  links-menu__text">about us
+
+                        <ul class="links-menu__submenu">
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Agriculture</a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link  ">Harvest</a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Company news</a>
+                            </li>
+
+                            <li class="links-menu__item">
+                                <a href="/" class="links-menu__link">Investor relations</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
             </div>
+
+        </section>
+
+
+
+
+
+<!--FOOTER INFO-->
+        <footer  class="wrapper__footer">
+
+            <div class="container  footer-info">
+
+                <div class="footer-info__item">
+                    <span class="footer-info__address">BuildHomeLtd.  Street Name 123   23 45 Cityname</span>
+                    <span class="footer-info__phone">+123 900 123 456</span>
+                    <span class="footer-info__mail">info@buildhome.web</span>
+                </div>
+
+                <div class="footer-info__item">© 2014 Build Home</div>
+
+            </div>
+
         </footer>
 
     </div>
-
-
-
-<script type="text/template" id="user-profile">
-    <div class="cv">
-
-        <div class="fio"><%=fullName%></div>
-
-        <div class="photo">
-            <img src="<%=imgSrc%>" alt="my photo" width="<%=imgWidth%>">
-        </div>
-
-        <div class="work border"><%=job%></div>
-
-
-        <div class="reason border">Хочу учить фронтенд потому что:
-
-            <ul class="reason_list">
-
-                <% for (let i = 0; i < reasonListItems.length ; i++) { %>
-                <li><%=reasonListItems[i]%></li>
-                <% } %>
-
-            </ul>
-
-            <div class="reason">Мой контактный телефон:</div>
-
-            <div class="reason_list ph"><%=phoneNumber%></div>
-
-            <div class="reason border">Мой профиль Facebook:
-                <div class="reason_list"><a href="<%=faceBookLink%>">facebook.com</a></div>
-            </div>
-
-            <div class="reason">Мой фидбек:</div>
-
-            <div class="reason_list"><%=feedback%></div>
-
-        </div>
-
-    </div>
-
-</script>
 
 </body>
 </html>

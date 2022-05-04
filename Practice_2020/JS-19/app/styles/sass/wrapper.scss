@@ -1,21 +1,24 @@
 @import "variables";
 @import "templates";
 
-@mixin wrapper($name) {
+@mixin wrapper($name, $top, $bottom) {
     .wrapper__#{$name} {
-        @extend %justify_center;
+      @extend %justify_center;
+
+      padding-top:    #{$top}px;
+      padding-bottom: #{$bottom}px;
     }
 }
 
-@include wrapper('header');
-@include wrapper('header-nav');
-@include wrapper('carousel');
-@include wrapper('features');
-@include wrapper('services');
-@include wrapper('banners');
-@include wrapper('news');
-@include wrapper('footer');
-@include wrapper('item');
+@include wrapper('header', 0, 0);
+@include wrapper('header-nav', 40, 40);
+@include wrapper('carousel', 0, 0);
+@include wrapper('features', 75, 85);
+@include wrapper('services', 45, 70);
+@include wrapper('banners', 0, 0);
+@include wrapper('news', 65, 85);
+@include wrapper('links', 65, 85);
+@include wrapper('footer', 25, 25);
 
 
 
@@ -23,31 +26,21 @@
   width: 100%;
   padding-top: 35px;
 
-
-  &__header-nav {
-    padding-top:    40px;
-    padding-bottom: 40px;
-  }
-
-
-  &__features {
-    padding-top:    75px;
-    padding-bottom: 85px;
-  }
-
   &__services {
-    padding-top:    45px;
-    padding-bottom: 70px;
-
     background: $backgroundColor;
     color: $lightTextColor;
   }
 
   &__news {
-    padding-top: 4em;
-    padding-bottom: 5.25em;
     background: #f7f7f7;
   }
 
+  &__links{
+    background: $backgroundColor;
+  }
+
+  &__footer{
+    background: #35383c;
+  }
 
 }

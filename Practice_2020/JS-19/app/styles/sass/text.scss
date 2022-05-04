@@ -77,16 +77,3 @@
 
 @include text__restriction(3);
 @include text__restriction(4);
-
-
-.text__restrict{
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -moz-box;
-  -moz-box-orient: vertical;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  line-clamp: 3;
-  box-orient: vertical;
-}

@@ -12,61 +12,58 @@
   @extend %justify_space-between;
   max-height: 200px;
 
-
-
-
-  &__item {
-    display: flex;
-    color: #2a2b2e;
-  }
-
-  &__item:not(:first-child) {
-    margin-left: 2vw;
-  }
-
-
-    &__number {
-    opacity: 0.102;
+    &__item {
+      display: flex;
+      color: #2a2b2e;
     }
 
-
-    &__body {
+    &__item:not(:first-child) {
       margin-left: 2vw;
     }
 
 
-      &__icon_settings{  @extend %features__icon;  background-position: -74px 0; }
-      &__icon_params  {  @extend %features__icon;  background-position: -37px 0; }
-      &__icon_truck   {  @extend %features__icon;  background-position:     0 0; }
-
-
-      &__name{
-        margin-top:    0.75em;
-        margin-bottom:    2em;
-
-        text-transform: capitalize;
-        white-space: nowrap;
+      &__number {
+      opacity: 0.102;
       }
 
 
-      &__text{
-        margin-bottom: 2em;
+      &__body {
+        margin-left: 2vw;
       }
 
 
-      &__link{
+        &__icon_settings{  @extend %features__icon;  background-position: -74px 0; }
+        &__icon_params  {  @extend %features__icon;  background-position: -37px 0; }
+        &__icon_truck   {  @extend %features__icon;  background-position:     0 0; }
 
-        &::after{
-          margin-left: 1em;
-          content: '\2192';
-          color: $hoverLinkColor;
+
+        &__name{
+          margin-top:    0.75em;
+          margin-bottom:    2em;
+
+          text-transform: capitalize;
+          white-space: nowrap;
         }
 
 
-        &:hover::after{
-          color: #2a2b2e;
+        &__text{
+          margin-bottom: 2em;
         }
 
-      }
+
+        &__link{
+
+          &::after{
+            margin-left: 1em;
+            content: '\2192';
+            color: $hoverLinkColor;
+          }
+
+
+          &:hover::after{
+            color: #2a2b2e;
+          }
+
+        }
 
   }
