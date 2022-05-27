@@ -45,7 +45,7 @@ function browsersync() {
 }
 
 function scripts () {
-    return src( [ 'app/js/plugins/*.js', 'app/js/*.js', '!app/js/*.min.js', '!app/js/*.test.js'] )
+    return src( [ 'app/js/plugins/*.js', 'app/js/*.js', '!app/js/*.min.js', '!app/js/**/*.test.js'] )
         .pipe(rigger())
         .pipe(concat('app.min.js'))
         .pipe(uglify())

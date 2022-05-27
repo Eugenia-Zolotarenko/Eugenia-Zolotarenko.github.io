@@ -11549,7 +11549,7 @@
          * @example
          *
          * function isGreeting(value) {
-         *   return /^h(?:i|ello)$/.test(value);
+         *   return /^h(?:i|ello)$/.__test__(value);
          * }
          *
          * function customizer(objValue, othValue) {
@@ -11841,7 +11841,7 @@
          * @example
          *
          * function isGreeting(value) {
-         *   return /^h(?:i|ello)$/.test(value);
+         *   return /^h(?:i|ello)$/.__test__(value);
          * }
          *
          * function customizer(objValue, srcValue) {
@@ -15521,7 +15521,7 @@
          * // Create custom iteratee shorthands.
          * _.iteratee = _.wrap(_.iteratee, function(iteratee, func) {
          *   return !_.isRegExp(func) ? iteratee(func) : function(string) {
-         *     return func.test(string);
+         *     return func.__test__(string);
          *   };
          * });
          *
@@ -15674,7 +15674,7 @@
          *
          * function vowels(string) {
          *   return _.filter(string, function(v) {
-         *     return /[aeiou]/i.test(v);
+         *     return /[aeiou]/i.__test__(v);
          *   });
          * }
          *

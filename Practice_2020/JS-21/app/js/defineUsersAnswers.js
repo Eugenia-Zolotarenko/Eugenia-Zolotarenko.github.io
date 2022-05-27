@@ -1,30 +1,24 @@
-function defineUsersAnswers (obj) {
+function defineUsersAnswers () {
 
-    let form = document.forms.quiz;
-    let elements = form.elements;
+    const $form = $('#js-form-quiz');
 
+    const $options = $form.find('input[type="radio"]');
 
-/*Define array of all options*/
-    let options = [];
+    let checked = [];
+    let j = 0;
 
-    for (let i = 0; i < obj.quizList.length; i++){
+    for (let i = 0; i < $options.length; i++) {
 
-        options[i] = elements[`answer_${i}`];
-    }
-
-
-/*Define array of options checked by user*/
-    let checkedOptions = [];
-
-    for (let i = 0; i < options.length; i++){
-
-        for (let j = 0; j < options[i].length; j++){
-
-            if (options[i][j].checked === true) {
-                checkedOptions[i] = +options[i][j].value;
-            }
+        if ($options[i].checked) {
+            checked[j] = +$options[i].value;
+            j++;
         }
     }
 
-    return checkedOptions;
+    return checked;
 }
+
+
+// try {
+//     module.exports = defineUsersAnswers;
+// } catch (e) {}

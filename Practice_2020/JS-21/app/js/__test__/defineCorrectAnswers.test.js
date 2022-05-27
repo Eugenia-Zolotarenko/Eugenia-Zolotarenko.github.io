@@ -1,5 +1,5 @@
 
-const defineCorrectAnswers = require('./defineCorrectAnswers.js');
+const defineCorrectAnswers = require('../defineCorrectAnswers.js');
 
 describe('defineCorrectAnswersArray', () => {
 
