@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Home work JS-23</title><link rel="icon" href="fc5cec3556e37002074d.ico"><script defer="defer" src="638.df15a4ed724221ddeae3.bundle.js"></script><script defer="defer" src="main.43da411fe0905100c861.bundle.js"></script><link href="main.7603f21a09a6c9c15486.bundle.css" rel="stylesheet"></head><body><script type="text/template" id="wrapper-template"><div class="wrapper">
+
+            <ul class="item-list">
+
+            </ul>
+
+            <div class="controls">
+                <input type="text" class="item-value" placeholder="type new task here..">
+                <button class="button  item-edit" disabled>Edit</button>
+                <button class="button  item-add">Add</button>
+            </div>
+
+        </div></script><script type="text/template" id="list-template"> <% for (let i = 0; i < data.length; i++) {%> <li class="item-content  text-content"><%= data[i] %> <button data-value="<%= data[i] %>"  data-index="<%=i%>"
+                 class="button_remove item-remove"></button>
+     </li> <% }; %> </script></body></html>

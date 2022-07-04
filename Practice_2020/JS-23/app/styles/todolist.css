@@ -1,0 +1,40 @@
+.item-list {
+    border-radius: 10px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+
+
+.item-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+
+    border-radius: 5px;
+    border: 1px solid #939697;
+    cursor: pointer;
+    background-color: #c5e1e6;
+    overflow-wrap: break-word;
+}
+
+
+.text-content{
+    font-size: 1.5em;
+}
+
+.button_remove {
+    display: inline-block;
+    border: none;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-image:  url(../img/sprite.svg);
+    background-position: 0 0;
+    min-width:  16px;
+    height: 16px;
+}
