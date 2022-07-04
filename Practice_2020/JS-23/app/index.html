@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home work JS-23</title>
+    <link rel="icon" href="img/faviconka.ico">
+</head>
+<body>
+
+    <script type="text/template" id="wrapper-template">
+        <div class="wrapper">
+
+            <ul class="item-list">
+
+            </ul>
+
+            <div class="controls">
+                <input type="text" class="item-value" placeholder="type new task here..">
+                <button class="button  item-edit" disabled>Edit</button>
+                <button class="button  item-add">Add</button>
+            </div>
+
+        </div>
+</script>
+
+<script type="text/template" id="list-template">
+    <% for (let i = 0; i < data.length; i++) {%>
+     <li class="item-content  text-content"><%= data[i] %>
+         <button data-value="<%= data[i] %>"  data-index="<%=i%>"
+                 class="button_remove item-remove"></button>
+     </li>
+    <% }; %>
+</script>
+
+</body>
+</html>
